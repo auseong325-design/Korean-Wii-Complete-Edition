@@ -1,0 +1,78 @@
+{
+ "schema": 1,
+ "purpose": "Approximate Wii pointer calibrations for scripts/dolphin_ui.py: pointer = a*mouse + b per axis, in fractions of the maximized render window's client area. Verify with point + shot before clicking.",
+ "profiles": {
+  "forecast": {
+   "ax": 1.25,
+   "bx": -0.125,
+   "ay": 1.25,
+   "by": -0.235,
+   "a_input": "left mouse or z",
+   "b_input": "x",
+   "home": "return",
+   "note": "2026-10-24 review profile: maximized 4:3 content, fractions include side bars; verify hand before click"
+  },
+  "default": {
+   "ax": 1.0,
+   "bx": 0.0,
+   "ay": 1.0,
+   "by": 0.0,
+   "a_input": "left mouse",
+   "note": "uncalibrated"
+  },
+  "wiiroom": {
+   "ax": 1.3,
+   "bx": -0.151,
+   "ay": 0.99,
+   "by": -0.086,
+   "a_input": "left mouse (hold 300 ms)",
+   "home": "return",
+   "note": "measured 2026-10-24 with dolphin_ui.py shots (1920x1009 client)"
+  },
+  "votes": {
+   "ax": 1.36,
+   "bx": -0.1855,
+   "ay": 1.0,
+   "by": -0.0785,
+   "a_input": "left mouse or space (profile pulse)",
+   "b_input": "right mouse or x",
+   "note": "derived from older full-screen observations; re-measure (TESTING.md) if clicks miss"
+  },
+  "mii-contest": {
+   "ax": 1.25,
+   "bx": -0.127,
+   "ay": 1.03,
+   "by": -0.0613,
+   "a_input": "left mouse or space (profile pulse)",
+   "b_input": "right mouse or x",
+   "note": "derived from older full-screen observations; re-measure (TESTING.md) if clicks miss"
+  },
+  "news": {
+   "ax": 1.0,
+   "bx": 0.0275,
+   "ay": 1.0,
+   "by": -0.0838,
+   "a_input": "left mouse only",
+   "home": "return",
+   "note": "pointer hides at the very top edge derived from older full-screen observations; re-measure (TESTING.md) if clicks miss"
+  },
+  "news-home": {
+   "ax": 0.865,
+   "bx": 0.066,
+   "ay": 1.51,
+   "by": -0.349,
+   "a_input": "left mouse",
+   "home": "return",
+   "note": "2026-10-24 HOME-only calibration for maximized News 16:9 render; keep normal news calibration unchanged"
+  },
+  "tvguide": {
+   "ax": 1.25,
+   "bx": -0.125,
+   "ay": 1.25,
+   "by": -0.355,
+   "a_input": "left mouse or SPACE",
+   "home": "return",
+   "note": "2026-10-25 TV Guide maximized render approximate; verify point+shot"
+  }
+ }
+}

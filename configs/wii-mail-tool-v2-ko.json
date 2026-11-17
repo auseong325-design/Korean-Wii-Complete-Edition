@@ -1,0 +1,8 @@
+{
+  "builder_snapshot": "workspace/hardware/mail-candidate-v2/builder.py",
+  "builder_sha256": "86f00067f979e6595343debed91fd3ff33782fc04fb7fe5e4af794c4bf0f4a1f",
+  "known_issues": [
+    "Dark framebuffer colours in Dolphin",
+    "Audit did not invoke config checksum validation"
+  ]
+}

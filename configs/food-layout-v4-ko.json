@@ -1,0 +1,52 @@
+{
+ "note": "BRLYT textbox (txt1) Korean for build-v4, applied to content 2 layouts. Verified against the stock Japanese text; Korean glyph-checked against the Korean wbf1 (no kanji). Keyed arc -> brlyt -> [{pane, ja, ko}]. Multi-line help uses \\n as in the original.",
+ "content_index": 2,
+ "layouts": {
+  "DtestWelcome.arc": {
+   "Welcome/blyt/welcome_layout.brlyt": [
+    {"pane": "weT_05_txt_00", "ja": "ようこそ 出前チャンネルへ", "ko": "음식 배달 채널에 오신 것을 환영합니다"},
+    {"pane": "weT_05_txt_01", "ja": "このチャンネルはお客様の\nご自宅のWiiより出前の注文をして\n いただくためのチャンネルです。", "ko": "이 채널은 고객님이\n자택 Wii에서 음식 배달을 주문하실 수 있는\n채널입니다."},
+    {"pane": "weT_05_txt_02", "ja": " Wii本体に設定している「自宅住所」以外へ \n 出前をお届けすることはできません。\n ご了承ください。", "ko": " Wii 본체에 설정한 「자택 주소」 외의 곳으로는 \n 배달해 드릴 수 없습니다.\n 양해 부탁드립니다."},
+    {"pane": "weT_06_txt_00", "ja": " 出前チャンネルでは、お客様に“お食事”の \n 出前ができるお店を紹介させていただき、\n 出前の注文までのサービスをおこないます。", "ko": " 음식 배달 채널에서는 고객님께 ‘식사’를 \n 배달할 수 있는 가게를 소개해 드리고, \n 주문까지의 서비스를 제공합니다."},
+    {"pane": "weT_06_txt_01", "ja": "お支払いは、出前をお届けするお店の方へ\n直接お願いいたします。クレジットカードや\n Wiiポイントでのお支払いはできません。", "ko": "결제는 배달해 주시는 가게 분께\n직접 해 주세요. 신용카드나\n Wii 포인트로는 결제할 수 없습니다."},
+    {"pane": "weT_06_txt_02", "ja": "また、一度に100万円以上の\n ご注文はできません。ご了承ください。", "ko": "또한 한 번에 100만 원 이상은\n 주문하실 수 없습니다. 양해 부탁드립니다."},
+    {"pane": "weT_07_txt_00", "ja": " 出前チャンネルでは、\nお客様からのご注文の受付および\nお店への注文内容の連絡につきましては\n 夢の街創造委員会株式会社が行います。", "ko": " 음식 배달 채널에서는\n고객님의 주문 접수와\n가게로의 주문 내용 전달을\n 유메노마치소조위원회(주)가 담당합니다."},
+    {"pane": "weT_07_txt_01", "ja": "出前の商品につきましては\nお客様が注文されたお店が\n 責任をもってお届けいたします。", "ko": "배달 상품은\n고객님이 주문하신 가게가\n 책임지고 배달해 드립니다."},
+    {"pane": "weT_08_txt_00", "ja": "チャンネルについては\n任天堂株式会社が責任をもって\n お届けしています。", "ko": "채널은\n닌텐도(주)가 책임지고\n 제공하고 있습니다."},
+    {"pane": "weT_08_txt_01", "ja": "Wiiをお楽しみ中のひと休み…\nおなかを満たしたい時などに\n ご利用いただければ幸いです。", "ko": "Wii를 즐기시다 잠깐 쉬어 갈 때…\n출출할 때 등에\n 이용해 주시면 감사하겠습니다."}
+   ]
+  },
+  "DtestTitle.arc": {
+   "Title/blyt/00-2_m_layout.brlyt": [
+    {"pane": "00-2T_title_00", "ja": "利用規約・プライバシーポリシー", "ko": "이용약관·개인정보 방침"},
+    {"pane": "00-2T_regulat2", "ja": "(パネルのご利用規約文)(仮）", "ko": "(이용약관 본문)(임시)"}
+   ],
+   "Title/blyt/address_layout.brlyt": [
+    {"pane": "adT_09_txt_00", "ja": "お届け先は正しいですか？", "ko": "받는 곳이 맞습니까?"},
+    {"pane": "adTc_09_sama", "ja": "さま", "ko": "님"},
+    {"pane": "adT_09_txt_02", "ja": "お届け先に間違いがないか確認いただくため\n この情報は出前チャンネルのトップ画面に表示されます。\n ご了承ください。", "ko": "받는 곳에 잘못된 곳이 없는지 확인하실 수 있도록\n 이 정보는 음식 배달 채널 첫 화면에 표시됩니다.\n 양해 부탁드립니다."}
+   ],
+   "Title/blyt/01_m_layout.brlyt": [
+    {"pane": "01_Tc_win_sama", "ja": "さま", "ko": "님"}
+   ],
+   "Title/blyt/L2_m_layout.brlyt": [
+    {"pane": "L2_T_coupon_t", "ja": "出前のとくてん", "ko": "배달 혜택"}
+   ]
+  },
+  "DtestOrder.arc": {
+   "Order/blyt/12_m_layout.brlyt": [
+    {"pane": "12_T_userinfo_t", "ja": "お届け先", "ko": "받는 곳"},
+    {"pane": "12_Tc_win_sama", "ja": "さま", "ko": "님"},
+    {"pane": "12_T_coupon_t", "ja": "出前のとくてん", "ko": "배달 혜택"}
+   ],
+   "Order/blyt/14_m_layout.brlyt": [
+    {"pane": "14_T_userinfo_t", "ja": "お届け先", "ko": "받는 곳"},
+    {"pane": "14_Tc_win_sama", "ja": "さま", "ko": "님"},
+    {"pane": "14_T_coupon_t", "ja": "出前のとくてん", "ko": "배달 혜택"}
+   ],
+   "Order/blyt/10_m_layout.brlyt": [
+    {"pane": "10_T_cop_Mname", "ja": "出前のとくてん", "ko": "배달 혜택"}
+   ]
+  }
+ }
+}

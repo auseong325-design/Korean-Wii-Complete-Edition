@@ -1,0 +1,239 @@
+--- a/Source/Core/Core/IOS/ES/ES.cpp
++++ b/Source/Core/Core/IOS/ES/ES.cpp
+@@ -1142,6 +1142,13 @@
+   // Verify the signature.
+   const std::vector<u8> signature = signed_blob.GetSignatureData();
+   ret = iosc.VerifyPublicKeySign(signed_blob.GetSha1(), issuer_handle, signature, PID_ES);
++  // KWCE showcase build only: like the console's d2x cIOS 249, whose ES skips the signature check,
++  // accept unverified TMDs/tickets while IOS 249 is running (every other IOS stays strict).
++  if (ret != IPC_SUCCESS && type != VerifyContainerType::Device && m_ios.GetVersion() == 249)
++  {
++    WARN_LOG_FMT(IOS_ES, "VerifyContainer: signature check skipped under IOS 249 (showcase build)");
++    ret = IPC_SUCCESS;
++  }
+   if (ret != IPC_SUCCESS)
+   {
+     ERROR_LOG_FMT(IOS_ES, "VerifyContainer: IOSC_VerifyPublicKeySign failed with error {}",
+--- a/Source/Core/Core/IOS/VersionInfo.cpp
++++ b/Source/Core/Core/IOS/VersionInfo.cpp
+@@ -27,7 +27,7 @@
+ // The writes are usually contained in a single function that
+ // mostly writes raw literals to the relevant locations.
+ // e.g. IOS9, version 1034, content id 0x00000006, function at 0xffff6884
+-constexpr std::array<MemoryValues, 41> ios_memory_values = {
++constexpr std::array<MemoryValues, 42> ios_memory_values = {
+     {{
+          4,          0x40003,     0x81006,          MEM1_SIZE,
+          MEM1_SIZE,  MEM1_END,    MEM1_ARENA_BEGIN, MEM1_ARENA_END,
+@@ -252,6 +252,15 @@
+          0x935E0000, 0x935E0000, 0x93600000,       HOLLYWOOD_REVISION,
+          RAM_VENDOR, 0x93600000, 0x93620000,       0,
+      },
++     // KWCE showcase build only: the console's d2x cIOS 249 (base 56) behaves as IOS56,
++     // so the KWCE installer can reload to it the way it does on the console.
++     {
++         249,        0xf95213,   0x030110,         MEM1_SIZE,
++         MEM1_SIZE,  MEM1_END,   MEM1_ARENA_BEGIN, MEM1_ARENA_END,
++         MEM2_SIZE,  MEM2_SIZE,  0x93600000,       MEM2_ARENA_BEGIN,
++         0x935E0000, 0x935E0000, 0x93600000,       HOLLYWOOD_REVISION,
++         RAM_VENDOR, 0x93600000, 0x93620000,       0,
++     },
+      {
+          57,         0x39171f,   0x030110,         MEM1_SIZE,
+          MEM1_SIZE,  MEM1_END,   MEM1_ARENA_BEGIN, MEM1_ARENA_END,
+@@ -331,7 +340,7 @@
+          PLACEHOLDER,
+      }}};
+ 
+-const std::array<MemoryValues, 41>& GetMemoryValues()
++const std::array<MemoryValues, 42>& GetMemoryValues()
+ {
+   return ios_memory_values;
+ }
+@@ -345,7 +354,8 @@
+   if (version != 4)
+     features |= Feature::KD | Feature::SSL | Feature::NCD | Feature::WiFi;
+ 
+-  if (version == 48 || (version >= 56 && version <= 62) || version == 70 || version == 80)
++  if (version == 48 || (version >= 56 && version <= 62) || version == 70 || version == 80 ||
++      version == 249)
+     features |= Feature::SDv2;
+ 
+   if (version == 57 || version == 58 || version == 59)
+--- a/Source/Core/Core/IOS/VersionInfo.h
++++ b/Source/Core/Core/IOS/VersionInfo.h
+@@ -33,7 +33,7 @@
+   u32 sysmenu_sync;
+ };
+ 
+-const std::array<MemoryValues, 41>& GetMemoryValues();
++const std::array<MemoryValues, 42>& GetMemoryValues();
+ 
+ enum class Feature
+ {
+--- a/Source/Core/VideoCommon/FrameDumper.cpp
++++ b/Source/Core/VideoCommon/FrameDumper.cpp
+@@ -68,6 +68,10 @@
+                                                  m_frame_dump_readback_texture->GetRect());
+   m_last_frame_state = m_ffmpeg_dump.FetchState(ticks, frame_number);
+   m_frame_dump_needs_flush = true;
++  // KWCE showcase build only: flush every presented field. Software that draws its XFB with the
++  // CPU (libogc console text, e.g. the KWCE installer) never ends a GPU frame, so the
++  // after_frame flush alone would never write those frames.
++  FlushFrameDump();
+ }
+ 
+ bool FrameDumper::CheckFrameDumpRenderTexture(u32 target_width, u32 target_height)
+--- a/Source/Core/VideoCommon/FrameDumpFFMpeg.cpp
++++ b/Source/Core/VideoCommon/FrameDumpFFMpeg.cpp
+@@ -184,7 +184,10 @@
+   m_context->width = w;
+   m_context->height = h;
+ 
+-  m_context->start_ticks = start_ticks;
++  // KWCE showcase build only: timestamps are absolute emulated time (like the DSP/DTK audio dumps,
++  // which start with the core), so every split file lines up with the audio without guessing.
++  static_cast<void>(start_ticks);
++  m_context->start_ticks = 0;
+   m_context->savestate_index = savestate_index;
+ 
+   InitAVCodec();
+--- a/Source/Core/AudioCommon/Mixer.h
++++ b/Source/Core/AudioCommon/Mixer.h
+@@ -54,6 +54,8 @@
+   void StopLogDTKAudio();
+ 
+   void StartLogDSPAudio(const std::string& filename);
++  // KWCE showcase build only: keep the audio dumps on emulated time (silence where no samples came).
++  void AlignLog(WaveFileWriter& writer, u64& written, u32 divisor, std::size_t incoming);
+   void StopLogDSPAudio();
+ 
+   // 54000000 doesn't work here as it doesn't evenly divide with 32000, but 108000000 does
+@@ -192,6 +194,8 @@
+   WaveFileWriter m_wave_writer_dsp;
+ 
+   bool m_log_dtk_audio = false;
++  u64 m_dtk_written = 0;
++  u64 m_dsp_written = 0;
+   bool m_log_dsp_audio = false;
+ 
+   float m_config_emulation_speed;
+--- a/Source/Core/AudioCommon/Mixer.cpp
++++ b/Source/Core/AudioCommon/Mixer.cpp
+@@ -15,6 +15,9 @@
+ #include "Common/MathUtil.h"
+ #include "Common/Swap.h"
+ #include "Core/Config/MainSettings.h"
++#include "Core/CoreTiming.h"
++#include "Core/HW/SystemTimers.h"
++#include "Core/System.h"
+ #include "Core/Core.h"
+ #include "Core/System.h"
+ 
+@@ -213,6 +216,28 @@
+   return num_samples;
+ }
+ 
++void Mixer::AlignLog(WaveFileWriter& writer, u64& written, u32 divisor, std::size_t incoming)
++{
++  auto& system = Core::System::GetInstance();
++  const u64 rate = FIXED_SAMPLE_RATE_DIVIDEND / divisor;
++  const double now = static_cast<double>(system.GetCoreTiming().GetTicks()) /
++                     static_cast<double>(system.GetSystemTimers().GetTicksPerSecond());
++  const u64 expected = static_cast<u64>(now * static_cast<double>(rate));
++  if (expected > written + incoming + rate / 20)
++  {
++    static const std::array<s16, 2 * 4096> zeros{};
++    u64 pad = expected - written - incoming;
++    while (pad != 0)
++    {
++      const u32 n = static_cast<u32>(std::min<u64>(pad, 4096));
++      writer.AddStereoSamplesBE(zeros.data(), n, divisor, 256, 256);
++      pad -= n;
++      written += n;
++    }
++  }
++  written += incoming;
++}
++
+ void Mixer::PushSamples(const s16* samples, std::size_t num_samples)
+ {
+   if (IsOutputSampleRateValid())
+@@ -231,6 +256,7 @@
+   {
+     const s32 sample_rate_divisor = m_dma_mixer.GetInputSampleRateDivisor();
+     auto const volume = m_dma_mixer.GetVolume();
++    AlignLog(m_wave_writer_dsp, m_dsp_written, sample_rate_divisor, num_samples);
+     m_wave_writer_dsp.AddStereoSamplesBE(samples, static_cast<u32>(num_samples),
+                                          sample_rate_divisor, volume.first, volume.second);
+   }
+@@ -254,6 +280,7 @@
+   {
+     const s32 sample_rate_divisor = m_streaming_mixer.GetInputSampleRateDivisor();
+     const auto volume = m_streaming_mixer.GetVolume();
++    AlignLog(m_wave_writer_dtk, m_dtk_written, sample_rate_divisor, num_samples);
+     m_wave_writer_dtk.AddStereoSamplesBE(samples, static_cast<u32>(num_samples),
+                                          sample_rate_divisor, volume.first, volume.second);
+   }
+@@ -358,6 +385,7 @@
+     if (success)
+     {
+       m_log_dtk_audio = true;
++      m_dtk_written = 0;
+       m_wave_writer_dtk.SetSkipSilence(false);
+       NOTICE_LOG_FMT(AUDIO, "Starting DTK Audio logging");
+     }
+@@ -395,6 +423,7 @@
+     if (success)
+     {
+       m_log_dsp_audio = true;
++      m_dsp_written = 0;
+       m_wave_writer_dsp.SetSkipSilence(false);
+       NOTICE_LOG_FMT(AUDIO, "Starting DSP Audio logging");
+     }
+--- a/Source/Core/VideoCommon/VertexShaderGen.h
++++ b/Source/Core/VideoCommon/VertexShaderGen.h
+@@ -65,7 +65,9 @@
+   u32 numColorChans : 2;  // Output color channels.
+   VSExpand vs_expand : 2;
+ 
+-  u32 pad : 8;
++  // KWCE showcase build only: XF clip disable (0x1005 bit 0), honoured like the console
++  u32 clip_disable : 1;
++  u32 pad : 7;
+ 
+   // texInfo is optimized to fit all per-texgen config into just 16-bits.
+   // But it did require a union
+--- a/Source/Core/VideoCommon/VertexShaderGen.cpp
++++ b/Source/Core/VideoCommon/VertexShaderGen.cpp
+@@ -23,6 +23,7 @@
+   vertex_shader_uid_data* const uid_data = out.GetUidData();
+   uid_data->numTexGens = xfmem.numTexGen.numTexGens;
+   uid_data->numColorChans = xfmem.numChan.numColorChans;
++  uid_data->clip_disable = xfmem.clipDisable.disable_clipping_detection ? 1 : 0;
+ 
+   uid_data->components =
+       VertexLoaderManager::g_current_components & (VB_HAS_SHARED | VB_HAS_TEXMTXIDXALL);
+@@ -785,6 +786,10 @@
+     out.Write("float clipDepth = o.pos.z * (1.0 - 1e-7);\n"
+               "float clipDist0 = clipDepth + o.pos.w;\n"  // Near: z < -w
+               "float clipDist1 = -clipDepth;\n");         // Far: z > 0
++    // KWCE showcase build only: software that disables XF clipping (GXSetClipMode(GX_CLIP_DISABLE),
++    // e.g. channel layouts flipping panes around Y) is not depth-clipped on the console.
++    if (uid_data->clip_disable)
++      out.Write("clipDist0 = 1.0;\nclipDist1 = 1.0;\n");
+ 
+     if (host_config.backend_geometry_shaders)
+     {
+--- a/Source/Core/VideoCommon/XFStructs.cpp
++++ b/Source/Core/VideoCommon/XFStructs.cpp
+@@ -47,6 +47,9 @@
+     case XFMEM_CLIPDISABLE:
+     {
+       ClipDisable setting{.hex = value};
++      // KWCE showcase build only: the vertex shaders honour bit 0, so flush on a change.
++      if (xfmem.clipDisable.hex != value)
++        g_vertex_manager->Flush();
+       if (setting.disable_clipping_detection)
+         DolphinAnalytics::Instance().ReportGameQuirk(GameQuirk::SetsXFClipDisableBit0);
+       if (setting.disable_trivial_rejection)

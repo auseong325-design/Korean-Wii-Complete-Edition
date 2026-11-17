@@ -1,0 +1,13 @@
+{
+  "schema": 1,
+  "purpose": "Fix legacy Priiloader zero-token truncation/EOF; zero-free initial sentinel; native DVD animation unchanged. Real-console retest pending.",
+  "player_build": 27,
+  "home_ui": 4,
+  "wad_revision": 27,
+  "wad_sha256": "f9876d63941d5e3e38a08ab88bcea859e883848296c120555561ac5521cd32f4",
+  "installer_source_sha256": "8163d98cbb050026cd765ec4c2718722225975009848a457f384a55dcfed5ef5",
+  "dvd_banner_hook": 12,
+  "dvd_hook_source_sha256": "50dd6f0bb7360647eeb6362615d3435d7d370d3525118cf387821f761b4db24f",
+  "dvd_native_source_sha256": "4f42ac1295abcaea0a149426b175d55a4ab55468bc36d385a753001b1a06c352",
+  "legacy_parser": true
+}

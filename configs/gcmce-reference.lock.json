@@ -1,0 +1,11 @@
+{
+  "repository": "https://github.com/FlipperMCE/firmware",
+  "commit": "3e5b948a82862b36844ca2fca08548ebf0bb422c",
+  "reference_only": true,
+  "installed_firmware_version_known": false,
+  "files": {
+    "src/gc/gc_cardman.c": "79653d4cc58bf1c9b53fc5ccc9c29f2eacccd7d884a95b15c96360d20f5a8f63",
+    "src/gc/card_emu/gc_unlock.c": "827f9c4fd34c30e2f384034f2c33371174eabaf8b764579cfc32e6e1fe58b5d8",
+    "src/settings.c": "f7d0b052cdbf88ec27d2498c932b5742443c556f7abcebec30f6bcd49e6d5cf1"
+  }
+}

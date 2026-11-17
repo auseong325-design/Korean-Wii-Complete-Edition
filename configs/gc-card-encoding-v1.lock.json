@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "scope": "43K VerifyID validated-header encoding selection only",
+  "verify_id_address": 2169738216,
+  "verify_id_size": 876,
+  "verify_id_sha256": "b1f57a58a17946f242369df9a6c615986330d1093dab75cfa17b4adeb206e206",
+  "call_address": 2169739032,
+  "expected_call_target": 2169730608,
+  "cave_address": 2169788928,
+  "cave_size": 20,
+  "cave_input_sha256": "df8bae6d0961ae09b90aac57a386620bf1465c290775bca39013f1d81d397c45",
+  "header_register": 29,
+  "header_encoding_offset": 36,
+  "supported_encodings": [
+    0,
+    1
+  ],
+  "unsupported_fallback": 1,
+  "hardware_verified": false
+}

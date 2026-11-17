@@ -1,0 +1,43 @@
+{
+  "profile": "tvguide-test-v1-user",
+  "title_id": "0001000148424e4a",
+  "capability_count": 0,
+  "external_network_allowed": false,
+  "files": [
+    {
+      "path": "workspace/sandbox/tvguide-test-v1/Dolphin-x64/Dolphin.exe",
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    {
+      "path": "workspace/sandbox/tvguide-test-v1/NetProbe.exe",
+      "sha256": "faa1a0dae95b56631b530f9ee2ceffb31dbddbd0269cadc99603b7a418a0217d"
+    },
+    {
+      "path": "tools/tvguide-sandbox/v1/bin/TvGuideRunner.cs",
+      "sha256": "a05ff6d1ee6ecda40c0b415a14b85783ed0a70ca846a545fdddf81829243bbff"
+    },
+    {
+      "path": "tools/tvguide-sandbox/v1/bin/TvGuideRunner.exe",
+      "sha256": "0521c6b041a7504e2c16bb532749d6b8179cdc675e01954f1b812fc462a0cd28"
+    },
+    {
+      "path": "tools/tvguide-sandbox/v1/bin/TvGuideServer.cs",
+      "sha256": "8def93549443ceb2e8d01dd5f438f2c753db9c3ad9f3c17c17dee8cf1e3ad9fe"
+    },
+    {
+      "path": "tools/tvguide-sandbox/v1/bin/TvGuideServer.exe",
+      "sha256": "b1b81ceec481ecd761cb278ebbf49c9349eef130780ef65fdbf22c0a0946643b"
+    },
+    {
+      "path": "workspace/sandbox/tvguide-test-v1/local-feed/fixture-manifest.json",
+      "sha256": "7a8c5779783c25a84ee01c86ead9eff0035d78ccf4bd7a4482bfb0bd865b5ac2"
+    }
+  ],
+  "builds": {
+    "1": "8440cf5998824351af1982cf76c2e8ae89f8ca149ca5c4ebaf839316c99120f5",
+    "2": "fc1d2be90b70397f6ddd50e30c4243afa96293cde517ff7925a29d9f91f9f463",
+    "3": "02270af0e3741c71b1f22be1ff97fc1431d38856206bf676b9f5a8a26d14078f",
+    "4": "30add0b40e58329441cd0ecf42904acf558d98d3552c43ebd5a4e19403e1f7ba",
+    "5": "8d74ca18ed03c20513a6fd2723c2ddbd8672fe2eac372029f2a668b49d03410a"
+  }
+}

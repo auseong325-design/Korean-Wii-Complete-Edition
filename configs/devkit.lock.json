@@ -1,0 +1,103 @@
+[
+  {
+    "name": "devkitPPC",
+    "version": "r51-1",
+    "url": "https://downloads.devkitpro.org/packages/devkitPPC-r51-1-any.pkg.tar.zst",
+    "sha256": "9e0767dbde557728f7ef57e9baec7314f1f71110f4b35d0dd15c34aa56b11307",
+    "depends": [
+      "devkitppc-binutils>=2.47-2",
+      "devkitppc-mn10200-binutils>=2.24-3",
+      "devkitppc-gcc>=16.2.0-1",
+      "devkitppc-newlib>=4.6.0.20260123-4"
+    ]
+  },
+  {
+    "name": "devkitppc-binutils",
+    "version": "2.47-2",
+    "url": "https://pkg.devkitpro.org/packages/windows/x86_64/devkitppc-binutils-2.47-2-x86_64.pkg.tar.zst",
+    "sha256": "2a4009e734f7e43e565c0e0fed7facf95191e30d7fbd55d2732500b056cfa376",
+    "depends": []
+  },
+  {
+    "name": "devkitppc-mn10200-binutils",
+    "version": "2.24-3",
+    "url": "https://pkg.devkitpro.org/packages/windows/x86_64/devkitppc-mn10200-binutils-2.24-3-x86_64.pkg.tar.zst",
+    "sha256": "9d2c04aeeddf4e761165fdb2c5e2c2165694f42bc6c5a49f3f14bee9ffa21811",
+    "depends": []
+  },
+  {
+    "name": "devkitppc-gcc",
+    "version": "16.2.0-1",
+    "url": "https://pkg.devkitpro.org/packages/windows/x86_64/devkitppc-gcc-16.2.0-1-x86_64.pkg.tar.zst",
+    "sha256": "ab245a7a29f7f7037169d5ad99d1c6577e9bc2339ba0ca9ec501acf72f6fc5f4",
+    "depends": [
+      "devkitppc-binutils",
+      "devkitppc-newlib",
+      "devkitppc-rules",
+      "devkitppc-crtls"
+    ]
+  },
+  {
+    "name": "devkitppc-newlib",
+    "version": "4.6.0.20260123-4",
+    "url": "https://downloads.devkitpro.org/packages/devkitppc-newlib-4.6.0.20260123-4-any.pkg.tar.zst",
+    "sha256": "2c5277c6b07a5558c9fd8e631d958c6d7784860aa55f5c320cb51371bc07e21b",
+    "depends": []
+  },
+  {
+    "name": "devkitppc-rules",
+    "version": "1.2.1-1",
+    "url": "https://downloads.devkitpro.org/packages/devkitppc-rules-1.2.1-1-any.pkg.tar.zst",
+    "sha256": "0c3394da451c9dfb3b428d9d61b044eb1eafb947b2b5090ff88525f55c785278",
+    "depends": [
+      "general-tools>=1.3.1"
+    ]
+  },
+  {
+    "name": "devkitppc-crtls",
+    "version": "2.1.0-1",
+    "url": "https://downloads.devkitpro.org/packages/devkitppc-crtls-2.1.0-1-any.pkg.tar.zst",
+    "sha256": "5a1144d515579eee73bb936ca36a8ea739b00d8cf32af3fa4dda21a039881bcd",
+    "depends": []
+  },
+  {
+    "name": "general-tools",
+    "version": "1.4.4-1",
+    "url": "https://pkg.devkitpro.org/packages/windows/x86_64/general-tools-1.4.4-1-x86_64.pkg.tar.zst",
+    "sha256": "a0fcea1a26c4f472c2ac98c409847dbec9d8e86ed82cd8b02131454f63d239f1",
+    "depends": []
+  },
+  {
+    "name": "gamecube-tools",
+    "version": "1.0.7-1",
+    "url": "https://pkg.devkitpro.org/packages/windows/x86_64/gamecube-tools-1.0.7-1-x86_64.pkg.tar.zst",
+    "sha256": "7c68dba282b62f2a80dda94b6af1f7fef9f584648db1ae62e8f3d346492b569f",
+    "depends": []
+  },
+  {
+    "name": "libogc",
+    "version": "3.2.1-1",
+    "url": "https://downloads.devkitpro.org/packages/libogc-3.2.1-1-any.pkg.tar.zst",
+    "sha256": "2ece827018582723e040247b815e142551c034e12a8808a889923a5481eb7a4b",
+    "depends": []
+  },
+  {
+    "name": "libfat-ogc",
+    "version": "2.1.0-4",
+    "url": "https://downloads.devkitpro.org/packages/libfat-ogc-2.1.0-4-any.pkg.tar.zst",
+    "sha256": "9fb965672aaa3a82586715aab15ee4a16d3fc8850cbd2bd8cc4868e1c091d1b9",
+    "depends": [
+      "libogc"
+    ]
+  },
+  {
+    "name": "wii-examples",
+    "version": "20260510-1",
+    "url": "https://downloads.devkitpro.org/packages/wii-examples-20260510-1-any.pkg.tar.zst",
+    "sha256": "56de7e109247519707c612cef155a7559e6a5ce946f80d449c0782aee54248cb",
+    "depends": [
+      "devkitPPC",
+      "libogc"
+    ]
+  }
+]

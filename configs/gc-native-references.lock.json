@@ -1,0 +1,256 @@
+{
+  "repository": "dolphin-emu/dolphin",
+  "tag": "2609a",
+  "resolved_commit": "409881c34357d0f105fd473167d15ab0bd9c1628",
+  "tree": "7bb5b578f7ac3fbffbf674444040344d1dc4fde5",
+  "files": [
+    {
+      "path": "BaseConfigLoader.cpp",
+      "sha256": "51ed8fa2996dac96bc3e73a929e302120f757c72cd47c20ad5a9c1aff3261727",
+      "upstream_path": "Source/Core/Core/ConfigLoaders/BaseConfigLoader.cpp"
+    },
+    {
+      "path": "Boot.cpp",
+      "sha256": "c2e5e7989a011a78a7a7e39ead810835e339db69292476dbf0c8e547ee967484",
+      "upstream_path": "Source/Core/Core/Boot/Boot.cpp"
+    },
+    {
+      "path": "Boot_BS2Emu.cpp",
+      "sha256": "ed6e86f6bb58b443a0e22e03dddaed22966bf5d7fb09a2d5de4130648e5479b5",
+      "upstream_path": "Source/Core/Core/Boot/Boot_BS2Emu.cpp"
+    },
+    {
+      "path": "Boot_WiiWAD.cpp",
+      "sha256": "37b1a2392efda2f626a284888e363569ef08a7f2edaf040710f9e9ec70f73a16",
+      "upstream_path": "Source/Core/Core/Boot/Boot_WiiWAD.cpp"
+    },
+    {
+      "path": "Command.cpp",
+      "sha256": "c7c2990f8352fa97aa124786561a76fb6d6871c6111514aee476ea9881878ced",
+      "upstream_path": "Source/Core/Core/IOS/Network/WD/Command.cpp"
+    },
+    {
+      "path": "Command.h",
+      "sha256": "6421128f37d303c317c762b3112e0089e05a919690241990491d745c79581cd9",
+      "upstream_path": "Source/Core/Core/IOS/Network/WD/Command.h"
+    },
+    {
+      "path": "CommandLineParse.cpp",
+      "sha256": "6daa8173ae1bb62eff13d00a896f5c49035100a6bfe1f262f2df2bddccdd801d",
+      "upstream_path": "Source/Core/UICommon/CommandLineParse.cpp"
+    },
+    {
+      "path": "CommonPaths.h",
+      "sha256": "d5d49f752f41b8716c3a2f9cb4e627df870466c12955e7d4b313bdd1f2b79a4f",
+      "upstream_path": "Source/Core/Common/CommonPaths.h"
+    },
+    {
+      "path": "ConfigManager.cpp",
+      "sha256": "2e1baf3194c455cd1215964ef60d920a311bfcd13d18db1177bc245b13498d3b",
+      "upstream_path": "Source/Core/Core/ConfigManager.cpp"
+    },
+    {
+      "path": "Core.cpp",
+      "sha256": "bdfaf4b30e62c7e63699ef93b83f257ff70832fd8044a6f487fa11c497171774",
+      "upstream_path": "Source/Core/Core/Core.cpp"
+    },
+    {
+      "path": "ES.cpp",
+      "sha256": "4ef01d82152db9b47e532a10ed20cfd2253b6a87e2972eff654faae92a50009f",
+      "upstream_path": "Source/Core/Core/IOS/ES/ES.cpp"
+    },
+    {
+      "path": "ESLaunch.cpp",
+      "sha256": "4ef01d82152db9b47e532a10ed20cfd2253b6a87e2972eff654faae92a50009f",
+      "upstream_path": "Source/Core/Core/IOS/ES/ES.cpp"
+    },
+    {
+      "path": "ESLaunchTitle.cpp",
+      "sha256": "117f526e39ab6037a757bd7348d9c87ac1d1cdf49694f2aac428aad14619f43d",
+      "upstream_path": "Source/Core/Core/IOS/ES/TitleManagement.cpp"
+    },
+    {
+      "path": "ESViews.cpp",
+      "sha256": "4553d3d550b017281cda92a1640104d37313f59e0cd2ace462fca04d564fe67f",
+      "upstream_path": "Source/Core/Core/IOS/ES/Views.cpp"
+    },
+    {
+      "path": "EXI.cpp",
+      "sha256": "aef920aa0675bc6b0366697338ce967981492c9d570bdc1a95e73024da485d20",
+      "upstream_path": "Source/Core/Core/HW/EXI/EXI.cpp"
+    },
+    {
+      "path": "EXIChannel.cpp",
+      "sha256": "bda1a69b8a97229277393a291931552fc38a59708279bf247b4ef8ac46a5c7b7",
+      "upstream_path": "Source/Core/Core/HW/EXI/EXI_Channel.cpp"
+    },
+    {
+      "path": "EXIDevice.h",
+      "sha256": "605a74dfe8359408b5de503fef5b8a5cad8b378c88f22236137a91cb87db8f66",
+      "upstream_path": "Source/Core/Core/HW/EXI/EXI_Device.h"
+    },
+    {
+      "path": "EXIIPL.cpp",
+      "sha256": "5911636e07944de3c85f49c83215a36e90f9ae1ab56d7aadf2177fd53782a385",
+      "upstream_path": "Source/Core/Core/HW/EXI/EXI_DeviceIPL.cpp"
+    },
+    {
+      "path": "EXIIPL.h",
+      "sha256": "1b873055684909fbb70101abac77451228513fa22f2cb861d29ce09f20f8a64c",
+      "upstream_path": "Source/Core/Core/HW/EXI/EXI_DeviceIPL.h"
+    },
+    {
+      "path": "EXIMemcard.cpp",
+      "sha256": "2cb1a488e1a3c687aebbf834df481faec1692286b44d3b49fba238aba08cea1c",
+      "upstream_path": "Source/Core/Core/HW/EXI/EXI_DeviceMemoryCard.cpp"
+    },
+    {
+      "path": "EXIMemcardDir.cpp",
+      "sha256": "ab84a10f6240490106638e3b3baa76fcfc22591ae52d41c6ee5ff50f51b503ab",
+      "upstream_path": "Source/Core/Core/HW/GCMemcard/GCMemcardDirectory.cpp"
+    },
+    {
+      "path": "FileUtil.cpp",
+      "sha256": "a4cb895671b1a7a322c3d7b63d748a81b0a1f70efc701b0a47b33783a4f8a115",
+      "upstream_path": "Source/Core/Common/FileUtil.cpp"
+    },
+    {
+      "path": "GCMemcard.cpp",
+      "sha256": "8f720b057e9b95b682c6ddd038671d31663d86ffffea92d937d23d742921da44",
+      "upstream_path": "Source/Core/Core/HW/GCMemcard/GCMemcard.cpp"
+    },
+    {
+      "path": "HostFile.cpp",
+      "sha256": "93ebe2195e589d5a2683c3f882f33ab0f17466bad71281462cc028bbbda723a5",
+      "upstream_path": "Source/Core/Core/IOS/FS/HostBackend/File.cpp"
+    },
+    {
+      "path": "HostFS.cpp",
+      "sha256": "885a5749f6ab545b6542656ff6fc0a783854bbaf264c7536ff086c75d2c60f33",
+      "upstream_path": "Source/Core/Core/IOS/FS/HostBackend/FS.cpp"
+    },
+    {
+      "path": "HttpRequest.cpp",
+      "sha256": "e7542c7196d716c19e2c5b66fefe3a39ddebf364e5704ab32bbe303413e805eb",
+      "upstream_path": "Source/Core/Common/HttpRequest.cpp"
+    },
+    {
+      "path": "Main.cpp",
+      "sha256": "9eb7af64bbf416ef8f488647be823b2fe574015697d40cebdcc09a081425a344",
+      "upstream_path": "Source/Core/DolphinQt/Main.cpp"
+    },
+    {
+      "path": "MainSettings.cpp",
+      "sha256": "b66a7cd93abb24af463ddaa3199462ef9a1bb10465f925508379f29bbe950e29",
+      "upstream_path": "Source/Core/Core/Config/MainSettings.cpp"
+    },
+    {
+      "path": "MemArenaWin.cpp",
+      "sha256": "7201a934dffb13cf8eadb0ac514e7aa93b4fb5767f0cc4df6947b8de62ba6a5e",
+      "upstream_path": "Source/Core/Common/MemArenaWin.cpp"
+    },
+    {
+      "path": "MenuBar.cpp",
+      "sha256": "af96f37271312c2e78c37f18f4efe0be1f0e69bbbda9a09c79849ac54630e514",
+      "upstream_path": "Source/Core/DolphinQt/MenuBar.cpp"
+    },
+    {
+      "path": "MIOS.cpp",
+      "sha256": "603c181174fca95f3cbeb20005eb6cdd5bf0b15d3bf0ff75ad37efd95ca0736b",
+      "upstream_path": "Source/Core/Core/IOS/MIOS.cpp"
+    },
+    {
+      "path": "Movie.cpp",
+      "sha256": "5cb69730867be7099d152cdc8937fb898828f658880363469146c57c5defa38d",
+      "upstream_path": "Source/Core/Core/Movie.cpp"
+    },
+    {
+      "path": "Movie.h",
+      "sha256": "197e58ca9d01f227704ef7f37c93575977d97210ca15f4d5f879b559168fdc44",
+      "upstream_path": "Source/Core/Core/Movie.h"
+    },
+    {
+      "path": "NANDImporter.cpp",
+      "sha256": "1445e00b0706e448c3a69ef2a94ab518c310b7a211b66345aeaf4dd421319238",
+      "upstream_path": "Source/Core/DiscIO/NANDImporter.cpp"
+    },
+    {
+      "path": "NANDImporter.h",
+      "sha256": "2feba24168ce7e32cdab916d816279d3e648e1c306e776ada830ff5fc5168b18",
+      "upstream_path": "Source/Core/DiscIO/NANDImporter.h"
+    },
+    {
+      "path": "NetKDRequest.cpp",
+      "sha256": "597bfc631a33b10b6cd9ccbb2109c3d66ee489fae661cfeff9ed581798e9cab8",
+      "upstream_path": "Source/Core/Core/IOS/Network/KD/NetKDRequest.cpp"
+    },
+    {
+      "path": "NetKDRequest.h",
+      "sha256": "c13ddce95f7aabe191a808f3dc1302723b7363e6aee6a8e2c82150f346df0998",
+      "upstream_path": "Source/Core/Core/IOS/Network/KD/NetKDRequest.h"
+    },
+    {
+      "path": "NWC24Config.h",
+      "sha256": "897ca5beadfab8848c744a588069de5c40c04cbb0dbd3a321884ea6024b8fa06",
+      "upstream_path": "Source/Core/Core/IOS/Network/KD/NWC24Config.h"
+    },
+    {
+      "path": "NWC24DL.cpp",
+      "sha256": "74a24fef69518f3e29ede0531da01d7d04eb32f4ae6fcf36b9a87f56a6e084a3",
+      "upstream_path": "Source/Core/Core/IOS/Network/KD/NWC24DL.cpp"
+    },
+    {
+      "path": "NWC24DL.h",
+      "sha256": "5b42a18e430c299817bbe222a3480cb1eee51ef3bc64e8784cfce512c0e81e1f",
+      "upstream_path": "Source/Core/Core/IOS/Network/KD/NWC24DL.h"
+    },
+    {
+      "path": "RawMemcard.cpp",
+      "sha256": "1b05766eb3b296dfbd833dd1100196e55c583466a939e9a1b693236c028a95cd",
+      "upstream_path": "Source/Core/Core/HW/GCMemcard/GCMemcardRaw.cpp"
+    },
+    {
+      "path": "SessionSettings.cpp",
+      "sha256": "c6ac5d9dfdee15ce87c7aa6dfc1aa2a4dcb26b1be2edab9fb3583596575a7243",
+      "upstream_path": "Source/Core/Core/Config/SessionSettings.cpp"
+    },
+    {
+      "path": "Socket.cpp",
+      "sha256": "ec857cfc94f0d6cd39631adbcbb2d6cd4c55c9cf7fac10c36c0c3750978f0b28",
+      "upstream_path": "Source/Core/Core/IOS/Network/Socket.cpp"
+    },
+    {
+      "path": "Sram.cpp",
+      "sha256": "a4d534f96a9c3ed87bee995f4981aa12f43200fcac8635d2d40bb9f26d038623",
+      "upstream_path": "Source/Core/Core/HW/Sram.cpp"
+    },
+    {
+      "path": "SYSCONFSettings.cpp",
+      "sha256": "4302b1b41ba7d810050c474f24cf1569ab2da4aa6351fa14762d30cca068975b",
+      "upstream_path": "Source/Core/Core/Config/SYSCONFSettings.cpp"
+    },
+    {
+      "path": "TextureDecoder_Generic.cpp",
+      "sha256": "8f4630151f3c28f0408a1ce0351080fec50bd85f3b0503f08580a636650dac92",
+      "upstream_path": "Source/Core/VideoCommon/TextureDecoder_Generic.cpp"
+    },
+    {
+      "path": "TitleManagement.cpp",
+      "sha256": "117f526e39ab6037a757bd7348d9c87ac1d1cdf49694f2aac428aad14619f43d",
+      "upstream_path": "Source/Core/Core/IOS/ES/TitleManagement.cpp"
+    },
+    {
+      "path": "Top.cpp",
+      "sha256": "db772c7c8fe6001eb6c8b6a77d6d91541fb7ae31a086e3ac898e070aefe8ad65",
+      "upstream_path": "Source/Core/Core/IOS/Network/IP/Top.cpp"
+    }
+  ],
+  "MS_AppContainer_documents": [
+    "https://learn.microsoft.com/en-us/windows/win32/secauthz/appcontainer-isolation",
+    "https://learn.microsoft.com/en-us/windows/win32/secauthz/implementing-an-appcontainer"
+  ],
+  "unmatched_files_not_used_as_pinned_reference": [
+    "NetplaySettings.cpp",
+    "NWC24Config.cpp"
+  ]
+}

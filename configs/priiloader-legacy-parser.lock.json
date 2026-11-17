@@ -1,0 +1,8 @@
+{
+  "repository": "https://github.com/DacoTaco/priiloader",
+  "tag": "0.8.2",
+  "path": "priiloader/source/hacks.cpp",
+  "sha256": "fa6e98ca5cbb88464052c2506145d84717c4e109b786b48442147dbd088f25e2",
+  "scope": "Legacy syntax and variable-width hexadecimal byte parser. Installed version unknown; R26 SD reproduces EOF at line281.",
+  "runtime": "kwce/priiloader_legacy.py"
+}

@@ -1,0 +1,20 @@
+{
+ "source": "WiiLink NewsChannel public country-136 English files; fixed labels only",
+ "policy": "Article text, headlines, captions and unknown place names are machine translated locally at seed time (kwce.local_mt) and kept in ignored private caches; photo credits after REUTERS/ stay in English",
+ "fixed": {
+  "National News": "국내 뉴스",
+  "International News": "국제 뉴스",
+  "World News": "국제 뉴스",
+  "Sports": "스포츠",
+  "Arts/Entertainment": "문화/연예",
+  "Entertainment": "연예",
+  "Business": "경제",
+  "Science/Health": "과학/건강",
+  "Technology": "기술",
+  "Oddities": "화제",
+  "Politics": "정치"
+ },
+ "patterns": [
+  ["^© (\\d{4}) Reuters\\. All rights reserved\\.?$", "© \\1 Reuters. 무단 전재 및 재배포 금지"]
+ ]
+}

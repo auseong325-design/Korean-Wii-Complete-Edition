@@ -1,0 +1,22 @@
+{
+ "schema": 1,
+ "purpose": "Revision 6 changes on top of the v1/v4/v5 tables (earlier configs stay unchanged so v1-v5 rebuild byte-identically): Korean software keyboard (font group, labels, input hints), Korean manual pictures, error heading size.",
+ "keyboard_font": {"file": "wbf1.brfna", "group": "wii_name", "add_sheets_of": "ksx_level_1"},
+ "keyboard_font_reason": "The keyboard loads only glyph group 'wii_name' of /cnt/00000008/wbf1.brfna (executable 0x80054dc4-0x80054e0c: SCGetProductArea != JPN -> 'wii_name' at 0x8088ddd8, JPN -> every group). In the Korean 43K wbf1 'wii_name' = sheets 38 and 49-55; KS X 1001 Hangul ('ksx_level_1') = sheets 38-48, so v2 drew '?'. v6 flags sheets 39-48 for 'wii_name' in the GLGR block (no other byte changes).",
+ "keyboard_rows_keep_english": ["Space"],
+ "keyboard_rows_keep_english_reason": "Key caps stay as printed on Korean keyboards (Space, like Shift/Caps in the layout and lng entries 545/561); command buttons use the v1 Korean rows (OK, Quit, Dictionary, Close, More, Back).",
+ "keyboard_labels": [
+  {"va": "0x8099c590", "en": "Eng", "ko": "영어"},
+  {"va": "0x8099c598", "en": "Fra", "ko": "프랑스"},
+  {"va": "0x8099c5a0", "en": "Esp", "ko": "스페인"},
+  {"va": "0x8099f3e8", "en": "Eng", "ko": "영어"},
+  {"va": "0x8099f3f0", "en": "Fra", "ko": "프랑스"},
+  {"va": "0x8099f3f8", "en": "Esp", "ko": "스페인"}
+ ],
+ "keyboard_labels_reason": "Two UTF-16 copies of the prediction-dictionary language abbreviations (each 8-byte slot, followed by the EU codes EN/DE/FR/ES/IT/NL which stay). A three-syllable label plus terminator fills the slot exactly.",
+ "lng_hints": ["407", "439", "471", "519"],
+ "lng_hints_reason": "v4 kept these keyboard input hints English because the keyboard font could not draw Hangul; v6 uses their v1 Korean translations.",
+ "manual_images": "configs/internet-manual-images-v6-ko.json",
+ "error_heading": {"file": "styles/error.css", "selector": "h1", "old": "font-size: 130%;", "new": "font-size: 110%;"},
+ "error_heading_reason": "Opera breaks Hangul between any two syllables; at 130% the most common heading '240023: 서버를 찾을 수 없습니다.' wrapped as '없습니/다.' (lead review of v5). About 15% smaller heading text keeps it on one line [추정: measured from the v5 wrap point]."
+}

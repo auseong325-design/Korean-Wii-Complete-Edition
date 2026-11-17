@@ -1,0 +1,167 @@
+{
+  "libwiipy_commit": "71ad5b90c659d8a6475c8015e7ea5719d61a1cbb",
+  "official_patcher_release": "v1.5.3",
+  "font_source": {
+    "commit": "b38c5c93af322c45f633e17ac440ec1e6c94d489",
+    "url": "https://raw.githubusercontent.com/google/fonts/b38c5c93af322c45f633e17ac440ec1e6c94d489/ofl/notosanskr/NotoSansKR%5Bwght%5D.ttf"
+  },
+  "packages": {
+    "certifi": "2026.10.19",
+    "charset-normalizer": "3.5.2",
+    "fonttools": "4.60.1",
+    "idna": "3.20",
+    "pillow": "11.3.0",
+    "requests": "2.32.5",
+    "urllib3": "2.8.0"
+  },
+  "files": [
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/docs/source/conf.py",
+      "sha256": "7d529a606b37b8f37d729d89509792aea56fa32e7e2d67ca663bbd0d89225d5f"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/LICENSE",
+      "sha256": "f2f82df7169b0b9882d334d85db70853438b2c5440c6c76e4cbe3f185109c4d5"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/pyproject.toml",
+      "sha256": "9ce1f9a769832372694d95259fbeaa22c162598495200535956077732914354b"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/__init__.py",
+      "sha256": "f8e0ff34fdc8e08c4c2c887ac4bc5e3c380d6d752a29164e01aee47713dc9259"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/archive/__init__.py",
+      "sha256": "0f92368c76c888e2ea9fd69e76f41d98bf36455e20dd5dc8ea122ed5661940ec"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/archive/ash.py",
+      "sha256": "98921b4fdd81cea5dab33492548ee633a0839b0258bdc38557a944114acfd4a5"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/archive/lz77.py",
+      "sha256": "5712b59bfb7302ccefd039772afc3eb96012320b805a1e36399cfb60285a3ade"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/archive/u8.py",
+      "sha256": "fcae9b8a2233c3c58a4a5fd521e6db17faa96a447c4ebab2d5efc72c0fc9b952"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/constants.py",
+      "sha256": "35007f9766fb726dc7a1a600cd2d9eb101644b8682cd733b0526713366408ed2"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/media/__init__.py",
+      "sha256": "148649cf7ae86fdc1041d7ed7afa3e2e6d243219fa5834b9bab9f37b3d1984c5"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/media/banner.py",
+      "sha256": "c51608dc9771ff5565348ba7b6d737ce6704349bc275fea6f2739ad47c0f5a80"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/nand/__init__.py",
+      "sha256": "f972042f87e853a8d92f3dd14dcd82edcdf2465ad052fab5024ceae7983f759f"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/nand/emunand.py",
+      "sha256": "b9ee812ee9435fc11e40166da3aa83f0d133358ee312c1a5d22e39f60ac7f7ae"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/nand/setting.py",
+      "sha256": "907d0102d3f6a567ee749cff6310841e658330b9e1544abff38e8f148e3aa17a"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/nand/sys.py",
+      "sha256": "5049f49dba48f899e8d832c1a1f240c773bb5f45452e341bcbc5f960aaac7c5d"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/shared.py",
+      "sha256": "11d747569a36ddcb590ba8b5803a94cb8029014d171ba2a535324b4909243029"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/__init__.py",
+      "sha256": "e9d3336889b1544a7e5d4ee4182a3e9874d0d66f2c997f10eac6d153db8e4b59"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/cert.py",
+      "sha256": "299e6f85e12c2ca343b7bf2b53afbf369f23a54238fbf6ed870c33d427f7a373"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/commonkeys.py",
+      "sha256": "15362b990a763045b77f383a38aa5cf8a84ef77232cdb3a966150d011f9b5e1b"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/content.py",
+      "sha256": "7d2cfbef3e8126b3fcdb3648b7132d5933847543edfddd070291d5ede70dce32"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/crypto.py",
+      "sha256": "190908a56da6ec4c4a05ba4c7cf1b6e71740baaed0a21e92176c3039bf9c6e8f"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/iospatcher.py",
+      "sha256": "775d43865091afe90f62255f320e5ff85e81ae70fdcae070e75a3e3129bbbe1b"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/nus.py",
+      "sha256": "373c678137e4b9e4fe45f2e31cdc57a7ca321803ba3d6b49592cea6627474261"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/ticket.py",
+      "sha256": "9f323b3962a0627045144b13fe3ed1e2ed996e9f3ade6fa32fb870b114836ff3"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/title.py",
+      "sha256": "574fc6d9f1ee31a6406fed8e7d5bf2957320514542fe4f21b37b78a316efaf27"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/tmd.py",
+      "sha256": "25f9e24027e6473bc9b6851f5768d14e99154a6ed127967e6c260482b3f74411"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/types.py",
+      "sha256": "c658583e431779def1b57ecc636f97b8c7c1a3b0b4686972ae1ad9b61550ccde"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/versions.py",
+      "sha256": "5e5c97d5ffbddda474e32a008a24b045ac52282b9943d8c4005ecf7a120c58eb"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy/title/wad.py",
+      "sha256": "3cff7f1b1f775cde5c60f8e1c040ab1736ed9ebda58b3cebef1b7ae1b8faf1a2"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/test/__init__.py",
+      "sha256": "6ef2761d3978057ce8a090b7b9da4f9ebe07e3061ac63d64822e1dafe2d6a3d6"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/test/title/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/test/title/commonkeys_test.py",
+      "sha256": "c7225911693a5e10c287ca6f61bffff267482b814fb769c2f6a7dedf191840a5"
+    },
+    {
+      "path": "external/channel-tools/libWiiPy-71ad5b90/test/title/nus_test.py",
+      "sha256": "9628f377802f1ee39d1cfbc152c9241cd10cbe83bdf72e5673fa281de0742d0a"
+    },
+    {
+      "path": "tools/channel-tools/WiiLinkPatcherGUI-Windows-onefile-x64.exe",
+      "sha256": "37d685b02f5bb06904043a21d25687401f751d665864ff4537baebe7b1a669bc"
+    },
+    {
+      "path": "workspace/channels/forecast/references/NotoSansKR-OFL.txt",
+      "sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9"
+    },
+    {
+      "path": "workspace/channels/forecast/references/NotoSansKR.ttf",
+      "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252"
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+{
+ "note": "rc7 X-Food (revision >= 11): order-flow textures the earlier waves missed, plus the category-screen refit. Delta over v7+v10; kwce/food_resources.py merges v7+v10+v11 for rev>=11 with override=True so the category tiles refine their v7 entries (rev 10 output unchanged -> --reproduce stays byte-identical). (1) the three 'くわしく' buttons 04_btn_check_00/01/02 -> '자세히' (v10 never touched them; they sit in 04_m_layout alongside the already-working 04_btn_f). (2) the big '注文する' button is four glyph tiles 12_btn_f_chu(注)/_mon(文)/_su(す)/_ru(る) -> 주/문/하/기 (positional; left/right order verified against 12_m_layout). (3) 09-3_btn_change へんこう->변경, 09-3_btn_select えらぶ->선택, 10_btn_cancel とりけし->취소. (4) category genre tiles re-fit to one max font size (size cap 22, wider scrim x0 0.30) so the grid reads evenly, with natural delivery wording (仕出し・パーティ->케이터링). (5) 02_btn_menu_asu contrast: dark-purple fill + white halo instead of the faint light-pink. (6) 02_btn_menu_NOdata blanked (the floating '음식 배달 채널' empty-slot placeholder). ja = stock baked text. Only text is redrawn; food photos/art are byte-untouched. Placement [미검증 in Dolphin]; baked-texture reflection on real HW to be confirmed by the lead (see the 04a/b/c obi note in X-Food.md).",
+ "textures": {
+  "DtestOrder.arc": {
+   "Order/timg/02_btn_menu_piz.tpl":   {"mode": "tile", "ja": "ピザ", "ko": "피자", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_ben.tpl":   {"mode": "tile", "ja": "弁当", "ko": "도시락", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_sushi.tpl": {"mode": "tile", "ja": "すし", "ko": "초밥", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_wa.tpl":    {"mode": "tile", "ja": "和食", "ko": "일식", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_tyu.tpl":   {"mode": "tile", "ja": "中華", "ko": "중식", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_you.tpl":   {"mode": "tile", "ja": "洋食", "ko": "양식", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_fast.tpl":  {"mode": "tile", "ja": "ファーストフード", "ko": "패스트푸드", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_curry.tpl": {"mode": "tile", "ja": "カレー", "ko": "카레", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_party.tpl": {"mode": "tile", "ja": "仕出し・パーティ", "ko": "케이터링", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_drink.tpl": {"mode": "tile", "ja": "デザート・ドリンク", "ko": "디저트·음료", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_etc.tpl":   {"mode": "tile", "ja": "その他", "ko": "기타", "x0": 0.30, "size": 22},
+   "Order/timg/02_btn_menu_NOdata.tpl": {"mode": "blank", "ja": "出前チャンネル"},
+   "Order/timg/02_btn_menu_asu.tpl": {
+    "mode": "button", "ja": "明日以降の\n予約はこちら", "ko": "내일 이후\n예약은 여기",
+    "erase": [12, 11, 156, 61],
+    "frame": {"rect": [13, 15, 155, 58], "radius": 8, "width": 2, "colour_at": [14, 36]},
+    "box": [17, 17, 151, 57], "spacing": 0.0, "fill": "#4a2a7a", "outline": "#ffffff", "stroke": 2
+   },
+   "Order/timg/04_btn_check_00.tpl": {"mode": "button", "ja": "くわしく", "ko": "자세히", "erase": [6, 7, 114, 47], "box": [14, 11, 106, 43], "fill": "#ffffff", "outline": "#7a3636", "stroke": 2},
+   "Order/timg/04_btn_check_01.tpl": {"mode": "button", "ja": "くわしく", "ko": "자세히", "erase": [6, 7, 114, 47], "box": [14, 11, 106, 43], "fill": "#ffffff", "outline": "#2e5a3c", "stroke": 2},
+   "Order/timg/04_btn_check_02.tpl": {"mode": "button", "ja": "くわしく", "ko": "자세히", "erase": [6, 7, 114, 47], "box": [14, 11, 106, 43], "fill": "#ffffff", "outline": "#2e4e5e", "stroke": 2},
+   "Order/timg/09-3_btn_change.tpl": {"mode": "button", "ja": "へんこう", "ko": "변경", "erase": [6, 7, 90, 49], "box": [12, 11, 84, 45], "fill": "#ffffff", "outline": "#8a6a1a", "stroke": 2},
+   "Order/timg/09-3_btn_select.tpl": {"mode": "button", "ja": "えらぶ", "ko": "선택", "erase": [6, 7, 90, 49], "box": [12, 11, 84, 45], "fill": "#ffffff", "outline": "#3a6a8a", "stroke": 2},
+   "Order/timg/10_btn_cancel.tpl":   {"mode": "button", "ja": "とりけし", "ko": "취소", "erase": [6, 7, 90, 49], "box": [12, 11, 84, 45], "fill": "#ffffff", "outline": "#9a3a3a", "stroke": 2},
+   "Order/timg/12_btn_f_chu.tpl": {"mode": "text", "ja": "注", "ko": "주", "fill": "#000000", "outline": "#ffffff", "stroke": 4, "align": "center", "box": [4, 4, 56, 56]},
+   "Order/timg/12_btn_f_mon.tpl": {"mode": "text", "ja": "文", "ko": "문", "fill": "#000000", "outline": "#ffffff", "stroke": 4, "align": "center", "box": [4, 4, 56, 56]},
+   "Order/timg/12_btn_f_su.tpl":  {"mode": "text", "ja": "す", "ko": "하", "fill": "#000000", "outline": "#ffffff", "stroke": 4, "align": "center", "box": [4, 4, 56, 56]},
+   "Order/timg/12_btn_f_ru.tpl":  {"mode": "text", "ja": "る", "ko": "기", "fill": "#000000", "outline": "#ffffff", "stroke": 4, "align": "center", "box": [4, 4, 56, 56]}
+  }
+ }
+}

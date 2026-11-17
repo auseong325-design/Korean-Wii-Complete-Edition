@@ -1,0 +1,74 @@
+{
+  "profile": "internet-test-v1-user",
+  "title_id": "0001000148414445",
+  "capability_count": 0,
+  "external_network_allowed": false,
+  "page_server": "127.0.0.2:80 inside the same AppContainer",
+  "feed_revision": 3,
+  "files": [
+    {
+      "path": "workspace/sandbox/internet-test-v1/Dolphin-x64/Dolphin.exe",
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    {
+      "path": "workspace/sandbox/internet-test-v1/NetProbe.exe",
+      "sha256": "faa1a0dae95b56631b530f9ee2ceffb31dbddbd0269cadc99603b7a418a0217d"
+    },
+    {
+      "path": "workspace/sandbox/internet-test-v1/local-feed/euckr-nometa.html",
+      "sha256": "e21a463fc202718c7f0ab205f7736d45c8e76b03825965edd58f301d4538ba92"
+    },
+    {
+      "path": "workspace/sandbox/internet-test-v1/local-feed/euckr.html",
+      "sha256": "3735ee774ed86a569610a765e09db9d26a1ffc4dcdb9ac36aeb140baebfc32bb"
+    },
+    {
+      "path": "workspace/sandbox/internet-test-v1/local-feed/fixture-manifest.json",
+      "sha256": "af2ab1a2407dc306925949a1a108e367570a24f9126c6ac303b7dad8f285473d"
+    },
+    {
+      "path": "workspace/sandbox/internet-test-v1/local-feed/index.html",
+      "sha256": "531dab2dc93ec3a088d01ecab4ddef2170ff44d8430ec65cbadf38abb846bf74"
+    },
+    {
+      "path": "workspace/sandbox/internet-test-v1/local-feed/routes.tsv",
+      "sha256": "43f7a74b25a261512da89c20b7e916529d9458cc52e1d665907b7cbd5063f427"
+    },
+    {
+      "path": "workspace/sandbox/internet-test-v1/local-feed/search.html",
+      "sha256": "5682dba8912c8e0b3a7e7527ef84abf0265d7b21c2f0e642f0a669d59cdab350"
+    },
+    {
+      "path": "workspace/sandbox/internet-test-v1/local-feed/utf8.html",
+      "sha256": "be4739ca0fee8231c804cc3772d7831fd6cfdc8e800f0c1705b010d0e86d4585"
+    },
+    {
+      "path": "tools/internet-sandbox/v2/bin/InternetRunner.cs",
+      "sha256": "77bae41c3f9ae793540002bd9cc040cea5175c2ee0f487fc01f508900e5b60fd"
+    },
+    {
+      "path": "tools/internet-sandbox/v2/bin/InternetRunner.exe",
+      "sha256": "7acacf0922040987206fa9045503eecd4b3b337971c8843c25bc888ae6725081"
+    },
+    {
+      "path": "tools/internet-sandbox/v2/bin/InternetServer.cs",
+      "sha256": "f2f78e2cb703a8ceb63f0f38ed5f4cac310b2df21e4fbeaab328103053f56c9c"
+    },
+    {
+      "path": "tools/internet-sandbox/v2/bin/InternetServer.exe",
+      "sha256": "32298a35fe4c1b8b5fd75d2563bcbd7ac8c66e20d975667d145307ce77409688"
+    }
+  ],
+  "builds": {
+    "1": "8e0d480d32c8f274d4b7db3f94a12f71cf3ea05625d9e07616b0a2869cfc5521",
+    "2": "b421bfb84dc4069abec887198df41ea24f1c7ee9537b73f6673ac5c5c1bebcbb",
+    "3": "8b82dc3d0693d85416c9fe3040581ebe706d855d476cdab83eb72358ce2fcc1d",
+    "4": "186c56748fec33fea65973553e788d1ed09e7fa8df65c8bf892b442379f21127",
+    "5": "1c45b612a9f17177bc6a831c4c2b3e7e666da799f93f3bc13c65733515e6a461",
+    "6": "5b1f114ce5eae76e88f5d4bf415a22a8a884920810b8f2bbf933b65e40830c1f",
+    "7": "6240dbf5dfbe064a26e221628db1bce4681cee0f0fd5140e85a74d705a938fbc",
+    "8": "5e29eea501ad15a4567380ba99b76535b6cf8d5151e203325e55357a088aa054"
+  },
+  "helper": "tools/internet-sandbox/v2/bin",
+  "helper_revision": 2
+}

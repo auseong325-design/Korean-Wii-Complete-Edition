@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "source": "Pinned Dolphin 2609a mGBA vendored LZMA decoder, Igor Pavlov, public domain",
+  "files": {
+    "LzmaDec.c": "34081b2f00685c1e2f0b4828cbdfebca846e0f7af82d7a84d38787824909e8f4",
+    "LzmaDec.h": "f43c4023065b3fc6c230c309457645070cecef848e8a3a1c9c4e0aa54eb5c5ff",
+    "7zTypes.h": "cba4277d8cda4954ddb4ad1e2d91a3c119b27d6bde8e906c674f3532511c26f0",
+    "Precomp.h": "3850ffe13cb2207dba1c037fe41a803303883aaeec1407052f6038c4e6722ace",
+    "Compiler.h": "432fffe11231783e452fa0d7bbfc0412d6860e377291e00d54e0fdf01b029878"
+  }
+}

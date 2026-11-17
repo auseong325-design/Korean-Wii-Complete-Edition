@@ -1,0 +1,128 @@
+{
+ "schema": 1,
+ "purpose": "Revision 7: long Korean error-page headings get a line break at a word boundary (english.lng \\n escape) and the error page h1 gets white-space: pre-line, so Opera no longer ends a line inside a word.",
+ "source": {
+  "lng": "configs/internet-lng-v1-ko.json",
+  "lng_sha256": "859936b8192115dda58cac82f2469487ce60b528fcc769ea793d1f86b46cacf3"
+ },
+ "error_heading_css": {
+  "file": "styles/error.css",
+  "selector": "h1",
+  "old": "font-size: 110%;",
+  "new": "font-size: 110%;\n\twhite-space: pre-line;"
+ },
+ "error_heading_css_reason": "Opera 9.30 for Wii has no word-break/word-wrap property; pre-line honours the line feed and still wraps a line that is too long, so a narrower layout behaves like v6.",
+ "model": {
+  "observed_fits": "240023: 서버를 찾을 수 없습니",
+  "observed_wraps": "240023: 서버를 찾을 수 없습니다.",
+  "observed_scale": 1.3,
+  "target_scale": 1.1,
+  "safety": 0.975,
+  "placeholder": "application",
+  "observation": "lead Dolphin review of build-v5 (h1 130%, 16:9 profile): first line ended at 없습니, second line 다.",
+  "limit_em": 17.4011,
+  "bounds_em": [
+   19.632,
+   21.4195
+  ]
+ },
+ "error_heading_breaks": {
+  "5": {
+   "v6": "240004: 이 주소는 인터넷 채널에서 사용할 수 없습니다.",
+   "ko": "240004: 이 주소는 인터넷 채널에서\\n사용할 수 없습니다."
+  },
+  "6": {
+   "v6": "240017: 내부 통신 오류가 발생했습니다.",
+   "ko": "240017: 내부 통신 오류가\\n발생했습니다."
+  },
+  "24": {
+   "v6": "240019: 알 수 없거나 지원하지 않는 주소 형식입니다.",
+   "ko": "240019: 알 수 없거나\\n지원하지 않는 주소 형식입니다."
+  },
+  "28": {
+   "v6": "243500: 서버 또는 파일을 찾을 수 없습니다.",
+   "ko": "243500: 서버 또는 파일을\\n찾을 수 없습니다."
+  },
+  "29": {
+   "v6": "243501: 서버에 필요한 기능이 없습니다.",
+   "ko": "243501: 서버에 필요한 기능이\\n없습니다."
+  },
+  "31": {
+   "v6": "243405: 서버가 이 HTTP 요청 방식을 받아들이지 않았습니다.",
+   "ko": "243405: 서버가 이 HTTP 요청\\n방식을 받아들이지 않았습니다."
+  },
+  "32": {
+   "v6": "243406: 서버가 받을 수 있는 형식의 데이터를 보내지 못했습니다.",
+   "ko": "243406: 서버가 받을 수 있는\\n형식의 데이터를 보내지 못했습니다."
+  },
+  "33": {
+   "v6": "243408: 서버 응답 시간이 초과되었습니다.",
+   "ko": "243408: 서버 응답 시간이\\n초과되었습니다."
+  },
+  "34": {
+   "v6": "243409: 서버에 있는 기존 자료와 충돌합니다.",
+   "ko": "243409: 서버에 있는 기존 자료와\\n충돌합니다."
+  },
+  "35": {
+   "v6": "243410: 이 주소는 더 이상 사용할 수 없습니다.",
+   "ko": "243410: 이 주소는\\n더 이상 사용할 수 없습니다."
+  },
+  "36": {
+   "v6": "243411: HTTP 내용 길이가 필요합니다.",
+   "ko": "243411: HTTP 내용 길이가\\n필요합니다."
+  },
+  "37": {
+   "v6": "243412: HTTP 전제 조건을 만족하지 못했습니다.",
+   "ko": "243412: HTTP 전제 조건을\\n만족하지 못했습니다."
+  },
+  "38": {
+   "v6": "243413: HTTP 요청 데이터가 너무 깁니다.",
+   "ko": "243413: HTTP 요청 데이터가\\n너무 깁니다."
+  },
+  "40": {
+   "v6": "243415: 서버가 내용 형식을 인식하지 못했습니다.",
+   "ko": "243415: 서버가 내용 형식을\\n인식하지 못했습니다."
+  },
+  "41": {
+   "v6": "243416: 서버가 요청한 파일 부분을 보내지 못했습니다.",
+   "ko": "243416: 서버가 요청한 파일 부분을\\n보내지 못했습니다."
+  },
+  "43": {
+   "v6": "243502: HTTP 게이트웨이 오류가 발생했습니다.",
+   "ko": "243502: HTTP 게이트웨이 오류가\\n발생했습니다."
+  },
+  "45": {
+   "v6": "243504: HTTP 게이트웨이 응답 시간이 초과되었습니다.",
+   "ko": "243504: HTTP 게이트웨이\\n응답 시간이 초과되었습니다."
+  },
+  "46": {
+   "v6": "243505: 서버가 이 HTTP 버전을 받아들이지 않았습니다.",
+   "ko": "243505: 서버가 이 HTTP 버전을\\n받아들이지 않았습니다."
+  },
+  "51": {
+   "v6": "240007: 이 파일에 접근할 수 없습니다.",
+   "ko": "240007: 이 파일에\\n접근할 수 없습니다."
+  },
+  "182": {
+   "v6": "240021: 인터넷 채널에서는 이 기능을 사용할 수 없습니다.",
+   "ko": "240021: 인터넷 채널에서는\\n이 기능을 사용할 수 없습니다."
+  },
+  "313": {
+   "v6": "244002: 보안 처리를 완료할 수 없습니다.",
+   "ko": "244002: 보안 처리를\\n완료할 수 없습니다."
+  },
+  "376": {
+   "v6": "240020: %s 파일 형식은 지원하지 않습니다.",
+   "ko": "240020: %s 파일 형식은\\n지원하지 않습니다."
+  },
+  "377": {
+   "v6": "240016: %s 프로토콜은 지원하지 않습니다.",
+   "ko": "240016: %s 프로토콜은\\n지원하지 않습니다."
+  }
+ },
+ "kept_two_sentence": [
+  126,
+  514
+ ],
+ "kept_two_sentence_reason": "two-sentence entries may be dialog texts (certificate question, Flash memory); unchanged"
+}

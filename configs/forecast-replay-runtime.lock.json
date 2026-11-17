@@ -1,0 +1,13 @@
+{
+  "base_sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05",
+  "output_sha256": "44a980e488efe9a496a88eca08012903c516c2005d66a00571fe6ef9f88d0d95",
+  "KDDownload_rva": "0x431240",
+  "leaf_rva": "0xf905ba",
+  "replayed_task_slots": [
+    3,
+    4
+  ],
+  "other_tasks_use_original": true,
+  "diagnostic_only": true,
+  "network_success_verified": false
+}

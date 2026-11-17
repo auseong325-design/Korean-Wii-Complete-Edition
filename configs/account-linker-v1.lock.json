@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "version": "2.1.0",
+  "source_commit": "fdddbc473d55ee63868bae4848236c5b3c90aecc",
+  "source_repository": "https://github.com/WiiLink24/AccountLinker",
+  "archive_url": "https://github.com/WiiLink24/AccountLinker/releases/download/v2.1.0/account_linker.zip",
+  "archive_sha256": "8e39d59f6518a33cfe70f5295685a1c3512b846d74b07c995defd4c9b20692e5",
+  "archive_bytes": 1332811,
+  "payload_sha256": {
+    "boot.dol": "1b9ac3cf5e0444c13c3e4be4ffa1b6871391070d132f320cf6272654f9e28c4e",
+    "meta.xml": "d2b3b5fad1a14abf2a0301dc7077631e6d4b47ef4b0c5480dc0be81a29882b10",
+    "icon.png": "8d22ce375012efcbf39b173d13519fdabc606ab7f5b6c67b5339123cb0dc7dcd"
+  }
+}

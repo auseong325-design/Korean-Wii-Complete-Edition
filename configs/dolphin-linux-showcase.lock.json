@@ -1,0 +1,40 @@
+{
+  "schema": 1,
+  "purpose": "Showcase recording only (user instruction 2026-11-17). Never used by the isolated or regular online launchers.",
+  "base_lock": "configs/dolphin-linux.lock.json",
+  "base_source": "tools/linux/dolphin-2609a-src (pinned derivative, copied unchanged)",
+  "source": "tools/linux/dolphin-2609a-showcase-src",
+  "patch": "configs/dolphin-linux-showcase-v1.patch",
+  "patch_effect": [
+    "While IOS 249 runs, IOS ES skips the TMD/ticket signature check like the console's d2x cIOS 249 (every other IOS stays strict), so the KWCE installer installs its WADs on camera exactly as on the console",
+    "IOS 249 (the console's d2x cIOS, base 56) is emulated with IOS56 memory values and SDv2, so the installer's IOS_ReloadIOS(249) works as on the console",
+    "every presented field is flushed to the frame dump, so CPU-drawn console screens (the installer) are recorded",
+    "frame dump timestamps are absolute emulated time, so split files line up with the DSP/DTK audio dumps",
+    "audio dumps stay on emulated time: when the DSP/DTK delivers no samples (boot, title changes) silence is written, so audio and the absolute-time frame dumps share one timeline",
+    "XF clip disable (0x1005 bit 0) is honoured by the hardware-backend vertex shaders (no depth clipping), like the console; stock Dolphin ignores it (only reports a game quirk)"
+  ],
+  "prefix": "tools/linux/dolphin-2609a-showcase-v1",
+  "executable": "tools/linux/dolphin-2609a-showcase-v1/bin/dolphin-emu",
+  "executable_sha256": "57aeec85c794c18d2a9af3a00ad1e0af54560f8042600de50aeac40510bed696",
+  "cmake_options": [
+    "-DCMAKE_BUILD_TYPE=Release",
+    "-DENABLE_TESTS=OFF",
+    "-DENABLE_NOGUI=ON",
+    "-DENABLE_ANALYTICS=OFF",
+    "-DENABLE_AUTOUPDATE=OFF",
+    "-DUSE_DISCORD_PRESENCE=OFF",
+    "-DUSE_RETRO_ACHIEVEMENTS=OFF",
+    "-DUSE_UPNP=OFF",
+    "-DUSE_MGBA=OFF",
+    "-DENABLE_LLVM=OFF",
+    "-DENCODE_FRAMEDUMPS=ON"
+  ],
+  "features_enabled_over_base": [
+    "framedumps (system FFmpeg, libavcodec 63)",
+    "fakesigned ES blobs",
+    "IOS 249 reload"
+  ],
+  "isolation": "same bubblewrap online sandbox as workspace/online profiles; only the bound Dolphin prefix differs",
+  "note": "Earlier rehearsal-only binaries (390a08cd, 3385c973, 2b2f3649, 5c10c8c3, a01dbc6c, a4915d62) were replaced before any final recording. take2 was recorded with 212e6468 (before the clip-disable change).",
+  "previous_executable_sha256": "212e6468f9604617e56ae6e5f7e10bfde61c2bd5f66c8047a97389775d3878cb"
+}

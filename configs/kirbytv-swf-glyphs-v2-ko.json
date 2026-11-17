@@ -1,0 +1,22 @@
+{
+ "schema": 1,
+ "channel": "kirbytv",
+ "revision": 2,
+ "purpose": "Hangul syllables added as outlines to the SWF embedded fonts \"Alor 0513\" and \"Alor 0513 Narrow\"",
+ "covers": "configs/kirbytv-ui-v2-ko.json targets, system error_xml/error_strings/dialog targets, local-feed-v1 fictional episodes",
+ "source": {
+  "path": "workspace/channels/forecast/references/NotoSansKR.ttf",
+  "name": "Noto Sans KR (variable)",
+  "license": "SIL Open Font License 1.1",
+  "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+  "weight": 800
+ },
+ "outline": {
+  "method": "overlap union (non-zero), flattened quadratic curves",
+  "size_em": 0.9,
+  "condense": 1.0,
+  "bold_em": 0.0
+ },
+ "characters": "가각간개거검게겠고곧공과관구굴권그근금기긴김까께꼭끝나난날남났내널네넷년노놓누뉴는늘능니닌님다달대덕덜데도독돌동되된될됩두뒤드들란람랑래랜러려력로록료루류르를리릴림마만맞메면명모무문밀바받발방버번별보본볼부분블비빈빛사삭상새생서선설성세션소속손송쇠수스습시식실아안않알았앞애야약어언업없었에여연열영예오옮완요용운울워월위으은을음의이인일입있자작잠장재저적점접정제족종주줄중지짜찾채체치친침카커코크타탈택터트튼파판퍼편표푸풀프피하한할함합해했험현호홍화확활회후",
+ "count": 229
+}

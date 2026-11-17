@@ -1,0 +1,624 @@
+{
+ "schema": 2,
+ "purpose": "KWCE optional-channel catalog; prototypes stay unavailable to an integrated installer",
+ "console_locale": {
+  "region": "KOR",
+  "language": 9,
+  "country": 136
+ },
+ "notes": "installs[].artifact is a folder under workspace/channels/<id>/ holding one WAD; profile is workspace/sandbox/<profile>. Verify with scripts/review_channel_installations.py. stage: internal-review | blocked | not-started.",
+ "channels": [
+  {
+   "id": "forecast",
+   "display_name_ko": "날씨 채널",
+   "title_id": "0001000248414645",
+   "base_region": "USA",
+   "base_version": 7,
+   "stage": "full-review-complete",
+   "full_localization_complete": true,
+   "installs": [
+    {
+     "profile": "forecast-v1",
+     "artifact": "build-v22",
+     "role": "preserved",
+     "launch": "scripts/launch_forecast.py --preserved-check"
+    },
+    {
+     "profile": "forecast-manual-v1",
+     "artifact": "build-v26",
+     "role": "manual-capture",
+     "launch": "scripts/launch_forecast.py --cache-preview --manual-capture"
+    },
+    {
+     "profile": "forecast-review-v1",
+     "artifact": "build-v103",
+     "role": "verification",
+     "launch": "scripts/launch_forecast.py --review --cache-preview"
+    },
+    {
+     "profile": "forecast-v2",
+     "artifact": "build-v103",
+     "role": "active",
+     "launch": "scripts/run_forecast_test.py --offline"
+    }
+   ],
+   "status_doc": "docs/channels/forecast.md",
+   "run_doc": "docs/channels/run-forecast.md",
+   "remaining": "[2026-11-16 전수 검수 완료, docs/reference/FULL_REVIEW_2026_11.md] 1.0.5 build-v108. 예외: 서버 공급 날씨 상태·자외선 등급·지명은 영어(사용자 결정 2026-10-28), 풍속 단위 mph. 실기 확인 보고 없음.",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": true
+  },
+  {
+   "id": "news",
+   "display_name_ko": "뉴스 채널",
+   "title_id": "0001000248414745",
+   "base_region": "USA",
+   "base_version": 7,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "news-v1",
+     "artifact": "build-v25",
+     "role": "active",
+     "launch": "scripts/launch_channel_feed.py news"
+    }
+   ],
+   "status_doc": "docs/channels/news.md",
+   "run_doc": "docs/channels/run-news.md",
+   "remaining": "build-v25(2026-10-30): 실기 050330·107242는 우리 30초 IPC 상한이 KD ioctl 6·14를 끊은 것 -> ioctl 6/14/30을 10분 상한으로. Dolphin 부팅·24시간 파일 수신 경로 확인(오류 창 0, 로컬 피드 200 x24). 실기에서 KD 다운로드가 끝나는지와 뉴스 배너(WC24 작업 등록 필요)는 미검증 - RC3 설치 도구 B 보고로 확인.",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false
+  },
+  {
+   "id": "votes",
+   "display_name_ko": "모두의 투표 채널",
+   "title_id": "0001000148414a45",
+   "base_region": "USA",
+   "base_version": 512,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "votes-test-v1",
+     "artifact": "access-build-v12",
+     "role": "active",
+     "launch": "scripts/run_channel_test.py votes"
+    },
+    {
+     "profile": "votes-v1",
+     "artifact": "build-v10",
+     "role": "preserved",
+     "launch": "scripts/launch_votes.py"
+    }
+   ],
+   "source_build": 20,
+   "status_doc": "docs/channels/votes.md",
+   "run_doc": "docs/channels/run-votes.md",
+   "remaining": "build-v20(2026-10-30): 국가 게터의 srwi를 li r3,49로 제자리 교체(4바이트, 캐이브·새 섹션 없음)해 서버에는 미국(49)으로 보임 - 사용자 승인된 위장. Dolphin [직접 확인]: 부팅 정상, 한국어 안내 화면, 요청 /first_data.bin·/049/voting.bin. 의문: 이후 /136/voting.bin 요청이 1회 더 나감(다른 국가 읽기 경로 가능성)이고 가상 피드로는 언어 선택 이후 단계를 못 봄 - 실서비스에서 확인. build-v19는 .init 표 끝(text0 끝 36B)을 캐이브로 써서 부팅 크래시(Invalid write 0x5463463e)라 폐기. 국가별 그래프·지역 지도, 한글 입력 미지원.",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false
+  },
+  {
+   "id": "nintendo",
+   "display_name_ko": "닌텐도 채널",
+   "title_id": "0001000148415445",
+   "base_region": "USA",
+   "base_version": 1792,
+   "stage": "in_progress",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "nintendo-test-v1",
+     "artifact": "access-build-v9",
+     "role": "active",
+     "launch": "scripts/run_channel_test.py nintendo"
+    },
+    {
+     "profile": "nintendo-v1",
+     "artifact": "build-v2",
+     "role": "preserved",
+     "launch": "scripts/launch_nintendo.py"
+    }
+   ],
+   "source_build": 8,
+   "status_doc": "docs/channels/nintendo.md",
+   "run_doc": null,
+   "remaining": "배너 후보 화면 검수; 실기 262000 원인 및 본문 진입 미해결",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false
+  },
+  {
+   "id": "mii-contest",
+   "display_name_ko": "Mii 콘테스트 채널",
+   "title_id": "0001000148415045",
+   "base_region": "USA",
+   "base_version": 512,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "mii-contest-test-v1",
+     "artifact": "access-build-v20",
+     "role": "active",
+     "launch": "scripts/run_channel_test.py mii-contest"
+    },
+    {
+     "profile": "mii-contest-v1",
+     "artifact": "build-v7",
+     "role": "preserved",
+     "launch": "scripts/launch_mii_contest.py"
+    }
+   ],
+   "source_build": 25,
+   "status_doc": "docs/channels/mii-contest.md",
+   "run_doc": null,
+   "remaining": "조건 검색 결과 피드(258404), 내 출품 결과·기념사진(출품 금지 규칙)",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false
+  },
+  {
+   "id": "wiiroom",
+   "display_name_ko": "Wii의 방",
+   "title_id": "000100014843494a",
+   "base_region": "Japan",
+   "base_version": 1025,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "wiiroom-test-v1",
+     "artifact": "build-v61",
+     "role": "active",
+     "launch": "scripts/launch_wiiroom.py"
+    }
+   ],
+   "status_doc": "docs/channels/wiiroom.md",
+   "run_doc": "docs/channels/run-wiiroom.md",
+   "remaining": "r47 실기 다섯 아이콘 로딩 지속. v50/r51 작은 WC24 IPC 정상 로컬 수신/응답 누락109042 확인. 실제 WiiLink 수신·전체 오류/조건 검수 잔여.",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false
+  },
+  {
+   "id": "tvguide",
+   "display_name_ko": "TV 가이드",
+   "title_id": "0001000148424e4a",
+   "base_region": "Japan",
+   "base_version": 512,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "tvguide-test-v1",
+     "artifact": "build-v7",
+     "role": "active",
+     "launch": "scripts/launch_tvguide.py"
+    }
+   ],
+   "status_doc": "docs/channels/tvguide.md",
+   "run_doc": "docs/channels/run-tvguide.md",
+   "remaining": "HDPK main 이후 정지 원인/합성 지역·편성표 진입, HAL 본문 그림·추가 문구·설명서 실제 화면/전체 오류, 실제 WiiLink·실기",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false
+  },
+  {
+   "id": "dvd-player",
+   "display_name_ko": "DVD 플레이어",
+   "title_id": "000100014b445644",
+   "base_region": "KOR",
+   "base_version": 31,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "dvd-test-v2",
+     "artifact": "wad-v31",
+     "role": "preserved"
+    },
+    {
+     "profile": "dvd-test-v3",
+     "artifact": "build-v47",
+     "role": "active",
+     "launch": "scripts/launch_dvd_test.py",
+     "native_package": "kwce-rc-sd-v29"
+    }
+   ],
+   "status_doc": "docs/channels/dvd-player.md",
+   "run_doc": "docs/TESTING.md",
+   "remaining": "DVD 실기 인식 원인은 미확정. v27은 Dolphin 합성 디스크 아이콘 삽입·제거 애니메이션 후보, 실제 배출 및 Wii/GC 실매체 전체 시험 전.",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false
+  },
+  {
+   "id": "personal-data",
+   "display_name_ko": "주소 설정",
+   "title_id": "000100084843434a",
+   "base_region": "Japan",
+   "base_version": 512,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "personal-data-test-v1",
+     "artifact": "build-v2",
+     "role": "active",
+     "launch": "scripts/launch_personal_data.py"
+    }
+   ],
+   "status_doc": "docs/channels/personal-data.md",
+   "run_doc": "docs/channels/run-personal-data.md",
+   "remaining": "WiiLink SPD v512 포크(숨김 타이틀, --nand_title 직접 부팅). build-v1은 0x80003400 진입점 부재로 Dolphin 패닉(보존만), v2에 32바이트 진입 분기 추가·부팅 미검증. Dolphin 화면·한글 키보드 검수, 채널 선택 대화창, 실기(hardware-v2 후보, 설치 앱 허용 목록이 00010008 거부)·읽는 채널의 한국 지역 브리지/한글 글꼴 미검증.",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false
+  },
+  {
+   "id": "internet",
+   "display_name_ko": "인터넷 채널",
+   "title_id": "0001000148414445",
+   "base_region": "USA",
+   "base_version": 1024,
+   "stage": "full-review-complete",
+   "full_localization_complete": true,
+   "installs": [
+    {
+     "profile": "internet-test-v1",
+     "artifact": "build-v8",
+     "role": "active",
+     "launch": "scripts/launch_internet.py"
+    }
+   ],
+   "status_doc": "docs/channels/internet.md",
+   "run_doc": "docs/channels/run-internet.md",
+   "remaining": "[2026-11-17 전수 검수 완료, docs/reference/FULL_REVIEW_2026_11.md] 1.0.6 hardware-v13(240004 제목 한 줄). 기능 한계(번역 범위 밖): 한글 입력 없음, 기울임꼴·웹 한자 글리프 없음. 실기 미검증.",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false,
+   "_note_for_lead": "RC3 W6 제안: build-v8(= v7 + 코드 붙은 오류 문장 35개를 대화창 글 칸 12.72em에 맞춰 다시 줄바꿈; 콘텐츠 2·6의 english.lng만 변경, 실행 파일 동일)은 아직 internet-test-v1에 설치되지 않았다. 순서: Dolphin 종료 → scripts/install_internet_test.py --revision 8 → scripts/launch_internet.py --check → Dolphin 확인 → scripts/merge_catalog_entry.py internet --replace. 대화창이나 오류 페이지에서 단어 중간 줄바꿈·'\\n' 글자가 보이면 build-v7 행을 유지. 실기 후보 hardware-v8(원래 URL, fakesign, 지역 4) 미배포. 상세: workspace/channels/internet/rc3-progress.md"
+  },
+  {
+   "id": "kirbytv",
+   "display_name_ko": "커비 TV 채널",
+   "title_id": "0001000148434d50",
+   "base_region": "Europe",
+   "base_version": 257,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "kirbytv-test-v1",
+     "artifact": "build-v4",
+     "role": "active",
+     "launch": "scripts/launch_kirbytv.py"
+    }
+   ],
+   "status_doc": "docs/channels/kirbytv.md",
+   "run_doc": "docs/channels/run-kirbytv.md",
+   "remaining": "v4 화면 확인: 저장 초기화 후 첫 실행 안내(늦은 시작 2쪽·알림 동의 아니요→txt_optin_4·'Wii 알림판'), 편성표 9개 상태 날짜(KST), 설정→알림 재확인, HOME 설명서 화면, local-feed-v4의 종료 2주 전 안내(남은 일수). 재생 후 보상·채널 종료 화면, 실기·실제 WiiLink 서비스(차단)",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false,
+   "_note_for_lead": "configs/channels.catalog.json의 kirbytv 행을 이 객체로 바꾸세요(_note_for_lead 키는 빼고). 그 전까지 check_all --quick의 installs 검사는 kirbytv만 FAIL입니다(catalog build-v3 / 설치 build-v4). kirbytv-test-v1에 build-v4(1c97c16f…)와 local-feed-v3가 설치되어 active-build.json·runtime lock(builds 1-4, feed_revision 3)이 갱신되었고, 채널 저장은 workspace/private/kirbytv-save-backup-1로 옮겨 다음 실행에서 첫 실행 안내가 나옵니다(되돌리기: scripts/reset_kirbytv_save.py --restore 1). 하드웨어 후보 hardware-v4(0189f64e…)는 미설치·SD 미복사. v1-v3 빌드는 보존·바이트 동일 재생성 확인."
+  },
+  {
+   "id": "photoprints",
+   "display_name_ko": "디지털 카메라 프린트 채널",
+   "title_id": "000100014843444a",
+   "base_region": "Japan",
+   "base_version": 1024,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "photoprints-test-v1",
+     "artifact": "build-v13",
+     "role": "active",
+     "launch": "scripts/launch_photoprints.py"
+    }
+   ],
+   "status_doc": "docs/channels/photoprints.md",
+   "run_doc": "docs/channels/run-photoprints.md",
+   "remaining": "v13 HOME 확인창·조작 설명(manual.jpg·제목·버튼·안내)·'자세한 설명 보기' 종료 확인 한국어 Dolphin 확인, 저장 데이터 배너(새 세이브), 상품 선택 이후·사진·편집·명함·주문 화면(SD off/주문 거부로 미도달), 키보드 한글(범위 외), 실기·실제 WiiLink(hardware-v9 미배포)",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false,
+   "_note_for_lead": "wave 3 제안: build-v13(= v11 + v12 manual.jpg·저장 배너 + v13 HOME home.csv 0~6열 한국어·network.csv 7열 한국어·HOME 글꼴 +12자·조작 설명 그림 3장×7·nwm 글꼴 4개; 콘텐츠 2·3·7)은 아직 photoprints-test-v1에 설치되지 않았다. build-v12는 network.csv 변경이 효과 없어 설치 비권장(기록용). 순서: Dolphin 종료 → scripts/install_photoprints_test.py --revision 13 → scripts/launch_photoprints.py --check → Dolphin 확인(HOME) → scripts/merge_catalog_entry.py photoprints --replace. 하드웨어 후보 hardware-v9(hardware-v8 + 같은 3개 콘텐츠, WiiLink 주소·IOS56·지역 4, fakesign) 미배포. 상세: workspace/channels/photoprints/wave3-progress.md"
+  },
+  {
+   "id": "food",
+   "display_name_ko": "음식 배달 채널",
+   "title_id": "000100014843484a",
+   "base_region": "Japan",
+   "base_version": 512,
+   "stage": "internal-review",
+   "full_localization_complete": false,
+   "installs": [
+    {
+     "profile": "food-test-v1",
+     "artifact": "build-v9",
+     "role": "active",
+     "launch": "scripts/launch_food.py"
+    }
+   ],
+   "status_doc": "docs/channels/food.md",
+   "run_doc": "docs/channels/run-food.md",
+   "remaining": "build-v9 (RC3, 2026-10-30): 주소 카드 이름을 성+이름('홍길동 님')으로, 우편번호를 한국식 5칸 5자리로 바꿈(content 1 제자리 9워드 + DtestTitle.arc 3파일, 새 DOL 섹션 없음). 한국 SPD가 읽는 법을 이름과 같게 저장해 이름이 두 번 보이던 읽는 법 줄은 숨김. 리드 Dolphin 확인: 부팅 정상(오류 창 0), 첫 화면 카드 '00000'·'홍길동 님' [직접 확인]; 주소 확인 화면은 첫 실행에서만 보여 정적 확인. 가게 목록 오류 339293 = 서비스/환경 측 판정(우리 패치 결함 아님): shop_list 파서가 번역 없는 진단 build-v5와 한국어 빌드에서 바이트 동일하고, 주문/인증 없는 로컬 합성 피드로는 지역 핸드셰이크를 재현할 수 없음. 남은 일본어는 모두 경로 밖: 주문 흐름 화면, 런타임 pd.dat/금액 자리표시자, 일본어 소프트키보드(한글 입력 비지원). 실기 검증 대기.",
+   "installer_selectable": false,
+   "public_WAD_distribution": false,
+   "hardware_validation": false,
+   "emulator_live_service_verified": false
+  }
+ ],
+ "test_beds": [
+  {
+   "profile": "hardware-test-v1",
+   "purpose": "real-console installer DOL test (scripts/launch_hardware_test.py)"
+  },
+  {
+   "profile": "mail-test-v1",
+   "purpose": "incapable Korean mail tool preview; no registration/config writes"
+  },
+  {
+   "profile": "dvd-test-v1",
+   "purpose": "preserved standalone DVD test profile; R6/home-ui-v1 after current integrated testing",
+   "player_build": "build-v6",
+   "home_ui": "home-ui-v1",
+   "media_kind": "user-provided",
+   "media_revision": 1
+  },
+  {
+   "profile": "gc-v8",
+   "purpose": "System Menu GC v7 + disc channel DVD hook (kwce.dvd_disc_hook) + KDVD player channel wad-v1 in NAND, synthetic unreadable Wii disc staged (scripts/launch_dolphin.py --profile gc-native-v8-user --menu)"
+  },
+  {
+   "profile": "dvd-test-v2",
+   "purpose": "integrated R31/HOME8/WAD31, patched menu, auto-insert synthetic fixture and verified user DVD",
+   "player_build": "build-v31",
+   "home_ui": "home-ui-v8",
+   "media_kind": "user-provided",
+   "media_revision": 1
+  },
+  {
+   "profile": "gc-v9",
+   "purpose": "System Menu GC v6 + GameCube-only disc channel layout (kwce.gc_disc_layout: original two-disc diskBann.ash names, no DVD hook/player) - scripts/launch_dolphin.py --profile gc-native-v9-user --menu"
+  },
+  {
+   "profile": "wiispeak-test-v1",
+   "purpose": "Wii Speak boot test: official Korean v512 first, hardware-v1 (content 1 Wiimmfi port) as comparison; no microphone/USB device, capability-0, no feed (scripts/launch_wiispeak.py)",
+   "title_id": "000100014843464b",
+   "baseline_build": "original-v512",
+   "comparison_build": "hardware-v1"
+  },
+  {
+   "profile": "dvd-test-v3",
+   "purpose": "experimental channel-independent DVD RAM loader; no KDVD title; scripts/launch_dvd_test.py --profile dvd-test-v3 --menu",
+   "native_hook": "dvd-native-hook-v41",
+   "player_build": "build-v47",
+   "home_ui": "home-ui-v8"
+  },
+  {
+   "profile": "menu-v7",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v63",
+   "player_build": "build-v51",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v8",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v64",
+   "player_build": "build-v51",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v9",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v66",
+   "player_build": "build-v51",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v10",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v67",
+   "player_build": "build-v53",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v11",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v68",
+   "player_build": "build-v54",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v12",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v69",
+   "player_build": "build-v55",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v13",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v70",
+   "player_build": "build-v56",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v14",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v71",
+   "player_build": "build-v57",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v15",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v72",
+   "player_build": "build-v58",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v16",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v74",
+   "player_build": "build-v59",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v17",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v75",
+   "player_build": "build-v60",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v18",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v76",
+   "player_build": "build-v61",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v19",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v76",
+   "player_build": "build-v61",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v20",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v900",
+   "player_build": "build-v900",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v21",
+   "purpose": "Linux offline integrated DVD/Settings qualification",
+   "native_hook": "dvd-native-hook-v77",
+   "player_build": "build-v64",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v22",
+   "purpose": "Linux offline GC memory card menu: native77 menu as shipped (comment baseline)",
+   "native_hook": "dvd-native-hook-v77",
+   "player_build": "build-v64",
+   "menu_patch": "none",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v23",
+   "purpose": "Linux offline GC memory card menu: per-save region comment decoder",
+   "native_hook": "dvd-native-hook-v77",
+   "player_build": "build-v64",
+   "menu_patch": "gc_comment_region",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v24",
+   "purpose": "Linux offline GC memory card menu: region comment decoder + ANSI format default",
+   "native_hook": "dvd-native-hook-v77",
+   "player_build": "build-v64",
+   "menu_patch": "gc_comment_region+gc_card_format",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "forecast-v2",
+   "purpose": "Linux offline Wii Menu weather icon/banner, clock 2026-10-24T07:30Z",
+   "channel_build": "forecast build-v103",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "forecast-v3",
+   "purpose": "Linux offline Wii Menu weather icon/banner, clock 2026-10-24T07:30Z",
+   "channel_build": "forecast build-v106",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "forecast-v4",
+   "purpose": "Linux offline Wii Menu weather icon/banner, clock 2026-10-24T07:30Z",
+   "channel_build": "forecast build-v107",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v25",
+   "purpose": "Linux offline RC30 gc-dvd result (kwce-rc-sd-v39) with menu-v21 DVD media",
+   "native_hook": "dvd-native-hook-v77",
+   "player_build": "build-v64",
+   "menu_patch": "rc30 gc_card_menu 2",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v26",
+   "purpose": "Linux offline DVD HOME frame/sound qualification (RC30 GC sections + native78/module v23/R65 + HOME UI v9)",
+   "native_hook": "dvd-native-hook-v78",
+   "player_build": "build-v65",
+   "home_ui": "home-ui-v9",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v27",
+   "purpose": "Linux offline DVD Wii-cursor qualification (RC31 profile: native79/module v24/R66/HOME UI v9, user DVD 40MiB fixture)",
+   "native_hook": "dvd-native-hook-v79",
+   "player_build": "build-v66",
+   "home_ui": "home-ui-v9",
+   "platform": "linux",
+   "role": "experimental"
+  },
+  {
+   "profile": "menu-v28",
+   "purpose": "Linux offline DVD Wii-cursor playback qualification (RC31 profile with synthetic kwce-dvd-test-v1)",
+   "native_hook": "dvd-native-hook-v79",
+   "player_build": "build-v66",
+   "home_ui": "home-ui-v9",
+   "platform": "linux",
+   "role": "experimental"
+  }
+ ]
+}

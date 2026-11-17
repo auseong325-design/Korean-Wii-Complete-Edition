@@ -1,0 +1,56 @@
+[
+  {
+    "repository": "koopthekoopa/wii-ipl",
+    "path": "external/wii-ipl",
+    "commit": "f4c09f4001c5a0b9af734ad1e3f80a54c5e5723c",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-10-15T22:38:06Z",
+    "url": "https://github.com/koopthekoopa/wii-ipl"
+  },
+  {
+    "repository": "NinjaCheetah/wii-menu-visual-patcher",
+    "path": "external/wii-menu-visual-patcher",
+    "commit": "6600fdf42c5b6e9cc18d8573efc79ea03161274e",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2024-01-26T07:23:35Z",
+    "url": "https://github.com/NinjaCheetah/wii-menu-visual-patcher"
+  },
+  {
+    "repository": "WiiLink24/Mail-Patcher",
+    "path": "external/other-tools/Mail-Patcher",
+    "commit": "17784c26d1488f631d084d8abd43bf0060bc4f75",
+    "default_branch": "main",
+    "archived": false,
+    "pushed_at": "2026-01-11T08:54:40Z",
+    "url": "https://github.com/WiiLink24/Mail-Patcher"
+  },
+  {
+    "repository": "WiiLink24/WiiLink24-Patcher",
+    "path": "external/other-tools/WiiLink24-Patcher",
+    "commit": "9f67496eb3f10c5587ebd4a0356916fa1ae95757",
+    "default_branch": "main",
+    "archived": true,
+    "pushed_at": "2026-10-02T14:20:21Z",
+    "url": "https://github.com/WiiLink24/WiiLink24-Patcher"
+  },
+  {
+    "repository": "dborth/wiimc",
+    "path": "external/other-tools/wiimc",
+    "commit": "fae733f1ee51db8f8c9e3560cdb8b65835174f00",
+    "default_branch": "master",
+    "archived": false,
+    "pushed_at": "2026-06-28T22:11:08Z",
+    "url": "https://github.com/dborth/wiimc"
+  },
+  {
+    "repository": "WiiLink24/WiiLink-Patcher-GUI",
+    "path": "external/other-tools/WiiLink-Patcher-GUI",
+    "commit": "2f2753344d8378daa3a1a64c419943fc4ec1208f",
+    "archived": false,
+    "default_branch": "master",
+    "pushed_at": "2026-06-20T15:14:05Z",
+    "url": "https://github.com/WiiLink24/WiiLink-Patcher-GUI"
+  }
+]

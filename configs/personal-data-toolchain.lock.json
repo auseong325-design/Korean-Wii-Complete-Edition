@@ -1,0 +1,51 @@
+{
+  "purpose": "Korean Set Personal Data (WiiLink SPD fork) build inputs beyond the shared devkitPro root. devkitPPC r51/libogc 3.2.1 come from configs/devkit.lock.json; freetype/libpng/zlib/bzip2/brotli from configs/dvd-player-toolchain.lock.json (tools/devkitpro-root, read-only here).",
+  "target": "tools/personal-data-sandbox/toolchain",
+  "packages": [
+    {
+      "name": "ppc-libogg",
+      "version": "1.3.6-1",
+      "url": "https://pkg.devkitpro.org/packages/ppc-libogg-1.3.6-1-any.pkg.tar.zst",
+      "sha256": "335836c9a5a4bcfd2de9e66707e8671293d1b76224b8bc5bfdba95b319e24f67",
+      "license": "BSD-3-Clause",
+      "source_db": "https://pkg.devkitpro.org/packages/dkp-libs.db"
+    },
+    {
+      "name": "ppc-libvorbisidec",
+      "version": "1.2.1-2",
+      "url": "https://pkg.devkitpro.org/packages/ppc-libvorbisidec-1.2.1-2-any.pkg.tar.xz",
+      "sha256": "c1f091ec438c55c650bd43408ae1a3b911807f7cba2ec45e3b5dd620403a6246",
+      "license": "BSD-3-Clause",
+      "depends": ["ppc-libogg"],
+      "source_db": "https://pkg.devkitpro.org/packages/dkp-libs.db"
+    }
+  ],
+  "sources": [
+    {
+      "name": "libpatcher",
+      "repository": "WiiLink24/libpatcher",
+      "commit": "3e51f23ac170df9f3961306a10ac5007d91d4084",
+      "tree": "dad44986b6251997786d40aa93504ec01ae4866c",
+      "license": "MIT",
+      "note": "Upstream SPD links -lpatcher from WiiLink's wii-libpatcher pacman package (not in the project toolchain); built here from this pinned source with its own Makefile flags.",
+      "dest": "workspace/channels/personal-data/references/libpatcher-3e51f23a",
+      "files": {
+        "LICENSE": "9e6bfd59c38ab1e0bce88e1f7ce5f9602b23f91c",
+        "Makefile": "01bd2d7ed6ff7b93514c8f0657966caab3d4c410",
+        "README.md": "a9db00cee158c77aab92d56ea4fe8f2d2e0e7fb6",
+        "source/libpatcher.c": "8f2404bcbeb2a26024404d9ab2201aa8befada77",
+        "source/libpatcher.h": "19cf3590d392fbe5266479fe7b94d48448d33d64",
+        "source/patches.h": "d2308da0cf898ec6a2c79177165def588f72885a"
+      }
+    }
+  ],
+  "spd_source_lock": "configs/personal-data-references.lock.json",
+  "font_source": {
+    "path": "workspace/channels/forecast/references/NotoSansKR.ttf",
+    "sha256": "194018e6b2b293a7964f037b25c0249ce1418bc9ab3c971060a03aa57861e252",
+    "license_path": "workspace/channels/forecast/references/NotoSansKR-OFL.txt",
+    "license_sha256": "1c05c68c34f9708415aada51f17e1b0092d2cea709bf4a94cd38114f9e73d7d9",
+    "license": "OFL-1.1",
+    "pinned_by": "configs/channel-tools.lock.json font_source (google/fonts b38c5c93)"
+  }
+}

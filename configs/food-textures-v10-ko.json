@@ -1,0 +1,117 @@
+{
+ "note": "rc6 W-Food (revision >= 10): baked-text TPLs the earlier waves left Japanese - order-record band (IMG_5643 L1_obi), order-flow title bars and buttons (reachable on a real console once the phone check passes; blocked only by the 339293 server list in Dolphin). Delta over food-textures-v7-ko.json; kwce/food_resources.py merges v7 + v10 for rev >= 10 so rev 9 output is unchanged. mode text/button handled by kwce/food_texture_v6.py (white fill + black outline title bars like the stock obi; 14_obi keeps the orange outline; 04a/b/c obi are white text on their own coloured panel). ja = stock baked text (confirmed by rendering the stock TPLs). Status badges (cnm03_icon_*), the reorder 予約/当日 panels (L2j_*) and the in-channel 注文中 bubbles are two-tone CI art only shown with real orders/shops; left for a later wave. Placement [미검증 in Dolphin].",
+ "textures": {
+  "DtestTitle.arc": {
+   "Title/timg/L1_obi.tpl": {
+    "mode": "text", "ja": "注文きろくを選ぶと、くわしく見られます", "ko": "주문 기록을 선택하면 자세히 볼 수 있습니다",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [2, 2, 374, 30]
+   },
+   "Title/timg/L2_P_obi2.tpl": {
+    "mode": "text", "ja": "くわしい内容", "ko": "자세한 내용",
+    "fill": "#4a4a4a", "align": "left", "box": [2, 1, 141, 27]
+   },
+   "Title/timg/L2_reorderBtx.tpl": {
+    "mode": "text", "ja": "注文リストをつくる", "ko": "주문 목록 만들기",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [3, 2, 226, 30]
+   },
+   "Title/timg/L3_obi.tpl": {
+    "mode": "text", "ja": "お問い合わせ内容を選んでください", "ko": "문의 내용을 선택해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 2, "align": "left", "box": [2, 1, 342, 25]
+   },
+   "Title/timg/L3a_obi.tpl": {
+    "mode": "text", "ja": "お問い合わせ内容を確認してください", "ko": "문의 내용을 확인해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 2, "align": "left", "box": [2, 1, 367, 24]
+   }
+  },
+  "DtestOrder.arc": {
+   "Order/timg/03_obi.tpl": {
+    "mode": "text", "ja": "お店を選んでください", "ko": "가게를 선택해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 234, 30]
+   },
+   "Order/timg/04_btn_f.tpl": {
+    "mode": "text", "ja": "メニューをみる", "ko": "메뉴 보기",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "center", "box": [2, 2, 222, 38]
+   },
+   "Order/timg/04a_obi.tpl": {
+    "mode": "text", "ja": "ひとことPR", "ko": "한마디 PR",
+    "fill": "#ffffff", "align": "left", "box": [4, 2, 164, 30]
+   },
+   "Order/timg/04b_obi.tpl": {
+    "mode": "text", "ja": "出前のとくてん", "ko": "배달 혜택",
+    "fill": "#ffffff", "align": "left", "box": [4, 2, 214, 30]
+   },
+   "Order/timg/04c_obi.tpl": {
+    "mode": "text", "ja": "お店のかくにん", "ko": "가게 확인",
+    "fill": "#ffffff", "align": "left", "box": [4, 2, 214, 30]
+   },
+   "Order/timg/07_font.tpl": {
+    "mode": "text", "ja": "おすすめ商品\nメニュー", "ko": "추천 상품\n메뉴",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "center", "box": [4, 2, 140, 62]
+   },
+   "Order/timg/07_obi.tpl": {
+    "mode": "text", "ja": "メニューを選んでください", "ko": "메뉴를 선택해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 274, 30]
+   },
+   "Order/timg/08_obi.tpl": {
+    "mode": "text", "ja": "商品を選んでください", "ko": "상품을 선택해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 234, 30]
+   },
+   "Order/timg/08_obi_asu.tpl": {
+    "mode": "text", "ja": "予約商品を選んでください", "ko": "예약 상품을 선택해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 278, 30]
+   },
+   "Order/timg/09-1_obi.tpl": {
+    "mode": "text", "ja": "数量を決定してください", "ko": "수량을 정해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 254, 30]
+   },
+   "Order/timg/09-2_obi.tpl": {
+    "mode": "text", "ja": "オプションを選んでください", "ko": "옵션을 선택해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 298, 30]
+   },
+   "Order/timg/09-3_obi.tpl": {
+    "mode": "text", "ja": "注文内容を確認してください", "ko": "주문 내용을 확인해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 302, 30]
+   },
+   "Order/timg/09-3_obi_asu.tpl": {
+    "mode": "text", "ja": "予約内容を確認してください", "ko": "예약 내용을 확인해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 302, 30]
+   },
+   "Order/timg/09-3_btn_f.tpl": {
+    "mode": "text", "ja": "注文リストに入れる", "ko": "주문 목록에 넣기",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "center", "box": [4, 3, 236, 37]
+   },
+   "Order/timg/10_obi.tpl": {
+    "mode": "text", "ja": "注文リスト", "ko": "주문 목록",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 126, 30]
+   },
+   "Order/timg/10_btn_f_order.tpl": {
+    "mode": "text", "ja": "注文を追加", "ko": "주문 추가",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "center", "box": [4, 2, 172, 38]
+   },
+   "Order/timg/11_obi.tpl": {
+    "mode": "text", "ja": "お届け時間を選んでください", "ko": "배달 시간을 선택해 주세요",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 298, 30]
+   },
+   "Order/timg/11a_obi.tpl": {
+    "mode": "text", "ja": "お届け希望時間の指定", "ko": "배달 희망 시간 지정",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 238, 30]
+   },
+   "Order/timg/11b_obi.tpl": {
+    "mode": "text", "ja": "お届け希望日の指定", "ko": "배달 희망일 지정",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [6, 2, 214, 30]
+   },
+   "Order/timg/12_obi.tpl": {
+    "mode": "text", "ja": "注文の最終確認", "ko": "주문 최종 확인",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "left", "box": [2, 1, 176, 29]
+   },
+   "Order/timg/14_btn_main.tpl": {
+    "mode": "text", "ja": "トップ画面へ", "ko": "첫 화면으로",
+    "fill": "#ffffff", "outline": "#000000", "stroke": 3, "align": "center", "box": [2, 2, 198, 34]
+   },
+   "Order/timg/14_obi.tpl": {
+    "mode": "text", "ja": "ご利用ありがとうございます", "ko": "이용해 주셔서 감사합니다",
+    "fill": "#ffffff", "outline": "#cd6a52", "stroke": 3, "align": "center", "box": [4, 2, 362, 35]
+   }
+  }
+ }
+}

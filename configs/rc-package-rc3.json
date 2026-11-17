@@ -1,0 +1,25 @@
+{
+  "schema": 1,
+  "purpose": "Unified release-candidate SD package: every KWCE channel in one installer, console-aware. Paths are under workspace/channels/<id>/. Never publish the output.",
+  "version": "1.0-rc4",
+  "versions": true,
+  "restore_region": 4,
+  "priiloader_merge": true,
+  "extras": {"wiilink-mail-patcher": "wiilink-mail-patcher-17784c26"},
+  "channels": [
+    {"id": "forecast", "name": "Forecast Channel", "tid": "0001000248414645", "source": "korean_original", "korean": "build-v103/forecast-ko-personal-test.wad", "original": "originals/forecast-usa-wiilink-archive.wad", "experimental": false},
+    {"id": "news", "name": "News Channel", "tid": "0001000248414745", "source": "korean_original", "korean": "build-v25/news-ko-personal.wad", "original": "originals/news-usa-wiilink-archive.wad", "experimental": false},
+    {"id": "votes", "name": "Everybody Votes Channel", "tid": "0001000148414a45", "source": "korean_original", "korean": "build-v20/votes-ko-ui-test.wad", "original": "originals/votes-usa-wiilink-archive.wad", "experimental": false},
+    {"id": "mii-contest", "name": "Check Mii Out Channel", "tid": "0001000148415045", "source": "korean_original", "korean": "build-v30/mii-contest-ko-ui-test.wad", "original": "originals/mii-contest-usa-wiilink-archive.wad", "experimental": false},
+    {"id": "wiiroom", "name": "Wii Room", "tid": "000100014843494a", "source": "korean_original", "korean": "build-v57/wiiroom-ko-local-test.wad", "original": "originals/wiiroom-english-wiilink-archive.wad", "experimental": false},
+    {"id": "nintendo", "name": "Nintendo Channel", "tid": "0001000148415445", "source": "korean_original", "korean": "build-v13/nintendo-ko-ui-test.wad", "original": "originals/nintendo-usa-wiilink-archive.wad", "experimental": true},
+    {"id": "personal-data", "name": "Set Personal Data", "tid": "000100084843434a", "source": "hardware", "pin": "hardware-v2", "experimental": false},
+    {"id": "internet", "name": "Internet Channel", "tid": "0001000148414445", "source": "hardware", "pin": "hardware-v8", "experimental": false},
+    {"id": "kirbytv", "name": "Kirby TV Channel", "tid": "0001000148434d50", "source": "hardware", "pin": "hardware-v7", "experimental": false},
+    {"id": "photoprints", "name": "Digicam Print Channel", "tid": "000100014843444a", "source": "hardware", "pin": "hardware-v9", "experimental": false},
+    {"id": "food", "name": "Demae Channel", "tid": "000100014843484a", "source": "hardware", "pin": "hardware-v8", "experimental": true},
+    {"id": "wiispeak", "name": "Wii Speak Channel", "tid": "000100014843464b", "source": "hardware", "pin": "hardware-v1", "experimental": false},
+    {"id": "dvd-player", "name": "DVD Player", "tid": "000100014b445644", "source": "dvd", "pin": "wad-v30", "experimental": false},
+    {"id": "tvguide", "name": "TV Guide Channel", "tid": "0001000148424e4a", "source": "korean_original", "korean": "build-v8/tvguide-ko-hardware-test.wad", "original": "originals/tvguide-japan-original.wad", "experimental": true}
+  ]
+}

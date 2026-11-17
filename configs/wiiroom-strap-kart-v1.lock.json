@@ -1,0 +1,23 @@
+{
+  "title_id": "00010004524d434b",
+  "content_sha256": "0c4ea3fb9678de92d08c2822eded7618589dc052fb475211ad8af118ed78bd38",
+  "ui_archive_sha256": "74b1cb7f89f105bb041d92e3389f8a284ab8a668b0439a827d435e68d3bfcef1",
+  "source_dimensions": [
+    608,
+    456
+  ],
+  "native_korean": true,
+  "redrawn": false,
+  "files": [
+    {
+      "path": "workspace/channels/wiiroom/references/kart-strap-v1/strap-0.tpl",
+      "sha256": "0f137805a479e505f8151339f12ba68c615eadc300d703ebcbd3b2c8130ac7d4",
+      "texture": "strapA_608x456"
+    },
+    {
+      "path": "workspace/channels/wiiroom/references/kart-strap-v1/strap-1.tpl",
+      "sha256": "541d9a38c522591195737fcb4c6514e8d1ce9b713333987885e6d64faa281124",
+      "texture": "strapB_608x456"
+    }
+  ]
+}

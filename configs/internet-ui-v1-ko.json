@@ -1,0 +1,64 @@
+{
+ "schema": 1,
+ "purpose": "Korean Internet Channel resources outside the language file and manual. Every entry names its original so the build refuses a different source.",
+ "display_name": "인터넷 채널",
+ "banner": {
+  "meta/banner.bin": {"layout": "arc/blyt/banner.brlyt", "group_from": "ENG", "group_to": "KOR",
+   "texts": {"T_title_00_ENG": ["Internet Channel", "인터넷 채널"], "T_title_01_ENG": ["Internet Channel", "인터넷 채널"], "T_title_03_ENG": ["Internet Channel", "인터넷 채널"]}},
+  "meta/icon.bin": {"layout": "arc/blyt/icon.brlyt", "group_from": "ENG", "group_to": "KOR",
+   "texts": {"T_title_ENG": ["Internet\nChannel", "인터넷\n채널"]}}
+ },
+ "banner_kept": "letter sprites ist_e/n/r/t ('Internet' wordmark, also in the Japanese release), Nintendo and Opera logos",
+ "save_banner": {"file": "banner.bin", "title": ["Internet Channel", "인터넷 채널"]},
+ "html": {
+  "about.html": {"About Opera": "Opera 정보", "Version information": "버전 정보", "Version": "버전", "Build": "빌드", "Build date": "빌드 날짜", "Platform": "플랫폼", "System": "시스템"},
+  "authdialog.html": {"Username": "사용자 이름", "Password": "비밀번호"},
+  "favorites/favorites.html": {"Favorites": "즐겨찾기"},
+  "pageInfo/pageInfo.html": {"Page information": "페이지 정보"},
+  "preferences/preferences.html": {"Prefernces": "설정"},
+  "startpage/startpage.html": {"Startpage": "시작 페이지"}
+ },
+ "html_kept": "platform codename 'Dolphin', the Opera copyright line, internal dialog titles ('Dialog', 'Search Engine Setting Flow') and the hidden debug template",
+ "keyboard_archive": "sofkeybd.arc",
+ "keyboard_layouts": {
+  "arc/blyt/fs_prdicSelWidw_a.brlyt": {"T_PRDC_US_US": ["English", "영어"], "T_PRDC_US_Fre": ["Français", "프랑스어"], "T_PRDC_US_Spa": ["Español", "스페인어"]},
+  "arc/blyt/fs_VK_ascii_keytop_a.brlyt": {"T_USEU_Chng_sign": ["others", "기호"]},
+  "arc/blyt/fs_VK_cellPhone_a.brlyt": {"T_othersBT_EU": ["others", "기호"]}
+ },
+ "keyboard_kept": "Japanese kana-mode labels and textures (かな, カナ, あいう, 記号, 変換, 漢字, 空白, 英, 小字), key caps and EU language codes",
+ "home": {
+  "source": "HomeButton2/LZ77_homeBtn_KOR.arc",
+  "archives": ["homebutton/homeBtn.arc", "homebutton/homeBtn_ENG.arc", "homebutton/homeBtn_FRA.arc", "homebutton/homeBtn_GER.arc", "homebutton/homeBtn_ITA.arc", "homebutton/homeBtn_NED.arc", "homebutton/homeBtn_SPA.arc"],
+  "csv": ["homebutton/home.csv", "homebutton/home_nosave.csv"],
+  "columns": 10,
+  "korean_column": 9
+ },
+ "favorites": {
+  "folders": ["us_en", "us_fr", "us_sp"],
+  "source_folder": "us_en",
+  "titles": {"Web Links": "웹 링크", "Nintendo": "닌텐도"},
+  "local_test": [
+   ["KWCE 시험 색인", "http://127.0.0.2/"],
+   ["한글 시험 (UTF-8)", "http://127.0.0.2/utf8.html"],
+   ["한글 시험 (EUC-KR)", "http://127.0.0.2/euckr.html"],
+   ["EUC-KR 선언 없음", "http://127.0.0.2/euckr-nometa.html"]
+  ]
+ },
+ "images": {
+  "help_A/img/BtnNext_ukv.png": {"text": "다음", "box": [56, 12, 153, 51], "color": [96, 96, 96], "size": 32, "fill": "hblend"},
+  "help_A/img/BtnNextRo_ukv.png": {"text": "다음", "box": [56, 12, 153, 51], "color": [0, 158, 216], "size": 32, "fill": "hblend"},
+  "help_A/img/BtnPrevious_ukv.png": {"text": "이전", "box": [76, 12, 206, 51], "color": [96, 96, 96], "size": 32, "fill": "hblend"},
+  "help_A/img/BtnPreviousRo_ukv.png": {"text": "이전", "box": [76, 12, 206, 51], "color": [0, 158, 216], "size": 32, "fill": "hblend"},
+  "help_A/img/IconOK.png": {"text": "확인", "box": [12, 5, 84, 25], "color": [24, 24, 24], "size": 17, "fill": "hblend"},
+  "help_A/img/IconSend.png": {"text": "보내기", "box": [10, 4, 86, 25], "color": [40, 40, 40], "size": 17, "fill": "hblend"},
+  "help_A/ukv/page_05/icon_cancel.png": {"text": "취소", "box": [5, 4, 108, 27], "color": [0, 0, 0], "size": 22, "fill": [255, 255, 255]},
+  "help_A/ukv/page_05/icon_delete.png": {"text": "삭제", "box": [5, 4, 108, 27], "color": [0, 0, 0], "size": 22, "fill": [255, 255, 255]},
+  "help_A/ukv/page_05/icon_move.png": {"text": "이동", "box": [5, 4, 108, 27], "color": [0, 0, 0], "size": 22, "fill": [255, 255, 255]},
+  "help_A/ukv/page_05/icon_rename.png": {"text": "이름 변경", "box": [5, 4, 108, 27], "color": [0, 0, 0], "size": 22, "fill": [255, 255, 255]},
+  "help_A/ukv/page_05/IconAd.png": {"text": "즐겨찾기 추가", "box": [6, 3, 229, 30], "color": [48, 48, 48], "size": 24, "fill": [255, 255, 255]},
+  "help_A/ukv/page_05/IconAr.png": {"text": "즐겨찾기 편집", "box": [6, 3, 229, 30], "color": [48, 48, 48], "size": 24, "fill": [255, 255, 255]},
+  "default_bookmarks/us_en/Wii_rcmd_sites_buttononly_US.bmp": {"text": "추천\n사이트", "box": [3, 36, 118, 78], "color": [255, 255, 255], "size": 18, "fill": [0, 192, 232], "align": "left"},
+  "default_bookmarks/us_en/Wii_rcmd_sites_buttononly_US169.BMP": {"text": "추천\n사이트", "box": [1, 27, 89, 59], "color": [255, 255, 255], "size": 14, "fill": [0, 192, 232], "align": "left"}
+ },
+ "images_kept": "manual screenshots of the English UI (page2_ukv, page4_*, page5_*, page6_*) need Korean captures from the emulator; logos, Wii Remote diagrams and symbol icons have no translatable text"
+}

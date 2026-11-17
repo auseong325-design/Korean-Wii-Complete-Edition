@@ -1,0 +1,61 @@
+diff --git a/Source/Core/Core/Boot/ElfReader.cpp b/Source/Core/Core/Boot/ElfReader.cpp
+index 1e570c9..86359c2 100644
+--- a/Source/Core/Core/Boot/ElfReader.cpp
++++ b/Source/Core/Core/Boot/ElfReader.cpp
+@@ -203,7 +203,7 @@ bool ElfReader::LoadIntoMemory(Core::System& system, bool only_in_mem1) const
+       // Check LMA (paddr) first - some are nonsense, so fall back to VMA (vaddr) if invalid
+       u32 writeAddr = p->p_paddr;
+       if (writeAddr)
+-        writeAddr |= 0x80000000;  // map to virtual address
++        writeAddr &= 0x7fffffff;  // KWCE: physical MEM1 bounds check for MIOS
+       else
+         writeAddr = p->p_vaddr;  // LMA is empty, fall back to VMA
+ 
+diff --git a/Source/Core/Core/HW/VideoInterface.cpp b/Source/Core/Core/HW/VideoInterface.cpp
+index 42e0f35..8e60dd4 100644
+--- a/Source/Core/Core/HW/VideoInterface.cpp
++++ b/Source/Core/Core/HW/VideoInterface.cpp
+@@ -165,7 +165,8 @@ void VideoInterfaceManager::Preset(bool _bNTSC)
+   m_dtv_status.component_plugged = Config::Get(Config::SYSCONF_PROGRESSIVE_SCAN);
+ 
+   // Triforce IPL requires the DTV NTSC-J flag to be set.
+-  m_dtv_status.ntsc_j = m_system.IsTriforce() || region == DiscIO::Region::NTSC_J;
++  m_dtv_status.ntsc_j = m_system.IsTriforce() || region == DiscIO::Region::NTSC_J ||
++                        region == DiscIO::Region::NTSC_K;
+ 
+   m_fb_width.Hex = 0;
+   m_border_hblank.Hex = 0;
+diff --git a/Source/Core/Core/HW/WII_IPC.cpp b/Source/Core/Core/HW/WII_IPC.cpp
+index c99c8af..9ae183d 100644
+--- a/Source/Core/Core/HW/WII_IPC.cpp
++++ b/Source/Core/Core/HW/WII_IPC.cpp
+@@ -144,7 +144,8 @@ void WiiIPC::RegisterMMIO(MMIO::Mapping* mmio, u32 base)
+                      wii_ipc.m_ppc_irq_flags |= INT_CAUSE_IPC_BROADWAY;
+                    if (wii_ipc.m_ctrl.X1)
+                      system.GetIOS()->EnqueueIPCRequest(wii_ipc.m_ppc_msg);
+-                   system.GetIOS()->UpdateIPC();
++                   if (system.GetIOS())
++                     system.GetIOS()->UpdateIPC();
+                    system.GetCoreTiming().ScheduleEvent(0, wii_ipc.m_event_type_update_interrupts,
+                                                         0);
+                  }));
+@@ -155,7 +156,8 @@ void WiiIPC::RegisterMMIO(MMIO::Mapping* mmio, u32 base)
+                  MMIO::ComplexWrite<u32>([](Core::System& system, u32, u32 val) {
+                    auto& wii_ipc = system.GetWiiIPC();
+                    wii_ipc.m_ppc_irq_flags &= ~val;
+-                   system.GetIOS()->UpdateIPC();
++                   if (system.GetIOS())
++                     system.GetIOS()->UpdateIPC();
+                    system.GetCoreTiming().ScheduleEvent(0, wii_ipc.m_event_type_update_interrupts,
+                                                         0);
+                  }));
+@@ -166,7 +168,8 @@ void WiiIPC::RegisterMMIO(MMIO::Mapping* mmio, u32 base)
+                    wii_ipc.m_ppc_irq_masks = val;
+                    if (wii_ipc.m_ppc_irq_masks & INT_CAUSE_IPC_BROADWAY)  // wtf?
+                      wii_ipc.Reset();
+-                   system.GetIOS()->UpdateIPC();
++                   if (system.GetIOS())
++                     system.GetIOS()->UpdateIPC();
+                    system.GetCoreTiming().ScheduleEvent(0, wii_ipc.m_event_type_update_interrupts,
+                                                         0);
+                  }));

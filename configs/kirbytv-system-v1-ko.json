@@ -1,0 +1,76 @@
+{
+ "schema": 1,
+ "channel": "kirbytv",
+ "title_id": "0001000148434d50",
+ "name": "커비 TV 채널",
+ "name_note": "IMET 10개 언어 칸과 세이브 배너 이름에 같은 표기. '별의 커비 TV 채널'은 공식 표기가 아니므로 쓰지 않음.",
+ "dialog_source": "layout/EU/EN/dialog.bin runtime_dialog.arc (영어 25칸)",
+ "dialog": {
+  "FLSH_01/MsgTxtTP": ["A server error has occurred.\nWait awhile and try again.", "서버 오류가 발생했습니다.\n잠시 후 다시 시도해 주세요."],
+  "FLSH_01/WiiMenuBtnPPTP": ["Return to\nWii Menu", "Wii 메뉴로\n돌아가기"],
+  "FLSH_02/MsgTxtTP_": ["Use of network features has been\nrestricted.  Please enter your PIN to\ntemporarily disable the restriction.", "네트워크 기능 사용이 제한되어\n있습니다. 제한을 잠시 해제하려면\n비밀번호를 입력해 주세요."],
+  "FLSH_02/StartBtnPPTP": ["Start", "시작"],
+  "FLSH_02/QuitBtnPPTP": ["Quit", "그만두기"],
+  "FLSH_02/MsgTxtTP": ["[@P]", "[@P]"],
+  "FLSH_03/MsgTxtTP": ["The PIN you entered was incorrect.", "비밀번호가 맞지 않습니다."],
+  "FLSH_04/MsgTxtTP": ["Restrictions have temporarily been\nremoved.  Restrictions will be\nreactivated when you return to\nthe Wii Menu.", "제한을 일시적으로 해제했습니다.\nWii 메뉴로 돌아가면\n다시 제한됩니다."],
+  "NAND_01/MsgTxtTP": ["Saving. Please do not touch\nthe POWER Button or RESET.", "저장 중입니다. POWER 버튼이나\nRESET 버튼을 누르지 마세요."],
+  "NAND_01/WiiMenuBtnPPTP": ["OK", "확인"],
+  "NAND_02/MsgTxtTP": ["There is not enough available space\nin the Wii System Memory.\nCreate [@X] block(s) of free space\nby either moving data to an SD Card\nor deleting data in the Wii console's\nData Management Screen.", "Wii 본체 저장 메모리의\n빈 공간이 부족합니다.\n데이터 관리 화면에서 데이터를\nSD 카드로 옮기거나 지워서\n빈 블록을 [@X]블록 확보해 주세요."],
+  "NAND_02/WiiMenuBtnPPTP": ["Go to the Data\nManagement Screen", "데이터 관리\n화면으로"],
+  "NAND_03/MsgTxtTP": ["There is not enough available space\nin the Wii System Memory.\nEither move data to an SD Card\nor delete data in the Wii console's\nData Management Screen.", "Wii 본체 저장 메모리의\n빈 공간이 부족합니다.\n데이터 관리 화면에서 데이터를\nSD 카드로 옮기거나 지워 주세요."],
+  "NAND_03/WiiMenuBtnPPTP": ["Go to the Data\nManagement Screen", "데이터 관리\n화면으로"],
+  "NAND_07/MsgTxtTP": ["The file cannot be used\nbecause the data is corrupted.", "데이터가 손상되어\n파일을 사용할 수 없습니다."],
+  "NAND_07/WiiMenuBtnPPTP": ["Delete file", "파일 삭제"],
+  "NAND_08/MsgTxtTP": ["The Wii System Memory\nhas been damaged.\nRefer to the Wii Operations Manual\nfor details.", "Wii 본체 저장 메모리가\n손상되었습니다.\n자세한 내용은 Wii 사용설명서를\n확인해 주세요."],
+  "NAND_09/MsgTxtTP": ["Saving in progress. Please do not touch\nthe POWER Button or RESET.", "저장 중입니다. POWER 버튼이나\nRESET 버튼을 누르지 마세요."],
+  "NAND_11/MsgTxtTP": ["Could not access the Wii System Memory.\nRefer to the Wii Operations Manual\nfor details.", "Wii 본체 저장 메모리에\n접근할 수 없습니다. 자세한 내용은\nWii 사용설명서를 확인해 주세요."],
+  "NAND_11/WiiMenuBtnPPTP": ["Wii Menu", "Wii 메뉴"],
+  "NAND_12/MsgTxtTP": ["An error occurred while accessing\nthe Wii System Memory. Refer to the\nWii Operations Manual for details.", "Wii 본체 저장 메모리에 접근하는\n중 오류가 발생했습니다. 자세한\n내용은 Wii 사용설명서를 확인해 주세요."],
+  "NAND_12/WiiMenuBtnPPTP": ["Wii Menu", "Wii 메뉴"],
+  "NAND_90/MsgTxtTP": ["The corrupt file has been deleted.", "손상된 파일을 삭제했습니다."],
+  "NAND_90/WiiMenuBtnPPTP": ["OK", "확인"],
+  "NAND_91/MsgTxtTP": ["Creating a save file\nfor the [@T]...", "[@T]의\n저장 파일을 만들고 있습니다..."]
+ },
+ "error_strings_source": "text/EU/EN/ErrorStrings.bmg (UTF-8 BMG, 61칸, 서로 다른 문장 4종)",
+ "error_strings": {
+  "Unable to connect to the internet. Confirm the internet settings of the Wii console.\nError Code: ": "인터넷에 접속할 수 없습니다. Wii 본체 설정의 인터넷 설정을 확인해 주세요.\n오류 코드: ",
+  "A server error has occurred. Wait awhile and try again.\nError Code: ": "서버 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.\n오류 코드: ",
+  "Currently undergoing maintenance. Please wait awhile and try again.\nError Code: ": "현재 점검 중입니다. 잠시 후 다시 시도해 주세요.\n오류 코드: ",
+  "Enter your PIN.": "비밀번호를 입력해 주세요."
+ },
+ "error_xml_source": "trusted/xml/gb_error_text.xml (_en 항목 → 새 _ko 항목)",
+ "error_xml": {
+  "btn_fatal_error": ["Return to<br/>Wii Menu", "Wii 메뉴로<br/>돌아가기", "label"],
+  "btn_non_fatal_error": ["Back", "뒤로", "label"],
+  "btn_non_fatal_error_ok": ["OK", "확인", "label"],
+  "server_error": ["A server error has occurred. Please wait awhile and try again.", "서버 오류가 발생했습니다. 잠시 후 다시 시도해 주세요.", "message"],
+  "nand_error": ["Your save data is corrupt.<br/><br/>New save data is being created.", "저장 데이터가 손상되었습니다.<br/><br/>새 저장 데이터를 만들고 있습니다.", "message"]
+ },
+ "manual_source": "hbm/EU/EN/manual.jpg (554x256, 글자가 박힌 JPEG)",
+ "manual": {
+  "title": ["Kirby TV Channel is operated by holding the Wii Remote vertically.", "커비 TV 채널은 Wii 리모컨을 세로로 잡고 조작합니다."],
+  "rows": [
+   ["Display the HOME Menu", "HOME 메뉴 표시"],
+   ["Confirm selection", "결정"],
+   ["Back", "뒤로"],
+   ["Page left", "이전 페이지"],
+   ["Page right", "다음 페이지"]
+  ]
+ },
+ "home_manual_frame_source": "content 8 HomeButton3/LZ77_homeBtn_nwm_eng.arc (HOME 메뉴 '조작 방법' 화면의 글자 텍스처)",
+ "home_manual_frame": {
+  "arc/timg/it_ttl_wrd_a.tpl": ["How to Use the Controller", "컨트롤러 사용 방법"],
+  "arc/timg/it_btn_01.tpl": ["View Detailed Instructions", "자세한 설명 보기"],
+  "arc/timg/it_net_wrd.tpl": ["• You can see more detailed instructions on the Wii Shop Channel.", "• Wii 쇼핑 채널에서 더 자세한 설명을 볼 수 있습니다."]
+ },
+ "home_network_message": ["This will quit the game. Proceed?\r\n(Anything not saved will be lost.)", "Wii 메뉴로 돌아가시겠습니까?\r\n(저장되지 않은 내용은 사라집니다)"],
+ "home_network_note": "HOME 한국어 아카이브의 부분 폰트(한글 51자)에 있는 글자만 사용. 같은 아카이브의 기본 3번 행과 같은 문장.",
+ "excluded": {
+  "skb/": "PIN 입력용 소프트웨어 키보드(숫자 입력). 배치 데이터는 바꾸지 않음",
+  "content 9 strapImage": "config.common.pcf가 strap_reminder none이라 표시되지 않음",
+  "SWF DefineEditText 초기 문자열": "실행 중 서버 XML 문장으로 바뀌는 자리표시 문자열. 모든 언어가 공유하므로 바꾸지 않음",
+  "SWF 게임 제목 로고(promo)": "상표 로고 그림. WiiLink XML에 promo_data가 없어 표시되지 않음",
+  "Kirby 로고 그림": "상표 워드마크는 그대로 둠"
+ }
+}

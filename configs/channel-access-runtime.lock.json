@@ -1,0 +1,16 @@
+{
+  "base": "gc-fst-runtime.lock.json",
+  "capability_count": 0,
+  "local_simulation": true,
+  "channels": {
+    "votes": {
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    "nintendo": {
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    "mii-contest": {
+      "sha256": "a476d2e983164f44d26cc007ce97f2d684341f2fc0ff713c717e0188a5c51a1c"
+    }
+  }
+}

@@ -1,0 +1,123 @@
+/* 43K only. Native animator binding/state transitions, no pane/matrix copying.
+ * Called at ordinary call sites; the compiler supplies complete EABI frames.
+ * Unused ALL-group slots 1..5 belong to DVD; native layout owns the animators.
+ */
+typedef unsigned int u32;
+typedef unsigned char u8;
+#define FIELD(p,o) (*(u32 *)((u8 *)(p)+(o)))
+#define PTR(p,o) (*(void **)((u8 *)(p)+(o)))
+#define FN(a,t) ((t)(a))
+extern int kwce_find_dvd(void);
+static volatile struct { void *owner,*file; int active,failed; u32 ticks,stage; } ctx;
+__attribute__((section(".text.stub"))) int kwce_unused_debug(void) {return 0;}
+static void *anim(void *s,int group,int index) { return PTR(s,0x258+40*group+4*index); }
+static void stop(void *a) { if(a) FIELD(a,0x14)=0; }
+static int playing(void *a) { return a && FIELD(a,0x14)==1; }
+static void play(void *a) {
+    if(a) { FN(0x81368FB8,void (*)(void *))(a); FIELD(a,0x14)=1; }
+}
+static void visible(void *layout,int yes) {
+    if(layout) {void *root=PTR(layout,0x14);if(root) {
+        u8 *flags=(u8 *)root+0xcf;*flags=(*flags&~1)|(yes!=0);
+    }}
+}
+static int drive(void) { void *b=*(void **)0x810890b0;return b?FIELD(b,4):0; }
+static void start_button(void *s) { FN(0x813B8ED0,void (*)(void *))(s); }
+static int finished(void *f) { return f && FN(0x8133BA54,int (*)(void *))(f); }
+static void native_update(void *s,int page,int index) { FN(0x813B7A00,void (*)(void *,int,int))(s,page,index); }
+
+void kwce_bind(void *s) {
+    FN(0x813B78B0,void (*)(void *))(s);
+    ctx.owner=s;ctx.file=0;ctx.active=0;ctx.failed=0;ctx.ticks=0;ctx.stage=0;
+    void *layout=PTR(s,0x254);
+    if(!layout || !PTR(layout,0x18))return;
+    void *group=FN(0x814F8BF4,void *(*)(void *,const char *))(PTR(layout,0x18),"G_DVD");
+    if(!group)return; /* Older resources fall back to the proven launch hook. */
+    static const char *const names[]={
+        (const char *)0x8162387e,(const char *)0x8162389c,(const char *)0x816238b9,
+        (const char *)0x816238d5,(const char *)0x816238f2
+    };
+    for(int i=0;i<5;i++) {
+        void *a=FN(0x813698D4,void *(*)(void *,const char *,void *,int,int))(layout,names[i],group,0,0);
+        PTR(s,0x2fc+4*i)=a;
+        if(!a)return;
+    }
+    FIELD(anim(s,4,2),0x18)=2; /* original loop type */
+    ctx.active=1;
+}
+
+static void forget(void) {ctx.file=0;ctx.stage=0;}
+static void discard(void *s) {
+    u32 at=4*FIELD(s,0x218);
+    void *layout=PTR(s,0x23c);
+    if(layout && layout!=PTR(s,0x254))FN(0x8136A194,void (*)(void *))(layout);
+    PTR(s,0x23c)=0;PTR(s,0x240)=0;PTR(s,0x244)=0;PTR(s,0x248)=0;
+    if(ctx.file)FN(0x8133BB18,void (*)(void *,int))((void *)ctx.file,1);
+    void *sound=PTR(s,0x22c+at);
+    if(sound)FN(0x8133A94C,void (*)(void *,int))(sound,1);
+    PTR(s,0x21c+at)=PTR(s,0x250);PTR(s,0x224+at)=0;PTR(s,0x22c+at)=0;PTR(s,0x234+at)=0;
+    forget();
+}
+static void original_disc(void *s,int error) {
+    discard(s);
+    for(int i=1;i<=5;i++)stop(anim(s,4,i));
+    FN(0x813B55BC,void (*)(void *))(s);
+    visible(PTR(s,0x254),1);
+    FIELD(s,0x74)=error?15:0;FIELD(s,0x78)=error?0:14;
+    if(error) {ctx.failed=1;play(anim(s,4,7));}
+    start_button(s);
+}
+static int begin_banner(void *s) {
+    int tile=kwce_find_dvd();if(tile<0)return 0;
+    u32 at=4*FIELD(s,0x218);
+    void *f=FN(0x813B917C,void *(*)(void *,int,int,void **,void **,void **))(
+        s,tile>>8,tile&255,&PTR(s,0x224+at),&PTR(s,0x22c+at),&PTR(s,0x234+at));
+    if(!f)return 0;
+    ctx.file=f;PTR(s,0x21c+at)=f;ctx.stage=1;FIELD(s,0x74)=20;
+    return 1;
+}
+
+void kwce_update(void *s,int page,int index) {
+    int state=FIELD(s,0x74),d=drive();
+    if(ctx.owner!=s || !ctx.active) {native_update(s,page,index);return;}
+    ctx.ticks++;
+    /* Native channel changes own/free the old buffers; never dereference them. */
+    if(ctx.file && PTR(s,0x21c+4*FIELD(s,0x218))!=ctx.file)forget();
+    if((state>=18 && state<=20) || (state==16 && ctx.file)) {
+        if(d!=7) {
+            if(ctx.file && !finished((void *)ctx.file))return;
+            original_disc(s,0);native_update(s,page,index);return;
+        }
+        if(state==18) {
+            if(!playing(anim(s,1,4)) && !playing(anim(s,2,4))) {
+                stop(anim(s,4,2));play(anim(s,4,5));play(anim(s,3,5));
+                FIELD(s,0x74)=19;ctx.stage=3;
+            }
+        } else if(state==19) {
+            if(!playing(anim(s,4,5)) && !playing(anim(s,3,5))) {
+                if(!begin_banner(s))original_disc(s,1);
+            }
+        } else if(state==20 && finished((void *)ctx.file)) {
+            if(FN(0x8133BA10,int (*)(void *))((void *)ctx.file)!=1) {original_disc(s,1);return;}
+            FN(0x813B57A8,void (*)(void *))(s);
+            if(!PTR(s,0x23c)) {original_disc(s,1);return;}
+            FN(0x813699C8,void (*)(void *))(PTR(s,0x23c));
+            if(PTR(s,0x244))play(PTR(s,0x244));
+            else if(PTR(s,0x248))play(PTR(s,0x248));
+            else if(PTR(s,0x240))play(PTR(s,0x240));
+            visible(PTR(s,0x254),0);FIELD(s,0x74)=16;ctx.stage=2;start_button(s);
+        }
+        return;
+    }
+    if(state==7 && d==7 && !ctx.failed && kwce_find_dvd()>=0) {
+        stop(anim(s,1,2));stop(anim(s,2,2));
+        play(anim(s,1,4));play(anim(s,2,4));
+        FIELD(s,0x74)=18;FIELD(s,0x78)=0;ctx.stage=4;return;
+    }
+    native_update(s,page,index);
+    int now=FIELD(s,0x74);
+    if(state==2 && now==6)play(anim(s,4,1));
+    else if(state==6 && now==7)play(anim(s,4,2));
+    else if(state==7 && now==9) {stop(anim(s,4,2));play(anim(s,4,4));}
+    else if(state==7 && now==8) {stop(anim(s,4,2));play(anim(s,4,3));}
+}

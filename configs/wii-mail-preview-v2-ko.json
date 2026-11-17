@@ -1,0 +1,27 @@
+{
+  "profile": "mail-test-v1-user",
+  "capability_count": 0,
+  "external_registration_allowed": false,
+  "files": [
+    {
+      "path": "workspace/sandbox/mail-test-v1/Dolphin-x64/Dolphin.exe",
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    {
+      "path": "workspace/sandbox/mail-test-v1/NetProbe.exe",
+      "sha256": "faa1a0dae95b56631b530f9ee2ceffb31dbddbd0269cadc99603b7a418a0217d"
+    },
+    {
+      "path": "workspace/sandbox/mail-test-v1/preview.dol",
+      "sha256": "d7441bd55e832550a80628db33bc733de630cf7521d8fef0048a05c1f60c4ba8"
+    },
+    {
+      "path": "tools/mail-sandbox/v1/bin/MailPreviewRunner.cs",
+      "sha256": "8a8bde1b9752e607278f4bee168553c0e142b3693aa1a4276e9c2a5b0756ec22"
+    },
+    {
+      "path": "tools/mail-sandbox/v1/bin/MailPreviewRunner.exe",
+      "sha256": "3033d32a4d76cab780ec96f3149b03499bca3c747040ba1039050e1d8d72b19b"
+    }
+  ]
+}

@@ -1,0 +1,172 @@
+{
+ "package": "kwce-rc-sd-v53",
+ "block_bytes": 131072,
+ "profiles_scanned": 129,
+ "channels": [
+  {
+   "id": "forecast",
+   "title_id": "0001000248414645",
+   "name": "Forecast Channel",
+   "experimental": false,
+   "content_bytes": 29270842,
+   "content_blocks": 224,
+   "data_bytes": 553248,
+   "data_blocks": 7,
+   "measured": true,
+   "data_profile": "workspace/linux/forecast-v1/user"
+  },
+  {
+   "id": "news",
+   "title_id": "0001000248414745",
+   "name": "News Channel",
+   "experimental": false,
+   "content_bytes": 29100577,
+   "content_blocks": 223,
+   "data_bytes": 3801376,
+   "data_blocks": 31,
+   "measured": true,
+   "data_profile": "workspace/linux/news-v1/user"
+  },
+  {
+   "id": "votes",
+   "title_id": "0001000148414a45",
+   "name": "Everybody Votes Channel",
+   "experimental": false,
+   "content_bytes": 19249969,
+   "content_blocks": 147,
+   "data_bytes": 258464,
+   "data_blocks": 4,
+   "measured": true,
+   "data_profile": "workspace/linux/dvd-player-v1/user"
+  },
+  {
+   "id": "mii-contest",
+   "title_id": "0001000148415045",
+   "name": "Check Mii Out Channel",
+   "experimental": false,
+   "content_bytes": 21370331,
+   "content_blocks": 164,
+   "data_bytes": 64096,
+   "data_blocks": 2,
+   "measured": true,
+   "data_profile": "workspace/linux/mii-contest-v1/user"
+  },
+  {
+   "id": "wiiroom",
+   "title_id": "000100014843494a",
+   "name": "Wii Room",
+   "experimental": false,
+   "content_bytes": 39593890,
+   "content_blocks": 303,
+   "data_bytes": 1012384,
+   "data_blocks": 9,
+   "measured": true,
+   "data_profile": "workspace/linux/wiiroom-v1/user"
+  },
+  {
+   "id": "nintendo",
+   "title_id": "0001000148415445",
+   "name": "Nintendo Channel",
+   "experimental": true,
+   "content_bytes": 20027012,
+   "content_blocks": 153,
+   "data_bytes": 1395040,
+   "data_blocks": 14,
+   "measured": true,
+   "data_profile": "workspace/linux/nintendo-v1/user"
+  },
+  {
+   "id": "personal-data",
+   "title_id": "000100084843434a",
+   "name": "Set Personal Data",
+   "experimental": false,
+   "content_bytes": 4931872,
+   "content_blocks": 38,
+   "data_bytes": 16384,
+   "data_blocks": 1,
+   "measured": true,
+   "data_profile": "workspace/linux/food-v1/user"
+  },
+  {
+   "id": "internet",
+   "title_id": "0001000148414445",
+   "name": "Internet Channel",
+   "experimental": false,
+   "content_bytes": 31348216,
+   "content_blocks": 240,
+   "data_bytes": 4724896,
+   "data_blocks": 37,
+   "measured": true,
+   "data_profile": "workspace/dolphin/baseline-user"
+  },
+  {
+   "id": "kirbytv",
+   "title_id": "0001000148434d50",
+   "name": "Kirby TV Channel",
+   "experimental": false,
+   "content_bytes": 24782208,
+   "content_blocks": 190,
+   "data_bytes": 127648,
+   "data_blocks": 2,
+   "measured": true,
+   "data_profile": "workspace/linux/kirbytv-v1/user"
+  },
+  {
+   "id": "photoprints",
+   "title_id": "000100014843444a",
+   "name": "Digicam Print Channel",
+   "experimental": false,
+   "content_bytes": 15597876,
+   "content_blocks": 120,
+   "data_bytes": 1121888,
+   "data_blocks": 13,
+   "measured": true,
+   "data_profile": "workspace/linux/photoprints-v1/user"
+  },
+  {
+   "id": "food",
+   "title_id": "000100014843484a",
+   "name": "Demae Channel",
+   "experimental": true,
+   "content_bytes": 21442807,
+   "content_blocks": 164,
+   "data_bytes": 209856,
+   "data_blocks": 6,
+   "measured": true,
+   "data_profile": "workspace/linux/food-v1/user"
+  },
+  {
+   "id": "wiispeak",
+   "title_id": "000100014843464b",
+   "name": "Wii Speak Channel",
+   "experimental": false,
+   "content_bytes": 7893964,
+   "content_blocks": 61,
+   "data_bytes": 0,
+   "data_blocks": 0,
+   "measured": false,
+   "data_profile": null
+  },
+  {
+   "id": "tvguide",
+   "title_id": "0001000148424e4a",
+   "name": "TV Guide Channel",
+   "experimental": true,
+   "content_bytes": 29464996,
+   "content_blocks": 225,
+   "data_bytes": 4194848,
+   "data_blocks": 33,
+   "measured": true,
+   "data_profile": "workspace/linux/tvguide-v1/user"
+  }
+ ],
+ "total": {
+  "content_blocks": 2252,
+  "data_blocks": 159,
+  "content_bytes": 294074560,
+  "data_bytes": 17480128,
+  "blocks": 2411,
+  "bytes": 311554688
+ },
+ "note": "Default Korean builds; data = largest data folder seen after real runs (estimate)."
+}

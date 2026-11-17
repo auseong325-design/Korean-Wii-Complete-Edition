@@ -1,0 +1,30 @@
+{
+  "profile": "wiispeak-test-v1-user",
+  "title_id": "000100014843464b",
+  "capability_count": 0,
+  "external_network_allowed": false,
+  "microphone_allowed": false,
+  "local_server": false,
+  "files": [
+    {
+      "path": "workspace/sandbox/wiispeak-test-v1/Dolphin-x64/Dolphin.exe",
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    {
+      "path": "workspace/sandbox/wiispeak-test-v1/NetProbe.exe",
+      "sha256": "faa1a0dae95b56631b530f9ee2ceffb31dbddbd0269cadc99603b7a418a0217d"
+    },
+    {
+      "path": "tools/wiispeak-sandbox/v1/bin/WiiSpeakRunner.cs",
+      "sha256": "128a346115a8cca6fa3b6f1088c0ce96efeb35c6c3555c4b055da9de4902feee"
+    },
+    {
+      "path": "tools/wiispeak-sandbox/v1/bin/WiiSpeakRunner.exe",
+      "sha256": "f03894e0dce5f55bd5c19bb02c9ec8132a3c99a0b770a3fa8737052b2fc4e1b4"
+    }
+  ],
+  "builds": {
+    "original-v512": "0330cfe6cad49881044f94d92745d421cf031212f065bd437c64f1bc52b3edc8",
+    "hardware-v1": "3b6f06e8946f033ced532c7c2b5bd4b9224faef6a656b78c3b27248d54131219"
+  }
+}

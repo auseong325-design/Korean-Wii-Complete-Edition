@@ -1,0 +1,172 @@
+{
+ "purpose": "DVD player (WiiMC 3.0.0 fork) build toolchain; devkitPPC r51 from devkit.lock.json",
+ "repos": {
+  "libogc2": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ (libogc2-devkitpro.db)",
+  "msys2": "https://repo.msys2.org/msys/x86_64/"
+ },
+ "packages": [
+  {
+   "name": "libogc2-git",
+   "version": "r2490.cb0df37-1",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/libogc2-git-r2490.cb0df37-1-any.pkg.tar.zst",
+   "sha256": "7d2b8efc046585161934b96969fc4cac877ec8812ab2cc36e5e16a9526991379",
+   "depends": [
+    "devkitPPC>=r49",
+    "gamecube-tools",
+    "ppc-libmad"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "libogc2-libfat-git",
+   "version": "r272.c756e1e-4",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/libogc2-libfat-git-r272.c756e1e-4-any.pkg.tar.zst",
+   "sha256": "d266113f10562382916c56d91fbd14f4485ed9af20d48a107e1b817658d4393f",
+   "depends": [
+    "devkitPPC>=r42",
+    "libogc2"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "libogc2-libntfs-git",
+   "version": "r29.f73a4d1-2",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/libogc2-libntfs-git-r29.f73a4d1-2-any.pkg.tar.zst",
+   "sha256": "08a328f83c52f405d40900f97f4b2be6bfa458a84204c95e0197df09312fc0c7",
+   "depends": [
+    "devkitPPC>=r42",
+    "libogc2"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-freetype",
+   "version": "2.15.0-1",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-freetype-2.15.0-1-any.pkg.tar.zst",
+   "sha256": "dbdbab7ecc8d682d62dc540b09ab62525fb941b9ed078a3596b3e53073a1548b",
+   "depends": [
+    "devkitPPC",
+    "ppc-libbrotli",
+    "ppc-libbz2",
+    "ppc-libpng",
+    "ppc-zlib"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-libbrotli",
+   "version": "1.2.1-1",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-libbrotli-1.2.1-1-any.pkg.tar.zst",
+   "sha256": "6bce6e16801e7df7d055c1c6bcef6186a36587a81e60eeff26685bba357ab503",
+   "depends": [
+    "devkitPPC"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-libbz2",
+   "version": "1.0.8-9",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-libbz2-1.0.8-9-any.pkg.tar.zst",
+   "sha256": "4d24268fe0aab5a1d515f89b8c1bd383990e8f264a89e888fea08827653b9de9",
+   "depends": [
+    "devkitPPC"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-libpng",
+   "version": "1.6.59-2",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-libpng-1.6.59-2-any.pkg.tar.zst",
+   "sha256": "d9d71cf01f4ab000769ccbe1da43859f191703be4e0c95677f23db54563b07f3",
+   "depends": [
+    "devkitPPC",
+    "ppc-zlib"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-zlib",
+   "version": "1.3.2-2",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-zlib-1.3.2-2-any.pkg.tar.zst",
+   "sha256": "4514321868c2d352ad6902e630227817cd8d64ccea7419112447fed3a2b875fe",
+   "depends": [
+    "devkitPPC"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-libjpeg-turbo",
+   "version": "3.2.0-2",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-libjpeg-turbo-3.2.0-2-any.pkg.tar.zst",
+   "sha256": "2d3a93e4d4b57c0c640dc0711c853cd5a0e2c69afe4ae3d917a45a4f52d11ef8",
+   "depends": [
+    "devkitPPC",
+    "ppc-libspng"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-libspng",
+   "version": "0.7.4-2",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-libspng-0.7.4-2-any.pkg.tar.zst",
+   "sha256": "341628649227d38fd4f24b3e8c433e71a869f6c5036d45940ee0a6af3da06b9e",
+   "depends": [
+    "devkitPPC",
+    "ppc-zlib"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-libiconv",
+   "version": "1.19-6",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-libiconv-1.19-6-any.pkg.tar.zst",
+   "sha256": "6fc8b1d4ba1c385c056fe287cf5e4f938d687ac25294e7a6e37b2f2288c4105a",
+   "depends": [
+    "devkitPPC"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-mxml",
+   "version": "3.3.1-10",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-mxml-3.3.1-10-any.pkg.tar.zst",
+   "sha256": "4845f592e78c9bffa4c690d996561edfefadb1fdc55977529a9f1519afc79396",
+   "depends": [
+    "devkitPPC"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-libexif",
+   "version": "0.6.26-3",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-libexif-0.6.26-3-any.pkg.tar.zst",
+   "sha256": "9cea4386db9b6044be5c35d10bdafc4df0910f5fdd0975b8ac36e89032d2233a",
+   "depends": [
+    "devkitPPC"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "ppc-libmad",
+   "version": "0.16.5-1",
+   "url": "https://packages.extremscorner.org/devkitpro/windows/x86_64/ppc-libmad-0.16.5-1-any.pkg.tar.zst",
+   "sha256": "9565a9c1f7cfc411a3303feac4bcdd4e2faf7fd26be66525f352443a37630398",
+   "depends": [
+    "devkitPPC"
+   ],
+   "target": "devkitpro"
+  },
+  {
+   "name": "make",
+   "version": "4.4.1-3",
+   "url": "https://repo.msys2.org/msys/x86_64/make-4.4.1-3-x86_64.pkg.tar.zst",
+   "sha256": "af0bdba17f06fe037f0194069adaa31a8fe45f1a11381501896aea1fae37bd5d",
+   "depends": [
+    "libintl",
+    "sh"
+   ],
+   "target": "msys-make",
+   "note": "MSYS2 make; runs under Git Bash with its msys-2.0/msys-intl-8 DLLs"
+  }
+ ]
+}

@@ -1,0 +1,7 @@
+{
+  "schema": 1,
+  "system_menu_profile": "menu-v3",
+  "mode": "isolated-offline",
+  "channel_profiles": "workspace/linux/<channel-id>-vN",
+  "synthetic_feed_servers_ported": false
+}

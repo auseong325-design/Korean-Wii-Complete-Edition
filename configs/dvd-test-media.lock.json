@@ -1,0 +1,8 @@
+{
+ "purpose": "Synthetic DVD-Video test disc tools (no copyrighted content; Dolphin cannot read real DVD-Video)",
+ "tools": [
+  {"name": "ffmpeg essentials (Gyan)", "version": "9.0.2", "url": "https://github.com/GyanD/codexffmpeg/releases/download/9.0.2/ffmpeg-9.0.2-essentials_build.zip", "sha256": "60f467265b1e312373dbcd92200c2618a74850f98d3d078e94296bb3fa2047ba", "extract": "tools/dvd-test-tools/ffmpeg"},
+  {"name": "DVDStyler (dvdauthor 0.7.2, spumux, mkisofs only)", "version": "3.2.1", "url": "https://downloads.sourceforge.net/project/dvdstyler/dvdstyler/3.2.1/DVDStyler-3.2.1-win64.exe", "sha256": "99b74055e9b5cceae29b153158563e454905531c966f3cdbe98ea390a6a0e713", "extract": "tools/dvd-test-tools/dvdstyler (innoextract, installer never run)"},
+  {"name": "innoextract", "version": "1.9", "url": "https://github.com/dscharrer/innoextract/releases/download/1.9/innoextract-1.9-windows.zip", "sha256": "6989342c9b026a00a72a38f23b62a8e6a22cc5de69805cf47d68ac2fec993065", "extract": "tools/dvd-test-tools/innoextract"}
+ ]
+}

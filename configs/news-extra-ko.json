@@ -1,0 +1,520 @@
+{
+ "source": "USA News v7 WiiLink archive; Korean-only build (every language slot shows Korean)",
+ "panes": {
+  "earth/zoom_outT": "축소",
+  "earth/zoom_inT": "확대",
+  "head/zoom_outT": "글자 축소",
+  "head/zoom_inT": "글자 확대",
+  "main/zoom_outT": "글자 축소",
+  "main/zoom_inT": "글자 확대",
+  "slide_main/zoom_outT": "글자 축소",
+  "slide_main/zoom_inT": "글자 확대"
+ },
+ "executable": [
+  [
+   "0x801b0348",
+   "Error Code:",
+   "오류 코드:"
+  ],
+  [
+   "0x801b0360",
+   "Fehlercode:",
+   "오류 코드:"
+  ],
+  [
+   "0x801b0378",
+   "Code d'erreur:",
+   "오류 코드:"
+  ],
+  [
+   "0x801b0398",
+   "Error:",
+   "오류:"
+  ],
+  [
+   "0x801b03a8",
+   "Codice errore:",
+   "오류 코드:"
+  ],
+  [
+   "0x801b03c8",
+   "Fout:",
+   "오류:"
+  ],
+  [
+   "0x801b0428",
+   "Select a Section",
+   "분야 선택"
+  ],
+  [
+   "0x801b044c",
+   "Zur Themenauswahl",
+   "분야 선택"
+  ],
+  [
+   "0x801b0498",
+   "Secciones",
+   "분야 선택"
+  ],
+  [
+   "0x801b0518",
+   "Select a Section",
+   "분야 선택"
+  ],
+  [
+   "0x801b053c",
+   "Themenauswahl",
+   "분야 선택"
+  ],
+  [
+   "0x801b0570",
+   "Elegir una sección",
+   "분야 선택"
+  ],
+  [
+   "0x801b0598",
+   "Scegli una categoria",
+   "분야 선택"
+  ],
+  [
+   "0x801b0944",
+   "News Channel",
+   "뉴스 채널"
+  ],
+  [
+   "0x801b0960",
+   "Nachrichtenkanal",
+   "뉴스 채널"
+  ],
+  [
+   "0x801b0984",
+   "Chaîne infos",
+   "뉴스 채널"
+  ],
+  [
+   "0x801b09a0",
+   "Canal Noticias",
+   "뉴스 채널"
+  ],
+  [
+   "0x801b09c0",
+   "Canale Notizie",
+   "뉴스 채널"
+  ],
+  [
+   "0x801b09e0",
+   "Nieuwskanaal",
+   "뉴스 채널"
+  ],
+  [
+   "0x801b0a18",
+   " Area",
+   " 지역"
+  ],
+  [
+   "0x801b0a28",
+   " (u.a.)",
+   " 외"
+  ],
+  [
+   "0x801b0a38",
+   " et ailleurs",
+   " 외"
+  ],
+  [
+   "0x801b0a54",
+   " y otras",
+   " 외"
+  ],
+  [
+   "0x801b0a68",
+   " etc.",
+   " 외"
+  ],
+  [
+   "0x801b0a74",
+   " e.o.",
+   " 외"
+  ],
+  [
+   "0x801b0aa0",
+   " etc.",
+   " 외"
+  ],
+  [
+   "0x801b0ab0",
+   " (u.a.)",
+   " 외"
+  ],
+  [
+   "0x801b0ac0",
+   " et ailleurs",
+   " 외"
+  ],
+  [
+   "0x801b0adc",
+   " y otras",
+   " 외"
+  ],
+  [
+   "0x801b0af0",
+   " etc.",
+   " 외"
+  ],
+  [
+   "0x801b0afc",
+   " e.o.",
+   " 외"
+  ],
+  [
+   "0x801b0b34",
+   "Choose a language",
+   "언어 선택"
+  ],
+  [
+   "0x801b0b58",
+   "Spracheinstellungen",
+   "언어 선택"
+  ],
+  [
+   "0x801b0b80",
+   "Langue",
+   "언어 선택"
+  ],
+  [
+   "0x801b0b90",
+   "Idioma",
+   "언어 선택"
+  ],
+  [
+   "0x801b0ba0",
+   "Cambia lingua",
+   "언어 선택"
+  ],
+  [
+   "0x801b0bbc",
+   "Kies een taal",
+   "언어 선택"
+  ],
+  [
+   "0x801b0c08",
+   "Regional News",
+   "지역 뉴스"
+  ],
+  [
+   "0x801b0c24",
+   "Nachrichten aus dieser Region",
+   "지역 뉴스"
+  ],
+  [
+   "0x801b0c60",
+   "Articles de cette zone",
+   "지역 뉴스"
+  ],
+  [
+   "0x801b0c90",
+   "Noticias de esta zona",
+   "지역 뉴스"
+  ],
+  [
+   "0x801b0cbc",
+   "Elenco notizie",
+   "지역 뉴스"
+  ],
+  [
+   "0x801b0cdc",
+   "Nieuws uit deze regio",
+   "지역 뉴스"
+  ],
+  [
+   "0x801b0d38",
+   "The News",
+   "이 지역 뉴스"
+  ],
+  [
+   "0x801b0d4c",
+   "Nachrichten aus dieser Region",
+   "이 지역 뉴스"
+  ],
+  [
+   "0x801b0d88",
+   "Articles de cette zone",
+   "이 지역 뉴스"
+  ],
+  [
+   "0x801b0db8",
+   "Noticias de esta zona",
+   "이 지역 뉴스"
+  ],
+  [
+   "0x801b0de4",
+   "Elenco notizie",
+   "이 지역 뉴스"
+  ],
+  [
+   "0x801b0e04",
+   "Nieuws uit deze regio",
+   "이 지역 뉴스"
+  ],
+  [
+   "0x801b0e68",
+   "Updated",
+   "갱신"
+  ],
+  [
+   "0x801b0e78",
+   "Aktuell seit:",
+   "갱신"
+  ],
+  [
+   "0x801b0e94",
+   "Depuis la mise à jour:",
+   "갱신"
+  ],
+  [
+   "0x801b0ec4",
+   "Actualizado hace",
+   "갱신"
+  ],
+  [
+   "0x801b0ee8",
+   "Dall'ultimo aggiornamento:",
+   "갱신"
+  ],
+  [
+   "0x801b0f20",
+   "Bijgewerkt:",
+   "갱신"
+  ],
+  [
+   "0x801b0f70",
+   "Last Updated",
+   "최종 갱신"
+  ],
+  [
+   "0x801b0f8c",
+   "Aktuell seit:",
+   "최종 갱신"
+  ],
+  [
+   "0x801b0fa8",
+   "Depuis la mise à jour:",
+   "최종 갱신"
+  ],
+  [
+   "0x801b0fd8",
+   "Actualizado hace",
+   "최종 갱신"
+  ],
+  [
+   "0x801b0ffc",
+   "Dall'ultimo aggiornamento:",
+   "최종 갱신"
+  ],
+  [
+   "0x801b1038",
+   "Bijgewerkt:",
+   "최종 갱신"
+  ],
+  [
+   "0x801b1070",
+   "Seitenanfang",
+   "맨 위로"
+  ],
+  [
+   "0x801b108c",
+   "Haut de page",
+   "맨 위로"
+  ],
+  [
+   "0x801b10a8",
+   "Página de inicio",
+   "맨 위로"
+  ],
+  [
+   "0x801b10cc",
+   "Inizio pagina",
+   "맨 위로"
+  ],
+  [
+   "0x801b10e8",
+   "Naar boven\t",
+   "맨 위로"
+  ],
+  [
+   "0x801b20c8",
+   "%ls %02d:%02d uur geleden.",
+   "%ls %d시간 %d분 전"
+  ],
+  [
+   "0x801b2100",
+   "%ls %02d h e %02d m",
+   "%ls %d시간 %d분 전"
+  ],
+  [
+   "0x801b2128",
+   "%ls %d h y %d min",
+   "%ls %d시간 %d분 전"
+  ],
+  [
+   "0x801b2168",
+   "%ls %02d Std. %02d Min.",
+   "%ls %d시간 %d분 전"
+  ],
+  [
+   "0x801b2198",
+   "%ls %02d:%02d ago",
+   "%ls %d시간 %d분 전"
+  ],
+  [
+   "0x801b21c0",
+   "%ls %02dh %02dm ago",
+   "%ls %d시간 %d분 전"
+  ],
+  [
+   "0x801b2648",
+   "English",
+   "영어"
+  ],
+  [
+   "0x801b2658",
+   "Deutsch",
+   "독일어"
+  ],
+  [
+   "0x801b2668",
+   "Français",
+   "프랑스어"
+  ],
+  [
+   "0x801b2680",
+   "Español",
+   "스페인어"
+  ],
+  [
+   "0x801b2690",
+   "Italiano",
+   "이탈리아어"
+  ],
+  [
+   "0x801b26a4",
+   "Nederlands",
+   "네덜란드어"
+  ]
+ ],
+ "textures": {
+  "TPLNews": {
+   "51": [
+    "뉴스 채널",
+    "bold"
+   ],
+   "52": [
+    "뉴스 채널",
+    "bold"
+   ],
+   "53": [
+    "뉴스 채널",
+    "bold"
+   ],
+   "54": [
+    "뉴스 채널",
+    "bold"
+   ],
+   "55": [
+    "뉴스 채널",
+    "bold"
+   ],
+   "56": [
+    "뉴스 채널",
+    "bold"
+   ],
+   "57": [
+    "뉴스 채널",
+    "bold"
+   ],
+   "70": [
+    "뉴스",
+    "newspaper"
+   ],
+   "71": [
+    "뉴스",
+    "newspaper"
+   ],
+   "72": [
+    "뉴스",
+    "newspaper"
+   ],
+   "73": [
+    "뉴스",
+    "newspaper"
+   ],
+   "74": [
+    "뉴스",
+    "newspaper"
+   ],
+   "75": [
+    "뉴스",
+    "newspaper"
+   ],
+   "76": [
+    "뉴스",
+    "newspaper"
+   ],
+   "84": [
+    "슬라이드 쇼\n뉴스 채널",
+    "serif"
+   ],
+   "85": [
+    "슬라이드 쇼\n뉴스 채널",
+    "serif"
+   ],
+   "86": [
+    "슬라이드 쇼\n뉴스 채널",
+    "serif"
+   ],
+   "87": [
+    "슬라이드 쇼\n뉴스 채널",
+    "serif"
+   ],
+   "88": [
+    "슬라이드 쇼\n뉴스 채널",
+    "serif"
+   ],
+   "89": [
+    "슬라이드 쇼\n뉴스 채널",
+    "serif"
+   ],
+   "90": [
+    "슬라이드 쇼\n뉴스 채널",
+    "serif"
+   ]
+  },
+  "layout_logos": {
+   "arc/timg/logoDU.tpl": "뉴스 채널",
+   "arc/timg/logoFR.tpl": "뉴스 채널",
+   "arc/timg/logoGE.tpl": "뉴스 채널",
+   "arc/timg/logoIT.tpl": "뉴스 채널",
+   "arc/timg/logoJP.tpl": "뉴스 채널",
+   "arc/timg/logoSP.tpl": "뉴스 채널",
+   "arc/timg/logoUS.tpl": "뉴스 채널"
+  }
+ },
+ "banner": {
+  "textT0ENG": "이 화면에서 뉴스를 보려면\n뉴스 채널을 정기적으로 이용해 주세요.\n\n시작을 선택해 주세요.",
+  "textT1ENG": "뉴스를 가져올 수 없습니다.\n\n시작을 선택해 주세요.",
+  "textT2ENG": "현재 이 화면에 표시할\n뉴스가 없습니다.\n\n시작을 선택해 주세요.",
+  "textT3ENG": "청소년 보호 설정으로 뉴스 채널 이용이\n제한되어 뉴스를 표시하지 않습니다."
+ },
+ "banner_textures": {
+  "meta/banner.bin": {
+   "arc/timg/news_logoENG.tpl": "뉴스 채널",
+   "arc/timg/news_logo_flashENG.tpl": "뉴스 채널"
+  },
+  "meta/icon.bin": {
+   "arc/timg/icon_news_logoENG.tpl": "뉴스 채널"
+  }
+ },
+ "preserved_executable": {
+  "0x801b0328": "NEWS error-code prefix (format \"%ls %ls%06d\")"
+ }
+}

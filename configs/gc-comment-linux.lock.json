@@ -1,0 +1,9 @@
+{
+  "address": "0x815458d8",
+  "size": 264,
+  "sha256": "078348948b390b3a797eb104f4ebcd3a6a62f93379948e222147de6ab83be9f6",
+  "converter": "0x815bd2c0",
+  "compiler_sha256": "be3ef2cd21bc7da3f0689c3be2a0c427ad0f0df4b808281c1d4a99064456b302",
+  "objcopy_sha256": "1e03326f5947c99de5896a4ed0241959cb3b8fbe8ba4991ef64eabc5ccedb0e7",
+  "source_sha256": "018538e263a1b864101ee59980e7ed026e3e9b44b47083c6a6a109587bb362d4"
+}

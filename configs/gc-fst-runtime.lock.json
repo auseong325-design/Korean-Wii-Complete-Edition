@@ -1,0 +1,15 @@
+{
+  "base_sha256": "eebfe21a6a5704dfd26d71ad87a3c7b5f559b13158eadc8cb3123f6ff4384a93",
+  "output_sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05",
+  "call_rva": "0x3e6a5c",
+  "rename_rva": "0xac8b80",
+  "thunk_rva": "0xf90580",
+  "thunk_size": 58,
+  "sleep_iat_rva": "0xf91230",
+  "attempts": 3,
+  "delay_ms": 10,
+  "unwind_info_rva": "0x13b7644",
+  "runtime_function_added": true,
+  "final_failure_reaches_original_panic": true,
+  "scope": "HostFileSystem SaveFst only"
+}

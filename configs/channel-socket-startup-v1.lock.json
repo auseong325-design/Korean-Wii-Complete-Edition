@@ -1,0 +1,19 @@
+{
+  "timeout_ms": 30000,
+  "channels": {
+    "news": {
+      "parent": 16,
+      "wrapper": "0x80074ca8",
+      "original_timeout_ms": 600000,
+      "wrapper_sha256": "61f2c587d74ef6f41853144a77faf77f3e9a6bbf32336a36b4c3ba4b39e5ee98",
+      "native_ex_window_sha256": "f5dfdefc1170688d29195f95492cb62a0fb82dabd25c0fe7cba4371b4688aa9c"
+    },
+    "wiiroom": {
+      "parent": 47,
+      "wrapper": "0x803e228c",
+      "original_timeout_ms": 60000,
+      "wrapper_sha256": "a140cf9fddd151be675d91b289ac10c5488fab3a41682e4a36560135d0b21443",
+      "native_ex_window_sha256": "d400f79c5708e0e7495b365598d336b413b5985f05232bcb5c6f53ffe4e2e7e0"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+ "schema": 1,
+ "purpose": "Immutable historical public cache bindings for preserved manual and final-review profiles; normal refresh uses its active snapshot",
+ "profiles": {
+  "forecast-manual-v1": {
+   "snapshot": "public-20261023T054309Z",
+   "manifest_sha256": "5c84a45c397873e480b9bda6ba7969af955d81a15acb779c3c245805919f897b"
+  },
+  "forecast-review-v1": {
+   "snapshot": "public-20261023T054309Z",
+   "manifest_sha256": "5c84a45c397873e480b9bda6ba7969af955d81a15acb779c3c245805919f897b"
+  }
+ }
+}

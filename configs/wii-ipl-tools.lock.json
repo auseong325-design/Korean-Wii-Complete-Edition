@@ -1,0 +1,102 @@
+[
+  {
+    "tool": "dtk",
+    "path": "external/wii-ipl/build/tools/dtk.exe",
+    "sha256": "faf0cac77f0b18b2ab3c1dbba16c61de720b403e194098d8cb5d8a64590c9bb3"
+  },
+  {
+    "tool": "objdiff-cli",
+    "path": "external/wii-ipl/build/tools/objdiff-cli.exe",
+    "sha256": "1ca3575661aca987699f64a8229486806963a838689240585300dd5c227ce083"
+  },
+  {
+    "tool": "sjiswrap",
+    "path": "external/wii-ipl/build/tools/sjiswrap.exe",
+    "sha256": "01d50fa1148cfc3c3b16658c6c9b1c0d9f5324cde79ed6c09ef8353af9d63adf"
+  },
+  {
+    "tool": "bstool",
+    "path": "external/wii-ipl/build/tools/bstool.exe",
+    "sha256": "bf11c6c5c5aeb158b0c013ed636c6d3e2348b96a146e2c63c7136dedcb76f296"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-addr2line.exe",
+    "sha256": "bc00f495f634b61b32051a00f718cea252a1b08b7af8477641fbadd42a7f4998"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-ar.exe",
+    "sha256": "82e2cd653e404dc200c6d2c91323ee5e76a0f2643f51a67a0444c37e91d5b448"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-as.exe",
+    "sha256": "bdb2307f515e7b02192d177223b85cc711f153e9f93826520622ca240c127415"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-c++filt.exe",
+    "sha256": "ec7ac1cc82782c3ac556bcad2d8a52bf381ec362f6bb910a0ada14dbd31fc253"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-elfedit.exe",
+    "sha256": "3c4921a27a61ee668fd509c648ba74c286a71568655d4b48ab691348fa97ae2e"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-embedspu",
+    "sha256": "5777c1e41f12388f3d382862655e4e75160fbd871b68687f930d0715c6c2dfd3"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-ld.bfd.exe",
+    "sha256": "d8e7ccafd9e946db5f88a938c08f554417995de18f51be62e9e2f8b07142f00e"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-ld.exe",
+    "sha256": "d8e7ccafd9e946db5f88a938c08f554417995de18f51be62e9e2f8b07142f00e"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-nm.exe",
+    "sha256": "dd91af71d518d28dc08d6cd7ca02f238cff8fa9184b179862528f0f0f1f56013"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-objcopy.exe",
+    "sha256": "16664793dc8bd2e632c7e2a0574907c32940117fa11d07cc7bb75e2158d67111"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-objdump.exe",
+    "sha256": "f6c63a0808108d1f8768ca778f75e470f8b609f11e33fcb9480ccd6ff2dfbe09"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-ranlib.exe",
+    "sha256": "e4a7d1664f3544861c032a1fc0f9f90b4a4c16f7e8af78ea8ee7737d1ece3c72"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-readelf.exe",
+    "sha256": "14989e56fc2d06a7692dfcc60ae28d9c92e654a13d9c8546dd882d6c9cd68ddf"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-size.exe",
+    "sha256": "b81490827cb04fa57f8a61b147e5661fb1fae710f11f5d889f9c8ef2b6990243"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-strings.exe",
+    "sha256": "344127bbea4ffda5cb791178532e873ab1ffa33d8eb32502e90cec317fd59c8d"
+  },
+  {
+    "tool": "binutils",
+    "path": "external/wii-ipl/build/binutils/powerpc-eabi-strip.exe",
+    "sha256": "9a3bcc402badbdecd691f2689b1957f2669066fd0607c8e2e4980bba614f3d66"
+  }
+]

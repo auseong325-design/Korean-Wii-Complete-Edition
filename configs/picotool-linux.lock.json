@@ -1,0 +1,8 @@
+{
+  "picotool_version": "2.3.1",
+  "picotool_commit": "2041936441b48a3cc53ae3da9e805229fe8f4e18",
+  "sdk_version": "2.2.0",
+  "sdk_commit": "a1438dff1d38bd9c65dbd693f0e5db4b9ae91779",
+  "executable_sha256": "3c1bde0a3e280e5ab5fcd9d730b5d1303888807d01616bb2c7b130376de74f7c",
+  "scope": "read-only RP2040 program metadata/backup; no firmware load or OTP access"
+}

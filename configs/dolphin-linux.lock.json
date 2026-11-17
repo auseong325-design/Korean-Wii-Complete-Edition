@@ -1,0 +1,29 @@
+{
+  "schema": 1,
+  "version": "2609a",
+  "tag_object": "9e8a002e404ee487e83acaa13119d30c8cde9de1",
+  "source_commit": "409881c34357d0f105fd473167d15ab0bd9c1628",
+  "source_url": "https://github.com/dolphin-emu/dolphin.git",
+  "prefix": "tools/linux/dolphin-2609a-v1",
+  "executable": "tools/linux/dolphin-2609a-v1/bin/dolphin-emu",
+  "executable_sha256": "1cc0d92c83c7307176e169ef9e5652c1a9e5a20aed5da4076eb2b3a6cb2c87b6",
+  "source_derivative": {
+    "Source/Core/Core/Boot/ElfReader.cpp": "bc33493ab91da5391578905ff26f8da4ed8c09ca1f4f0537f8dd9dafc449cacf",
+    "Source/Core/Core/HW/WII_IPC.cpp": "93cc04f28b47718fa93fb515b77963afeb77bc461c23bd6bf533b18f6261c579",
+    "Source/Core/Core/HW/VideoInterface.cpp": "decef24fb4885cbff1e27720012daffe8aabdfa229f785244d857fee749c8992"
+  },
+  "windows_pe_fst_retry": "not applicable; Linux rename behavior requires separate regression",
+  "cmake_version": "4.4.4",
+  "ninja_version": "1.13.2",
+  "features_disabled": [
+    "analytics",
+    "autoupdate",
+    "discord",
+    "retroachievements",
+    "upnp",
+    "mgba",
+    "llvm",
+    "framedumps"
+  ],
+  "isolation": "bubblewrap --unshare-all --cap-drop ALL; offline only"
+}

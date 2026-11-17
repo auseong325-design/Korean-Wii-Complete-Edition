@@ -1,0 +1,24 @@
+{
+ "schema": 1,
+ "purpose": "Revision 4 changes on top of the v1 tables (configs/internet-lng-v1-ko.json and configs/internet-ui-v1-ko.json stay unchanged so v1-v3 rebuild byte-identically).",
+ "lng_keep_english": {
+  "407": "Enter a Web Address",
+  "439": "Enter message",
+  "471": "Enter your password",
+  "519": "Enter search text"
+ },
+ "lng_keep_english_reason": "These four entries are only referenced by the software keyboard's input-field hint (executable 0x8005451c/0x800545dc/0x8005459c/0x8005455c, keyboard types URL/message/password/search). The keyboard loads only the 'wii_name' glyph group of wbf1 (string at 0x8088ddd8); in the Korean 43K font that group holds 8 sheets with 1 Hangul sheet, while the hint syllables sit on sheets 38, 41-45 and 48 of the 50-sheet 'ksx_hangul' group, so Hangul draws as '?'.",
+ "local_thumbnails": {
+  "default_bookmarks/yahoo.bmp": {"text": "KWCE\n시험 색인", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 24},
+  "default_bookmarks/yahoo169.bmp": {"text": "KWCE\n시험 색인", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 18},
+  "default_bookmarks/google.bmp": {"text": "한글 시험\nUTF-8", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 22},
+  "default_bookmarks/google169.bmp": {"text": "한글 시험\nUTF-8", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 17},
+  "default_bookmarks/us_sp/Wii_rcmd_sites_buttononly_SP.bmp": {"text": "한글 시험\nEUC-KR", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 22},
+  "default_bookmarks/us_sp/Wii_rcmd_sites_buttononly_SP169.bmp": {"text": "한글 시험\nEUC-KR", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 17},
+  "default_bookmarks/us_en/Wii_rcmd_sites_buttononly_US.bmp": {"text": "한글 시험\nEUC-KR", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 22},
+  "default_bookmarks/us_en/Wii_rcmd_sites_buttononly_US169.BMP": {"text": "한글 시험\nEUC-KR", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 17},
+  "default_bookmarks/us_fr/Wii_rcmd_sites_buttononly_FR.bmp": {"text": "한글 시험\nEUC-KR", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 22},
+  "default_bookmarks/us_fr/Wii_rcmd_sites_buttononly_FR169.BMP": {"text": "한글 시험\nEUC-KR", "color": [30, 60, 110], "fill": [222, 236, 248], "size": 17}
+ },
+ "local_thumbnails_reason": "Local build only: the first-run import pairs the files.dat thumbnails with favorites by order, so the test entries showed the Yahoo!/Google/Recommended Sites pictures. The hardware candidate keeps the original thumbnails."
+}

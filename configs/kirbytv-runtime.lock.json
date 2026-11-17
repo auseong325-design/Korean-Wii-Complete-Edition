@@ -1,0 +1,58 @@
+{
+  "profile": "kirbytv-test-v1-user",
+  "title_id": "0001000148434d50",
+  "capability_count": 0,
+  "external_network_allowed": false,
+  "files": [
+    {
+      "path": "workspace/sandbox/kirbytv-test-v1/Dolphin-x64/Dolphin.exe",
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    {
+      "path": "workspace/sandbox/kirbytv-test-v1/NetProbe.exe",
+      "sha256": "faa1a0dae95b56631b530f9ee2ceffb31dbddbd0269cadc99603b7a418a0217d"
+    },
+    {
+      "path": "tools/kirbytv-sandbox/v1/bin/KirbyRunner.cs",
+      "sha256": "0e2ac27b7593b23a35565eee2058532db26d8d8e47be353046e9884e0473f9a9"
+    },
+    {
+      "path": "tools/kirbytv-sandbox/v1/bin/KirbyRunner.exe",
+      "sha256": "95a870b7dae05e56403beb0c8e4fe04c35910a6c847bb419052c3c8f35453b0f"
+    },
+    {
+      "path": "tools/kirbytv-sandbox/v1/bin/KirbyServer.cs",
+      "sha256": "faeb7b9a8df7842dd0f975b3df130ca7876811bd03fc51629131f7e5d7996ad5"
+    },
+    {
+      "path": "tools/kirbytv-sandbox/v1/bin/KirbyServer.exe",
+      "sha256": "7b9521ad143794f1a892f7ef01f9b4071ca2bc7229880b23b508bd4606226b26"
+    },
+    {
+      "path": "workspace/sandbox/kirbytv-test-v1/local-feed/fixture-manifest.json",
+      "sha256": "b6d6bb7d20ade26e26df48b317ecb60a3c4e129103d8e50eb51ba0c9bbbbe3aa"
+    },
+    {
+      "path": "workspace/sandbox/kirbytv-test-v1/local-feed/gb_config_en.xml",
+      "sha256": "a716320cf5462413692155f640c2d3e37e0cace068aa90e642cfdda00914151f"
+    },
+    {
+      "path": "workspace/sandbox/kirbytv-test-v1/local-feed/routes.tsv",
+      "sha256": "e18a4fefcfd123279c6bc168edd019d760eb58059bbf3c90d1200aecc677c4f4"
+    },
+    {
+      "path": "workspace/sandbox/kirbytv-test-v1/local-feed/sample.mo",
+      "sha256": "1892068e7da38b6845d66e862a0eb36f3b5b3853aa7df8a3656e21866a0e3857"
+    }
+  ],
+  "builds": {
+    "1": "5e4c36a4d293f5914a451bdac48a69208fa1f4d64ce06853bb18c6a859befb90",
+    "2": "8a9b9086080c0d9d720451319a232acdfe8aed336c2cc8e136c5f5f1433130fb",
+    "3": "4192c7267a87a32c4a7a2b93d87c2fd62ebb3a0fabdbbdb7bfe999a0c1ec0ec5",
+    "4": "1c97c16f50dcd14d53a2d7bd9df64808eb345c960d04dca616b2c99c427a138f",
+    "9": "35adc553677f1a685b815b46e36e1902bbe3256152cd91ddcc30e5ca71e15f33",
+    "10": "24497851fc22d09666869cac0084d5e931a0727bb6965e37dd9774e3f88aa869",
+    "11": "56ec6def26bed552f4e5f17a86c116887bbcff7087cf67ecf1b7512606ed3db9"
+  },
+  "feed_revision": 3
+}

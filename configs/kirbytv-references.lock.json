@@ -1,0 +1,71 @@
+{
+ "note": "Public WiiLink/Striim Kirby TV service sources. Not executed.",
+ "service_host": "kirby.wiilink24.com",
+ "path_scheme": "/kctv2/xml/gb_config_<lang>.xml, /kctv2/<dir>/<file>.mo, /video/<file>.mo",
+ "files": [
+  {
+   "path": "workspace/channels/kirbytv/references/production-deployment/629d3bb7/docker-compose.yml",
+   "repository": "WiiLink24/production-deployment",
+   "commit": "629d3bb7cb7a01e4bf369324cf7c187b5d5d8411",
+   "upstream_path": "docker-compose.yml",
+   "blob_sha1": "d650cf7b2b6f798dd2dbfde2bce751f5c468364e",
+   "sha256": "71af740f64732e30be01d4d5ed0619235bc18e6107c9f7b7d8247c9a85cede41"
+  },
+  {
+   "path": "workspace/channels/kirbytv/references/production-deployment/629d3bb7/nginx/templates/kirby.conf.template",
+   "repository": "WiiLink24/production-deployment",
+   "commit": "629d3bb7cb7a01e4bf369324cf7c187b5d5d8411",
+   "upstream_path": "nginx/templates/kirby.conf.template",
+   "blob_sha1": "0416a0f6ba9af580330aea2af88df9917e3e49f6",
+   "sha256": "b9e955133b3fb32a8b84774d6176a85c941b29a6edfe2b13ed600b7c0653a2fb"
+  },
+  {
+   "path": "workspace/channels/kirbytv/references/kirby-tv-docs/cae1941e/README.md",
+   "repository": "StriimNetwork/kirby-tv-docs",
+   "commit": "cae1941ee7399a6f0a3da8a14465bb42c795ba4e",
+   "upstream_path": "README.md",
+   "blob_sha1": "820762e7684f3f65373c23f1a76b61f6fb0d3819",
+   "sha256": "2fbf0ea78f487c649a16a875e1877dce9a8d9bd5eb1fdd854757277922a54038"
+  },
+  {
+   "path": "workspace/channels/kirbytv/references/kirby-tv-docs/cae1941e/basic-information.md",
+   "repository": "StriimNetwork/kirby-tv-docs",
+   "commit": "cae1941ee7399a6f0a3da8a14465bb42c795ba4e",
+   "upstream_path": "basic-information.md",
+   "blob_sha1": "346e7f9f991f642b9f6600a25505f34698bc2a91",
+   "sha256": "ce1f9d1db792bad31341ac2d489758386b5ef0ad0531b4548e1bc64b0367a273"
+  },
+  {
+   "path": "workspace/channels/kirbytv/references/kirby-tv-docs/cae1941e/xml-node-types/README.md",
+   "repository": "StriimNetwork/kirby-tv-docs",
+   "commit": "cae1941ee7399a6f0a3da8a14465bb42c795ba4e",
+   "upstream_path": "xml-node-types/README.md",
+   "blob_sha1": "9bfc50968725760b62b779d6f7a2f010dc81f664",
+   "sha256": "a6fd079ea931a1eb4e24d16aec0d346447876c6cc0fac311d13bd1a4493da59d"
+  },
+  {
+   "path": "workspace/channels/kirbytv/references/Kirby-TV-Channel-Patcher/038d75b5/README.md",
+   "repository": "StriimNetwork/Kirby-TV-Channel-Patcher",
+   "commit": "038d75b5e47f9a1a79c590644e62370efe0d0a48",
+   "upstream_path": "README.md",
+   "blob_sha1": "f7c81ed88cf6550db0ce40b9142cbedcf1b4b4b9",
+   "sha256": "1c254d804b83c99197ec492ae6a534e2885b25bee8a6f07d7e4a10b0c6fa80d8"
+  },
+  {
+   "path": "workspace/channels/kirbytv/references/Kirby-TV-Channel-Patcher/038d75b5/main.go",
+   "repository": "StriimNetwork/Kirby-TV-Channel-Patcher",
+   "commit": "038d75b5e47f9a1a79c590644e62370efe0d0a48",
+   "upstream_path": "main.go",
+   "blob_sha1": "26f14747a745c2fb866fc77cc3cbaf1b09cdd9d3",
+   "sha256": "48ee19bdc46a4e76a6471c3ef7d5fae1d8f6ec31e120a7245da8a46178e6eefc"
+  },
+  {
+   "path": "workspace/channels/kirbytv/references/Kirby-TV-Channel-Patcher/038d75b5/helpers.go",
+   "repository": "StriimNetwork/Kirby-TV-Channel-Patcher",
+   "commit": "038d75b5e47f9a1a79c590644e62370efe0d0a48",
+   "upstream_path": "helpers.go",
+   "blob_sha1": "32d252af4d5f40a7f83cb0c1125a8a78f1ab5443",
+   "sha256": "c7456b4ed0c52408701235ddee5d69fdf0c63ffdd7cfe5ff52a1dedbaa2cb289"
+  }
+ ]
+}

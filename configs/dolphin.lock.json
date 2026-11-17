@@ -1,0 +1,10 @@
+{
+  "version": "2609a",
+  "url": "https://dl.dolphin-emu.org/releases/2609a/dolphin-2609a-x64.7z",
+  "archive_sha256": "bbfd13bf9e6d2a4164a15c392b1f32a9b18150e5136746b388704608fbb60f76",
+  "platform": "Windows x64",
+  "executable_sha256": "17b01a8629d865378a45e58d5fcebf9dcc3f7919c719130a4ffdd1ca2b27b635",
+  "official_release_tag": "2609a",
+  "user_profile": "workspace/dolphin/experiment-user",
+  "reference_tag_commit": "9e8a002e404ee487e83acaa13119d30c8cde9de1"
+}

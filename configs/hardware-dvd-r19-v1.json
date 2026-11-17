@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "purpose": "DVD-only R19 UI physical test, isolated installer/data, no menu resource writer/ISO/emulator preview",
+  "player_build": 19,
+  "home_ui": 3,
+  "wad_revision": 16,
+  "wad_sha256": "66520209470e21747fd7c8439c40503601edc1b0de0ae736a1a6fecf3dfcc24a",
+  "installer_source_sha256": "8163d98cbb050026cd765ec4c2718722225975009848a457f384a55dcfed5ef5"
+}

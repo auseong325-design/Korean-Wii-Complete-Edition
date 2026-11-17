@@ -1,0 +1,214 @@
+{
+  "executed": false,
+  "purpose": "read-only protocol reference for synthetic local feed shapes",
+  "files": [
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/LICENSE",
+      "sha256": "7d4f5bdf3554bbc4279c50244aa16277b53f44d5f6d97e0cfb3ec4751dada1a8",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "LICENSE",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/README.md",
+      "sha256": "9a47d39224cea3498f17dec159d6e9f0beae4142a313979600bb5409bcfc6686",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "README.md",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/cam.py",
+      "sha256": "0e12ba05c016fab297036d26326bbb1a756f3cc8bd4451c24deda8913e48327e",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "cam.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/camlib/__init__.py",
+      "sha256": "2511ff06de477d362d39479d2e89408bf479f3579cd22417a7f9fbafdf17744c",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "camlib/__init__.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/camlib/custom_format.py",
+      "sha256": "0fa61e698a8004c1e49299c1807d82e2c4b96732961a8ad85fd6fa5f3fe8e32d",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "camlib/custom_format.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/camlib/item_data.py",
+      "sha256": "d4120ca17ecb28685d61e58e04495e08bca03e572c80297b2a34fe56eb5f766c",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "camlib/item_data.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/camlib/item_info.py",
+      "sha256": "953f615688d828007cbb071e4b49f2a9e1d76dd3505a90c1ec9340593decfb94",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "camlib/item_info.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/camlib/item_response.py",
+      "sha256": "f107ce6a9cdac200b25f14f04aad93e6ea4ce4cbd2ebdd43365188ba1b8fe734",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "camlib/item_response.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/camlib/status_values.py",
+      "sha256": "96b3eda890e805da280004ec6eab1892aa94a636ceb75a42e767358a4a5a8528",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "camlib/status_values.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/config-example.py",
+      "sha256": "6e8679e0cf36cd7be33c370af2943614c9e413a57ea37019429e21610320e842",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "config-example.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/formparser_override.py",
+      "sha256": "2d06ad7ec88469ebfbb6e60a5c1faba46803c39e879d8f7c544e97ed397314e4",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "formparser_override.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/models.py",
+      "sha256": "b7ed4fe1faeb5b715db04951bc613f8ec74a1a4282133576d94262489999e9ea",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "models.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/render.py",
+      "sha256": "fe4309803f721b845168e5fb167814b194c2a12b29bea3e1cfb228ba33888af0",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "render.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/__init__.py",
+      "sha256": "c85779565c35b9a5907abbccbc279d1d5f5f20bf9641a6c7565955f295643f0e",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/__init__.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/exemption_response.py",
+      "sha256": "b30bdf3568a2a7ce1a37b7dd753ff2f167ee21ddeb7573d41c4d2921bcf7da3c",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/exemption_response.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/fix_item_information.py",
+      "sha256": "a19b249fb27a8df4c07e5427053e53bcdf5e25ba0f6c3974b30df8217029cb4c",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/fix_item_information.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/fix_order_information.py",
+      "sha256": "3f00730eb4bb2c3cfef2b0469e9146eeefc8f1504c2fb6b72b8786c341100296",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/fix_order_information.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/get_assets.py",
+      "sha256": "41dc64a79e0be8d4cc28191a96bc9b5be6672852ff4303855f39f6fcdb283c3b",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/get_assets.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/get_image_id.py",
+      "sha256": "42c8828e12bc976fcabc7fb5380983446a7d7757e77f92c80b9de63303551e54",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/get_image_id.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/get_item_information.py",
+      "sha256": "48d462930c9b6729492672491b3e713d4bd73ee3d7ec14f0add21e7568fcc87c",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/get_item_information.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/get_order_id.py",
+      "sha256": "616750d302f5646ad4ec54a2ab8da427c4c85113dd2a820023a489daacf0a96f",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/get_order_id.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/get_service_information.py",
+      "sha256": "1f165de4580794524ebf4b663dd65fc52b6f512a6e91aa09178ce637789364ad",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/get_service_information.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/order_finish.py",
+      "sha256": "066c51c5a2c353c92e42f553b19191330ec3f3b6d3ddbe037991967477246937",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/order_finish.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/order_id_available.py",
+      "sha256": "052daf054ccdce95adff5462a8baaebc17e73392f0af1de74fb96dbdf303f9b7",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/order_id_available.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/update_order_information.py",
+      "sha256": "395073d977cca802d9a9d0191e895220da4d59cb69ca7589e1aa8cbdf8c9bd5f",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/update_order_information.py",
+      "license": "MIT"
+    },
+    {
+      "path": "workspace/channels/photoprints/references/cam-server-ab059bc0/routes/utils.py",
+      "sha256": "fc787eae22f20356a69fe8b8692f8b26e943dc213811a765c2a522c30cdbe9ff",
+      "repository": "WiiLink24/cam-server",
+      "commit": "ab059bc04567ed21a8bf219d8ea86fd4afacbd2d",
+      "upstream_path": "routes/utils.py",
+      "license": "MIT"
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+{
+  "repository": "dolphin-emu/dolphin",
+  "commit": "409881c34357d0f105fd473167d15ab0bd9c1628",
+  "upstream_path": "Source/Core/Core/IOS/Network/KD/WC24File.h",
+  "local_path": "workspace/channels/tvguide/references/WC24File-2609a.h",
+  "sha256": "0c5babd4e2244b62ddc57d57bcde02f8b9a13eeb73fc1db53cb81b5271d46090"
+}

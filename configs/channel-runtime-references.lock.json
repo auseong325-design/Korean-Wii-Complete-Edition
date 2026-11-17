@@ -1,0 +1,108 @@
+{
+  "repository": "dolphin-emu/dolphin",
+  "reference_tree": "409881c34357d0f105fd473167d15ab0bd9c1628",
+  "files": [
+    {
+      "local": "BootManager.cpp",
+      "repository_path": "Source/Core/Core/BootManager.cpp",
+      "git_blob": "85444ef0b6c7cb06db2531b8c7973732d481cc5e",
+      "sha256": "3919ad0de5ac75c8a34dd8a8d7603095e22409d6c35d12363d947c537b69a595"
+    },
+    {
+      "local": "EXI_DeviceIPL.cpp",
+      "repository_path": "Source/Core/Core/HW/EXI/EXI_DeviceIPL.cpp",
+      "git_blob": "82650ff1a01ec0332dea1ed3bc028f670d618b1c",
+      "sha256": "5911636e07944de3c85f49c83215a36e90f9ae1ab56d7aadf2177fd53782a385"
+    },
+    {
+      "local": "MainSettings.cpp",
+      "repository_path": "Source/Core/Core/Config/MainSettings.cpp",
+      "git_blob": "f0cc8511b7919d7f06958b4d5e1e643d1c6c41a3",
+      "sha256": "b66a7cd93abb24af463ddaa3199462ef9a1bb10465f925508379f29bbe950e29"
+    },
+    {
+      "local": "Manage.cpp",
+      "repository_path": "Source/Core/Core/IOS/Network/NCD/Manage.cpp",
+      "git_blob": "5cd3de22b52b3dcc5ee23ddeb29205cc9a7ce869",
+      "sha256": "32373cf538baccf5b630bb5da27bd684abdbf2fed6f5471f2aa35c0c2bf074dc"
+    },
+    {
+      "local": "NetKDRequest.cpp",
+      "repository_path": "Source/Core/Core/IOS/Network/KD/NetKDRequest.cpp",
+      "git_blob": "ed320f566e4b6d32725e6a3bd0c168584b30a7a3",
+      "sha256": "597bfc631a33b10b6cd9ccbb2109c3d66ee489fae661cfeff9ed581798e9cab8"
+    },
+    {
+      "local": "NetKDTime.cpp",
+      "repository_path": "Source/Core/Core/IOS/Network/KD/NetKDTime.cpp",
+      "git_blob": "6095ae458dd3c9fc33b38e8b6f8c5cda430a847a",
+      "sha256": "ac3d5e3fd49d2de97a6e1160b22778ab688444d52a146510d967db7127c25c07"
+    },
+    {
+      "local": "NWC24Config.cpp",
+      "repository_path": "Source/Core/Core/IOS/Network/KD/NWC24Config.cpp",
+      "git_blob": "b19164254341520f15ee1527f270ad44811826be",
+      "sha256": "5265455854e9bf5b235268234a2278e3320ffeff1bd3980c9ab7f16a736f2a14"
+    },
+    {
+      "local": "NWC24DL.cpp",
+      "repository_path": "Source/Core/Core/IOS/Network/KD/NWC24DL.cpp",
+      "git_blob": "5f1fb41021691927d5f26a53f7bd0a3cf9079c47",
+      "sha256": "74a24fef69518f3e29ede0531da01d7d04eb32f4ae6fcf36b9a87f56a6e084a3"
+    },
+    {
+      "local": "NWC24DL.h",
+      "repository_path": "Source/Core/Core/IOS/Network/KD/NWC24DL.h",
+      "git_blob": "4b875e57acbd07ab19134e7c05814662686a546b",
+      "sha256": "5b42a18e430c299817bbe222a3480cb1eee51ef3bc64e8784cfce512c0e81e1f"
+    },
+    {
+      "local": "SysConf.cpp",
+      "repository_path": "Source/Core/Core/SysConf.cpp",
+      "git_blob": "9381f274f395479669fb5b77ca23319347d5e8b5",
+      "sha256": "685f691b900a515375be2c44bc1f2f1277f8abd94454009abd04407d420bdb2b"
+    },
+    {
+      "local": "SYSCONFSettings.cpp",
+      "repository_path": "Source/Core/Core/Config/SYSCONFSettings.cpp",
+      "git_blob": "2a6528b8e0a1af38f048855e8adfbc5f65e88856",
+      "sha256": "4302b1b41ba7d810050c474f24cf1569ab2da4aa6351fa14762d30cca068975b"
+    },
+    {
+      "local": "Timer.cpp",
+      "repository_path": "Source/Core/Common/Timer.cpp",
+      "git_blob": "fcbbd7bbd2002e67c9e2329c6ac2c53d48973397",
+      "sha256": "600d2f483a4410f937664062fc9880d78466ec29789a1513145170fdd53d09ef"
+    },
+    {
+      "local": "VFFUtil.cpp",
+      "repository_path": "Source/Core/Core/IOS/Network/KD/VFF/VFFUtil.cpp",
+      "git_blob": "702aaddae01dd75ea78a398a4f7522de1928f27e",
+      "sha256": "e7c9992bd48d43c9e7e6768bcd44200d27c534d101d333b4e8042d3b1a1eb064"
+    },
+    {
+      "local": "VFFUtil.h",
+      "repository_path": "Source/Core/Core/IOS/Network/KD/VFF/VFFUtil.h",
+      "git_blob": "53b31dd1d056254e823ceea3debf32d80de1319a",
+      "sha256": "3d6594996ee9ef58f28bee01e98b89233e05b44b4814254fbb40b07b137a9127"
+    },
+    {
+      "local": "WiiNetConfig.cpp",
+      "repository_path": "Source/Core/Core/IOS/Network/NCD/WiiNetConfig.cpp",
+      "git_blob": "ca294e6d7391a891474f3bfcc62b9d86572c76c7",
+      "sha256": "8a55c9054edcbe136b5dbd50c81affb9a7808f8fe0811ec32ffcd8c6ff9bc7de"
+    },
+    {
+      "local": "WiiNetConfig.h",
+      "repository_path": "Source/Core/Core/IOS/Network/NCD/WiiNetConfig.h",
+      "git_blob": "ae5245ee85b4a3d1ba2d2a27e8f9efe012446321",
+      "sha256": "578f20c7fe8977d043ea403892202c6ce62f0a29d6ba54079be199d05b60f32f"
+    },
+    {
+      "local": "WiiRoot.cpp",
+      "repository_path": "Source/Core/Core/WiiRoot.cpp",
+      "git_blob": "0f3397f536a75c9844ce9e2cc83542bf89380433",
+      "sha256": "55383f93a4a1b18e8b1fe9a792414ac331bace508f2dc2d95c9f900519235a08"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+ "channel": "photoprints",
+ "source_content1_sha256": "f8dddbb8019fa21d0c1e0a9196c9fffdac9081ec876ac127261d1c3febfd7ba2",
+ "note": "DOL fixed-slot UTF-16BE literals (application font). Keyboard/IME & kana tabs excluded.",
+ "local_endpoint": "http://127.0.0.2",
+ "rows": [
+  {
+   "address": "0x802b4a80",
+   "expected": "デジカメプリントチャンネル",
+   "ko": "디지털카메라 프린트채널",
+   "slot_bytes": 28,
+   "need_bytes": 26,
+   "fits": true
+  },
+  {
+   "address": "0x802ec37e",
+   "expected": "免責情報が無効です。",
+   "ko": "면책 정보가 무효",
+   "slot_bytes": 22,
+   "need_bytes": 20,
+   "fits": true
+  },
+  {
+   "address": "0x802ec394",
+   "expected": "おしらせ情報が無効です。",
+   "ko": "알림 정보가 무효입니다.",
+   "slot_bytes": 32,
+   "need_bytes": 28,
+   "fits": true
+  },
+  {
+   "address": "0x802ddae8",
+   "expected": "Wii本体保存メモリが壊れました。\nくわしくはWii本体の取扱説明書をお読みください。",
+   "ko": "Wii 저장 메모리가 손상됐습니다.\nWii 사용설명서를 읽어 주세요.",
+   "slot_bytes": 88,
+   "need_bytes": 78,
+   "fits": true
+  },
+  {
+   "address": "0x802de6d0",
+   "expected": "デジカメプリントチャンネルのシステムファイルが\n壊れています。チャンネル管理画面で\nデジカメプリントチャンネルを消去した後、もう一度\nWiiショッピングチャンネルからデジカメプリント\nチャンネルをダウンロードしてください。\nそれでも同じメッセージが出るようであれば、\n任天堂サービスセンターにお問い合わせください。",
+   "ko": "디지털 카메라 프린트 채널의 시스템 파일이\n손상되었습니다. 채널 관리 화면에서\n디지털 카메라 프린트 채널을 삭제한 후 다시\nWii 쇼핑 채널에서 디지털 카메라 프린트\n채널을 받아 주세요.\n그래도 같은 메시지가 나오면\n닌텐도 서비스 센터로 문의해",
+   "slot_bytes": 316,
+   "need_bytes": 274,
+   "fits": true
+  },
+  {
+   "address": "0x802de880",
+   "expected": "Wii本体保存メモリが壊れました。\nくわしくはWii本体の取扱説明書を\nお読みください。",
+   "ko": "Wii 저장 메모리가 손상됐습니다.\n자세한 내용은 Wii 사용설명서를\n읽어주세요.",
+   "slot_bytes": 92,
+   "need_bytes": 92,
+   "fits": true
+  },
+  {
+   "address": "0x802de950",
+   "expected": "Wii本体保存メモリの\n書き込み/読み出しができませんでした。\nくわしくはWii本体の取扱説明書を\nお読みください。",
+   "ko": "Wii 저장 메모리의\n쓰기/읽기를 할 수 없었습니다.\n자세한 내용은 Wii 사용설명서를\n읽어 주세요.",
+   "slot_bytes": 120,
+   "need_bytes": 114,
+   "fits": true
+  },
+  {
+   "address": "0x802dea3c",
+   "expected": "Wii本体保存メモリの書き込み/\n読み出し中にエラーが発生しました。\nくわしくはWii本体の取扱説明書を\nお読みください。",
+   "ko": "Wii 저장 메모리의 쓰기/\n읽기 중 오류가 발생했습니다.\n자세한 내용은 Wii 사용설명서를\n읽어 주세요.",
+   "slot_bytes": 124,
+   "need_bytes": 120,
+   "fits": true
+  },
+  {
+   "address": "0x804a272a",
+   "expected": "【氏名】\n%ls %ls\n【郵便番号】\n%ls\n【住所】\n%ls%ls%ls%ls\n【電話番号】\n%ls\n【メールアドレス】\n%ls",
+   "ko": "【이름】\n%ls %ls\n【우편번호】\n%ls\n【주소】\n%ls%ls%ls%ls\n【전화번호】\n%ls\n【이메일】\n%ls",
+   "slot_bytes": 134,
+   "need_bytes": 126,
+   "fits": true
+  }
+ ]
+}

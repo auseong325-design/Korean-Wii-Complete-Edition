@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "purpose": "Pins for scripts/build_channel_service_fix.py (2026-11-16 hardware error follow-up).",
+  "wiiroom": {"revision": 68, "parent": 66, "wad": "wiiroom-ko-local-test.wad", "compressed": true,
+              "parent_executable_sha256": "cec4f82ac872574c01c5815b6274aa02745ffe1f7a24d53ebde44dfd8bdafc32"},
+  "votes": {"revision": 22, "parent": 21, "wad": "votes-ko-ui-test.wad", "compressed": false,
+            "parent_executable_sha256": "246d28dee76fff74492c59e3ec7788f11058a4a246340450f5a55f8ad386ee8a"},
+  "votes_v23": {"channel": "votes", "revision": 23, "parent": 22, "wad": "votes-ko-ui-test.wad", "compressed": false,
+                "parent_executable_sha256": "4bd73711e975c1cbfa239595a8b0570df8aead5a2967ff92731793b1222fe3d1"},
+  "votes_v24": {"channel": "votes", "revision": 24, "parent": 23, "wad": "votes-ko-ui-test.wad", "compressed": false,
+                "parent_executable_sha256": "90517f2379f869c30e61fd98f1e2286abc7a830ffb589907d6cbcbef6afec8ba"},
+  "votes_v25": {"channel": "votes", "revision": 25, "parent": 24, "wad": "votes-ko-ui-test.wad", "compressed": false,
+                "parent_executable_sha256": "717045c9471382e1e0a03690862a1ff75b067756c563dadddb133658269fc2fa"},
+  "votes_v26": {"channel": "votes", "revision": 26, "parent": 25, "wad": "votes-ko-ui-test.wad", "compressed": false,
+                "parent_executable_sha256": "dc9c20fb4c8a6398bb1c1b41e3ecc98d07e2a2af298f19f9e004c98532ebdcc7"},
+  "votes_v27": {"channel": "votes", "revision": 27, "parent": 26, "wad": "votes-ko-ui-test.wad", "compressed": false,
+                "parent_executable_sha256": "d2cfae1276207342020023ad3656d6f87430128c58815a420af673c27c77c9da"},
+  "votes_v28": {"channel": "votes", "revision": 28, "parent": 27, "wad": "votes-ko-ui-test.wad", "compressed": false,
+                "parent_executable_sha256": "9981862102d3fcca029c812bcda999fba14e30ff039400d25bda13a237b75eb2"}
+}

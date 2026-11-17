@@ -1,0 +1,554 @@
+{
+ "schema": 1,
+ "channel": "kirbytv",
+ "purpose": "Korean text for the English UI strings the WiiLink service sends (locale + help_data); applied on Korean consoles only by exact source match",
+ "source": {
+  "url": "http://kirby.wiilink24.com/kctv2/xml/gb_config_en.xml",
+  "sha256": "65245f0d36b7409ca61195b1200377663ab3a027a2313284156fb01cb348305b",
+  "read_utc": "2026-10-28",
+  "episode_text_copied": false
+ },
+ "excluded": {
+  "ids": [
+   "txt_spanish_1",
+   "txt_spanish_2",
+   "txt_spanish_3",
+   "txt_spanish_4",
+   "txt_spanish_3_1",
+   "txt_spanish_3_2",
+   "txt_spanish_3_3",
+   "txt_spanish_3_4",
+   "txt_spanish_3_5"
+  ],
+  "reason": "Spanish-only language prompt; never shown to Korean consoles (Korean is handled as English internally)"
+ },
+ "not_translated": "episode_data titles/synopses and promo data stay as the service sends them",
+ "entries": [
+  {
+   "id": "notice",
+   "field": "message",
+   "source": "Theres a new episode coming out<br/>on the Kirby TV Channel!<br/><br/>Check it out soon, so you <br/>don't miss out on some Kirby action!",
+   "ko": "커비 TV 채널에 새 에피소드가<br/>곧 공개됩니다!<br/><br/>커비의 활약을 놓치지 않도록<br/>꼭 확인해 주세요!"
+  },
+  {
+   "id": "award",
+   "field": "message",
+   "source": "Please DM @oscie57 on Discord<br/>and show this message!",
+   "ko": "Discord에서 @oscie57 님에게<br/>이 메시지를 보여 주세요!"
+  },
+  {
+   "id": "btn_ok",
+   "field": "label",
+   "source": "OK",
+   "ko": "확인"
+  },
+  {
+   "id": "btn_yes",
+   "field": "label",
+   "source": "Yes",
+   "ko": "예"
+  },
+  {
+   "id": "btn_done",
+   "field": "label",
+   "source": "Done",
+   "ko": "완료"
+  },
+  {
+   "id": "btn_no",
+   "field": "label",
+   "source": "No",
+   "ko": "아니요"
+  },
+  {
+   "id": "btn_back",
+   "field": "label",
+   "source": "Back",
+   "ko": "뒤로"
+  },
+  {
+   "id": "btn_select",
+   "field": "label",
+   "source": "Select",
+   "ko": "선택"
+  },
+  {
+   "id": "btn_read",
+   "field": "label",
+   "source": "Summary",
+   "ko": "줄거리"
+  },
+  {
+   "id": "btn_wii",
+   "field": "label",
+   "source": "Go to Wii Menu",
+   "ko": "Wii 메뉴로"
+  },
+  {
+   "id": "btn_lang_1",
+   "field": "label",
+   "source": "English",
+   "ko": "영어"
+  },
+  {
+   "id": "btn_lang_2",
+   "field": "label",
+   "source": "French",
+   "ko": "프랑스어"
+  },
+  {
+   "id": "btn_lang_3",
+   "field": "label",
+   "source": "German",
+   "ko": "독일어"
+  },
+  {
+   "id": "btn_lang_4",
+   "field": "label",
+   "source": "Italian",
+   "ko": "이탈리아어"
+  },
+  {
+   "id": "btn_lang_5",
+   "field": "label",
+   "source": "Dutch",
+   "ko": "네덜란드어"
+  },
+  {
+   "id": "txt_episode_selection_title",
+   "field": "message",
+   "source": "Now Showing",
+   "ko": "방영 중"
+  },
+  {
+   "id": "btn_timeline",
+   "field": "label",
+   "source": "Episode<br/>Timetable",
+   "ko": "에피소드<br/>편성표"
+  },
+  {
+   "id": "btn_promo",
+   "field": "label",
+   "source": "Promos",
+   "ko": "홍보 영상"
+  },
+  {
+   "id": "txt_intro_1",
+   "field": "message",
+   "source": "The Kirby TV Channel is a<br/>limited service showing free <br/>Kirby cartoons.<br/>",
+   "ko": "커비 TV 채널은 커비 애니메이션을<br/>무료로 보여 주는<br/>기간 한정 서비스입니다.<br/>"
+  },
+  {
+   "id": "txt_intro_2",
+   "field": "message",
+   "source": "Episodes will be released<br/>every 3 days<br/>until 03rd of December, 2026.",
+   "ko": "에피소드는 2026년 12월 3일까지<br/>3일마다 공개됩니다."
+  },
+  {
+   "id": "txt_intro_3",
+   "field": "message",
+   "source": "Episodes will remain available<br/>for 12 days. Check the Episode<br/>Timetable to view upcoming<br/>episodes.",
+   "ko": "각 에피소드는 12일 동안 볼 수 있습니다.<br/>앞으로 공개될 에피소드는<br/>에피소드 편성표에서<br/>확인해 주세요."
+  },
+  {
+   "id": "txt_optin_1",
+   "field": "message",
+   "source": "The Kirby TV Channel can send<br/>new episode announcements to<br/>your Wii Message Board.",
+   "ko": "커비 TV 채널은 새 에피소드 소식을<br/>Wii 알림판으로<br/>보내 드릴 수 있습니다."
+  },
+  {
+   "id": "txt_optin_2",
+   "field": "message",
+   "source": "Do you wish to receive new<br/>episode announcements from<br/>the Kirby TV Channel?",
+   "ko": "커비 TV 채널에서 보내는<br/>새 에피소드 소식을<br/>받으시겠습니까?"
+  },
+  {
+   "id": "txt_optin_3",
+   "field": "message",
+   "source": "You will now receive<br/>announcements when new<br/>episode are available for<br/>viewing.",
+   "ko": "새 에피소드를 볼 수 있게 되면<br/>소식을 받게 됩니다."
+  },
+  {
+   "id": "txt_optin_5",
+   "field": "message",
+   "source": "You will not receive<br/>announcements when new<br/>episode are available for<br/>viewing.",
+   "ko": "새 에피소드를 볼 수 있게 되어도<br/>소식을 받지 않습니다."
+  },
+  {
+   "id": "txt_updated",
+   "field": "message",
+   "source": "The channel has been updated.<br/>Would you like to restart?",
+   "ko": "채널이 업데이트되었습니다.<br/>다시 시작하시겠습니까?"
+  },
+  {
+   "id": "btn_play",
+   "field": "label",
+   "source": "Play Episode",
+   "ko": "에피소드 보기"
+  },
+  {
+   "id": "txt_date_current",
+   "field": "message",
+   "source": "Now<br/>Showing",
+   "ko": "방영 중"
+  },
+  {
+   "id": "txt_date_limited",
+   "field": "message",
+   "source": "Limited time<br/>remaining!",
+   "ko": "곧 종료!"
+  },
+  {
+   "id": "txt_date_ended",
+   "field": "message",
+   "source": "No longer<br/>available.",
+   "ko": "방영이 끝났습니다."
+  },
+  {
+   "id": "txt_date_locked",
+   "field": "message",
+   "source": "Date<br/>Locked",
+   "ko": "날짜 잠김"
+  },
+  {
+   "id": "txt_date_expired",
+   "field": "message",
+   "source": "Episode<br/>Expired",
+   "ko": "방영 종료"
+  },
+  {
+   "id": "txt_date_future",
+   "field": "message",
+   "source": "Available on:<br/>[episode_date]",
+   "ko": "공개일:[episode_date]"
+  },
+  {
+   "id": "txt_date_unavailable",
+   "field": "message",
+   "source": "Episode Unavailable",
+   "ko": "볼 수 없는 에피소드"
+  },
+  {
+   "id": "txt_date_limited_24",
+   "field": "message",
+   "source": "24 Hours<br/>Remaining",
+   "ko": "24시간 남음"
+  },
+  {
+   "id": "txt_timeline_date_special",
+   "field": "message",
+   "source": "Showing until: 18th JUL",
+   "ko": "방영 기한: 7월 18일"
+  },
+  {
+   "id": "txt_timeline_date_expired",
+   "field": "message",
+   "source": "Episode expired",
+   "ko": "방영 종료"
+  },
+  {
+   "id": "txt_timeline_date_future",
+   "field": "message",
+   "source": "Available on: [episode_date]",
+   "ko": "공개일:[episode_date]"
+  },
+  {
+   "id": "txt_timeline_date_unlocked",
+   "field": "message",
+   "source": "Showing until: [episode_date]",
+   "ko": "방영 기한:[episode_date]"
+  },
+  {
+   "id": "txt_timeline_date_new",
+   "field": "message",
+   "source": "NEW! Showing until: [episode_date]",
+   "ko": "새로 공개! 방영 기한:[episode_date]"
+  },
+  {
+   "id": "txt_timeline_date_limited",
+   "field": "message",
+   "source": "Expires soon! ([episode_date])",
+   "ko": "곧 종료![episode_date]"
+  },
+  {
+   "id": "txt_timeline_date_limited_24",
+   "field": "message",
+   "source": "Less than 24 hours left!",
+   "ko": "24시간도 남지 않았습니다!"
+  },
+  {
+   "id": "txt_timeline_date_ended",
+   "field": "message",
+   "source": "Episode ended on: [episode_date]",
+   "ko": "방영 종료일:[episode_date]"
+  },
+  {
+   "id": "txt_timeline_date_unavailable",
+   "field": "message",
+   "source": "Episode Unavailable",
+   "ko": "볼 수 없는 에피소드"
+  },
+  {
+   "id": "txt_timeline_title",
+   "field": "message",
+   "source": "Episode Timetable",
+   "ko": "에피소드 편성표"
+  },
+  {
+   "id": "txt_timeline_1",
+   "field": "message",
+   "source": "This is the Kirby TV Channel Episode Timetable.",
+   "ko": "커비 TV 채널의 에피소드 편성표입니다."
+  },
+  {
+   "id": "txt_timeline_2",
+   "field": "message",
+   "source": "Here you can check when new<br/>episodes will become available and use Keys to unlock<br/>episodes you may have missed.",
+   "ko": "새 에피소드가 언제 공개되는지 확인하고,<br/>놓친 에피소드는 열쇠를 사용해<br/>잠금을 풀 수 있습니다."
+  },
+  {
+   "id": "txt_promo_title",
+   "field": "message",
+   "source": "Promos",
+   "ko": "홍보 영상"
+  },
+  {
+   "id": "txt_unlock_with_key",
+   "field": "message",
+   "source": "Unlock this episode with a key?",
+   "ko": "열쇠를 사용해 이 에피소드의 잠금을 푸시겠습니까?"
+  },
+  {
+   "id": "txt_ep_unavailable",
+   "field": "message",
+   "source": "This episode is unavailable.",
+   "ko": "이 에피소드는 볼 수 없습니다."
+  },
+  {
+   "id": "txt_reset_conf",
+   "field": "message",
+   "source": "<br/>Return to Wii Menu?",
+   "ko": "<br/>Wii 메뉴로 돌아가시겠습니까?"
+  },
+  {
+   "id": "txt_settings_title",
+   "field": "message",
+   "source": "Settings",
+   "ko": "설정"
+  },
+  {
+   "id": "txt_month_0",
+   "field": "message",
+   "source": "JAN",
+   "ko": "1월"
+  },
+  {
+   "id": "txt_month_1",
+   "field": "message",
+   "source": "FEB",
+   "ko": "2월"
+  },
+  {
+   "id": "txt_month_2",
+   "field": "message",
+   "source": "MAR",
+   "ko": "3월"
+  },
+  {
+   "id": "txt_month_3",
+   "field": "message",
+   "source": "APR",
+   "ko": "4월"
+  },
+  {
+   "id": "txt_month_4",
+   "field": "message",
+   "source": "MAY",
+   "ko": "5월"
+  },
+  {
+   "id": "txt_month_5",
+   "field": "message",
+   "source": "JUN",
+   "ko": "6월"
+  },
+  {
+   "id": "txt_month_6",
+   "field": "message",
+   "source": "JUL",
+   "ko": "7월"
+  },
+  {
+   "id": "txt_month_7",
+   "field": "message",
+   "source": "AUG",
+   "ko": "8월"
+  },
+  {
+   "id": "txt_month_8",
+   "field": "message",
+   "source": "SEP",
+   "ko": "9월"
+  },
+  {
+   "id": "txt_month_9",
+   "field": "message",
+   "source": "OCT",
+   "ko": "10월"
+  },
+  {
+   "id": "txt_month_10",
+   "field": "message",
+   "source": "NOV",
+   "ko": "11월"
+  },
+  {
+   "id": "txt_month_11",
+   "field": "message",
+   "source": "DEC",
+   "ko": "12월"
+  },
+  {
+   "id": "help/mail/label",
+   "field": "label",
+   "source": "Mail",
+   "ko": "알림"
+  },
+  {
+   "id": "help/mail/tool_tip",
+   "field": "tool_tip",
+   "source": "Change Announcement Settings",
+   "ko": "새 에피소드 소식 설정"
+  },
+  {
+   "id": "help/channel/label",
+   "field": "label",
+   "source": "Channel",
+   "ko": "채널"
+  },
+  {
+   "id": "help/channel/tool_tip",
+   "field": "tool_tip",
+   "source": "About The Channel",
+   "ko": "채널 소개"
+  },
+  {
+   "id": "help/channel/channel_1",
+   "field": "message",
+   "source": "The Kirby TV Channel is a<br/>limited service showing free <br/>Kirby cartoons.<br/>",
+   "ko": "커비 TV 채널은 커비 애니메이션을<br/>무료로 보여 주는<br/>기간 한정 서비스입니다.<br/>"
+  },
+  {
+   "id": "help/channel/channel_2",
+   "field": "message",
+   "source": "Episodes will be released<br/>every 3 days<br/>until 03rd of December, 2026.",
+   "ko": "에피소드는 2026년 12월 3일까지<br/>3일마다 공개됩니다."
+  },
+  {
+   "id": "help/channel/channel_3",
+   "field": "message",
+   "source": "Episodes will remain available<br/>for 16 days. Check the Episode<br/>Timetable to view upcoming<br/>episodes.",
+   "ko": "각 에피소드는 16일 동안 볼 수 있습니다.<br/>앞으로 공개될 에피소드는<br/>에피소드 편성표에서<br/>확인해 주세요."
+  },
+  {
+   "id": "help/timetable/label",
+   "field": "label",
+   "source": "Timetable",
+   "ko": "편성표"
+  },
+  {
+   "id": "help/timetable/tool_tip",
+   "field": "tool_tip",
+   "source": "Episode Timetable Information",
+   "ko": "에피소드 편성표 안내"
+  },
+  {
+   "id": "help/timetable/txt_timeline_1",
+   "field": "message",
+   "source": "This is the Kirby TV Channel Episode Timetable.",
+   "ko": "커비 TV 채널의 에피소드 편성표입니다."
+  },
+  {
+   "id": "help/timetable/txt_timeline_2",
+   "field": "message",
+   "source": "Here you can check when new<br/>episodes will become available and use Keys to unlock<br/>episodes you may have missed.",
+   "ko": "새 에피소드가 언제 공개되는지 확인하고,<br/>놓친 에피소드는 열쇠를 사용해<br/>잠금을 풀 수 있습니다."
+  },
+  {
+   "id": "help/keys/label",
+   "field": "label",
+   "source": "Keys",
+   "ko": "열쇠"
+  },
+  {
+   "id": "help/keys/tool_tip",
+   "field": "tool_tip",
+   "source": "Learn About Keys",
+   "ko": "열쇠 알아보기"
+  },
+  {
+   "id": "help/keys/key_1",
+   "field": "message",
+   "source": "You may receive a Key after </br> watching a Kirby episode.",
+   "ko": "커비 에피소드를 보고 나면 </br> 열쇠를 받을 수도 있습니다."
+  },
+  {
+   "id": "help/keys/key_2",
+   "field": "message",
+   "source": "Keys may be used to view a </br> locked episode for 24 hours.",
+   "ko": "열쇠를 사용하면 잠긴 에피소드를 </br> 24시간 동안 볼 수 있습니다."
+  },
+  {
+   "id": "help/keys/key_3",
+   "field": "message",
+   "source": "If you find a Key, look in the </br> Episode Timetable for an older </br> episode to unlock.",
+   "ko": "열쇠를 찾았다면 </br> 에피소드 편성표에서 </br> 잠금을 풀 지난 에피소드를 찾아보세요."
+  }
+ ],
+ "revision": 3,
+ "changes_from_v2": {
+  "reason": "'Wii 알림판' is the project term for the Wii Message Board; the episode page status box is wide, so its short states are one line (v2 review showed '방영'/'중' split by the source line break)",
+  "entries": [
+   {
+    "id": "txt_optin_1",
+    "v2": "커비 TV 채널은 새 에피소드 소식을<br/>Wii 게시판으로<br/>보내 드릴 수 있습니다.",
+    "v3": "커비 TV 채널은 새 에피소드 소식을<br/>Wii 알림판으로<br/>보내 드릴 수 있습니다."
+   },
+   {
+    "id": "txt_date_current",
+    "v2": "방영<br/>중",
+    "v3": "방영 중"
+   },
+   {
+    "id": "txt_date_limited",
+    "v2": "곧<br/>종료!",
+    "v3": "곧 종료!"
+   },
+   {
+    "id": "txt_date_ended",
+    "v2": "방영이<br/>끝났습니다.",
+    "v3": "방영이 끝났습니다."
+   },
+   {
+    "id": "txt_date_locked",
+    "v2": "날짜<br/>잠김",
+    "v3": "날짜 잠김"
+   },
+   {
+    "id": "txt_date_expired",
+    "v2": "방영<br/>종료",
+    "v3": "방영 종료"
+   },
+   {
+    "id": "txt_date_future",
+    "v2": "공개일:<br/>[episode_date]",
+    "v3": "공개일:[episode_date]"
+   },
+   {
+    "id": "txt_date_limited_24",
+    "v2": "24시간<br/>남음",
+    "v3": "24시간 남음"
+   }
+  ]
+ }
+}

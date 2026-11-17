@@ -1,0 +1,11 @@
+{
+  "schema": 1,
+  "purpose": "Native HOME SFX, 50ms hover rumble, settings button animations and input; silver native scanline DVD banner and memory-only disc animation",
+  "player_build": 24,
+  "home_ui": 4,
+  "wad_revision": 24,
+  "wad_sha256": "a699d1af1c470be8888ba7823c33e2071a4af50bf466a647294dc4b714a906b8",
+  "installer_source_sha256": "8163d98cbb050026cd765ec4c2718722225975009848a457f384a55dcfed5ef5",
+  "dvd_banner_hook": 10,
+  "dvd_hook_source_sha256": "29293fbcc5b21cdf70260a545625f84911d58ce9b670d0647d02a9163b5e7398"
+}

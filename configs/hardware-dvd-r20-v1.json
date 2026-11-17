@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "purpose": "R20 physical freeze diagnostic candidate: reject protected PES before decode, original movie cursor, isolated settings; same HOME3 UI",
+  "player_build": 20,
+  "home_ui": 3,
+  "wad_revision": 17,
+  "wad_sha256": "70ec07596e228a3525fd90418650992cedd7636346292da08ae5a6b1cbe618ac",
+  "installer_source_sha256": "8163d98cbb050026cd765ec4c2718722225975009848a457f384a55dcfed5ef5"
+}

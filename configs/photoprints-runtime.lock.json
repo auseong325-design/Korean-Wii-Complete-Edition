@@ -1,0 +1,68 @@
+{
+  "profile": "photoprints-test-v1-user",
+  "title_id": "000100014843444a",
+  "capability_count": 0,
+  "external_network_allowed": false,
+  "files": [
+    {
+      "path": "workspace/sandbox/photoprints-test-v1/Dolphin-x64/Dolphin.exe",
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    {
+      "path": "workspace/sandbox/photoprints-test-v1/NetProbe.exe",
+      "sha256": "faa1a0dae95b56631b530f9ee2ceffb31dbddbd0269cadc99603b7a418a0217d"
+    },
+    {
+      "path": "tools/photoprints-sandbox/v1/bin/PhotoPrintsRunner.cs",
+      "sha256": "7656147b0527a0b0e08cf6f15e72335ad3f9cd32d7535fe2c14f6e9902a14167"
+    },
+    {
+      "path": "tools/photoprints-sandbox/v1/bin/PhotoPrintsRunner.exe",
+      "sha256": "03c1ca5cb07f872dfd3516774a3a5d4607a63a2aa0250041c255252d0afd991c"
+    },
+    {
+      "path": "tools/photoprints-sandbox/v1/bin/PhotoPrintsServer.cs",
+      "sha256": "d0e9aae6220f86230738ae5d2580ce980e4a7bc1da0cadc8b138ed326db99e79"
+    },
+    {
+      "path": "tools/photoprints-sandbox/v1/bin/PhotoPrintsServer.exe",
+      "sha256": "826e36ad6addbb0d2e04f0874f9a47c1910fe02f8ef5de4e30164867dc41c03d"
+    },
+    {
+      "path": "workspace/sandbox/photoprints-test-v1/local-feed/fixture-manifest.json",
+      "sha256": "b884d1a1f08f5d73dd2a03b7e9d0f249c2cdf70db6b6178611657daf3d0fa32d"
+    }
+  ],
+  "builds": {
+    "1": "68967feef019a12da42328e8f2317359300c2636af59b3149876bce3686d19fa",
+    "3": "64588c652551bc470ad2aba7d9bcaea742e9dbb53995339637cf6bced53abe0b",
+    "2": "db93e6d5829f7f72a79632e8b066a81cf4ea69d25d402f569f3b5f5a6f22a2c7",
+    "6": "a108effdd46774ed691b6a4d4e2ae0dd07c2be7fc41dd4ae6b6426537be80e86",
+    "4": "2a0d78f13ad7ca974efd92c5dd48cf20417bc5a8b03fefd7cf0b5d5b2f1418f3",
+    "5": "92e87316baffd9827d58ad341ad71e3cda06862bb55d30e77cfcbe3222d3a02a",
+    "9": "8bda878a599bea05dd8f0a9f362275482942f410a80b197dae9014889333ecd0",
+    "8": "ecbe113408ef75cbdd4ba9582be3137209c56990a22afce588e5c373701189e7",
+    "10": "b6af74ec4136a7547343add49f5f1fe86b3794eb82c1d724721fa897abbb6404",
+    "11": "eaaf9fc28bd43b4da85ce4652a616fdeae5cc1ab25ec2e354d30281333a777fe",
+    "13": "0fe1eaaede7f3a9f18bf70f6ce49d3eca066fb71cdd2ed3a4ac628699901c1b5",
+    "14": "05ce417f54a0a0546cbc3d7d784a6a89a9f24a15926c9f68fbefc0d3ad02deda",
+    "15": "5786585741c5ebce0fcd3dd52479ca57889f874e2df91f73caa6f9a0543f94b9"
+  },
+  "personal_data": {
+    "spd_title": "000100084843434a",
+    "spd_wad": "workspace/channels/personal-data/build-v2/personal-data-ko-local-test.wad",
+    "spd_wad_sha256": "db968ff1e21d54c12f396d99270f7a4249076fd9ea56b2fbe4f4b606fc06ffcb",
+    "spd_tmd_sha256": "192d8915f3ce67a45d6d84d7fa023955893a8d2e0a2733b3b36c2435b39c1034",
+    "spd_title_version": 512,
+    "ios58": {
+      "00000018.app": "8a96a90404d390f97a3fa44248a60e74a7ae655237ce5173d5b4e83013f77421",
+      "title.tmd": "010ade26a0d961f92039feeeb88cb715fa9ff69ea9c9569aaad271a512c4ceb7"
+    },
+    "pd_path": "/title/00010008/4843434a/data/nocopy/pd.dat",
+    "pd_installed": true,
+    "pd_sha256": "416e1a28c1597303c15e3d7eaaccb66e19f2ecec5666400011e391311457e9c3",
+    "fictional_plain_sha256": "311f1927cdea95fb9909b1f815055b6331f4aba9a32b8e0bba386b4cab6bd2c9",
+    "device_id": "Dolphin public DEFAULT_DEVICE_ID",
+    "fictional": true
+  }
+}

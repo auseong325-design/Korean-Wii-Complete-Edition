@@ -1,0 +1,21 @@
+{
+  "revision": 2,
+  "files": [
+    {
+      "path": "kwce_home.cpp",
+      "sha256": "348de6b2837b6b4250264c66419254dcb15fbc50afbfbbf7facc2a14b72525bc"
+    },
+    {
+      "path": "lyt/WiiFont.cpp",
+      "sha256": "1ad79cae30b829671377d9ce1e83bae8e5fd822841f240721a7e6e527959ba6f"
+    },
+    {
+      "path": "lyt/WiiFont.h",
+      "sha256": "fb5bfe43f028d5c726da5f852396e8e682aed90f3128c23c9bfc69aaac86ee05"
+    },
+    {
+      "path": "lyt/Textbox.cpp",
+      "sha256": "cff4994b5f8494d67c95c48194993e9b605ec23d2edd9e4bd574388ee1de9173"
+    }
+  ]
+}

@@ -1,0 +1,491 @@
+{
+ "note": "rc7 X-Food (revision >= 11): order-flow BRLYT static labels (DtestOrder 03-14 + product-help dialog) the earlier waves left Japanese; rendered at runtime with our Korean font (content 3) so kanji dropped out on hardware. Channel-static strings only (status badges, table headers, instructions); server values/placeholders untouched. Delta over v7+v10; kwce/food_resources.py merges v7+v10+v11 for rev>=11.",
+ "content_index": 2,
+ "layouts": {
+  "DtestOrder.arc": {
+   "Order/blyt/04_m_layout.brlyt": [
+    {
+     "pane": "04_T_btn_next_no",
+     "ja": "受付時間外です",
+     "ko": "접수 시간 외"
+    },
+    {
+     "pane": "04_T_win_fWii_01",
+     "ja": "Wiiで楽しく注文してくださいネ！",
+     "ko": "Wii로 즐겁게 주문하세요!"
+    },
+    {
+     "pane": "04_Tc_win_fIN_02",
+     "ja": "受付時間は「くわしく」を見てください",
+     "ko": "접수 시간은 「자세히」를 눌러 주세요"
+    },
+    {
+     "pane": "04_Tc_mati_00",
+     "ja": "待ち時間",
+     "ko": "대기시간"
+    },
+    {
+     "pane": "04_Tc_yaku_00",
+     "ja": "約       分",
+     "ko": "약       분"
+    },
+    {
+     "pane": "04_Tc_jun_00",
+     "ja": "時間外",
+     "ko": "시간외"
+    },
+    {
+     "pane": "04_Tc_jun_01",
+     "ja": "受付",
+     "ko": "접수"
+    },
+    {
+     "pane": "04_Tc_kyu_00",
+     "ja": "休止中",
+     "ko": "휴무중"
+    },
+    {
+     "pane": "04_Tc_ope_00",
+     "ja": "近日\nオープン",
+     "ko": "곧\n오픈"
+    },
+    {
+     "pane": "04_Tc_asu_00",
+     "ja": "受付中",
+     "ko": "접수중"
+    }
+   ],
+   "Order/blyt/04abc_m_layout.brlyt": [
+    {
+     "pane": "04c_Tc_a",
+     "ja": "住所：",
+     "ko": "주소:"
+    },
+    {
+     "pane": "04c_Tc_h",
+     "ja": "注文定休日：",
+     "ko": "정기휴일:"
+    },
+    {
+     "pane": "04c_T_holiday",
+     "ja": "年中無休",
+     "ko": "연중무휴"
+    },
+    {
+     "pane": "04c_Tc_t",
+     "ja": "注文受付時間：",
+     "ko": "접수 시간:"
+    },
+    {
+     "pane": "04c_Tc_p",
+     "ja": "配達時間指定：",
+     "ko": "배달시간 지정:"
+    },
+    {
+     "pane": "04c_T_possible",
+     "ja": "可\n",
+     "ko": "가능\n"
+    },
+    {
+     "pane": "04c_Tc_l",
+     "ja": "最低注文金額：",
+     "ko": "최소 주문액:"
+    }
+   ],
+   "Order/blyt/08_m_layout.brlyt": [
+    {
+     "pane": "08_T_pne_Cnam_02",
+     "ja": "時間制限メニュー",
+     "ko": "시간 제한 메뉴"
+    },
+    {
+     "pane": "08_T_pne_In00_02",
+     "ja": "注文できる時間がきめられています。",
+     "ko": "주문 가능한 시간이 정해져 있습니다."
+    },
+    {
+     "pane": "08_T_Sold_money",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "08h_T_txt",
+     "ja": " 種類の商品にチェックをつけてから          を押してください。",
+     "ko": " 종류의 상품에 체크한 뒤          을 눌러 주세요."
+    },
+    {
+     "pane": "08h_T_OKtxt",
+     "ja": "OKボタン",
+     "ko": "OK 버튼"
+    },
+    {
+     "pane": "08h_T_btn_noOK",
+     "ja": "2つ選んで\nください",
+     "ko": "2개 선택해\n주세요"
+    }
+   ],
+   "Order/blyt/09-1_m_layout.brlyt": [
+    {
+     "pane": "091_Tc_txt",
+     "ja": "数量",
+     "ko": "수량"
+    },
+    {
+     "pane": "091_T_Sold_money",
+     "ja": "うりきれ",
+     "ko": "품절"
+    }
+   ],
+   "Order/blyt/09-2_m_layout.brlyt": [
+    {
+     "pane": "092_T_Sold_01_nC",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "092_T_Sold_01_nR",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "092_T_Sold_00_nC",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "092_T_Sold_00_nR",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "092_T_btn_noOK",
+     "ja": "お選びください",
+     "ko": "선택해 주세요"
+    }
+   ],
+   "Order/blyt/09-3_m_layout.brlyt": [
+    {
+     "pane": "093_T_pne_name_A",
+     "ja": "数量",
+     "ko": "수량"
+    },
+    {
+     "pane": "093_T_Sold_mny_A",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "093_T_pne_Mna_b",
+     "ja": "お選びください",
+     "ko": "선택해 주세요"
+    },
+    {
+     "pane": "093_T_Sold_mny_B",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "093_T_btn_ORD_no",
+     "ja": "お選びください",
+     "ko": "선택해 주세요"
+    },
+    {
+     "pane": "093_T_Soldout_no",
+     "ja": "“うりきれ” があります",
+     "ko": "“품절” 상품이 있습니다"
+    }
+   ],
+   "Order/blyt/10_m_layout.brlyt": [
+    {
+     "pane": "10_T_men_menu",
+     "ja": "商品名",
+     "ko": "상품명"
+    },
+    {
+     "pane": "10_T_men_cost",
+     "ja": "税込単価",
+     "ko": "단가"
+    },
+    {
+     "pane": "10_T_men_qua",
+     "ja": "数量",
+     "ko": "수량"
+    },
+    {
+     "pane": "10_T_men_total",
+     "ja": "計",
+     "ko": "계",
+     "fw_scale": 0.9818
+    },
+    {
+     "pane": "10_T_Sold_op_m",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "10_T_Sold_money",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "10_T_Over_money",
+     "ja": "時間外",
+     "ko": "시간외"
+    },
+    {
+     "pane": "10_T_Sold_Tmoney",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "10_T_Over_Tmoney",
+     "ja": "時間外",
+     "ko": "시간외"
+    },
+    {
+     "pane": "10_T_Soldout_no",
+     "ja": "“うりきれ” があります",
+     "ko": "“품절” 상품이 있습니다"
+    },
+    {
+     "pane": "10_T_Overtime_no",
+     "ja": "時間外です",
+     "ko": "시간 외입니다"
+    }
+   ],
+   "Order/blyt/11_m_layout.brlyt": [
+    {
+     "pane": "11_T_Mname_00",
+     "ja": "できるだけはやく\n(ただいまの待ち時間 約     分) ",
+     "ko": "되도록 빨리\n(현재 대기 시간 약     분) "
+    },
+    {
+     "pane": "11_T_Mname_01",
+     "ja": "お届け希望時間を指定する",
+     "ko": "배달 희망 시간 지정하기"
+    }
+   ],
+   "Order/blyt/11ab_m_layout.brlyt": [
+    {
+     "pane": "11a_T_Mname",
+     "ja": "000分以降(00:00～)の\n配達可能時間内で時間を指定してください。",
+     "ko": "000분 이후(00:00~)\n배달 가능 시간 내에서 지정해 주세요."
+    },
+    {
+     "pane": "11a_Tc_name",
+     "ja": "配達可能時間：",
+     "ko": "배달 가능 시간:"
+    },
+    {
+     "pane": "11a_Tc_txt",
+     "ja": "本日　　　　　時          分ごろ",
+     "ko": "오늘　　　　　시          분쯤"
+    },
+    {
+     "pane": "11b_T_Mname_00",
+     "ja": "2000/00/00～2000/00/00までの間の日付を指定してください。\n(今日から1日以降、31日以内で予約できます)",
+     "ko": "2000/00/00~2000/00/00 사이의 날짜를 지정해 주세요.\n(오늘부터 1일 이후 31일 이내로 예약 가능)"
+    },
+    {
+     "pane": "11b_Tc_name_00",
+     "ja": "定休日：",
+     "ko": "정기휴일:",
+     "fw_scale": 0.9544
+    },
+    {
+     "pane": "11b_T_time_00",
+     "ja": "年中無休",
+     "ko": "연중무휴"
+    },
+    {
+     "pane": "11b_Tc_txt_00",
+     "ja": "　　　　　　　月          日",
+     "ko": "　　　　　　　월          일"
+    },
+    {
+     "pane": "11b_T_Mname_01",
+     "ja": "お店の配達可能時間内で時間を指定してください。",
+     "ko": "가게의 배달 가능 시간 내에서 지정해 주세요."
+    },
+    {
+     "pane": "11b_Tc_name_01",
+     "ja": "配達可能時間：",
+     "ko": "배달 가능 시간:"
+    },
+    {
+     "pane": "11b_Tc_txt_01",
+     "ja": "　　　　　　　時          分ごろ",
+     "ko": "　　　　　　　시          분쯤"
+    },
+    {
+     "pane": "11c_T_Mname_00",
+     "ja": "配達時間帯を指定してください。",
+     "ko": "배달 시간대를 지정해 주세요."
+    },
+    {
+     "pane": "11c_Tc_name_00",
+     "ja": "配達可能時間：",
+     "ko": "배달 가능 시간:"
+    }
+   ],
+   "Order/blyt/12_m_layout.brlyt": [
+    {
+     "pane": "12_T_objnm_t00",
+     "ja": "商品名１",
+     "ko": "상품명 1"
+    },
+    {
+     "pane": "12_T_price_t00",
+     "ja": "税込単価",
+     "ko": "단가"
+    },
+    {
+     "pane": "12_T_num_t00",
+     "ja": "数量",
+     "ko": "수량"
+    },
+    {
+     "pane": "12_T_prsum_t00",
+     "ja": "計",
+     "ko": "계"
+    },
+    {
+     "pane": "12_T_Sold_p_v00",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "12_T_Over_p_v00",
+     "ja": "時間外",
+     "ko": "시간외"
+    },
+    {
+     "pane": "12_T_Sold_pm_v00",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "12_T_Over_pm_v00",
+     "ja": "時間外",
+     "ko": "시간외"
+    },
+    {
+     "pane": "12_T_Sold_op_m",
+     "ja": "うりきれ",
+     "ko": "품절"
+    },
+    {
+     "pane": "12_T_subtotal_t",
+     "ja": "小計",
+     "ko": "소계"
+    },
+    {
+     "pane": "12_T_discount_t",
+     "ja": "割引",
+     "ko": "할인"
+    },
+    {
+     "pane": "12_T_shipcost_t",
+     "ja": "配達料",
+     "ko": "배달료"
+    },
+    {
+     "pane": "12_T_allsum_t",
+     "ja": "合計",
+     "ko": "합계"
+    },
+    {
+     "pane": "12_T_delivtime_t",
+     "ja": "お届け時間",
+     "ko": "배달 시간"
+    },
+    {
+     "pane": "12_T_Soldout_no",
+     "ja": "“うりきれ” があります\n変更してください",
+     "ko": "“품절” 상품이 있습니다\n변경해 주세요"
+    }
+   ],
+   "Order/blyt/14_m_layout.brlyt": [
+    {
+     "pane": "14T_tel_t",
+     "ja": "お店の電話番号",
+     "ko": "가게 전화번호"
+    },
+    {
+     "pane": "14T_sname_t",
+     "ja": "お店の名前",
+     "ko": "가게 이름"
+    },
+    {
+     "pane": "14_T_titleb",
+     "ja": "ご注文内容",
+     "ko": "주문 내용"
+    },
+    {
+     "pane": "14_T_objnm_t00",
+     "ja": "商品名１",
+     "ko": "상품명 1"
+    },
+    {
+     "pane": "14_T_price_t00",
+     "ja": "税込単価",
+     "ko": "단가"
+    },
+    {
+     "pane": "14_T_num_t00",
+     "ja": "数量",
+     "ko": "수량"
+    },
+    {
+     "pane": "14_T_prsum_t00",
+     "ja": "計",
+     "ko": "계"
+    },
+    {
+     "pane": "14_T_subtotal_t",
+     "ja": "小計",
+     "ko": "소계"
+    },
+    {
+     "pane": "14_T_discount_t",
+     "ja": "割引",
+     "ko": "할인"
+    },
+    {
+     "pane": "12_T_shipcost_t",
+     "ja": "配達料",
+     "ko": "배달료"
+    },
+    {
+     "pane": "14_T_allsum_t",
+     "ja": "合計",
+     "ko": "합계"
+    },
+    {
+     "pane": "14_T_delivtime_t",
+     "ja": "お届け時間",
+     "ko": "배달 시간"
+    }
+   ]
+  },
+  "DtestDialog.arc": {
+   "Dialog/blyt/dialogue_layout.brlyt": [
+    {
+     "pane": "dic_T_msgH_00",
+     "ja": "商品パネルの「選択ボタン」以外を\nポイントして   を押すと\n パネルの色がピンクになり   が付きます。\n(もう1度   を押すと消えます)\n\n",
+     "ko": "상품 패널의 「선택 버튼」 외의 곳을\n포인트하고   을 누르면\n 패널 색이 분홍색이 되고   가 붙습니다.\n(한 번 더   을 누르면 사라집니다)\n\n"
+    },
+    {
+     "pane": "dic_T_msgH_00a",
+     "ja": "\n\n\n\n\n“お店を選ぶ画面”に戻ると\n すべての   は消えてしまいます。",
+     "ko": "\n\n\n\n\n“가게 선택 화면”으로 돌아가면\n 모든   가 사라집니다."
+    },
+    {
+     "pane": "dic_T_msgH_01",
+     "ja": "右下の    をポイントして\n   を押すと   のある商品パネル以外は\n 表示されなくなります。\n (    で、すべての商品パネルを表示 )",
+     "ko": "오른쪽 아래의    를 포인트하고\n   을 누르면   가 있는 상품 패널 외에는\n 표시되지 않습니다.\n (    로 모든 상품 패널 표시 )"
+    }
+   ]
+  }
+ }
+}

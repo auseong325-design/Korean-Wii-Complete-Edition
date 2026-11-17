@@ -1,0 +1,4 @@
+cmake==4.4.4
+ninja==1.13.2
+pycryptodome==4.1.0
+zstandard==0.25.0

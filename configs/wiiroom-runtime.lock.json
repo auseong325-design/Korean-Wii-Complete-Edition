@@ -1,0 +1,62 @@
+{
+  "runtime_version": "2609a",
+  "capability_count": 0,
+  "external_network_allowed": false,
+  "profile": "wiiroom-test-v1-user",
+  "title_id": "000100014843494a",
+  "files": [
+    {
+      "path": "workspace/sandbox/wiiroom-test-v1/Dolphin-x64/Dolphin.exe",
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    {
+      "path": "workspace/sandbox/wiiroom-test-v1/NetProbe.exe",
+      "sha256": "faa1a0dae95b56631b530f9ee2ceffb31dbddbd0269cadc99603b7a418a0217d"
+    },
+    {
+      "path": "tools/wiiroom-sandbox/v1/bin/helper-build.json",
+      "sha256": "762aacdfb655e7b98360596341cc29e6a6ab4cf7a0a43e7c68b019d5a6180233"
+    },
+    {
+      "path": "workspace/sandbox/wiiroom-test-v1/local-feed/fixture-manifest.json",
+      "sha256": "1dd303d598738d9ade51205cecbcd2f57970e57a14e8fc77ad65b3849f548283"
+    },
+    {
+      "path": "workspace/channels/wiiroom/build-v1/build-manifest.json",
+      "sha256": "0a1a264c118495c723b14d482beb169811acdb58919dc8038f73c66241f52cdf"
+    }
+  ],
+  "builds": {
+    "1": "ea38ad3c4573d5c4d49cee140dcdc34a07bf30f0364e3d50152576ff13c4d178",
+    "2": "9942dfc5c369468a59d44f96b94c399d35d6a53e8761eba4c59f394d123ebfd2",
+    "3": "fbb27cbde39a0aea9d0d7183f7661f8a14155bcf81bfa0e1450c8faf9e27f0bf",
+    "4": "f15cc76ef4231b63e195c60fad0c318f9467f02dba8a7c4a3684635a06f17e07",
+    "5": "1ecb0cf5b48f8bd1f2355a0d0e172b7f70f1b6de8f5af7996a3c423ba878482c",
+    "6": "8a8b9a01950cddb4c4b43feb1d0ffdacf315edf3889a56318c44a40a721094f9",
+    "7": "56fcaaaa23dee2ce195eefbdf971d38659276803aa96a771c4345af001b1e7ff",
+    "8": "0f9a60881f80731f1334ebf763e3749b84c9b0ca81c6ac8150b717154f24d0d0",
+    "10": "b0817f5eb5b56086143fef4df74a8bab64f78c8862770f86a2bcaba12258ec7e",
+    "12": "fe96ae861988112a8aaa5e1851963cebd9170e8dab03759b3faf77671d3535f9",
+    "16": "24d9df955d51e1c0967d3e0c4f7368ba88260916535a0feab09a29a887beb00b",
+    "18": "a1c3e4ea3684dd645be6cd9b33009dcf0554d418897657786624ea9c0f36d7d9",
+    "20": "c1b2d25e95472a387c0b707207f760725e630c0e78377926e6e10fe9afebf1eb",
+    "22": "e6a3365590b03a61827fe5512b45b11d1c907ea3a9216495f20ef47245c5c479",
+    "24": "9852f6900b9db825bbd50a79d6ddd1f8e4422313ae3a653b8bbf8a6f835b6c1a",
+    "26": "45345f13bd93f6919d6adf022ccee6c539829eab8848815fd2cabc575f0c3786",
+    "28": "f1c6094b6476f7424a9fa27412af5569546608eaaeac62cb58f72beb3e4b4b5f",
+    "30": "9118435c88ed0a2a12f4f34963f55ccddcb82e8c09a93ada9e5bd3103b351747",
+    "32": "4e05e22dfb708e0ddd574aaf28610769004e2e89b72708b75e25cdbfe2975860",
+    "34": "a8bb8ccbfd2926e99a5a6651a6add7ab48b4e43355cc862d225a7af9d79d2b02",
+    "36": "af798762be0f2e7a3375315c7b36795477545a73767b64faf656aac75e184f67",
+    "40": "5631814ab50f1bb0e22e890054d89a090b09a2b8b664599cbd1626aa44b28001",
+    "42": "1677a900e9e8babf03bcade2f9e9a3a2ba99ee0db7134355e9c27d989cc63645",
+    "44": "3269aa3451a664969d468a3960015e0e39b90f0fc120841c29bdf044f2113d2c",
+    "46": "ecc24ac07272c53f51986329d927deea108e5ddbffdd71101d5ce6ebc739df44",
+    "50": "877cc34e03f764f102dc781f04fd920701df3bc0cdb645b2ae9ea509040750f9",
+    "52": "f473716c74c94ceb36cc19ddabd5f0f3fbab51e84a0c2bf77f89c3735f130d8c",
+    "53": "61b3a56079666adee2294c91bf18d66975b2c29d52b85f964ea702abd98bd5da",
+    "54": "329f5c70d3c7fc06c3880cb94750c070ca0562305b632ee3ca34b80ae8e41e5a",
+    "61": "9ef972f5f3e791a54efeb66ddfccf887a91eed01d75a8615545b2bbb761f25c1"
+  },
+  "debug_helper_sha256": "ea397a9e127eea591a5095c7a5fe12b549e0524d12058a72105ec0c8e7548f17"
+}

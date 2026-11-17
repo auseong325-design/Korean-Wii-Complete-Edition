@@ -1,0 +1,55 @@
+[
+  {
+    "repository": "NinjaCheetah/ASH0-tools",
+    "commit": "8ba26ecf818112c4c73c74a540b8000a2de3c4df",
+    "tree": "3291e941248300aa2b334e1677469b13102d456f",
+    "files": [
+      {
+        "path": "Compressor/main.c",
+        "sha256": "640f2e5561508c51462f9c621a4ac190a85a043f302b1bad92ad4b8edcc41ec8"
+      },
+      {
+        "path": "Decompressor/main.c",
+        "sha256": "8f559626d4fa41144f5b871c677357e53c98d5890d363324ed4fdea5521ed0d7"
+      },
+      {
+        "path": "LICENSE",
+        "sha256": "515013b3b3296131370ad4b3b942bb4bb88ba988041de4d0a109707bd679374b"
+      },
+      {
+        "path": "README.md",
+        "sha256": "b0ef42402c12655c8123a1107282acb60046770a5637364c732573fb66287f32"
+      }
+    ]
+  },
+  {
+    "repository": "NinjaCheetah/libWiiPy",
+    "commit": "71ad5b90c659d8a6475c8015e7ea5719d61a1cbb",
+    "tree": "cae23174b09aa87d242d1a348b7aec306a317914",
+    "files": [
+      {
+        "path": "src/libWiiPy/archive/ash.py",
+        "sha256": "98921b4fdd81cea5dab33492548ee633a0839b0258bdc38557a944114acfd4a5"
+      },
+      {
+        "path": "src/libWiiPy/archive/u8.py",
+        "sha256": "fcae9b8a2233c3c58a4a5fd521e6db17faa96a447c4ebab2d5efc72c0fc9b952"
+      }
+    ]
+  },
+  {
+    "repository": "DacoTaco/priiloader",
+    "commit": "45eaa45d091f1e4f4b7dd1d01a9c409a8de34e3e",
+    "tree": "536f98725a1618f0ef62c94baa9d8c890fd09ecd",
+    "files": [
+      {
+        "path": "src/priiloader/hacks_hash.ini",
+        "sha256": "6581dc4fb3f7f6d0cb559378f1a5126f03210dd14fc723932e4835793f8e05b7"
+      },
+      {
+        "path": "tools/HashGenerator/HashGenerator.cpp",
+        "sha256": "e1a5022556cf39d8afdf618a5096165ad79a3d90dbe73463452a3cf9cab628ad"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1157 @@
+{
+ "schema": 1,
+ "source": "USA Mii Contest manual US.szs images; boxes detected from the original gray callouts; terms follow mii-contest-reviewed-ko.json",
+ "images": {
+  "ukv/page_02/page2.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      5,
+      161,
+      241,
+      190
+     ],
+     "text": "Mii 장인 등록 취소",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      317,
+      221,
+      531,
+      250
+     ],
+     "text": "Mii 넘겨 보기",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    }
+   ]
+  },
+  "ukv/page_03/page3.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      161,
+      221,
+      190
+     ],
+     "text": "Wii 메뉴로 돌아가기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      206,
+      221,
+      235
+     ],
+     "text": "Mii 장인 정보 보기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      251,
+      221,
+      280
+     ],
+     "text": "설정 변경 (14쪽 참조)",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      288,
+      24,
+      522,
+      196
+     ],
+     "capture": "main-menu-title.png",
+     "keep_red": true,
+     "overlay_box": [
+      0.94,
+      0,
+      1,
+      0.11
+     ],
+     "overlay_fill": "mirror"
+    }
+   ],
+   "palette_colors": 256
+  },
+  "ukv/page_04/page4.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      3,
+      221,
+      32
+     ],
+     "text": "도움말 보기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      321,
+      48,
+      535,
+      77
+     ],
+     "text": "Mii 게시 (5쪽 참조)",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      321,
+      100,
+      535,
+      129
+     ],
+     "text": "퍼레이드 / 정렬",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      321,
+      152,
+      535,
+      181
+     ],
+     "text": "검색 지역 변경",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      321,
+      204,
+      535,
+      233
+     ],
+     "text": "Mii 바꾸기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      321,
+      256,
+      535,
+      285
+     ],
+     "text": "Mii 불러오기 (6쪽 참조)",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      290,
+      221,
+      319
+     ],
+     "text": "메인 메뉴로 돌아가기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      17,
+      64,
+      251,
+      240
+     ],
+     "capture": "plaza.png",
+     "keep_red": true,
+     "overlay_box": [
+      0.83,
+      0,
+      1,
+      0.075
+     ],
+     "overlay_fill": "mirror"
+    }
+   ],
+   "palette_colors": 256
+  },
+  "ukv/page_06/page6.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      276,
+      3,
+      534,
+      32
+     ],
+     "text": "인기 Mii 불러오기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      73,
+      221,
+      102
+     ],
+     "text": "상위 50 불러오기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      121,
+      221,
+      150
+     ],
+     "text": "무작위 Mii",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      169,
+      221,
+      198
+     ],
+     "text": "즐겨찾기 불러오기 (8쪽 참조)",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      217,
+      221,
+      246
+     ],
+     "text": "메뉴 닫기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      265,
+      221,
+      294
+     ],
+     "text": "Mii 검색",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      315,
+      245,
+      344
+     ],
+     "text": "Mii 장인 순위 (7쪽 참조)",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      276,
+      349,
+      534,
+      378
+     ],
+     "text": "내가 게시한 Mii 보기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      288,
+      64,
+      522,
+      240
+     ],
+     "capture": "plaza-callout.png",
+     "keep_red": true,
+     "overlay_box": [
+      0.83,
+      0,
+      1,
+      0.075
+     ],
+     "overlay_fill": "mirror"
+    }
+   ],
+   "palette_colors": 256
+  },
+  "ukv/page_07/page7.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      21,
+      221,
+      71
+     ],
+     "text": "지난 순위와 비교한\n순위 변동",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      87,
+      221,
+      116
+     ],
+     "text": "Mii 장인 순위",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      156,
+      221,
+      185
+     ],
+     "text": "게시 광장으로 돌아가기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      317,
+      221,
+      531,
+      250
+     ],
+     "text": "위아래로 스크롤",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      288,
+      24,
+      522,
+      196
+     ],
+     "capture": "artisan-ranking.png",
+     "keep_red": true,
+     "overlay_box": [
+      0.83,
+      0,
+      1,
+      0.075
+     ],
+     "overlay_fill": "mirror"
+    }
+   ],
+   "palette_colors": 256
+  },
+  "ukv/page_08/page8.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      321,
+      5,
+      535,
+      34
+     ],
+     "text": "프로필 보기",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      321,
+      57,
+      535,
+      86
+     ],
+     "text": "Mii 채널로 Mii 데려오기",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      321,
+      109,
+      535,
+      138
+     ],
+     "text": "이 Mii를 즐겨찾기에 등록",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      321,
+      161,
+      535,
+      190
+     ],
+     "text": "Mii 친구 부르기",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      229,
+      221,
+      258
+     ],
+     "text": "게시 광장으로 돌아가기",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      17,
+      26,
+      251,
+      202
+     ],
+     "capture": "mii-detail.png",
+     "keep_red": true,
+     "overlay_box": [
+      0.83,
+      0,
+      1,
+      0.075
+     ],
+     "overlay_fill": "mirror"
+    }
+   ],
+   "palette_colors": 256
+  },
+  "ukv/page_09/page9.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      322,
+      9,
+      536,
+      38
+     ],
+     "text": "진행 중인 콘테스트",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      322,
+      54,
+      536,
+      83
+     ],
+     "text": "심사 중인 콘테스트",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      322,
+      99,
+      536,
+      128
+     ],
+     "text": "콘테스트 결과",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      322,
+      185,
+      536,
+      214
+     ],
+     "text": "위아래로 스크롤",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      322,
+      270,
+      536,
+      299
+     ],
+     "text": "메인 메뉴로 돌아가기",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      17,
+      84,
+      251,
+      260
+     ],
+     "capture": "contest-list-scroll.png",
+     "keep_red": true,
+     "overlay_box": [
+      0.94,
+      0,
+      1,
+      0.11
+     ],
+     "overlay_fill": "mirror",
+     "red_exclude": [
+      [
+       25,
+       125,
+       70,
+       170
+      ],
+      [
+       150,
+       196,
+       251,
+       240
+      ],
+      [
+       52,
+       84,
+       65,
+       97
+      ]
+     ],
+     "lines": [
+      [
+       [
+        251,
+        200
+       ],
+       [
+        175,
+        200
+       ],
+       [
+        175,
+        216
+       ]
+      ],
+      [
+       [
+        155,
+        216
+       ],
+       [
+        195,
+        216
+       ]
+      ],
+      [
+       [
+        155,
+        216
+       ],
+       [
+        155,
+        229
+       ]
+      ],
+      [
+       [
+        195,
+        216
+       ],
+       [
+        195,
+        229
+       ]
+      ],
+      [
+       [
+        58,
+        84
+       ],
+       [
+        58,
+        107
+       ]
+      ]
+     ],
+     "dots": [
+      [
+       155,
+       229
+      ],
+      [
+       195,
+       229
+      ],
+      [
+       58,
+       109
+      ]
+     ]
+    }
+   ],
+   "palette_colors": 256
+  },
+  "ukv/page_11/page11.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      322,
+      45,
+      536,
+      74
+     ],
+     "text": "심사 그만두기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      322,
+      161,
+      536,
+      190
+     ],
+     "text": "Mii 바꾸기",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      322,
+      206,
+      536,
+      255
+     ],
+     "text": "앞으로 골라야 할\nMii 수",
+     "fill": [
+      146,
+      146,
+      146
+     ],
+     "size": 18,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      17,
+      24,
+      251,
+      196
+     ],
+     "capture": "judging-selection.png",
+     "keep_red": true,
+     "overlay_box": [
+      0.83,
+      0,
+      1,
+      0.075
+     ],
+     "overlay_fill": "mirror"
+    }
+   ],
+   "palette_colors": 256
+  },
+  "ukv/page_12/page12.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      61,
+      221,
+      132
+     ],
+     "text": "다른 사람들이 내 Mii를\n높게 평가할수록 내 Mii가\n더 높이 올라갑니다.",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      317,
+      221,
+      531,
+      250
+     ],
+     "text": "바로 결과 보기",
+     "fill": [
+      147,
+      147,
+      147
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      302,
+      31,
+      378,
+      41
+     ],
+     "text": "출품한 Mii",
+     "fill": {
+      "sample": [
+       385,
+       36
+      ]
+     },
+     "color": [
+      60,
+      60,
+      60
+     ],
+     "size": 10,
+     "weight": 500
+    }
+   ]
+  },
+  "ukv/page_13/page13.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      5,
+      181,
+      27
+     ],
+     "text": "Wii 리모컨 비틀기",
+     "fill": [
+      144,
+      144,
+      144
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      34,
+      181,
+      57
+     ],
+     "text": "Mii 회전",
+     "fill": [
+      144,
+      144,
+      144
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      72,
+      181,
+      117
+     ],
+     "text": "Wii 리모컨을\nTV 쪽으로 움직이기",
+     "fill": [
+      144,
+      144,
+      144
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      359,
+      74,
+      533,
+      98
+     ],
+     "text": "포즈 바꾸기",
+     "fill": [
+      144,
+      144,
+      144
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      124,
+      181,
+      147
+     ],
+     "text": "Mii 확대",
+     "fill": [
+      144,
+      144,
+      144
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      359,
+      151,
+      533,
+      174
+     ],
+     "text": "Mii 붙이기",
+     "fill": [
+      144,
+      144,
+      144
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      162,
+      181,
+      208
+     ],
+     "text": "Wii 리모컨을\nTV에서 멀리 당기기",
+     "fill": [
+      144,
+      144,
+      144
+     ],
+     "size": 18,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      215,
+      181,
+      238
+     ],
+     "text": "Mii 축소",
+     "fill": [
+      144,
+      144,
+      144
+     ],
+     "size": 18,
+     "weight": 500
+    }
+   ]
+  },
+  "img/master_artisan.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      12,
+      4,
+      166,
+      22
+     ],
+     "text": "최고의 Mii 장인",
+     "fill": [
+      220,
+      120,
+      20
+     ],
+     "size": 16,
+     "weight": 700
+    }
+   ]
+  },
+  "img/new_master_l.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      22,
+      4,
+      63,
+      21
+     ],
+     "text": "신규!",
+     "fill": [
+      220,
+      120,
+      20
+     ],
+     "size": 16,
+     "weight": 700
+    }
+   ]
+  },
+  "img/new_master_r.png": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      17,
+      4,
+      60,
+      21
+     ],
+     "text": "신규!",
+     "fill": [
+      220,
+      120,
+      20
+     ],
+     "size": 16,
+     "weight": 700
+    }
+   ]
+  },
+  "img/CHM_common_source/back_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/back_button.png"
+  },
+  "img/CHM_common_source_ro/back_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/back_button_ro.png"
+  },
+  "img/CHM_common_source/forward_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/forward_button.png"
+  },
+  "img/CHM_common_source_ro/forward_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/forward_button_ro.png"
+  },
+  "img/CHM_common_source/return_index_button_s_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/return_index_button_s.png"
+  },
+  "img/CHM_common_source_ro/return_index_button_s_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/return_index_button_s_ro.png"
+  },
+  "img/CHM_common_source/return_index_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/return_index_button.png",
+   "align": "right"
+  },
+  "img/CHM_common_source_ro/return_index_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/return_index_button_ro.png",
+   "align": "right"
+  }
+ }
+}

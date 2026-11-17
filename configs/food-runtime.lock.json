@@ -1,0 +1,74 @@
+{
+  "profile": "food-test-v1-user",
+  "title_id": "000100014843484a",
+  "capability_count": 0,
+  "external_network_allowed": false,
+  "files": [
+    {
+      "path": "workspace/sandbox/food-test-v1/Dolphin-x64/Dolphin.exe",
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    {
+      "path": "workspace/sandbox/food-test-v1/NetProbe.exe",
+      "sha256": "faa1a0dae95b56631b530f9ee2ceffb31dbddbd0269cadc99603b7a418a0217d"
+    },
+    {
+      "path": "workspace/sandbox/food-test-v1/local-feed/fixture-manifest.json",
+      "sha256": "0407fb075132fca84ecf2e7b8f4e36ee349ebf2301fba34c538195d6cdf86b77"
+    },
+    {
+      "path": "tools/food-sandbox/v2/bin/FoodRunner.cs",
+      "sha256": "7be005b24467d0914fe905f1d62462a8e4c105945d0bc9107d10b237b8f96fa4"
+    },
+    {
+      "path": "tools/food-sandbox/v2/bin/FoodRunner.exe",
+      "sha256": "b194281d5d9289705ea4c1dc264b467f7307ee68acaf4b7b654e8eb5780b01b6"
+    },
+    {
+      "path": "tools/food-sandbox/v2/bin/FoodServer.cs",
+      "sha256": "e9b9006d444db46c12c644e8ee4ae348e3f51737acff448ea1b14266a553acc7"
+    },
+    {
+      "path": "tools/food-sandbox/v2/bin/FoodServer.exe",
+      "sha256": "8a59af3636c10f6beffa214be9c4f0a5fe56a1ccd941f5a3b761557323f8b684"
+    }
+  ],
+  "builds": {
+    "1": "e5e546de4a18404385a50293853d68f15d381764e8e5f0ed6dd9ac9493e0fe6d",
+    "2": "d9655bbc0cadaa6f557274711d05c7eb55583062374adbee0c916752b602aac4",
+    "3": "50e7c6489add2cd93ce99297f5fa1f46a659e2f1fdd590c2b2777237bed8b430",
+    "4": "9e9102336127f63768ba5163b9cd89a7a3c8e2225882d68f156b9014f31b169b",
+    "7": "8b259facbfb4fcc987c2e6288fc6b08c5c850acf5659b2d335ba20646b04dbc5",
+    "8": "176a28ccb2b7d3aa4d5f7958aa820651604f2d7ad9905ffe1bc10ea8adb99df9",
+    "9": "f1a254c515a1a605b006976ffcf09445664e12f6a8b152d78b511e4e4211eaf4",
+    "10": "8a361e27c15b51c5db162d52a787263ee0a34f95363ffb47ccfbd6111b22877a",
+    "12": "b104d47a9915ebfa29a7586100ef0e37ae5799292fb7bcabced717d9a416efb7",
+    "13": "156e46ed6e1546fdea56016d89d851bfeb3a04f358ca178093ec178c4c8a6de9",
+    "justeat-uk-1": "7d8ce8b903184434c2b2ed3d6767da8f324928f96eccfd08e759e7ff6b1b776e",
+    "dominos-us-1": "ae13698dd358ba1285cf3d02c1b14dc8d6dd292e414ab3f7086af835fd9e41f1",
+    "dominos-us-2": "a337baffd4d5fba756cc8293a6903641dd42a40f00c059933a19ce2aed898a5d"
+  },
+  "personal_data": {
+    "spd_title": "000100084843434a",
+    "spd_revision": 2,
+    "spd_wad_sha256": "db968ff1e21d54c12f396d99270f7a4249076fd9ea56b2fbe4f4b606fc06ffcb",
+    "spd_title_version": 512,
+    "pd_path": "/title/00010008/4843434a/data/nocopy/pd.dat",
+    "pd_installed": true,
+    "pd_variant": "korean-spd",
+    "pd_sha256": "416e1a28c1597303c15e3d7eaaccb66e19f2ecec5666400011e391311457e9c3",
+    "device_id": "Dolphin public DEFAULT_DEVICE_ID",
+    "fictional": true,
+    "fields": {
+      "home_address_set": true,
+      "kana_set": true,
+      "phone_digits": 10,
+      "zip_digits": 5,
+      "pin_protected": false,
+      "sjis_encodable": false
+    }
+  },
+  "helper": "tools/food-sandbox/v2/bin",
+  "helper_revision": 2,
+  "feed_revision": 7
+}

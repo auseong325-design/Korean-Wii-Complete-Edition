@@ -1,0 +1,26 @@
+{
+ "note": "build-v4 textures (content 2). mode=label: text-only on transparent, full Korean replace (outline). mode=header: text-only, left-aligned. mode=tile: RGBA8 food-photo tile, Korean composited over the right text band, PHOTO PRESERVED (no character/photo redrawn). Glyph-checked against Korean wbf1. Placement is [미검증 in Dolphin]. ja = stock baked text for verification via the proof sheet.",
+ "textures": {
+  "DtestOrder.arc": {
+   "Order/timg/02_obi.tpl":            {"mode": "header", "ja": "何を注文しますか?", "ko": "무엇을 주문할까요?"},
+   "Order/timg/02a_obi.tpl":           {"mode": "header", "ja": "何を予約しますか?", "ko": "무엇을 예약할까요?"},
+   "Order/timg/02_btn_menu_NOdata.tpl":{"mode": "label",  "ja": "出前チャンネル", "ko": "음식 배달 채널"},
+   "Order/timg/02_btn_menu_piz.tpl":   {"mode": "tile", "ja": "ピザ", "ko": "피자"},
+   "Order/timg/02_btn_menu_ben.tpl":   {"mode": "tile", "ja": "弁当", "ko": "도시락"},
+   "Order/timg/02_btn_menu_sushi.tpl": {"mode": "tile", "ja": "すし", "ko": "초밥"},
+   "Order/timg/02_btn_menu_wa.tpl":    {"mode": "tile", "ja": "和食", "ko": "일식"},
+   "Order/timg/02_btn_menu_tyu.tpl":   {"mode": "tile", "ja": "中華", "ko": "중식"},
+   "Order/timg/02_btn_menu_you.tpl":   {"mode": "tile", "ja": "洋食", "ko": "양식"},
+   "Order/timg/02_btn_menu_fast.tpl":  {"mode": "tile", "ja": "ファーストフード", "ko": "패스트푸드"},
+   "Order/timg/02_btn_menu_curry.tpl": {"mode": "tile", "ja": "カレー", "ko": "카레"},
+   "Order/timg/02_btn_menu_party.tpl": {"mode": "tile", "ja": "仕出し・パーティ", "ko": "출장·파티"},
+   "Order/timg/02_btn_menu_drink.tpl": {"mode": "tile", "ja": "デザート・ドリンク", "ko": "디저트·음료"},
+   "Order/timg/02_btn_menu_etc.tpl":   {"mode": "tile", "ja": "その他", "ko": "기타"},
+   "Order/timg/02_btn_menu_request.tpl":{"mode": "tile", "x0": 0.24, "ja": "お店のリクエスト", "ko": "가게 요청"},
+   "Order/timg/02_btn_menu_asu.tpl":   {"mode": "tile", "x0": 0.18, "ja": "明日以降の予約はこちら", "ko": "내일 이후 예약은 여기"}
+  },
+  "DtestTitle.arc": {
+   "Title/timg/01_title_obi.tpl":  {"mode": "header", "ja": "出前チャンネル", "ko": "음식 배달 채널"}
+  }
+ }
+}

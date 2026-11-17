@@ -1,0 +1,44 @@
+{
+  "schema": 1,
+  "polls": 300,
+  "channels": {
+    "news": {
+      "cave": "0x801e0120",
+      "cave_size": 2304,
+      "ioctl": "0x8007c194",
+      "close": "0x8007c160",
+      "ioctl_async": "0x801326c0",
+      "close_async": "0x80131f80",
+      "disable": "0x80103024",
+      "restore": "0x8010304c",
+      "sleep": "0x80106dd0",
+      "cave_sha256": "202481c0e30ec3515bef5367228bac6491d254cbe0d36b1502c0469eae22ac6c",
+      "ioctl_sha256": "847c63051663aba7127b0660e64b571d38e6af1425a1c976579b191ac399629a",
+      "close_sha256": "218f7f3f585ade1cd29d7b9df6cf6320eb158e1202797911c59ae04173d17254",
+      "ioctl_async_sha256": "5438dbae757ce78df9800741369e8aea0ee25c939954d2062a2e6ef3682a9225",
+      "close_async_sha256": "e45c025da6838143bf03f0aac2919cc04fea5e0e373550fd56587cefaf5593e2",
+      "disable_sha256": "021ea74286832dea68a2f302b984fb1cfaf0d8c109eb2daee8ba5c8ef6008666",
+      "restore_sha256": "6c98008cee56582d40b1cc302a6c2c4779d3beac5613e31393a3e3017d36cfab",
+      "sleep_sha256": "6f5bf7d409008b7f1e7b53bbc1664e788dac39bbd0a5e1dadf8e209e6520d065"
+    },
+    "wiiroom": {
+      "cave": "0x80834800",
+      "cave_size": 3072,
+      "ioctl": "0x803b5760",
+      "close": "0x803b572c",
+      "ioctl_async": "0x80311e00",
+      "close_async": "0x803116a0",
+      "disable": "0x802d6e10",
+      "restore": "0x802d6e50",
+      "sleep": "0x802db310",
+      "cave_sha256": "3cfc207a440b6c2503aa6848a8f0f1d5664c32e7cf815d2f1f600bf4eb55e2a5",
+      "ioctl_sha256": "71552dbef0260ccd6a34680e13bc67d4b517d2f4b2279d828d2417a5915d7905",
+      "close_sha256": "e1d986e55d1ddd8ed913617c523fa853db46f303461e01bdf8bcd1961b4ab98c",
+      "ioctl_async_sha256": "a2f958638848662767a6723edca309a41d83594d09423593122987aaa4696afd",
+      "close_async_sha256": "e45c025da6838143bf03f0aac2919cc04fea5e0e373550fd56587cefaf5593e2",
+      "disable_sha256": "021ea74286832dea68a2f302b984fb1cfaf0d8c109eb2daee8ba5c8ef6008666",
+      "restore_sha256": "6c98008cee56582d40b1cc302a6c2c4779d3beac5613e31393a3e3017d36cfab",
+      "sleep_sha256": "6f5bf7d409008b7f1e7b53bbc1664e788dac39bbd0a5e1dadf8e209e6520d065"
+    }
+  }
+}

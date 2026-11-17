@@ -1,0 +1,7 @@
+{
+  "repository": "https://github.com/AlexanderHarrison/tm_replay",
+  "commit": "fe4063cad99bb4b1432ff54c3553cc76a72dc59d",
+  "path": "obfuscation.c",
+  "sha256": "97211472b6eea7daf6f66c95ae209145133e1752f013858e92b09086887b1449",
+  "use": "local copied-buffer checksum validation only; no data upload"
+}

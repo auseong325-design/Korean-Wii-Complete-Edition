@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "base_revision": 15,
+  "executable_sha256": "6acfcd658c35a435371231137d1712f93335ad97029d16fd49641c90cb2f84db",
+  "cave_sha256": "8c6feeeb542c72be75117d58a880a9e1374c609f4109dfc61b44bfaf2391dde0",
+  "retry_limit": 300,
+  "retry_sleep_milliseconds": 100
+}

@@ -1,0 +1,679 @@
+{
+ "note": "Official bases for the KWCE public patcher. WiiLink entries follow WiiLink-Patcher-GUI v1.5.3 data/patches.json (MPL-2.0, 2f2753344d8378daa3a1a64c419943fc4ec1208f). wad_sha256 = libWiiPy dump of the rebuilt title; filled in by scripts/build_public_bundle.py when missing.",
+ "sysmenu": "System Menu 4.3K",
+ "bases": {
+  "Forecast Channel (USA)": {
+   "title_id": "0001000248414645",
+   "version": 7,
+   "patch_folder": "forecast",
+   "patches": [
+    {
+     "patch_name": "Forecast_1",
+     "content_id": 1
+    },
+    {
+     "patch_name": "Forecast_5",
+     "content_id": 5
+    }
+   ],
+   "additional_files": [],
+   "source": "nus+wiilink",
+   "wad_sha256": "2533c9f55478fa60027726f268ba5a4408b65956fe2122edc556a9e0c709e7b7",
+   "contents": [
+    "868c5e7fd88b6dcef3168c9f510ebba59b667bdb",
+    "68539a04de5db5dbb4e293245fac71ecf2c0eecf",
+    "f5dd17b3200dd4d6be2b25b577c99e5f941b7324",
+    "32b339cbbb507d502779259a7866995d030b1d88",
+    "3f06fa01562e3c3452bafc19faba7c24fd336c64",
+    "7473a9836e6fcb8135d8d97dab3cf2745a883f6c",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "9f43cba39269655819f49e9e47dae734ffc03ec7",
+    "e9b051e1b4b8282a8384e88ebd3fa90fa0fe124f",
+    "3d12c2cac0395d2b4de24b5d31adec0158dd70e8",
+    "33ac4d5a49137e8730ea463a4c83626cf2809f4a"
+   ]
+  },
+  "News Channel (USA)": {
+   "title_id": "0001000248414745",
+   "version": 7,
+   "patch_folder": "news",
+   "patches": [
+    {
+     "patch_name": "News_1",
+     "content_id": 1
+    }
+   ],
+   "additional_files": [],
+   "source": "nus+wiilink",
+   "wad_sha256": "03d8fd558aa396787622a616b768752715da6d48bbdb6cac4b98a2a33848a305",
+   "contents": [
+    "f2926539bb6a0592435b9ed7854ce858ef712033",
+    "b738731413a52ece2487193da0ccce947ebededd",
+    "f5dd17b3200dd4d6be2b25b577c99e5f941b7324",
+    "32b339cbbb507d502779259a7866995d030b1d88",
+    "a097c92839270470aaa51396b758ff65b2d1aedc",
+    "310a965fb2ea8068f3cc0806b51689d721cae6e6",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "9f43cba39269655819f49e9e47dae734ffc03ec7",
+    "331c506e42fd626ee18b8b81bc481bb453753e1a",
+    "bc8f38c22eee0288593bcb8619908743c9028aa9",
+    "33ac4d5a49137e8730ea463a4c83626cf2809f4a"
+   ]
+  },
+  "Nintendo Channel (USA)": {
+   "title_id": "0001000148415445",
+   "version": 1792,
+   "patch_folder": "nc",
+   "patches": [
+    {
+     "patch_name": "NC_1_USA",
+     "content_id": 1
+    }
+   ],
+   "additional_files": [
+    "ticket"
+   ],
+   "source": "nus+wiilink",
+   "wad_sha256": "a3b405a9b5fe351be1e6c518011be9d128df9c223fdd8264512eddd64774f111",
+   "contents": [
+    "3d369cf91adc54c63dabd5e55e8bde173abb1171",
+    "0efc0fcb1064bbd9f17ae727ab3d13e9d07a734e",
+    "9e843d3366d862ef827b15316faf18679e43bf77",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "d80a8d8258b7995b23c12c3a445b30c75b626b18",
+    "8c54f5790032f6858b1845a29471496b3ff43807",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "293d734260ac99f4d3de75310a7d273466f6be08",
+    "534d2952fe2f664370d8364b9a0a0d1f55a05931",
+    "7df43aafd47085f928047d7704494ec7fafa92b7"
+   ]
+  },
+  "Everybody Votes Channel (USA)": {
+   "title_id": "0001000148414a45",
+   "version": 512,
+   "patch_folder": "evc",
+   "patches": [
+    {
+     "patch_name": "EVC_1_USA",
+     "content_id": 1
+    }
+   ],
+   "additional_files": [
+    "ticket"
+   ],
+   "source": "nus+wiilink",
+   "wad_sha256": "289d057316a324e18de8411f98e54ee8bc45e2ece249133c29b44843ed8987ae",
+   "contents": [
+    "a716727ce3677d65c6222d66a00521c39e4c1807",
+    "c8b98788ae14f7fda26124822ad532ab8c35db57",
+    "f5dd17b3200dd4d6be2b25b577c99e5f941b7324",
+    "32b339cbbb507d502779259a7866995d030b1d88",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "ca6129759ab6eff63fd16d626ccb5bccc4554303",
+    "ef7739db27aa22e68d35dcc3dd3f89effaf91187",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "802d897077d5b8dd0bf9a57f87abd626c082d303",
+    "94cd75a7071c5f09eac8f9640aec07ea1851a972",
+    "293d734260ac99f4d3de75310a7d273466f6be08",
+    "08ae0bbeb4c18c75f464be9e315f014fdc2257f5",
+    "33ac4d5a49137e8730ea463a4c83626cf2809f4a"
+   ]
+  },
+  "Check Mii Out Channel (USA)": {
+   "title_id": "0001000148415045",
+   "version": 512,
+   "patch_folder": "cmoc",
+   "patches": [
+    {
+     "patch_name": "CMOC_1_USA",
+     "content_id": 1
+    },
+    {
+     "patch_name": "CMOC_4_USA",
+     "content_id": 4
+    }
+   ],
+   "additional_files": [
+    "ticket"
+   ],
+   "source": "nus+wiilink",
+   "wad_sha256": "ca2cb2cf215dc563f4a1e070892dfc211994755a824b88dc9ed7bec3f8fa4603",
+   "contents": [
+    "8e0d755210182f3d9a08082a23dc81eb06e0edc6",
+    "daeaa350e664cd661a1be763d852cde884fab570",
+    "f5dd17b3200dd4d6be2b25b577c99e5f941b7324",
+    "32b339cbbb507d502779259a7866995d030b1d88",
+    "62d6b53545f4beac2e5c77c6b7878b0f9710e0e0",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "f914319d946195f4da57a58ddbc373be873c1993",
+    "6f4c46e3c5723a778a16c61b9089b37f9d70f7d5"
+   ]
+  },
+  "Wii no Ma (Japanese)": {
+   "title_id": "000100014843494a",
+   "version": 1025,
+   "patch_folder": "WiinoMa",
+   "patches": [
+    {
+     "patch_name": "WiinoMa_1_Universal",
+     "content_id": 1
+    },
+    {
+     "patch_name": "WiinoMa_2_Japan",
+     "content_id": 2
+    }
+   ],
+   "additional_files": [],
+   "source": "nus+wiilink",
+   "wad_sha256": "d152646051442f8a93857f48e22ce9a615e0067c7b363f118f30f6fab56cf96f",
+   "contents": [
+    "d3ff61200dc68d00cb308565ef460ec01a517c65",
+    "102c491187313cab39dc800e99473456076acff2",
+    "d011b8daee8b49154885d42467c419524a6203f4",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "29c4cbe7f54a78a5e18d7a12c90e6b92103f7e45",
+    "4023156b2eae65ea3ded7d7a037c95a43eb50663",
+    "92c2983822c0b80b1ab7cf3e58e88b6593bf1934",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "f5dd17b3200dd4d6be2b25b577c99e5f941b7324",
+    "32b339cbbb507d502779259a7866995d030b1d88",
+    "74b4f0477e72d798dbece480710139f22f6ae339",
+    "a16de698aa707fb757d0a00783386af52700c09f",
+    "14b9a809588e37ef2bcbacdb1092255e89b4cb1f"
+   ]
+  },
+  "Wii Room (English)": {
+   "title_id": "000100014843494a",
+   "version": 1025,
+   "patch_folder": "WiinoMa",
+   "patches": [
+    {
+     "patch_name": "WiinoMa_0_Universal",
+     "content_id": 0
+    },
+    {
+     "patch_name": "WiinoMa_1_Universal",
+     "content_id": 1
+    },
+    {
+     "patch_name": "WiinoMa_2_English",
+     "content_id": 2
+    }
+   ],
+   "additional_files": [
+    "tmd"
+   ],
+   "source": "nus+wiilink",
+   "wad_sha256": "533ac68bc2b7267e52a18c48acf423c3f86c1e97641962d62a1991c630457d8c",
+   "contents": [
+    "e4a3cf1fd1c9d1ffb5f9b3d57498e09b254620fe",
+    "102c491187313cab39dc800e99473456076acff2",
+    "c25a145a366de84d41482663c52362ff761e8100",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "29c4cbe7f54a78a5e18d7a12c90e6b92103f7e45",
+    "4023156b2eae65ea3ded7d7a037c95a43eb50663",
+    "92c2983822c0b80b1ab7cf3e58e88b6593bf1934",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "f5dd17b3200dd4d6be2b25b577c99e5f941b7324",
+    "32b339cbbb507d502779259a7866995d030b1d88",
+    "74b4f0477e72d798dbece480710139f22f6ae339",
+    "a16de698aa707fb757d0a00783386af52700c09f",
+    "14b9a809588e37ef2bcbacdb1092255e89b4cb1f"
+   ]
+  },
+  "Digicam Print Channel (Japanese)": {
+   "title_id": "000100014843444a",
+   "version": 1024,
+   "patch_folder": "Digicam",
+   "patches": [
+    {
+     "patch_name": "Digicam_1_Japan",
+     "content_id": 1
+    }
+   ],
+   "additional_files": [],
+   "source": "nus+wiilink",
+   "wad_sha256": "d68c0b3d7c23f0da69dce43f2c6e6acc4d5549dfb6d2f76022c47320c44a2f2a",
+   "contents": [
+    "cdd6104c7fbc8966fde5eedbe130753db1778f65",
+    "b9094afc6ca61158bd1d363a7a93a46c2d8a2413",
+    "5713c9236aad4979c3b81a6fbf1c634b7ea59bdb",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "58bc7425b15719b6ddf78c90d62a006e0f97e5c7",
+    "18855e53f5fc9514779d074ae15271a754a7b04f",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "29c4cbe7f54a78a5e18d7a12c90e6b92103f7e45",
+    "4023156b2eae65ea3ded7d7a037c95a43eb50663",
+    "92c2983822c0b80b1ab7cf3e58e88b6593bf1934",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "04bef1b5db32674f6af0eaacc9b1f6eb5927351e"
+   ]
+  },
+  "Photo Prints Channel (English)": {
+   "title_id": "000100014843444a",
+   "version": 1024,
+   "patch_folder": "Digicam",
+   "patches": [
+    {
+     "patch_name": "Digicam_0_English",
+     "content_id": 0
+    },
+    {
+     "patch_name": "Digicam_1_English",
+     "content_id": 1
+    },
+    {
+     "patch_name": "Digicam_2_English",
+     "content_id": 2
+    }
+   ],
+   "additional_files": [
+    "tmd"
+   ],
+   "source": "nus+wiilink",
+   "wad_sha256": "50cd5bffea1aa43182ed85295b109a1c8eb23b7eebbb2005b22530a80c017268",
+   "contents": [
+    "580e0faaf16fc98c3eb5c58bb4769aca87bc543f",
+    "b9094afc6ca61158bd1d363a7a93a46c2d8a2413",
+    "c44a774b570f535c509c1a91876ed6730ac00fff",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "58bc7425b15719b6ddf78c90d62a006e0f97e5c7",
+    "18855e53f5fc9514779d074ae15271a754a7b04f",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "29c4cbe7f54a78a5e18d7a12c90e6b92103f7e45",
+    "4023156b2eae65ea3ded7d7a037c95a43eb50663",
+    "92c2983822c0b80b1ab7cf3e58e88b6593bf1934",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "04bef1b5db32674f6af0eaacc9b1f6eb5927351e"
+   ]
+  },
+  "Demae Channel (Standard) (Japanese)": {
+   "title_id": "000100014843484a",
+   "version": 512,
+   "patch_folder": "Demae",
+   "patches": [
+    {
+     "patch_name": "Demae_1_Japan",
+     "content_id": 1
+    }
+   ],
+   "additional_files": [],
+   "source": "nus+wiilink",
+   "wad_sha256": "9b1f52a3103b4a64cc1dd3730b7834ed348949a50cd871bbb74b42c55a2fffa6",
+   "contents": [
+    "2521743e029e3f1969def226a61a5ab5024b01dd",
+    "0e314bfc6a6ec0021dc17030c03d38e6e128aafd",
+    "17bd644eb694feae8468f08cebcee6225040ae95",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "ce5bb5f57cf427fd28e0314d5ce6cc4e8cf6a4ad",
+    "342defb9acf3360eb9bc3bdb9f63d3bb71d73ba7",
+    "0caa419a04eb89f2665d0e36f4ccd21fca122cf0"
+   ]
+  },
+  "Food Channel (Standard) (English)": {
+   "title_id": "000100014843484a",
+   "version": 512,
+   "patch_folder": "Demae",
+   "patches": [
+    {
+     "patch_name": "Demae_0_English",
+     "content_id": 0
+    },
+    {
+     "patch_name": "Demae_1_English",
+     "content_id": 1
+    },
+    {
+     "patch_name": "Demae_2_English",
+     "content_id": 2
+    }
+   ],
+   "additional_files": [
+    "tmd"
+   ],
+   "source": "nus+wiilink",
+   "wad_sha256": "a91d2ed3cef2981e5e07b86b81f7c592c910b5350d9ad4382a7a4237f7a4ff1a",
+   "contents": [
+    "10508843a99a4130f99080353d850b4b26ea16a3",
+    "0b5c43d3d31af360d2a618498cb89284c6cc772d",
+    "b8e4946aa28c87d6a1bffca0b1fbcd2e794d5123",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "ce5bb5f57cf427fd28e0314d5ce6cc4e8cf6a4ad",
+    "342defb9acf3360eb9bc3bdb9f63d3bb71d73ba7",
+    "0caa419a04eb89f2665d0e36f4ccd21fca122cf0"
+   ]
+  },
+  "Kirby TV Channel": {
+   "title_id": "0001000148434d50",
+   "version": 257,
+   "patch_folder": "ktv",
+   "patches": [
+    {
+     "patch_name": "ktv_2",
+     "content_id": 2
+    }
+   ],
+   "additional_files": [
+    "tmd",
+    "ticket"
+   ],
+   "source": "nus+wiilink",
+   "wad_sha256": "52dcd94b1d2477149aad6cbe53b127b110a576c6f6c87269ccc616343bf545b2",
+   "contents": [
+    "ed781c2de02858535da4f33790092eb528717c26",
+    "46df0fa478ae607b022ef46484501b3ba81c9577",
+    "dbe35c30c1ff06c558ea8b5f40e52a77a75b48a0",
+    "47dcaf806ed8098333be85b84de6883b761c5bd8",
+    "47dcaf806ed8098333be85b84de6883b761c5bd8",
+    "b75420d505e1d32811b60ccd9f6d7b902c57fbdd",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "74b4f0477e72d798dbece480710139f22f6ae339",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "7f66593a1cf0c8cee4e7d428b31624959deeae47"
+   ]
+  },
+  "Wii Speak Channel (Japan)": {
+   "title_id": "000100014843464a",
+   "version": 512,
+   "patch_folder": "ws",
+   "patches": [
+    {
+     "patch_name": "WiiSpeak_1_Japan",
+     "content_id": 1
+    }
+   ],
+   "additional_files": [],
+   "source": "nus+wiilink",
+   "wad_sha256": "b8655d3cb19f79a7aaea3096b464694b64960da5e958be9d013d038e10c1c422",
+   "contents": [
+    "c4de5c876fbed3ed9eeccc23e259d24e22a08aff",
+    "5664ec01f551a4d586507b73da7ceda2139d75c0",
+    "91d668d5e18d3c2f9953a8a06fde64dd99602e9b",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "0002d79efa7df39141a117c19012d32698d68aef",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "04bef1b5db32674f6af0eaacc9b1f6eb5927351e"
+   ]
+  },
+  "Food Channel (Domino's) (English)": {
+   "title_id": "000100014843484a",
+   "version": 512,
+   "patch_folder": "Dominos",
+   "patches": [
+    {
+     "patch_name": "Dominos_0",
+     "content_id": 0
+    },
+    {
+     "patch_name": "Dominos_1",
+     "content_id": 1
+    },
+    {
+     "patch_name": "Dominos_2",
+     "content_id": 2
+    }
+   ],
+   "additional_files": [
+    "tmd"
+   ],
+   "source": "nus+wiilink",
+   "wad_sha256": "4118697cf461a3bdf4c4b39e8228fc1bdf01ac277f9c9d377c172ea8a003a7e8",
+   "contents": [
+    "74cb22075b1f2f55e1e6bb456297b8ae48b4070d",
+    "1a3c84a82828351107b4077f0a02fd439325bc02",
+    "a290e06620fc7c1996b3ff29af18d4a4f46674b7",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "ce5bb5f57cf427fd28e0314d5ce6cc4e8cf6a4ad",
+    "342defb9acf3360eb9bc3bdb9f63d3bb71d73ba7",
+    "0caa419a04eb89f2665d0e36f4ccd21fca122cf0"
+   ]
+  },
+  "Internet Channel (USA)": {
+   "title_id": "0001000148414445",
+   "version": 1024,
+   "patch_folder": null,
+   "patches": [],
+   "additional_files": [],
+   "source": "nus",
+   "wad_sha256": "5c9fee70aac2a4be562d22d3a79d25b84013ba0549c8bdb9bb83ae6860e249bd",
+   "contents": [
+    "9c777992c038f42575b0cac330a55f7d8ffd2b5b",
+    "b7274517a40e926f0da260e7995e9beff6235d9d",
+    "826a0b401f3d74e20c6374fd68e882cf5f9f297d",
+    "ab3bb3ffea7bdca672b6de1614dc608f354ffbc5",
+    "32b339cbbb507d502779259a7866995d030b1d88",
+    "a3bc7230db344a744f9d409c00261f6b3ed04a45",
+    "b2d9ba88f60b70f57b71790e3e7781f9054f1d55",
+    "87dd0a9e3ff7f2baf4842ea43c76a31a7bc6490b",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "293d734260ac99f4d3de75310a7d273466f6be08",
+    "534d2952fe2f664370d8364b9a0a0d1f55a05931",
+    "95acdf2e97aa5bdfa37608714691c05dfbf47848",
+    "7df43aafd47085f928047d7704494ec7fafa92b7"
+   ]
+  },
+  "Food Channel (Just Eat) (English)": {
+   "title_id": "000100014843484a",
+   "version": 512,
+   "patch_folder": "eater",
+   "patches": [
+    {
+     "patch_name": "JustEat_0_English",
+     "content_id": 0
+    },
+    {
+     "patch_name": "JustEat_1_English",
+     "content_id": 1
+    },
+    {
+     "patch_name": "JustEat_2_English",
+     "content_id": 2
+    }
+   ],
+   "additional_files": [
+    "tmd"
+   ],
+   "source": "nus+wiilink",
+   "wad_sha256": "e6fd8459f0127dd172ed813f91f3658b54f691179d622d0660bb9b15b0e343d8",
+   "contents": [
+    "5111510bfcf8bd3dc9b5c909e9ef58e9a2311a33",
+    "5b79e69957a878be4490e9f5d412c59bf9d6e3fd",
+    "a290e06620fc7c1996b3ff29af18d4a4f46674b7",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "ce5bb5f57cf427fd28e0314d5ce6cc4e8cf6a4ad",
+    "342defb9acf3360eb9bc3bdb9f63d3bb71d73ba7",
+    "0caa419a04eb89f2665d0e36f4ccd21fca122cf0"
+   ]
+  },
+  "Wii Speak Channel (Korea) NUS": {
+   "title_id": "000100014843464b",
+   "version": 512,
+   "source": "nus",
+   "wad_sha256": "0330cfe6cad49881044f94d92745d421cf031212f065bd437c64f1bc52b3edc8",
+   "contents": [
+    "9cf1bfa715c91086b58dbcadafd6f1f659ea0a69",
+    "159f5916876d2d26b03e52d9941def9089a72135",
+    "59701f0d50c8f7e70f6f84477a37f3f88814f92c",
+    "7a07af59e36af2ae3da4047e0c735ec77ec9b177",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "ce0fa2a9c2b47b11dde01980f702a75987fabffe",
+    "3ad0aec725386db1af12b52a1a4e0486ffeb76a4",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "068686c3222ddeea186e4115501f5099f6c970ac"
+   ]
+  },
+  "TV no Tomo Channel (Japan) NUS": {
+   "title_id": "0001000148424e4a",
+   "version": null,
+   "source": "nus",
+   "wad_sha256": "d3b41225e424b924afe29e48c604fd013c0bfd91a82964379a1b94e52fc0ec53",
+   "contents": [
+    "11e62d364878313bd102911f2d0fe079d61ed809",
+    "2a5f7a92a868fc32ede727b1e6085703072968e6",
+    "4903e497a858a067a8cc66a8f88c33704f58de58",
+    "32b339cbbb507d502779259a7866995d030b1d88",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "911b1acd6a00ac87bc1db31d1619a80dfea6f513",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "92c2983822c0b80b1ab7cf3e58e88b6593bf1934",
+    "29c4cbe7f54a78a5e18d7a12c90e6b92103f7e45",
+    "4023156b2eae65ea3ded7d7a037c95a43eb50663",
+    "f5dd17b3200dd4d6be2b25b577c99e5f941b7324",
+    "6f4c46e3c5723a778a16c61b9089b37f9d70f7d5"
+   ]
+  },
+  "Digicam Print Channel (Japan) NUS": {
+   "title_id": "000100014843444a",
+   "version": 1024,
+   "source": "nus",
+   "wad_sha256": "2a0d78f13ad7ca974efd92c5dd48cf20417bc5a8b03fefd7cf0b5d5b2f1418f3",
+   "contents": [
+    "cdd6104c7fbc8966fde5eedbe130753db1778f65",
+    "422d4a0a43664ea0324ffc59d199336b7e1b83fc",
+    "5713c9236aad4979c3b81a6fbf1c634b7ea59bdb",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "58bc7425b15719b6ddf78c90d62a006e0f97e5c7",
+    "18855e53f5fc9514779d074ae15271a754a7b04f",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "29c4cbe7f54a78a5e18d7a12c90e6b92103f7e45",
+    "4023156b2eae65ea3ded7d7a037c95a43eb50663",
+    "92c2983822c0b80b1ab7cf3e58e88b6593bf1934",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "04bef1b5db32674f6af0eaacc9b1f6eb5927351e"
+   ]
+  },
+  "Demae Channel (Japan) NUS": {
+   "title_id": "000100014843484a",
+   "version": 512,
+   "source": "nus",
+   "wad_sha256": "069e1e59e896eeb090a721fa877c4ae6a80fd85096ab185530961f0a53d6d798",
+   "contents": [
+    "2521743e029e3f1969def226a61a5ab5024b01dd",
+    "be8749e51915838f032fb21ba69a203dad30cea8",
+    "17bd644eb694feae8468f08cebcee6225040ae95",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "061a4f1d60aec55f0eff6937d52320199f9bb788",
+    "ce5bb5f57cf427fd28e0314d5ce6cc4e8cf6a4ad",
+    "342defb9acf3360eb9bc3bdb9f63d3bb71d73ba7",
+    "0caa419a04eb89f2665d0e36f4ccd21fca122cf0"
+   ]
+  },
+  "Set Personal Data (Japan) NUS": {
+   "title_id": "000100084843434a",
+   "version": 2,
+   "source": "nus",
+   "wad_sha256": "d830fa61dd39a005e01e712f840d2abe1a3215744e2ba40b8adc23094c09a85c",
+   "contents": [
+    "5625e453aaed7f91c854d5eec936d8c30f708e8c",
+    "e20e34ff5488ce2d1638e300aecc80c159c125ad",
+    "5d11c9429d9792556d908cc58ca313e0a063b145",
+    "4fad97fd4a288c47e0587f3bbd292379f8709eb9",
+    "92c2983822c0b80b1ab7cf3e58e88b6593bf1934",
+    "4023156b2eae65ea3ded7d7a037c95a43eb50663",
+    "29c4cbe7f54a78a5e18d7a12c90e6b92103f7e45",
+    "3644384b0cfc920ef620120e8721bf53c85bda27",
+    "096b7bc8616329f32ec0376e438ef5438b0c247a",
+    "fe03e3504cc8ef69ab1d671efc9ada9f2108d5c6",
+    "58858c8566a55edeecc6ef9182d76b61c3897142"
+   ]
+  },
+  "System Menu 4.3K": {
+   "title_id": "0000000100000002",
+   "version": 518,
+   "source": "nus",
+   "wad_sha256": "fc0d46fe20055f4923520f2f283c76d01748ada1a6b2a7a7611c7a8c693578da",
+   "contents": [
+    "97db6fba990806030c77faedbf687e25f0dde20b",
+    "aafc40a74c232533afda04a64cef679ebfcfc78c",
+    "f5dd17b3200dd4d6be2b25b577c99e5f941b7324",
+    "b7156df0f4ae078fd153583e936e07c09877490e",
+    "5f1bb7b02794b14e88b72269a3376d23051dad1d",
+    "01488ecc904200005d01352fa279b2f79e7c45c8",
+    "98496cc8467f0749d7605fc175b1911827aa1fd0"
+   ]
+  }
+ },
+ "candidates": {
+  "forecast": [
+   "Forecast Channel (USA)"
+  ],
+  "news": [
+   "News Channel (USA)"
+  ],
+  "votes": [
+   "Everybody Votes Channel (USA)"
+  ],
+  "mii-contest": [
+   "Check Mii Out Channel (USA)"
+  ],
+  "nintendo": [
+   "Nintendo Channel (USA)"
+  ],
+  "wiiroom": [
+   "Wii no Ma (Japanese)",
+   "Wii Room (English)"
+  ],
+  "photoprints": [
+   "Digicam Print Channel (Japanese)",
+   "Photo Prints Channel (English)",
+   "Digicam Print Channel (Japan) NUS"
+  ],
+  "food": [
+   "Demae Channel (Standard) (Japanese)",
+   "Food Channel (Standard) (English)",
+   "Food Channel (Domino's) (English)",
+   "Food Channel (Just Eat) (English)",
+   "Demae Channel (Japan) NUS"
+  ],
+  "kirbytv": [
+   "Kirby TV Channel"
+  ],
+  "internet": [
+   "Internet Channel (USA)"
+  ],
+  "wiispeak": [
+   "Wii Speak Channel (Korea) NUS"
+  ],
+  "tvguide": [
+   "TV no Tomo Channel (Japan) NUS"
+  ],
+  "personal-data": [
+   "Set Personal Data (Japan) NUS"
+  ]
+ }
+}

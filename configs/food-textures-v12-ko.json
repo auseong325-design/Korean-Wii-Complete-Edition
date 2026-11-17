@@ -1,0 +1,2887 @@
+{
+ "note": "rc7b Y-Food (revision >= 12): baked Japanese the earlier waves left byte-identical to stock, found by rendering every unchanged TPL of content 2 (workspace/private/rc7-work/yfood_survey.py). Delta over v7+v10+v11; kwce/food_resources.py merges v7+v10+v11+v12 for rev>=12 (no overlap with earlier waves). mode text/button = kwce/food_texture_v6.restyle; mode retext = kwce/food_texture_v12.retext (removes the lettering enclosed by the shape colour, repaints it row-wise from the shape, then draws Korean in the stock style). Runtime-swapped siblings without a layout reference are included (cnm03_win_menu_*/cnm03asu_win_menu_* genre tabs, 02b_btn_menu_* plain genre buttons, 02_btn_menu_all_yo, l1j_*/l1j_asu_* order-record genre labels). 04_panel_f_00/01/02 are the shop-info band titles of IMG_5695 (04_m_layout pic1 04_P_win_gPR_00/gCO_01/gIN_02); 04a/b/c_obi (v10) are the detail-window titles. ja = stock baked text. Placement [미검증 in Dolphin].",
+ "textures": {
+  "DtestOrder.arc": {
+   "Order/timg/04_panel_f_00.tpl": {
+    "mode": "text",
+    "ja": "ひとことPR",
+    "ko": "한마디 PR",
+    "fill": "#ffffff",
+    "outline": "#000000",
+    "stroke": 3,
+    "align": "left",
+    "box": [
+     2,
+     1,
+     110,
+     23
+    ]
+   },
+   "Order/timg/04_panel_f_01.tpl": {
+    "mode": "text",
+    "ja": "出前のとくてん",
+    "ko": "배달 혜택",
+    "fill": "#ffffff",
+    "outline": "#000000",
+    "stroke": 3,
+    "align": "left",
+    "box": [
+     2,
+     1,
+     134,
+     23
+    ]
+   },
+   "Order/timg/04_panel_f_02.tpl": {
+    "mode": "text",
+    "ja": "お店のかくにん",
+    "ko": "가게 확인",
+    "fill": "#ffffff",
+    "outline": "#000000",
+    "stroke": 3,
+    "align": "left",
+    "box": [
+     2,
+     1,
+     134,
+     23
+    ]
+   },
+   "Order/timg/cnm03_icon_00.tpl": {
+    "mode": "retext",
+    "ja": "待ち時間\n約　分",
+    "ko": "대기 시간\n약\n분",
+    "bg": [
+     "#f87878"
+    ],
+    "tol": 50,
+    "rects": [
+     [
+      2,
+      2,
+      78,
+      36
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "대기 시간",
+      "box": [
+       4,
+       1,
+       76,
+       18
+      ],
+      "fill": "#ffffff"
+     },
+     {
+      "ko": "약",
+      "box": [
+       3,
+       20,
+       21,
+       37
+      ],
+      "fill": "#ffffff"
+     },
+     {
+      "ko": "분",
+      "box": [
+       59,
+       20,
+       77,
+       37
+      ],
+      "fill": "#ffffff"
+     }
+    ]
+   },
+   "Order/timg/cnm03_icon_01.tpl": {
+    "mode": "retext",
+    "ja": "受付中",
+    "ko": "접수중",
+    "bg": [
+     "#f87878"
+    ],
+    "tol": 50,
+    "rects": [
+     [
+      2,
+      2,
+      78,
+      36
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "접수중",
+      "box": [
+       4,
+       4,
+       76,
+       34
+      ],
+      "fill": "#ffffff"
+     }
+    ]
+   },
+   "Order/timg/cnm03_icon_02.tpl": {
+    "mode": "retext",
+    "ja": "受付\n時間外",
+    "ko": "접수\n시간 외",
+    "bg": [
+     "#989898"
+    ],
+    "tol": 40,
+    "rects": [
+     [
+      2,
+      2,
+      78,
+      36
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "접수\n시간 외",
+      "box": [
+       4,
+       1,
+       76,
+       37
+      ],
+      "fill": "#ffffff",
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/cnm03_icon_03.tpl": {
+    "mode": "retext",
+    "ja": "休止中",
+    "ko": "휴무중",
+    "bg": [
+     "#989898"
+    ],
+    "tol": 40,
+    "rects": [
+     [
+      2,
+      2,
+      78,
+      36
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "휴무중",
+      "box": [
+       4,
+       4,
+       76,
+       34
+      ],
+      "fill": "#ffffff"
+     }
+    ]
+   },
+   "Order/timg/cnm03_icon_04.tpl": {
+    "mode": "retext",
+    "ja": "近日\nオープン",
+    "ko": "곧\n오픈",
+    "bg": [
+     "#989898"
+    ],
+    "tol": 40,
+    "rects": [
+     [
+      2,
+      2,
+      78,
+      36
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "곧\n오픈",
+      "box": [
+       4,
+       1,
+       76,
+       37
+      ],
+      "fill": "#ffffff",
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_all.tpl": {
+    "mode": "retext",
+    "ja": "なじみ",
+    "ko": "단골",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "단골",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_ben.tpl": {
+    "mode": "retext",
+    "ja": "弁当",
+    "ko": "도시락",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "도시락",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_curry.tpl": {
+    "mode": "retext",
+    "ja": "カレー",
+    "ko": "카레",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "카레",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_drink.tpl": {
+    "mode": "retext",
+    "ja": "デザート\nドリンク",
+    "ko": "디저트\n음료",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "디저트\n음료",
+      "box": [
+       2,
+       1,
+       78,
+       39
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 1
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_etc.tpl": {
+    "mode": "retext",
+    "ja": "その他",
+    "ko": "기타",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "기타",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_fast.tpl": {
+    "mode": "retext",
+    "ja": "ファースト\nフード",
+    "ko": "패스트\n푸드",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "패스트\n푸드",
+      "box": [
+       2,
+       1,
+       78,
+       39
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 1
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_party.tpl": {
+    "mode": "retext",
+    "ja": "仕出し\nパーティ",
+    "ko": "케이터링",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "케이터링",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_piz.tpl": {
+    "mode": "retext",
+    "ja": "ピザ",
+    "ko": "피자",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "피자",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_sushi.tpl": {
+    "mode": "retext",
+    "ja": "すし",
+    "ko": "초밥",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "초밥",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_tyu.tpl": {
+    "mode": "retext",
+    "ja": "中華",
+    "ko": "중식",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "중식",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_wa.tpl": {
+    "mode": "retext",
+    "ja": "和食",
+    "ko": "일식",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "일식",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03_win_menu_you.tpl": {
+    "mode": "retext",
+    "ja": "洋食",
+    "ko": "양식",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "양식",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_all.tpl": {
+    "mode": "retext",
+    "ja": "なじみ",
+    "ko": "단골",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "단골",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_ben.tpl": {
+    "mode": "retext",
+    "ja": "弁当",
+    "ko": "도시락",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "도시락",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_curry.tpl": {
+    "mode": "retext",
+    "ja": "カレー",
+    "ko": "카레",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "카레",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_drink.tpl": {
+    "mode": "retext",
+    "ja": "デザート\nドリンク",
+    "ko": "디저트\n음료",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "디저트\n음료",
+      "box": [
+       2,
+       1,
+       78,
+       39
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 1
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_etc.tpl": {
+    "mode": "retext",
+    "ja": "その他",
+    "ko": "기타",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "기타",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_fast.tpl": {
+    "mode": "retext",
+    "ja": "ファースト\nフード",
+    "ko": "패스트\n푸드",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "패스트\n푸드",
+      "box": [
+       2,
+       1,
+       78,
+       39
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 1
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_party.tpl": {
+    "mode": "retext",
+    "ja": "仕出し\nパーティ",
+    "ko": "케이터링",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "케이터링",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_piz.tpl": {
+    "mode": "retext",
+    "ja": "ピザ",
+    "ko": "피자",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "피자",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_sushi.tpl": {
+    "mode": "retext",
+    "ja": "すし",
+    "ko": "초밥",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "초밥",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_tyu.tpl": {
+    "mode": "retext",
+    "ja": "中華",
+    "ko": "중식",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "중식",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_wa.tpl": {
+    "mode": "retext",
+    "ja": "和食",
+    "ko": "일식",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "일식",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/cnm03asu_win_menu_you.tpl": {
+    "mode": "retext",
+    "ja": "洋食",
+    "ko": "양식",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      1,
+      1,
+      79,
+      39
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "양식",
+      "box": [
+       5,
+       4,
+       75,
+       36
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/02_btn_menu_all_yo.tpl": {
+    "mode": "button",
+    "ja": "なじみ",
+    "ko": "단골",
+    "erase": [
+     66,
+     12,
+     162,
+     55
+    ],
+    "box": [
+     68,
+     14,
+     158,
+     53
+    ],
+    "fill": "#fff0b0",
+    "outline": "#6e4628",
+    "stroke": 2
+   },
+   "Order/timg/02b_btn_menu_ben.tpl": {
+    "mode": "retext",
+    "ja": "弁当",
+    "ko": "도시락",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "도시락",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_curry.tpl": {
+    "mode": "retext",
+    "ja": "カレー",
+    "ko": "카레",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "카레",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_drink.tpl": {
+    "mode": "retext",
+    "ja": "デザート\nドリンク",
+    "ko": "디저트·음료",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "디저트·음료",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_etc.tpl": {
+    "mode": "retext",
+    "ja": "その他",
+    "ko": "기타",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "기타",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_fast.tpl": {
+    "mode": "retext",
+    "ja": "ファースト\nフード",
+    "ko": "패스트푸드",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "패스트푸드",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_party.tpl": {
+    "mode": "retext",
+    "ja": "仕出し\nパーティ",
+    "ko": "케이터링",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "케이터링",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_piz.tpl": {
+    "mode": "retext",
+    "ja": "ピザ",
+    "ko": "피자",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "피자",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_sushi.tpl": {
+    "mode": "retext",
+    "ja": "すし",
+    "ko": "초밥",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "초밥",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_tyu.tpl": {
+    "mode": "retext",
+    "ja": "中華",
+    "ko": "중식",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "중식",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_wa.tpl": {
+    "mode": "retext",
+    "ja": "和食",
+    "ko": "일식",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "일식",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/02b_btn_menu_you.tpl": {
+    "mode": "retext",
+    "ja": "洋食",
+    "ko": "양식",
+    "erase_rows": [
+     [
+      16,
+      8,
+      156,
+      58
+     ]
+    ],
+    "parts": [
+     {
+      "ko": "양식",
+      "box": [
+       18,
+       10,
+       154,
+       56
+      ],
+      "fill": "#a07030",
+      "outline": "#ffffff",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/08_btn_check_00.tpl": {
+    "mode": "retext",
+    "ja": "くわしく",
+    "ko": "자세히",
+    "barrier": [
+     "#588098"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      26,
+      8,
+      112,
+      44
+     ]
+    ],
+    "grow": 1,
+    "repaint": "cols",
+    "parts": [
+     {
+      "ko": "자세히",
+      "box": [
+       28,
+       10,
+       110,
+       42
+      ],
+      "fill": "#ffffff",
+      "outline": "#2e4e5e",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/08_btn_favorite_00a.tpl": {
+    "mode": "retext",
+    "ja": "ハート\nのみ",
+    "ko": "하트\n만",
+    "bg_at": [
+     [
+      10,
+      16
+     ],
+     [
+      18,
+      16
+     ],
+     [
+      42,
+      16
+     ],
+     [
+      54,
+      16
+     ],
+     [
+      58,
+      16
+     ],
+     [
+      10,
+      32
+     ],
+     [
+      22,
+      32
+     ],
+     [
+      34,
+      32
+     ],
+     [
+      54,
+      32
+     ],
+     [
+      30,
+      52
+     ],
+     [
+      38,
+      52
+     ]
+    ],
+    "tol": 40,
+    "barrier": [
+     "#a04040"
+    ],
+    "grow": 1,
+    "repaint": "both",
+    "parts": [
+     {
+      "ko": "하트\n만",
+      "box": [
+       8,
+       16,
+       64,
+       56
+      ],
+      "fill": "#ffffff",
+      "outline": "#a04040",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Order/timg/08_btn_favorite_00b.tpl": {
+    "mode": "retext",
+    "ja": "すべて",
+    "ko": "전체",
+    "bg_at": [
+     [
+      14,
+      12
+     ],
+     [
+      34,
+      12
+     ],
+     [
+      54,
+      12
+     ],
+     [
+      6,
+      24
+     ],
+     [
+      30,
+      24
+     ],
+     [
+      58,
+      24
+     ],
+     [
+      6,
+      44
+     ],
+     [
+      30,
+      44
+     ],
+     [
+      58,
+      44
+     ],
+     [
+      18,
+      56
+     ],
+     [
+      34,
+      56
+     ],
+     [
+      50,
+      56
+     ]
+    ],
+    "tol": 40,
+    "barrier": [
+     "#605010"
+    ],
+    "grow": 1,
+    "repaint": "both",
+    "parts": [
+     {
+      "ko": "전체",
+      "box": [
+       12,
+       22,
+       60,
+       50
+      ],
+      "fill": "#fffbe8",
+      "outline": "#685018",
+      "stroke": 2
+     }
+    ]
+   },
+   "Order/timg/08_btn_favorite_01.tpl": {
+    "mode": "text",
+    "ja": "ハートのみ\n表示する",
+    "ko": "하트만\n표시",
+    "fill": "#000000",
+    "align": "center",
+    "box": [
+     2,
+     1,
+     78,
+     31
+    ],
+    "spacing": 0.0
+   },
+   "Order/timg/08_btn_favorite_02.tpl": {
+    "mode": "text",
+    "ja": "すべて\n表示する",
+    "ko": "전체\n표시",
+    "fill": "#000000",
+    "align": "center",
+    "box": [
+     2,
+     1,
+     78,
+     31
+    ],
+    "spacing": 0.0
+   }
+  },
+  "DtestDialog.arc": {
+   "Dialog/timg/com_08_icon_favorite_00a.tpl": {
+    "mode": "retext",
+    "ja": "ハート\nのみ",
+    "ko": "하트\n만",
+    "bg_at": [
+     [
+      10,
+      16
+     ],
+     [
+      18,
+      16
+     ],
+     [
+      42,
+      16
+     ],
+     [
+      54,
+      16
+     ],
+     [
+      58,
+      16
+     ],
+     [
+      10,
+      32
+     ],
+     [
+      22,
+      32
+     ],
+     [
+      34,
+      32
+     ],
+     [
+      54,
+      32
+     ],
+     [
+      30,
+      52
+     ],
+     [
+      38,
+      52
+     ]
+    ],
+    "tol": 40,
+    "barrier": [
+     "#a04040"
+    ],
+    "grow": 1,
+    "repaint": "both",
+    "parts": [
+     {
+      "ko": "하트\n만",
+      "box": [
+       8,
+       16,
+       64,
+       56
+      ],
+      "fill": "#ffffff",
+      "outline": "#a04040",
+      "stroke": 2,
+      "spacing": 0.0
+     }
+    ]
+   },
+   "Dialog/timg/com_08_icon_favorite_00b.tpl": {
+    "mode": "retext",
+    "ja": "すべて",
+    "ko": "전체",
+    "bg_at": [
+     [
+      14,
+      12
+     ],
+     [
+      34,
+      12
+     ],
+     [
+      54,
+      12
+     ],
+     [
+      6,
+      24
+     ],
+     [
+      30,
+      24
+     ],
+     [
+      58,
+      24
+     ],
+     [
+      6,
+      44
+     ],
+     [
+      30,
+      44
+     ],
+     [
+      58,
+      44
+     ],
+     [
+      18,
+      56
+     ],
+     [
+      34,
+      56
+     ],
+     [
+      50,
+      56
+     ]
+    ],
+    "tol": 40,
+    "barrier": [
+     "#605010"
+    ],
+    "grow": 1,
+    "repaint": "both",
+    "parts": [
+     {
+      "ko": "전체",
+      "box": [
+       12,
+       22,
+       60,
+       50
+      ],
+      "fill": "#fffbe8",
+      "outline": "#685018",
+      "stroke": 2
+     }
+    ]
+   }
+  },
+  "DtestCommon.arc": {
+   "Common/timg/cmn_btn_order_00.tpl": {
+    "mode": "retext",
+    "ja": "注文リストへもどる",
+    "ko": "주문 목록으로",
+    "barrier": [
+     "#006058"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      8,
+      6,
+      132,
+      38
+     ]
+    ],
+    "grow": 2,
+    "repaint": "cols",
+    "parts": [
+     {
+      "ko": "주문 목록으로",
+      "box": [
+       12,
+       7,
+       128,
+       35
+      ],
+      "fill": "#006058",
+      "outline": "#ffffff",
+      "stroke": 2
+     }
+    ]
+   }
+  },
+  "DtestTitle.arc": {
+   "Title/timg/01_logicon.tpl": {
+    "mode": "retext",
+    "ja": "注文中",
+    "ko": "주문 중",
+    "bg": [
+     "#f8a8a8"
+    ],
+    "tol": 40,
+    "barrier": [
+     "#a84858"
+    ],
+    "grow": 1,
+    "parts": [
+     {
+      "ko": "주문 중",
+      "box": [
+       10,
+       12,
+       86,
+       44
+      ],
+      "fill": "#ffffff",
+      "outline": "#a84858",
+      "stroke": 3
+     }
+    ]
+   },
+   "Title/timg/L2_chuico.tpl": {
+    "mode": "retext",
+    "ja": "注文中",
+    "ko": "주문 중",
+    "bg": [
+     "#f8a8a8"
+    ],
+    "tol": 40,
+    "barrier": [
+     "#a84858"
+    ],
+    "grow": 1,
+    "parts": [
+     {
+      "ko": "주문 중",
+      "box": [
+       10,
+       10,
+       90,
+       44
+      ],
+      "fill": "#ffffff",
+      "outline": "#a84858",
+      "stroke": 3
+     }
+    ]
+   },
+   "Title/timg/L2_icon_02.tpl": {
+    "mode": "retext",
+    "ja": "注文中",
+    "ko": "주문 중",
+    "bg": [
+     "#f8a8a8"
+    ],
+    "tol": 40,
+    "barrier": [
+     "#a84858"
+    ],
+    "grow": 1,
+    "parts": [
+     {
+      "ko": "주문 중",
+      "box": [
+       10,
+       12,
+       86,
+       44
+      ],
+      "fill": "#ffffff",
+      "outline": "#a84858",
+      "stroke": 3
+     }
+    ]
+   },
+   "Title/timg/L2_icon_00.tpl": {
+    "mode": "retext",
+    "ja": "注文中を消す",
+    "ko": "주문 중\n지우기",
+    "barrier": [
+     "#004040",
+     "#a84050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      66,
+      10,
+      140,
+      50
+     ],
+     [
+      12,
+      8,
+      66,
+      32
+     ]
+    ],
+    "grow": 2,
+    "repaint": "cols",
+    "parts": [
+     {
+      "ko": "주문 중",
+      "box": [
+       12,
+       8,
+       64,
+       31
+      ],
+      "fill": "#ffffff",
+      "outline": "#a84858",
+      "stroke": 2
+     },
+     {
+      "ko": "지우기",
+      "box": [
+       72,
+       14,
+       136,
+       46
+      ],
+      "fill": "#004040",
+      "outline": "#f8f8f8",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/L2_btntxt.tpl": {
+    "mode": "text",
+    "ja": "を消す",
+    "ko": "지우기",
+    "fill": "#ffffff",
+    "outline": "#000000",
+    "stroke": 2,
+    "align": "center",
+    "box": [
+     1,
+     1,
+     58,
+     20
+    ]
+   },
+   "Title/timg/L2j_tou_panel.tpl": {
+    "mode": "retext",
+    "ja": "当日",
+    "ko": "당일",
+    "bg": [
+     "#f89830"
+    ],
+    "tol": 16,
+    "rects": [
+     [
+      3,
+      54,
+      57,
+      83
+     ]
+    ],
+    "grow": 1,
+    "parts": [
+     {
+      "ko": "당일",
+      "box": [
+       4,
+       60,
+       56,
+       82
+      ],
+      "fill": "#ffffff",
+      "outline": "#b06028",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/L2j_asu_panel.tpl": {
+    "mode": "retext",
+    "ja": "予約",
+    "ko": "예약",
+    "bg": [
+     "#c868f8"
+    ],
+    "tol": 16,
+    "rects": [
+     [
+      3,
+      54,
+      57,
+      83
+     ]
+    ],
+    "grow": 1,
+    "parts": [
+     {
+      "ko": "예약",
+      "box": [
+       4,
+       60,
+       56,
+       82
+      ],
+      "fill": "#ffffff",
+      "outline": "#8850a0",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_ben.tpl": {
+    "mode": "retext",
+    "ja": "弁当",
+    "ko": "도시락",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "도시락",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_curry.tpl": {
+    "mode": "retext",
+    "ja": "カレー",
+    "ko": "카레",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "카레",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_drink.tpl": {
+    "mode": "retext",
+    "ja": "デザート\nドリンク",
+    "ko": "디저트\n음료",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "디저트\n음료",
+      "box": [
+       5,
+       4,
+       51,
+       48
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 1
+     }
+    ]
+   },
+   "Title/timg/l1j_etc.tpl": {
+    "mode": "retext",
+    "ja": "その他",
+    "ko": "기타",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "기타",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_fast.tpl": {
+    "mode": "retext",
+    "ja": "ファースト\nフード",
+    "ko": "패스트\n푸드",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "패스트\n푸드",
+      "box": [
+       5,
+       4,
+       51,
+       48
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 1
+     }
+    ]
+   },
+   "Title/timg/l1j_party.tpl": {
+    "mode": "retext",
+    "ja": "仕出し\nパーティ",
+    "ko": "케이\n터링",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "케이\n터링",
+      "box": [
+       5,
+       4,
+       51,
+       48
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 1
+     }
+    ]
+   },
+   "Title/timg/l1j_piz.tpl": {
+    "mode": "retext",
+    "ja": "ピザ",
+    "ko": "피자",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "피자",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_sushi.tpl": {
+    "mode": "retext",
+    "ja": "すし",
+    "ko": "초밥",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "초밥",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_tyu.tpl": {
+    "mode": "retext",
+    "ja": "中華",
+    "ko": "중식",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "중식",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_wa.tpl": {
+    "mode": "retext",
+    "ja": "和食",
+    "ko": "일식",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "일식",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_you.tpl": {
+    "mode": "retext",
+    "ja": "洋食",
+    "ko": "양식",
+    "grow": 1,
+    "barrier": [
+     "#785050"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#f8e0a0"
+    ],
+    "parts": [
+     {
+      "ko": "양식",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f0a058",
+      "outline": "#785050",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_ben.tpl": {
+    "mode": "retext",
+    "ja": "弁当",
+    "ko": "도시락",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "도시락",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_curry.tpl": {
+    "mode": "retext",
+    "ja": "カレー",
+    "ko": "카레",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "카레",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_drink.tpl": {
+    "mode": "retext",
+    "ja": "デザート\nドリンク",
+    "ko": "디저트\n음료",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "디저트\n음료",
+      "box": [
+       5,
+       4,
+       51,
+       48
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 1
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_etc.tpl": {
+    "mode": "retext",
+    "ja": "その他",
+    "ko": "기타",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "기타",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_fast.tpl": {
+    "mode": "retext",
+    "ja": "ファースト\nフード",
+    "ko": "패스트\n푸드",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "패스트\n푸드",
+      "box": [
+       5,
+       4,
+       51,
+       48
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 1
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_party.tpl": {
+    "mode": "retext",
+    "ja": "仕出し\nパーティ",
+    "ko": "케이\n터링",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "케이\n터링",
+      "box": [
+       5,
+       4,
+       51,
+       48
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 1
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_piz.tpl": {
+    "mode": "retext",
+    "ja": "ピザ",
+    "ko": "피자",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "피자",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_sushi.tpl": {
+    "mode": "retext",
+    "ja": "すし",
+    "ko": "초밥",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "초밥",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_tyu.tpl": {
+    "mode": "retext",
+    "ja": "中華",
+    "ko": "중식",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "중식",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_wa.tpl": {
+    "mode": "retext",
+    "ja": "和食",
+    "ko": "일식",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "일식",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   },
+   "Title/timg/l1j_asu_you.tpl": {
+    "mode": "retext",
+    "ja": "洋食",
+    "ko": "양식",
+    "grow": 1,
+    "barrier": [
+     "#605090"
+    ],
+    "tol": 40,
+    "barrier_rects": [
+     [
+      3,
+      3,
+      53,
+      49
+     ]
+    ],
+    "repaint": "both",
+    "bg": [
+     "#e8d8f8"
+    ],
+    "parts": [
+     {
+      "ko": "양식",
+      "box": [
+       6,
+       6,
+       50,
+       46
+      ],
+      "spacing": 0.0,
+      "fill": "#f8d0f8",
+      "outline": "#605090",
+      "stroke": 2
+     }
+    ]
+   }
+  },
+  "sofkeybd.arc": {
+   "arc/timg/fs_ComBtn_c_Fya.tpl": {
+    "mode": "text",
+    "ja": "やめる",
+    "ko": "그만두기",
+    "fill": "#ffffff",
+    "outline": "#000000",
+    "stroke": 2,
+    "align": "center",
+    "box": [
+     2,
+     2,
+     102,
+     32
+    ]
+   },
+   "arc/timg/fs_ComBtn_c_Fwa.tpl": {
+    "mode": "text",
+    "ja": "わすれた",
+    "ko": "잊었어요",
+    "fill": "#ffffff",
+    "outline": "#000000",
+    "stroke": 2,
+    "align": "center",
+    "box": [
+     2,
+     2,
+     126,
+     32
+    ]
+   }
+  }
+ }
+}

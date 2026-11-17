@@ -1,0 +1,16 @@
+{
+  "version": "43K",
+  "system_menu_version": 518,
+  "title_id": "0000000100000002",
+  "expected_original_executable_index": 6,
+  "expected_original_executable_sha1": "98496cc8467f0749d7605fc175b1911827aa1fd0",
+  "wad_available": false,
+  "tool_tags": {
+    "dtk": "v1.7.5",
+    "objdiff-cli": "v3.4.5",
+    "sjiswrap": "v1.2.2",
+    "bstool": "v1.0.1",
+    "binutils": "2.42-1",
+    "compilers_required_by_upstream_not_downloaded": "20251118"
+  }
+}

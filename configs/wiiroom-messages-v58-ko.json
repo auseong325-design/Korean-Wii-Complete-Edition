@@ -1,0 +1,15 @@
+{
+  "base": "wiiroom-messages-full-ko.json",
+  "applies_from_revision": 58,
+  "note": "Revision 58+ overrides on top of the full reviewed config, which stays unchanged so builds 8-57 reproduce byte for byte.",
+  "messages": {
+    "8": "다시 시작",
+    "221": "비슷한\n동영상",
+    "222": "비슷한\n동영상"
+  },
+  "reasons": {
+    "8": "Japanese original '最初にもどる' (return to the start), WiiLink 'Reset'. The exit code maps this action to the channel restart used by the console RESET button and the HOME Menu Reset (mode 2 -> 0x802d8a40, the SDK hot reset); no exit mode erases data, so '초기화' (reads as data reset) was misleading. Same term as the other KWCE channels ('Reset' -> '다시 시작').",
+    "221": "Japanese original 'あなたへの\\nおすすめ' is two explicit lines; the one-line Korean wrapped inside a word ('비슷한 동영 / 상', IMG_5676). Two lines of three syllables fit the same box.",
+    "222": "Same label on the second detail screen."
+  }
+}

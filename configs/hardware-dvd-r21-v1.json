@@ -1,0 +1,9 @@
+{
+  "schema": 1,
+  "purpose": "R21 physical video-only stall: VI output-mode field gating, bounded retrace wait, HOME bypass; same HOME3",
+  "player_build": 21,
+  "home_ui": 3,
+  "wad_revision": 18,
+  "wad_sha256": "8573591ae5b8581290e2f7a1e969f5239e0ceecdc70f70ab5d23fcb34d3f1d7d",
+  "installer_source_sha256": "8163d98cbb050026cd765ec4c2718722225975009848a457f384a55dcfed5ef5"
+}

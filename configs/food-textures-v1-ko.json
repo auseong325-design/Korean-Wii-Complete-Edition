@@ -1,0 +1,53 @@
+{
+ "note": "Text-bearing UI textures in content 2 (Dtest/) and their Korean. Functional button/label text only; illustrative art (chef mascot, smiley, fork/spoon/heart, hand cursors, frame 'waku' corners, window parts) is intentionally excluded and left Japanese/unchanged. Redraw via scripts/redraw_food_textures.py + kwce/food_texture.py (Wii system font coverage). NOT yet merged into a build: needs Dolphin placement verification before a build-v2. [미검증 placement]",
+ "source_title": "000100014843484a",
+ "content_index": 2,
+ "font": "Korean 43K shared wbf1.brfna (kwce.channel_korean_font.korean_shared_fonts)",
+ "priority": ["Welcome", "Title", "Common", "Dialog", "Order"],
+ "labels": {
+  "DtestWelcome.arc": {
+   "Welcome/timg/cmn_btn_f_OK.tpl": {"ja": "OK", "ko": "확인", "color": "auto"}
+  },
+  "DtestDialog.arc": {
+   "Dialog/timg/cmn_btn_di-ok.tpl": {"ja": "はい", "ko": "예"},
+   "Dialog/timg/cmn_btn_di-no.tpl": {"ja": "いいえ", "ko": "아니요"},
+   "Dialog/timg/cmn_btn_f_OK.tpl": {"ja": "OK", "ko": "확인"},
+   "Dialog/timg/cmn_btn_er_back.tpl": {"ja": "もどる", "ko": "뒤로"},
+   "Dialog/timg/cmn_btn_er_next.tpl": {"ja": "次へ", "ko": "다음"},
+   "Dialog/timg/cmn_btn_er_gotop.tpl": {"ja": "トップ画面へ", "ko": "첫 화면으로"},
+   "Dialog/timg/cmn_btn_yameru.tpl": {"ja": "やめる", "ko": "그만두기"},
+   "Dialog/timg/cmn_btn_f_Wiimenu.tpl": {"ja": "Wiiメニューへ", "ko": "Wii 메뉴로"},
+   "Dialog/timg/cmn_btn_f_Wii_update.tpl": {"ja": "Wii本体の更新", "ko": "Wii 본체 업데이트"},
+   "Dialog/timg/cmn_btn_f_address.tpl": {"ja": "住所情報設定", "ko": "주소 정보 설정"}
+  },
+  "DtestTitle.arc": {
+   "Title/timg/00-02_btn_no.tpl": {"ja": "同意しない", "ko": "동의 안 함"},
+   "Title/timg/00-02_btn_yes.tpl": {"ja": "同意する", "ko": "동의"},
+   "Title/timg/cmn_btn_di-no.tpl": {"ja": "いいえ", "ko": "아니요"},
+   "Title/timg/cmn_btn_di-ok.tpl": {"ja": "はい", "ko": "예"},
+   "Title/timg/cmn_btn_yameru.tpl": {"ja": "やめる", "ko": "그만두기"},
+   "Title/timg/L3a_btn_send.tpl": {"ja": "送信する", "ko": "보내기"}
+  },
+  "DtestCommon.arc": {
+   "Common/timg/cmn_btn_back_01.tpl": {"ja": "もどる", "ko": "뒤로"},
+   "Common/timg/cmn_btn_back_02.tpl": {"ja": "やめる", "ko": "그만두기"},
+   "Common/timg/cmn_btn_up_01.tpl": {"ja": "前へ", "ko": "이전"},
+   "Common/timg/cmn_btn_down_01.tpl": {"ja": "次へ", "ko": "다음"},
+   "Common/timg/cmn_btn_return_01.tpl": {"ja": "元の画面へもどる", "ko": "이전 화면으로"},
+   "Common/timg/cmn_btn_return_Y01.tpl": {"ja": "注文きろくへもどる", "ko": "주문 기록으로"}
+  },
+  "DtestOrder.arc": {
+   "Order/timg/10_btn_f_ok.tpl": {"ja": "OK", "ko": "확인"},
+   "Order/timg/cmn_btn_f_OK.tpl": {"ja": "OK", "ko": "확인"},
+   "Order/timg/L3a_btn_send.tpl": {"ja": "送信する", "ko": "보내기"},
+   "Order/timg/12_btn_f_yameru.tpl": {"ja": "やめる", "ko": "그만두기"},
+   "Order/timg/12_btn_f_henko.tpl": {"ja": "変更", "ko": "변경"}
+  }
+ },
+ "excluded_examples": [
+  "Dialog/timg/L_fork.tpl", "Dialog/timg/L_spoon.tpl", "Dialog/timg/L_circle.tpl",
+  "Common/timg/defcursor_*.tpl (hand cursors)", "Title/timg/*_waku_*.tpl (frame corners)",
+  "Title/timg/01_btn_demae_icon.tpl (chef mascot)", "Order/timg/*_obi.tpl (decorative bars with baked text - need per-item review)"
+ ],
+ "deferred": "Order/timg/02_btn_menu_* category buttons carry baked category names (ピザ/寿司/弁当/...) over art; these plus the many *_obi.tpl header bars with baked titles need per-texture review and are left for a focused pass with Dolphin verification."
+}

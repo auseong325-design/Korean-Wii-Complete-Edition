@@ -1,0 +1,28 @@
+{
+ "schema": 1,
+ "purpose": "USA v1024 Internet Channel executable (content 1, raw DOL after LZ11). Korean keyboard labels replace the US column of the keyboard string table in place. local_urls are applied to the local test build only; the hardware candidate keeps every URL.",
+ "raw_sha256": "731adc8610ee680fe07ff0005dee7b63df1c14c9918f69da2a07253a0dcebc82",
+ "keyboard": [
+  {"va": "0x809aa2b8", "en": "OK", "ko": "확인"},
+  {"va": "0x809aa2f0", "en": "Quit", "ko": "취소"},
+  {"va": "0x809aa364", "en": "Dictionary", "ko": "예측 사전 언어"},
+  {"va": "0x809aa420", "en": "Close", "ko": "닫기"},
+  {"va": "0x809aa488", "en": "More", "ko": "기호"},
+  {"va": "0x809aa4a8", "en": "Space", "ko": "스페이스"},
+  {"va": "0x809aa4c0", "en": "Back", "ko": "돌아가기"}
+ ],
+ "local_urls": [
+  {"url": "http://searcher.wii.com/search/search?r=%s&k=%s&l=%s&c=%s&n=%s&a=g&p=wii", "encoding": "ascii", "count": 1, "role": "Nintendo search service (Google)"},
+  {"url": "http://searcher.wii.com/search/search?r=%s&k=%s&l=%s&c=%s&n=%s&a=y&p=wii", "encoding": "ascii", "count": 1, "role": "Nintendo search service (Yahoo!)"},
+  {"url": "http://apps.digitalhomeservices.yahoo.com/gc/wii/v10/redirect.php?app=fav1&ctry=%s&lgge=%s", "encoding": "ascii", "count": 1, "role": "Yahoo! favorite redirect"},
+  {"url": "http://www.yahoo.co.jp/", "encoding": "ascii", "count": 1, "role": "Yahoo! Japan default"},
+  {"url": "http://widgets.opera.com/widget/img.pl?id=", "encoding": "ascii", "count": 1, "role": "Opera widget image"},
+  {"url": "http://widgets.opera.com/", "encoding": "utf-16-be", "count": 1, "role": "Opera widget gallery"},
+  {"url": "http://xml.opera.com/update/wii", "encoding": "utf-16-be", "count": 1, "role": "Opera automatic update check"},
+  {"url": "http://xml.opera.com/userjs/wii", "encoding": "utf-16-be", "count": 1, "role": "Opera site-patch download"},
+  {"url": "http://xml.opera.com/spoof/wii", "encoding": "utf-16-be", "count": 2, "role": "Opera browser-id override list"},
+  {"url": "http://www.google.com/search?q=%s&sourceid=opera&num=%i&ie=utf-8&oe=utf-8", "encoding": "utf-16-be", "count": 1, "role": "Opera default search template"},
+  {"url": "http://slashdot.org/", "encoding": "utf-16-be", "count": 1, "role": "Opera built-in default address"}
+ ],
+ "kept_urls_reason": "XML namespace and certificate URLs (w3.org, opera.com/2003/omf, CRL/OCSP inside root certificates) are identifiers, not fetches, and stay unchanged in every build"
+}

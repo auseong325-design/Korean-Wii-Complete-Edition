@@ -1,0 +1,50 @@
+{
+  "repository": "WiiLink24/ForecastChannel",
+  "commit": "adc752c7dbd96c2864eb11dbecde1cd80075007a",
+  "files": [
+    {
+      "path": "countries.go",
+      "sha256": "2405f008365d71a2a9623270ebd86bdbf80e8fb716a3114828075c1d920b48db"
+    },
+    {
+      "path": "main.go",
+      "sha256": "23ae9c12989c702fca6da347aeceb86986ab5d53a00e7fe47920b85009c1f291"
+    },
+    {
+      "path": "parser.go",
+      "sha256": "aca904bdaaddc426ba58ed232afe198804a98b4c0de4273bcb2aeaddd80838e1"
+    },
+    {
+      "path": "weather.xml",
+      "sha256": "4d3d431946dac0b36ad129ffd5008cc47c33633331ba9273e4beb3ab19437bf0"
+    },
+    {
+      "path": "config-example.xml",
+      "sha256": "7b957f5b8595358e37d1b5bd725bc7d1b017f3f84c3fb9991306152560aabd66"
+    },
+    {
+      "path": "long_table.go",
+      "sha256": "75a85bb8eb447279e8a2f7f29034162aa5711eb4898153ef0566338034e7785b"
+    },
+    {
+      "path": "header.go",
+      "sha256": "ebd13af3e626326c288aa466b9ed942ff7ba60b07077a7bb07f2f6567e0e52bb"
+    },
+    {
+      "path": "short_bin.go",
+      "sha256": "fdbbc2c4f1c69d6004be669131ece613182236f015fae415a95679f770b24281"
+    },
+    {
+      "path": "utils.go",
+      "sha256": "49a558825b18cffee1ca55108719411d684933c53725726b94d87448789094b5"
+    },
+    {
+      "path": "conditions.go",
+      "sha256": "8ba64bb4300a401914d2713ebcb0d7d1e8af341ef0ef0d961c4b6f7cfc33ac4a"
+    },
+    {
+      "path": "locations.go",
+      "sha256": "55656fc837ed5d7f2f349d2a007a1c6fd14e3a39b8ee4a2d8128424410bd76e1"
+    }
+  ]
+}

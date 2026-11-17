@@ -1,0 +1,85 @@
+{
+  "schema": 1,
+  "target": "Japanese Wii U with linked USA-base Korean vWii setup applied; not stock JPN vWii",
+  "guide_url": "https://gall.dcinside.com/mgallery/board/view/?id=nintendo_wiiu&no=111",
+  "installer_source_sha256": "8163d98cbb050026cd765ec4c2718722225975009848a457f384a55dcfed5ef5",
+  "channels": [
+    {
+      "id": "forecast",
+      "build": 103,
+      "korean": "build-v103/forecast-ko-personal-test.wad",
+      "original": "originals/forecast-usa-wiilink-archive.wad",
+      "source_sha256": "c95e8644256f1b793309068e09d4e4d683ad16bef4413ec45c8a8835a857a35a",
+      "title_id": "0001000248414645",
+      "label": "Forecast r103",
+      "experimental": false,
+      "original_sha256": "2533c9f55478fa60027726f268ba5a4408b65956fe2122edc556a9e0c709e7b7"
+    },
+    {
+      "id": "news",
+      "build": 15,
+      "korean": "build-v15/news-ko-personal.wad",
+      "original": "originals/news-usa-wiilink-archive.wad",
+      "source_sha256": "60d3192d472a78096f83c66bf97f006cb3e78b20eec568caee61b82c5b0334a7",
+      "title_id": "0001000248414745",
+      "label": "News r15 (retest)",
+      "experimental": false,
+      "original_sha256": "03d8fd558aa396787622a616b768752715da6d48bbdb6cac4b98a2a33848a305"
+    },
+    {
+      "id": "votes",
+      "korean": "build-v17/votes-ko-ui-test.wad",
+      "original": "originals/votes-usa-wiilink-archive.wad",
+      "experimental": false,
+      "build": 17,
+      "label": "Votes r17",
+      "source_sha256": "82c4accd26a1927c3a34c1935d2f44be205f079f9c576eebc5842180a9bb2d19",
+      "title_id": "0001000148414a45",
+      "original_sha256": "289d057316a324e18de8411f98e54ee8bc45e2ece249133c29b44843ed8987ae"
+    },
+    {
+      "id": "mii-contest",
+      "build": 25,
+      "korean": "build-v25/mii-contest-ko-ui-test.wad",
+      "original": "originals/mii-contest-usa-wiilink-archive.wad",
+      "source_sha256": "032d7b65c6a6bcd3625d8b3bfbc7977e9943000797cdd2fa58e7a883c4cd47c4",
+      "title_id": "0001000148415045",
+      "label": "Mii Contest r25",
+      "experimental": false,
+      "original_sha256": "ca2cb2cf215dc563f4a1e070892dfc211994755a824b88dc9ed7bec3f8fa4603"
+    },
+    {
+      "id": "wiiroom",
+      "build": 23,
+      "korean": "build-v23/wiiroom-ko-local-test.wad",
+      "original": "originals/wiiroom-english-wiilink-archive.wad",
+      "source_sha256": "f95e1eff1f784d791788d1b08d8093a6058d4b1d2c12874cae90f2373318659c",
+      "title_id": "000100014843494a",
+      "label": "Wii Room r23 (retest)",
+      "experimental": false,
+      "original_sha256": "533ac68bc2b7267e52a18c48acf423c3f86c1e97641962d62a1991c630457d8c"
+    },
+    {
+      "id": "tvguide",
+      "build": 8,
+      "korean": "build-v8/tvguide-ko-hardware-test.wad",
+      "original": "originals/tvguide-japan-original.wad",
+      "source_sha256": "a715dbdfc870dbe183d14b0c6c3731a45a85e0e988bc60426d25d38dfaec373b",
+      "title_id": "0001000148424e4a",
+      "label": "TV Guide r8 (trial)",
+      "experimental": true,
+      "original_sha256": "84ece4030fdd9825048d3f19725112a15faa7eff68ae21f2bff6305039c72dd8"
+    },
+    {
+      "id": "nintendo",
+      "korean": "build-v4/nintendo-ko-ui-test.wad",
+      "original": "originals/nintendo-usa-wiilink-archive.wad",
+      "experimental": true,
+      "build": 4,
+      "label": "Nintendo r4 (blocked)",
+      "source_sha256": "5380a6b09bf0ddee4faadd344a6f13a3a824b446ea3a86e2ed798968a9543a38",
+      "title_id": "0001000148415445",
+      "original_sha256": "a3b405a9b5fe351be1e6c518011be9d128df9c223fdd8264512eddd64774f111"
+    }
+  ]
+}

@@ -1,0 +1,361 @@
+{
+ "schema": 1,
+ "source": "USA News v7 html-us.arc English (ukv) pages; keys are whitespace-trimmed text nodes",
+ "html": [
+  "startup.html",
+  "index_bottomframe_ukv.html",
+  "index_contentsframe_ukv.html",
+  "index_mainframe_ukv.html",
+  "index_topframe_ukv.html",
+  "ukv/"
+ ],
+ "translations": {
+  "News Channel (English)": "뉴스 채널(한국어)",
+  "Scroll": "스크롤",
+  "Select": "선택",
+  "Close": "닫기",
+  "Contents": "목차",
+  "Introduction": "소개",
+  "Language Settings": "언어 설정",
+  "Sections": "분야",
+  "Headlines": "뉴스 목록",
+  "Map Display": "지도 표시",
+  "Icons": "아이콘",
+  "World News": "세계 뉴스",
+  "Globe Screen": "지구본 화면",
+  "Slide Show": "슬라이드 쇼",
+  "News Updates": "뉴스 갱신",
+  "Source": "정보 제공",
+  "and the Wii logo are trademarks of Nintendo.": "및 Wii 로고는 Nintendo의 상표입니다.",
+  "News Channel": "뉴스 채널",
+  "The News Channel information service offers easy access to articles about events going on at home and around the world. Through": "뉴스 채널에서는 국내와 세계 곳곳의 소식을 간편하게 볼 수 있습니다.",
+  ", the News Channel is constantly updated with the latest global and local news, allowing you instant access to the most recent articles available. For news concerning a particular region, articles will appear on that area of the globe.": "를 통해 국내외 최신 뉴스가 계속 갱신되므로 언제든지 최신 기사를 바로 볼 수 있습니다. 특정 지역에 관한 뉴스는 지구본의 해당 지역에 표시됩니다.",
+  "The News Channel will show locations for some news stories on the globe. These locations are determined by place names in the data file and may differ from the content of the actual news story.": "뉴스 채널은 일부 뉴스의 위치를 지구본에 표시합니다. 위치는 데이터에 포함된 지명으로 정해지므로 실제 기사 내용과 다를 수 있습니다.",
+  "News articles and headlines shown in this Operations Guide are fictitious and are intended for demonstration purposes only.": "이 사용설명서에 나오는 기사와 제목은 설명을 위한 가상의 내용입니다.",
+  "There may be cases when the News Channel doesn't provide news in the language chosen in the Wii Settings. In such cases, the language settings screen will appear when you launch the News Channel and will display the available languages.": "Wii 본체 설정에서 선택한 언어로 뉴스가 제공되지 않는 경우가 있습니다. 이때는 뉴스 채널을 시작하면 언어 설정 화면이 나타나 이용할 수 있는 언어가 표시됩니다.",
+  "The first thing you'll see on the News Channel is a list of available sections to peruse. Point at the section you'd like to read and then press": "뉴스 채널을 열면 먼저 볼 수 있는 분야 목록이 나타납니다. 읽고 싶은 분야를 가리키고",
+  "to jump to a list of headlines in that section. If a headline is too long to display properly, keep your pointer fixed on it to reveal the rest of the text. Select a headline by pointing at it, then press": "를 누르면 그 분야의 뉴스 목록으로 이동합니다. 제목이 길어 다 표시되지 않으면 포인터를 계속 대고 있으면 나머지가 표시됩니다. 제목을 가리키고",
+  "to jump to the full article. \n\t\t\t\t\t\t\tWhen you want to return to the previous headlines screen, press": "를 누르면 기사 전체를 볼 수 있습니다. \n\t\t\t\t\t\t\t이전 뉴스 목록 화면으로 돌아가려면 기사의 아무 곳이나 가리키고",
+  "while pointing at part of the article or Back.": "를 누르거나 뒤로를 선택해 주세요.",
+  "*You can also make the font size larger or smaller by pressing": "※Wii 리모컨의",
+  "and": "와",
+  "on the Wii Remote.": "를 눌러 글자 크기를 바꿀 수도 있습니다.",
+  "When a story pertains to a specific region of the world, a map may appear to the right of the article, providing a visual reference point to the region discussed. Please note that some articles may not be accompanied by a map.": "특정 지역에 관한 기사에는 기사 오른쪽에 그 지역의 지도가 표시되기도 합니다. 지도가 없는 기사도 있습니다.",
+  "Blue Marble image courtesy of NASA": "Blue Marble 이미지 제공: NASA",
+  "An icon beside a headline can have any of the following meanings. A blinking icon means that news has just been added.": "제목 옆의 아이콘은 다음과 같은 뜻입니다. 깜박이는 아이콘은 방금 추가된 뉴스입니다.",
+  "You haven't read the article": "아직 읽지 않은 기사",
+  "You have read the article": "읽은 기사",
+  "The unread article is accompanied by a map": "지도가 있는 읽지 않은 기사",
+  "The read article is accompanied by a map": "지도가 있는 읽은 기사",
+  "When a map appears to the right of an article, highlight Globe or a part of the globe and press": "기사 오른쪽에 지도가 나타나면 지구본이나 지도를 가리키고",
+  "to switch over to the Globe view.  The article icons on the surface of the globe represent places where breaking news is being covered. You can use this screen to scan news stories from all over the world. Hold down": "를 누르면 지구본 화면으로 바뀝니다. 지구본 위의 기사 아이콘은 뉴스가 일어난 곳을 나타냅니다. 이 화면에서 세계 곳곳의 뉴스를 살펴볼 수 있습니다.",
+  "and move your Wii Remote to spin the digital globe. Next, use your Wii Remote to highlight any article icon and press": "를 누른 채 Wii 리모컨을 움직이면 지구본을 돌릴 수 있습니다. 기사 아이콘을 가리키고",
+  "to bring up the news articles associated with that region.": "를 누르면 그 지역의 기사가 나타납니다.",
+  "Please note that the news displayed on the globe may not represent all of the breaking news for each area.": "지구본에 표시되는 뉴스가 각 지역의 모든 뉴스는 아닙니다.",
+  "The actions available to you when viewing the globe screen are listed below.": "지구본 화면에서는 다음과 같은 조작을 할 수 있습니다.",
+  "Select Slide show from the bottom right of the headlines screen or the section-selection screen to view a slide show of news stories. You can flip through articles by pressing left and right on": "뉴스 목록 화면이나 분야 선택 화면의 오른쪽 아래에서 슬라이드 쇼를 선택하면 뉴스를 슬라이드 쇼로 볼 수 있습니다.",
+  ". To read a story that interests you, point at the article and press": "의 좌우를 누르면 기사를 넘길 수 있습니다. 관심 있는 기사를 읽으려면 기사를 가리키고",
+  ". Choose End to exit the slide show.": "를 눌러 주세요. 슬라이드 쇼를 끝내려면 종료를 선택해 주세요.",
+  "The News Channel uses WiiConnect24 to update news articles. Please keep in mind that you won't receive news updates while viewing the News Channel.  Each time you enter the News Channel, news updates will appear if they're available.": "뉴스 채널은 WiiConnect24로 기사를 갱신합니다. 뉴스 채널을 보고 있는 동안에는 갱신되지 않습니다. 뉴스 채널을 열 때마다 새 뉴스가 있으면 표시됩니다.",
+  "Please note that there may be cases when news updates are suspended temporarily without notice for server maintenance.": "서버 점검 등으로 예고 없이 뉴스 갱신이 일시적으로 중단될 수 있습니다.",
+  "All information relayed through the News Channel is provided by the Associated Press. Associated Press text, photo, graphic, audio and/or video material shall not be published, broadcast, rewritten for broadcast or publication or redistributed directly or indirectly in any medium. Neither these AP materials nor any portion thereof may be stored in a computer except for personal and non-commercial use.  Users may not download or reproduce a substantial portion of the AP material found on this platform.  AP will not be held liable for any delays, inaccuracies, errors or omissions therefrom or in the transmission or delivery of all or any part thereof or for any damages arising from any of the foregoing.": "뉴스 채널의 정보는 원래 Associated Press(AP)가 제공했습니다. AP의 글·사진·그래픽·음성·영상 자료는 어떤 매체로도 직접 또는 간접적으로 출판, 방송, 재작성, 재배포할 수 없습니다. 개인적·비상업적 용도를 제외하고 AP 자료의 전부 또는 일부를 컴퓨터에 저장할 수 없으며, 이 플랫폼의 AP 자료를 상당 부분 내려받거나 복제할 수 없습니다. AP는 자료의 지연, 부정확함, 오류, 누락 또는 전송 과정의 문제와 그로 인한 손해에 책임지지 않습니다. (현재 WiiLink 서비스의 기사는 다른 통신사가 제공합니다.)"
+ },
+ "images": {
+  "img/CHM_common_source/back_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/back_button.png"
+  },
+  "img/CHM_common_source/forward_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/forward_button.png"
+  },
+  "img/CHM_common_source/return_index_button_s_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/return_index_button_s.png"
+  },
+  "img/CHM_common_source/return_index_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/return_index_button.png",
+   "align": "right"
+  },
+  "img/CHM_common_source_ro/back_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/back_button_ro.png"
+  },
+  "img/CHM_common_source_ro/forward_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/forward_button_ro.png"
+  },
+  "img/CHM_common_source_ro/return_index_button_s_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/return_index_button_s_ro.png"
+  },
+  "img/CHM_common_source_ro/return_index_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/return_index_button_ro.png",
+   "align": "right"
+  },
+  "ukv/page_03/page3_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      287,
+      22,
+      522,
+      187
+     ],
+     "capture": "v9/categories.png"
+    },
+    {
+     "box": [
+      287,
+      256,
+      522,
+      421
+     ],
+     "capture": "v9/headlines.png",
+     "overlay_box": [
+      0.47,
+      0,
+      0.52,
+      0.035
+     ]
+    }
+   ],
+   "labels": [
+    {
+     "box": [
+      7,
+      123,
+      248,
+      149
+     ],
+     "text": "헤드라인 슬라이드 쇼 보기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      162,
+      248,
+      188
+     ],
+     "text": "Wii 메뉴로 돌아가기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      220,
+      248,
+      246
+     ],
+     "text": "페이지 위로 스크롤",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      259,
+      248,
+      310
+     ],
+     "text": "글자 크기를\n키우거나 줄이기*",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      397,
+      248,
+      423
+     ],
+     "text": "분야 선택으로 돌아가기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      437,
+      248,
+      463
+     ],
+     "text": "페이지 아래로 스크롤",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    }
+   ]
+  },
+  "ukv/page_06/page6_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      18,
+      20,
+      227,
+      168
+     ],
+     "capture": "v9/globe.png"
+    },
+    {
+     "box": [
+      315,
+      20,
+      524,
+      168
+     ],
+     "capture": "v9/article.png"
+    }
+   ],
+   "labels": []
+  },
+  "ukv/page_07/page7_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      287,
+      54,
+      522,
+      219
+     ],
+     "capture": "v9/globe-bars.png"
+    }
+   ],
+   "labels": [
+    {
+     "box": [
+      7,
+      7,
+      248,
+      58
+     ],
+     "text": "지구본 확대·축소",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      156,
+      248,
+      182
+     ],
+     "text": "보는 각도 바꾸기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      196,
+      248,
+      222
+     ],
+     "text": "직전 화면으로 돌아가기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      236,
+      248,
+      287
+     ],
+     "text": "보는 각도를\n처음 위치로 되돌리기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    }
+   ]
+  },
+  "ukv/page_04/page4_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      18,
+      22,
+      253,
+      187
+     ],
+     "capture": "v9/article.png"
+    }
+   ],
+   "labels": []
+  },
+  "ukv/page_08/page8_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      18,
+      22,
+      253,
+      187
+     ],
+     "capture": "v9/slideshow.png"
+    }
+   ],
+   "labels": []
+  }
+ },
+ "capture_note": "Local fictional Korean examples; every game-screen slot replaced with build-v9 captures; full localization remains unverified."
+}

@@ -1,0 +1,20 @@
+{
+  "base_sha256": "17b01a8629d865378a45e58d5fcebf9dcc3f7919c719130a4ffdd1ca2b27b635",
+  "output_sha256": "eebfe21a6a5704dfd26d71ad87a3c7b5f559b13158eadc8cb3123f6ff4384a93",
+  "guarded_calls": [
+    "0x3d1b9e",
+    "0x3d1c10",
+    "0x3d1cef"
+  ],
+  "thunk_rva": "0x13a4",
+  "elf_physical_address_rva": "0x41bd64",
+  "elf_address_mask": "0x7fffffff",
+  "vi_region_rva": "0x3aaf65",
+  "vi_thunk_rva": "0x6f11",
+  "gc_japanese_region_fallback": [
+    0,
+    4
+  ],
+  "reason": "physical MEM1 range check, null IOS guard, NTSC-K GC font/card encoding fallback",
+  "upstream_binary_unchanged": true
+}

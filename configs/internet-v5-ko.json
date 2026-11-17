@@ -1,0 +1,15 @@
+{
+ "schema": 1,
+ "purpose": "Revision 5 changes on top of the v1/v4 tables (earlier configs stay unchanged so v1-v4 rebuild byte-identically).",
+ "local_url_targets": {
+  "http://apps.digitalhomeservices.yahoo.com/gc/wii/v10/redirect.php?app=fav1&ctry=%s&lgge=%s": "http://127.0.0.2/"
+ },
+ "local_url_targets_reason": "Local build only. The first-run favorites import (executable 0x80044f10, called from 0x80045694) rewrites line 2 of append1.adr, the first favorite's URL, with this template formatted with country and language (Japan: http://www.yahoo.co.jp/). v1-v4 redirected only its host, so the first tile opened /gc/wii/v10/redirect.php. The local target has no format directive; the extra formatter arguments are ignored. The hardware candidate keeps the original template.",
+ "fallback_encoding": {
+  "section": "User Prefs",
+  "key": "Fallback HTML Encoding",
+  "value": "euc-kr",
+  "files": {"2": ["operarc", "operarc.nand"], "3": ["operarc.nand"], "6": ["operarc"]}
+ },
+ "fallback_encoding_reason": "Both builds. Opera's pref table entry (0x8094909c) puts 'Fallback HTML Encoding' in section 0 = [User Prefs] with an empty default, so pages without a charset declaration fell back to the platform default (Latin-1 mojibake for EUC-KR). At first run /cnt/00000003/operarc.nand is copied into the save as 'operarc' (0x80033124); the other copies are patched the same way for consistency. A console that already has an Internet Channel save keeps its own prefs file."
+}

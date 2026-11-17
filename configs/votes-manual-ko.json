@@ -1,0 +1,734 @@
+{
+ "schema": 1,
+ "source": "USA Everybody Votes Channel manual html_US.arc (ukv); in-channel terms follow votes-messages-ko.json",
+ "html": [
+  "startup.html",
+  "index_bottomframe_ukv.html",
+  "index_contentsframe_ukv.html",
+  "index_mainframe_ukv.html",
+  "index_topframe_ukv.html",
+  "ukv/"
+ ],
+ "translations": {
+  "Vote Channel (English)": "모두의 투표 채널",
+  "Scroll": "스크롤",
+  "Select": "선택",
+  "Close": "닫기",
+  "Contents": "목차",
+  "About this Channel...": "채널 소개",
+  "Registering a Voter": "투표자 등록",
+  "The Main Menu": "메인 메뉴",
+  "Answering Questions": "질문에 답하기",
+  "Viewing Results": "결과 보기",
+  "Viewing Voter Data": "투표자 정보 보기",
+  "Options": "설정",
+  "Suggest a Question": "질문 제안",
+  "Poll Question Updates": "질문 갱신",
+  "Everybody Votes Channel": "모두의 투표 채널",
+  "The Everybody Votes Channel gives you the opportunity to share your opinion on a variety of topics by answering the latest poll questions. You can also see the opinions of others, and see just how close your opinion is to popular opinion. Questions are updated automatically over": "모두의 투표 채널에서는 최신 질문에 답하며 다양한 주제에 대한 의견을 나눌 수 있습니다. 다른 사람들의 의견을 보고 내 의견이 다수 의견과 얼마나 가까운지도 알아볼 수 있습니다. 질문은 ",
+  "WiiConnect24": "WiiConnect24",
+  ", so you can always view the latest results.": "를 통해 자동으로 갱신되므로 언제든지 최신 결과를 볼 수 있습니다.",
+  "You must register a voter the first time you use the Everybody Votes Channel. To do so, simply choose a Mii that you've created on the Mii Channel. You can register up to six different Miis, but if there aren't any Miis in Mii Plaza on the Mii Channel, you won't be able to register any voters. Refer to the Wii Operations Manual (Channels and Settings) for more information on the Mii Channel.": "처음 이용할 때는 투표자를 등록해야 합니다. Mii 채널에서 만든 Mii를 선택하면 됩니다. 투표자는 6명까지 등록할 수 있지만, Mii 채널의 Mii 광장에 Mii가 없으면 등록할 수 없습니다. Mii 채널에 대한 자세한 내용은 Wii 사용설명서 「채널과 설정」을 확인해 주세요.",
+  "The first screen that will appear is the main menu. Point at an option and press": "처음 나타나는 화면이 메인 메뉴입니다. 항목을 가리키고 ",
+  "to view its contents. Options containing updated information will be marked by a \"NEW!\" icon.": "를 누르면 내용을 볼 수 있습니다. 새로운 정보가 있는 항목에는 「신규!」 아이콘이 표시됩니다.",
+  "Three questions will appear under \"Active Polls.\" One question will appear under \"Worldwide Polls.\"": "「진행 중인 투표」에는 질문 3개가, 「전 세계 투표」에는 질문 1개가 나타납니다.",
+  "When you point at a question on the main menu and press": "메인 메뉴에서 질문을 가리키고 ",
+  ", that question's response screen will appear. Press and hold": "를 누르면 그 질문의 응답 화면이 나타납니다. ",
+  "and": "와 ",
+  "at the same time to grab the Mii you've registered, then drop it into the response field of your choice. Next, point at \"Vote!\" and press": "를 동시에 누른 채로 등록한 Mii를 잡아 원하는 응답 칸에 놓으세요. 그다음 「투표하기!」를 가리키고 ",
+  ". You can vote once with each Mii that is registered. Once a question closes, a new one will be added.": "를 누르세요. 등록한 Mii마다 한 번씩 투표할 수 있습니다. 질문이 마감되면 새 질문이 추가됩니다.",
+  "When you are finished answering the poll question, the prediction screen appears. This is your chance to predict which answer you think will be chosen the most amongst all the respondents. Make your prediction by grabbing and moving your Mii to the response of your choice, just as you did when you voted. Then choose \"Predict!\" when you're finished.": "질문에 답하면 예측 화면이 나타납니다. 모든 응답자 가운데 어느 응답이 가장 많이 선택될지 예측해 보세요. 투표할 때처럼 Mii를 잡아 원하는 응답으로 옮긴 뒤 「예측하기!」를 선택하세요.",
+  "Point at \"Recent Results\" on the main menu and press": "메인 메뉴에서 「최근 결과」를 가리키고 ",
+  "to view the results of the most recent poll questions that you've answered. Point at \"Poll History\" and press": "를 누르면 최근에 답한 질문의 결과를 볼 수 있습니다. 「투표 기록」을 가리키고 ",
+  "to view the results for the last 12 poll questions you answered. Poll question results will be erased starting with the oldest questions.": "를 누르면 마지막으로 답한 질문 12개의 결과를 볼 수 있습니다. 결과는 오래된 질문부터 지워집니다.",
+  "Point at \"Voter Data\" on the main menu and press": "메인 메뉴에서 「투표자 정보」를 가리키고 ",
+  "to view data for registered voters. Point at a Mii and press": "를 누르면 등록한 투표자의 정보를 볼 수 있습니다. Mii를 가리키고 ",
+  "to view the number of times that voter has voted, and that voter's results. On the pages that follow you can see how far that voter's opinions differ from popular opinion. You can also see how in tune that voter is with popular opinion. The Voter Data screen is also where you would delete registered voters.": "를 누르면 그 투표자의 투표 횟수와 결과를 볼 수 있습니다. 다음 쪽에서는 그 투표자의 의견이 다수 의견과 얼마나 다른지, 다수 의견을 얼마나 잘 맞히는지도 볼 수 있습니다. 등록한 투표자를 지우는 것도 투표자 정보 화면에서 합니다.",
+  "Point at \"Options\" on the main menu and press": "메인 메뉴에서 「설정」을 가리키고 ",
+  "to view options for the Everybody Votes Channel. Start with \"Confirm polling region\" to check which region you've chosen as your place of residence. Choose \"Erase all data\" to erase all voter data and results and return to the Wii Menu. Data that has been erased can never be recovered. \"Change question language\" will appear when questions are available in more than one language, allowing you to choose the language your questions are displayed in. Changing the language setting for questions will not change the menu language setting.": "를 누르면 모두의 투표 채널의 설정을 볼 수 있습니다. 「투표 지역 확인」에서는 사는 곳으로 선택한 지역을 확인할 수 있습니다. 「모든 데이터 삭제」를 선택하면 모든 투표자 정보와 결과를 지우고 Wii 메뉴로 돌아갑니다. 지운 데이터는 되돌릴 수 없습니다. 「질문 언어 변경」은 질문이 여러 언어로 제공될 때 나타나며, 질문을 표시할 언어를 고를 수 있습니다. 질문 언어를 바꿔도 메뉴 언어는 바뀌지 않습니다.",
+  "Point at \"Suggest a Question\" on the main menu and press": "메인 메뉴에서 「질문 제안」을 가리키고 ",
+  "to submit your own ideas for potential poll questions you'd like to see answered. You can suggest one question per day. After entering your suggested question and two possible responses, point at \"Send\" and press": "를 누르면 답을 듣고 싶은 투표 질문 아이디어를 보낼 수 있습니다. 질문은 하루에 하나만 제안할 수 있습니다. 제안할 질문과 응답 2개를 입력한 뒤 「보내기」를 가리키고 ",
+  "to send your suggested question to Nintendo. Refer to the Wii Operations Manual (Channels and Settings) for information on using the keyboard.": "를 누르면 Nintendo에 질문이 전송됩니다. 키보드 사용법은 Wii 사용설명서 「채널과 설정」을 확인해 주세요.",
+  "Information for poll questions will be updated automatically if you have turned your": "Wii 설정의 Wii 본체 설정에서 ",
+  "setting on in the Wii Settings menu under Wii Options.": " 설정을 켜 두면 질문 정보가 자동으로 갱신됩니다."
+ },
+ "images": {
+  "img/CHM_common_source/back_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/back_button.png"
+  },
+  "img/CHM_common_source_ro/back_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/back_button_ro.png"
+  },
+  "img/CHM_common_source/forward_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/forward_button.png"
+  },
+  "img/CHM_common_source_ro/forward_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/forward_button_ro.png"
+  },
+  "img/CHM_common_source/return_index_button_s_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/return_index_button_s.png"
+  },
+  "img/CHM_common_source_ro/return_index_button_s_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/return_index_button_s_ro.png"
+  },
+  "img/CHM_common_source/return_index_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/return_index_button.png",
+   "align": "right"
+  },
+  "img/CHM_common_source_ro/return_index_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/return_index_button_ro.png",
+   "align": "right"
+  },
+  "img/copyright_ukv.gif": {
+   "type": "text",
+   "text": "©2007 Nintendo. ™, ® 및 Wii 로고는\nNintendo의 상표입니다.",
+   "size": 14,
+   "color": [
+    90,
+    90,
+    90
+   ],
+   "box": [
+    8,
+    4,
+    272,
+    50
+   ]
+  },
+  "ukv/page_02/page2_ukv.gif": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      9,
+      248,
+      60
+     ],
+     "text": "후보 중에서 Mii 선택",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      192,
+      248,
+      218
+     ],
+     "text": "메인 메뉴로 돌아가기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      235,
+      248,
+      261
+     ],
+     "text": "페이지 이동",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      287,
+      59,
+      522,
+      224
+     ],
+     "capture": "register.png",
+     "overlay_box": [
+      0.955,
+      0,
+      1,
+      0.11
+     ],
+     "overlay_fill": "mirror",
+     "crop": [
+      0.112,
+      0,
+      0.889,
+      1
+     ]
+    }
+   ]
+  },
+  "ukv/page_03/page3_ukv.gif": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      177,
+      8,
+      418,
+      34
+     ],
+     "text": "Wii 메뉴로 돌아가기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      117,
+      53,
+      358,
+      79
+     ],
+     "text": "채널 설정 변경",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      69,
+      98,
+      310,
+      124
+     ],
+     "text": "새 투표 질문 제안",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      143,
+      248,
+      169
+     ],
+     "text": "투표자 정보 보기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      189,
+      248,
+      215
+     ],
+     "text": "새 투표자 등록",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      234,
+      248,
+      260
+     ],
+     "text": "진행 중인 투표 질문 보기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      280,
+      248,
+      306
+     ],
+     "text": "전 세계 투표 질문 보기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      325,
+      248,
+      376
+     ],
+     "text": "최근에 답한 질문의\n결과 보기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      277,
+      385,
+      531,
+      436
+     ],
+     "text": "지난번에 답한 질문의\n결과 보기",
+     "fill": [
+      159,
+      159,
+      159
+     ],
+     "size": 19,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      287,
+      190,
+      522,
+      355
+     ],
+     "capture": "main-menu.png",
+     "overlay_box": [
+      0.955,
+      0,
+      1,
+      0.11
+     ],
+     "overlay_fill": "mirror"
+    }
+   ]
+  },
+  "ukv/page_04/page4_ukv.gif": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      26,
+      248,
+      77
+     ],
+     "text": "질문과 응답",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      92,
+      248,
+      118
+     ],
+     "text": "응답 칸",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      156,
+      248,
+      182
+     ],
+     "text": "메인 메뉴로 돌아가기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      197,
+      248,
+      223
+     ],
+     "text": "질문에 답하기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      287,
+      20,
+      522,
+      185
+     ],
+     "capture": "voting.png",
+     "overlay_box": [
+      0.955,
+      0,
+      1,
+      0.11
+     ],
+     "overlay_fill": "mirror"
+    }
+   ]
+  },
+  "ukv/page_05/page5_ukv.gif": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      27,
+      248,
+      78
+     ],
+     "text": "질문과 응답",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      91,
+      248,
+      117
+     ],
+     "text": "색으로 나눈 결과",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      157,
+      248,
+      183
+     ],
+     "text": "메인 메뉴로 돌아가기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      198,
+      248,
+      224
+     ],
+     "text": "투표자의 응답",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      238,
+      248,
+      289
+     ],
+     "text": "성별 결과 등\n자세한 결과 보기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      277,
+      278,
+      518,
+      442
+     ],
+     "text": "사는 국가에 따라\n지역별 결과를 색으로\n구분해 볼 수 있습니다.\n\n※ 전 세계 투표 질문은\n국가별 결과가\n그래프로 표시됩니다.",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 15,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      287,
+      17,
+      522,
+      182
+     ],
+     "capture": "results.png",
+     "overlay_box": [
+      0.955,
+      0,
+      1,
+      0.11
+     ],
+     "overlay_fill": "mirror"
+    }
+   ]
+  },
+  "ukv/page_06/page6_ukv.gif": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      28,
+      248,
+      54
+     ],
+     "text": "등록한 투표자 지우기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      155,
+      248,
+      181
+     ],
+     "text": "정보 닫기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      7,
+      198,
+      248,
+      224
+     ],
+     "text": "페이지 이동",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      287,
+      21,
+      522,
+      186
+     ],
+     "capture": "voter-data.png",
+     "overlay_box": [
+      0.955,
+      0,
+      1,
+      0.11
+     ],
+     "overlay_fill": "mirror"
+    }
+   ]
+  },
+  "ukv/page_07/page7_ukv.gif": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      148,
+      248,
+      174
+     ],
+     "text": "메인 메뉴로 돌아가기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      287,
+      23,
+      522,
+      188
+     ],
+     "capture": "options.png",
+     "overlay_box": [
+      0.955,
+      0,
+      1,
+      0.11
+     ],
+     "overlay_fill": "mirror",
+     "crop": [
+      0.112,
+      0,
+      0.889,
+      1
+     ]
+    }
+   ]
+  },
+  "ukv/page_08/page8_ukv.gif": {
+   "type": "diagram",
+   "labels": [
+    {
+     "box": [
+      7,
+      151,
+      248,
+      177
+     ],
+     "text": "메인 메뉴로 돌아가기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    },
+    {
+     "box": [
+      285,
+      218,
+      526,
+      244
+     ],
+     "text": "제안 보내기",
+     "fill": [
+      164,
+      164,
+      164
+     ],
+     "size": 19,
+     "weight": 500
+    }
+   ],
+   "shots": [
+    {
+     "box": [
+      288,
+      21,
+      523,
+      186
+     ],
+     "capture": "suggest.png",
+     "overlay_box": [
+      0.955,
+      0,
+      1,
+      0.11
+     ],
+     "overlay_fill": "mirror",
+     "crop": [
+      0.112,
+      0,
+      0.889,
+      1
+     ]
+    }
+   ]
+  }
+ }
+}

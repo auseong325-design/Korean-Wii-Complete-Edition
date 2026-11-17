@@ -1,0 +1,12 @@
+{
+ "schema": 1,
+ "purpose": "Alpha real-console package: Korean channel WADs + original WiiLink WADs for restore. Paths are under workspace/channels/<id>/. Never publish the output.",
+ "channels": [
+  {"id": "forecast", "name": "Forecast Channel", "korean": "build-v22/forecast-ko-personal-test.wad", "original": "originals/forecast-usa-wiilink-archive.wad", "experimental": false},
+  {"id": "news", "name": "News Channel", "korean": "build-v10/news-ko-personal.wad", "original": "originals/news-usa-wiilink-archive.wad", "experimental": false},
+  {"id": "votes", "name": "Everybody Votes Channel", "korean": "build-v17/votes-ko-ui-test.wad", "original": "originals/votes-usa-wiilink-archive.wad", "experimental": false},
+  {"id": "mii-contest", "name": "Check Mii Out Channel", "korean": "build-v19/mii-contest-ko-ui-test.wad", "original": "originals/mii-contest-usa-wiilink-archive.wad", "experimental": false},
+  {"id": "wiiroom", "name": "Wii Room", "korean": "build-v9/wiiroom-ko-local-test.wad", "original": "originals/wiiroom-english-wiilink-archive.wad", "experimental": false},
+  {"id": "nintendo", "name": "Nintendo Channel", "korean": "build-v4/nintendo-ko-ui-test.wad", "original": "originals/nintendo-usa-wiilink-archive.wad", "experimental": true}
+ ]
+}

@@ -1,0 +1,64 @@
+{
+  "source": "WiiLink24/set-personal-data@18fa5a7d696dfb0f8c7fcdcd2fc5613f2c41dabf",
+  "inventory": "workspace/channels/personal-data/text-inventory-v1.json",
+  "catalog_path": "data/i10n/ko.lang",
+  "language": "ko",
+  "note": "gettext msgid -> Korean. GuiText applies gettext to every label, so button/title literals (OK, PIN, Digicam, Demae, Home Address, Zip Code) are covered here. Replaces upstream's partial ko.lang (23 entries, never wired to CONF_LANG_KOREAN).",
+  "messages": {
+    "Add PIN": "비밀번호 설정",
+    "An error occurred while attempting to save your information. Would you like to retry?": "정보를 저장하는 중에 오류가 발생했습니다. 다시 시도하시겠습니까?",
+    "Apartment Number": "상세 주소",
+    "Back": "뒤로",
+    "Cancel": "취소",
+    "Choose Channel": "채널 선택",
+    "City": "시/군/구",
+    "Delete PIN": "비밀번호 삭제",
+    "Demae": "음식 배달",
+    "Digicam": "카메라 프린트",
+    "Done": "완료",
+    "Edit PIN": "비밀번호 변경",
+    "Email Address": "이메일 주소",
+    "Enter": "확인",
+    "Error": "오류",
+    "Error saving": "저장 오류",
+    "Exit": "종료",
+    "First Name": "이름",
+    "Home Address": "주소",
+    "Incorrect PIN": "비밀번호 오류",
+    "Input PIN": "비밀번호 입력",
+    "Last Name": "성",
+    "Main Menu": "메인 메뉴",
+    "OK": "확인",
+    "PIN": "비밀번호",
+    "Phone Number": "전화번호",
+    "Please choose which channel you would like to load.": "실행할 채널을 선택해 주세요.",
+    "Please enter a 4-digit PIN that you will remember.": "기억할 수 있는 4자리 비밀번호를 입력해 주세요.",
+    "Please enter a 4-digit PIN to replace your current one.": "지금 비밀번호 대신 사용할 4자리 비밀번호를 입력해 주세요.",
+    "Please enter your 4-digit PIN to confirm.": "확인을 위해 4자리 비밀번호를 입력해 주세요.",
+    "Retry": "다시 시도",
+    "Set Personal Data": "주소 설정",
+    "State": "시/도",
+    "Wii Menu": "Wii 메뉴",
+    "You cannot have a PIN shorter than 4 numbers!": "4자리보다 짧은 비밀번호는 사용할 수 없습니다.",
+    "You cannot have an empty field. Either try again or return to the main menu.": "빈칸으로 둘 수 없습니다. 다시 입력하거나 메인 메뉴로 돌아가 주세요.",
+    "You have entered an invalid email address. Please enter a valid one.": "올바르지 않은 이메일 주소입니다. 올바른 이메일 주소를 입력해 주세요.",
+    "You have entered the incorrect PIN. Either try again or return to the main menu.": "비밀번호가 맞지 않습니다. 다시 입력하거나 메인 메뉴로 돌아가 주세요.",
+    "Your personal data is PIN protected. Please enter your 4-digit PIN.": "개인 정보가 비밀번호로 보호되어 있습니다. 4자리 비밀번호를 입력해 주세요.",
+    "Zip Code": "우편번호"
+  },
+  "kwce_messages": {
+    "Backspace": "지우기"
+  },
+  "kwce_literals": {
+    "hangul_toggle_key": "한/영"
+  },
+  "kept_english": {
+    "Caps": "Korean keyboards print Caps Lock in English; 20px label on an 80px key",
+    "Shift": "Korean keyboards print Shift in English; 20px label on an 80px key"
+  },
+  "excluded": {
+    "console_printf": "19 printf diagnostics (inventory console_messages) render through the libogc console font, which has ASCII only",
+    "template_values": "pd.dat template sample values are cleared, not translated (kwce/personal_data_format.py)",
+    "banner_manual": "hidden 00010008 title: no banner/IMET or manual content"
+  }
+}

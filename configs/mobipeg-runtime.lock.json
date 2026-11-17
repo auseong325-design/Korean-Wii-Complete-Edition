@@ -1,0 +1,26 @@
+{
+  "version": "2.3",
+  "release": "https://github.com/quatric/mobipeg/releases/tag/v2.3",
+  "archive_sha256": "9f15c9f7359be362ae8704ee0a0d6fc8046162311eefe471f3466ebf4530831b",
+  "files": [
+    {
+      "path": "tools/mobipeg-v2.3/bin/ffmpeg.exe",
+      "sha256": "bd3baba1920b56cf0d4c7c2d304d784f1e7e3669190c2f87ac905a92a9565857"
+    },
+    {
+      "path": "tools/mobipeg-v2.3/bin/ffplay.exe",
+      "sha256": "9ff09c7232360ddd77732ab36b90cb07c3e8ce3b4cad9c0db1ad5db14d638f7b"
+    },
+    {
+      "path": "tools/mobipeg-v2.3/bin/ffprobe.exe",
+      "sha256": "9bbe83b778994d7aa8fa088db7d7f7be39eb91c967c845ef85c70bb16a2f81ba"
+    },
+    {
+      "path": "tools/mobipeg-v2.3/bin/SDL2.dll",
+      "sha256": "df6be1cd49d741d1a3963eca3f32dea9aa78c39de6e876aabfe74bd2ae528872"
+    }
+  ],
+  "enabled": false,
+  "runtime_verified": false,
+  "rejection": "Windows encoder exited before producing a valid MOC5 file; not used by launchers/fixtures"
+}

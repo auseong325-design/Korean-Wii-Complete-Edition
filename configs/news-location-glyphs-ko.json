@@ -1,0 +1,103 @@
+{
+  "glyphs": " 가네노뉴니닐던델도드디라란런레렘로루뤼르른를름리린마맨멜모바반방버베벤별보불브비살상샌서셀수슈스시싱안앙앤엘역예오욕우운울워의이자젤지징체취카케코콕콩쿄크키타터턴톡트특튼파포프하한홀홍히",
+  "files": [
+    {
+      "file": "news.bin.00",
+      "sha256": "d0db2342e12e0428af7e7f220951a5d3c7a404845a0abc83cd3574e931c2846d"
+    },
+    {
+      "file": "news.bin.01",
+      "sha256": "3e472f129f7e9f6f25c6daa5802e81ef66e3959ba4b6d8b9dacbed20ff02b9af"
+    },
+    {
+      "file": "news.bin.02",
+      "sha256": "c33dee5129e5a1c4f6b81ca89abfba07d1f18798b83cab6d780d559be2a2b7bb"
+    },
+    {
+      "file": "news.bin.03",
+      "sha256": "e14894e4d65e86e2e3ffc63763fc4029572453662eb3389a44607a8c56d178e9"
+    },
+    {
+      "file": "news.bin.04",
+      "sha256": "5179349a9c2d33c23ed988ef003f17f29701550d70c80681de7e0ea2feda494c"
+    },
+    {
+      "file": "news.bin.05",
+      "sha256": "0ed5c886ce1071a8104cdd4b6db4572ae13aa83fde27f2902550315644150e36"
+    },
+    {
+      "file": "news.bin.06",
+      "sha256": "814540b9d471a4a8f54e8751a30116ce711522a4e3d857e6ddadbb4067f549ab"
+    },
+    {
+      "file": "news.bin.07",
+      "sha256": "470d070261801bea9381feb3daf9e0e84fc14e423e5dfeae09ca6bc0476651e8"
+    },
+    {
+      "file": "news.bin.08",
+      "sha256": "491b4569352fd18b7bf83eb9e03119e41bcaaf5c64262d6377b40fed90890bae"
+    },
+    {
+      "file": "news.bin.09",
+      "sha256": "c04b8b6aed3d728291ac1e5a447fba713a3c2958c485fd5e1d5ad13453f99fa3"
+    },
+    {
+      "file": "news.bin.10",
+      "sha256": "388e00950334a0b63791ccafb9e10b6810b745aa291289f55cc1f95c97a5f9cf"
+    },
+    {
+      "file": "news.bin.11",
+      "sha256": "2eb6616bb4a68f18db1f27abd1d26cb9d18f3533d8225c52fb9bcf332ad7e3ea"
+    },
+    {
+      "file": "news.bin.12",
+      "sha256": "150137c8f659ba1006754cb15f06c5f0d7121e0d72b6c1c533788f57e651656c"
+    },
+    {
+      "file": "news.bin.13",
+      "sha256": "d840c8454edca7fe9320c6555886d81ce5687fac7502dae1eeea84380fd1cb6c"
+    },
+    {
+      "file": "news.bin.14",
+      "sha256": "67a1013a036ec4ad5425b8b453a772d1e7327b2eaa3595ee10886c66125a5df4"
+    },
+    {
+      "file": "news.bin.15",
+      "sha256": "4731995825e0c6f73c5750f5360aa243139aed36440cbd13bf98faadcc69c326"
+    },
+    {
+      "file": "news.bin.16",
+      "sha256": "fe9b88b0167060fce1bd0961f3392350f93d0c5680ca7d132e657b57f184702d"
+    },
+    {
+      "file": "news.bin.17",
+      "sha256": "feda3816bf5550e2bbb6b4064cea1cb9a1f079e92f45f9635c8ca27361f81127"
+    },
+    {
+      "file": "news.bin.18",
+      "sha256": "1b8f4ea716a36b410be92d8ee6751aa3057a145a8facdf5a6928ff220d145fee"
+    },
+    {
+      "file": "news.bin.19",
+      "sha256": "9db5337562bbe61addb40cb774c15131b1c3a20f564643d8fe269caa9b5c5ce8"
+    },
+    {
+      "file": "news.bin.20",
+      "sha256": "1a3ad462fdc0aaadfb220885f91e016cc894072572e52cffadd5274382588281"
+    },
+    {
+      "file": "news.bin.21",
+      "sha256": "55b40cd2a1593f14139f38891d7dea0f4dd88a630500fdb55b8245d2e75b80af"
+    },
+    {
+      "file": "news.bin.22",
+      "sha256": "f54c4952b1a900fb1f8748d753998bf7b0392afb55b59027332c67e5474cbdcd"
+    },
+    {
+      "file": "news.bin.23",
+      "sha256": "5b0333bd2665e8a6e5ce751e45c1763df5fc50e847f56048e64b271c362c7b89"
+    }
+  ],
+  "location_references": 94,
+  "purpose": "glyph coverage, not translation review"
+}

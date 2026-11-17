@@ -1,0 +1,11 @@
+{
+  "runtime_version": "2609a",
+  "helper_revision": 3,
+  "reference_url": "https://raw.githubusercontent.com/dolphin-emu/dolphin/2609a/Source/Core/Core/WC24PatchEngine.cpp",
+  "reference_sha256": "50ecf0f07fec1e184c9e67948f6ad097aaafadefcb301c7bcee3ffa772ce7d5f",
+  "EnableWiiLink": false,
+  "game_id": "HAGE",
+  "destination": "127.0.0.2:80",
+  "capability_count": 0,
+  "live_service_verified": false
+}

@@ -1,0 +1,10 @@
+{
+  "source_commit": "17784c26d1488f631d084d8abd43bf0060bc4f75",
+  "builder_snapshot": "workspace/private/build-wii-mail-tool-v1.py",
+  "builder_sha256": "b018ad9dc35895c98c0a793f4a6fb05228c14b0a79874322849d5185894faa86",
+  "hardware_success_verified": false,
+  "known_issues": [
+    "Preview linked unused registration functions; excluded from launch",
+    "Non-network registration failures need bounded retry condition"
+  ]
+}

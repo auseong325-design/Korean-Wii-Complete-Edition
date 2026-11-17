@@ -1,0 +1,137 @@
+{
+  "files": [
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/LICENSE",
+      "sha256": "d856fa97eead9d6fbf71e413b4910d55dedeb0d8eff2f3710b0f688c4386d1ee",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "LICENSE"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/README.md",
+      "sha256": "8e1bd411b3d43119c601ae8a49870f5959431b46432af7dc6957c4b9a660c65a",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "README.md"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/account.go",
+      "sha256": "c494fe5963a9a0a92b68f8cc7cd8c53522c759f209db1b1ebfd1d6c3262735f9",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "account.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/auth.go",
+      "sha256": "eff5abd507e5d821bb60255e1deff48a841c5ffc4eb2e7f9131439137eabd7be",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "auth.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/aws.go",
+      "sha256": "81594b8038243d4cf90fbc40c93d83b9797e3a9250ec470b3d87b0bd6d8de6b7",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "aws.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/check.go",
+      "sha256": "49deae64391f49cf271484fa0e2c610bc06fecf91d9fee11a751de8a381f340d",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "check.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/delete.go",
+      "sha256": "d8ee3973c606e0e822fdfa933311d6bfd3223c7ed5cb24eacbe96c358a5fd6b8",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "delete.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/inbound.go",
+      "sha256": "83a3b0044f9873b7cfeea9995e913bf8a4853a91e6b6f294430946217b5dc909",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "inbound.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/main.go",
+      "sha256": "a634cbacd6409bc6fa2d5e0f7d5daeeba3a24d1f34568865236b4b8735a05190",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "main.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/message_decode_test.go",
+      "sha256": "06086583192244332a23d420a748b8831daea0c0eab74c89116687aa613d3e70",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "message_decode_test.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/receive.go",
+      "sha256": "3d155d208813efaf816b9a0b56b4c1a2c30982322e363af91688abef8cf89310",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "receive.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/route.go",
+      "sha256": "db2a1bfaeb84b5e53be24ed51e9f999fb6c8313fc800ca8db6a6d3d03b62cc48",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "route.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/send.go",
+      "sha256": "63a809d874257603bd11730e508d63cdb56559cfda704c8265763ee4f57d8aaa",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "send.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/structure.go",
+      "sha256": "d29985e0d21b9405af5cf1023eeb8c264752063e21a1d7ba94a83486845f6c36",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "structure.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/tracer.go",
+      "sha256": "7b776e463a5ff8e23734967b4cc42896293d583a82a0b80a6e554d870077c3e4",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "tracer.go"
+    },
+    {
+      "path": "workspace/channels/mail/references/Mail-Server-9fa3f40c/utils.go",
+      "sha256": "6dcde079053c5185c792388fb3f67a38740d177b6b6906bd947045ed28ed0a27",
+      "repository": "WiiLink24/Mail-Server",
+      "commit": "9fa3f40c9f8d34219f05f25f0e5266180958d88a",
+      "upstream_path": "utils.go"
+    },
+    {
+      "path": "workspace/channels/tvguide/references/tv-api-69436671/LICENSE",
+      "sha256": "d856fa97eead9d6fbf71e413b4910d55dedeb0d8eff2f3710b0f688c4386d1ee",
+      "repository": "WiiLink24/tv-api",
+      "commit": "694366718e1d2bee125a4082d8963b84f10d3e6b",
+      "upstream_path": "LICENSE"
+    },
+    {
+      "path": "workspace/channels/tvguide/references/tv-api-69436671/README.md",
+      "sha256": "c7d4d4db2b8b82b5f61345fbd63a448152c4020859fefd8dc069bb4e22810ce2",
+      "repository": "WiiLink24/tv-api",
+      "commit": "694366718e1d2bee125a4082d8963b84f10d3e6b",
+      "upstream_path": "README.md"
+    },
+    {
+      "path": "workspace/channels/tvguide/references/tv-api-69436671/channels/channels.json",
+      "sha256": "46e9184af73542f5857b5669dc338a3436eaa4597d80f11aba801d5fb8dae40b",
+      "repository": "WiiLink24/tv-api",
+      "commit": "694366718e1d2bee125a4082d8963b84f10d3e6b",
+      "upstream_path": "channels/channels.json"
+    }
+  ]
+}

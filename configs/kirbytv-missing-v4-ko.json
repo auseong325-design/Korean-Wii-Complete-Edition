@@ -1,0 +1,118 @@
+{
+ "schema": 1,
+ "channel": "kirbytv",
+ "revision": 4,
+ "purpose": "Korean units for locale IDs the SWF looks up but WiiLink's gb_config_en.xml does not contain. On a Korean console, LocaleManager.getLocaleInfoByID returns these only when the loaded XML lacks the ID, so a service-provided unit always wins.",
+ "audit": "Every getLocaleInfoByID argument in Gumball2.12.RC-1.swf (literal and 'prefix'+page) was compared with the 79 IDs of the WiiLink XML pinned 2026-10-28 (sha256 65245f0d...). Texts are KWCE's own; the screens' meaning was inferred from the SWF code (marked per entry).",
+ "not_added": {
+  "txt_delay": "DataController treats any non-empty txt_delay as a service interrupt notice (isInterrupt); adding it would show that screen.",
+  "txt_about_1": "AboutScreen is the legal-text screen; no settings item in the WiiLink help_data opens it, and legal wording is not invented.",
+  "txt_spanish_*": "Spanish-only language prompt, never shown for language 9.",
+  "btn_* without lookup": "Buttons initialised through GumballButton.initFromXMLObject keep their own label when the ID is missing (guarded), so no 'undefined' is shown."
+ },
+ "previous": "configs/kirbytv-missing-v3-ko.json",
+ "audit_v4": "Re-audit of the counter-built IDs (2026-10-28): txt_intro_ reaches 4 in the final two weeks before settings/expiry_date (added; outside that period onAdvanceScreen overwrites page 4 with txt_intro_3 in the same call). Pages written to a dialog in the same call that removes it are not shown and not added: txt_intro_5, txt_late_3. Shown ranges: txt_intro_1-4, txt_optin_1-5, txt_late_1-2, txt_reward_1-3.",
+ "units": {
+  "btn_use_cb": {
+   "label": "수정 구슬 사용",
+   "evidence": "[직접 확인] GBTitleCardButton label."
+  },
+  "btn_use_crystal": {
+   "label": "수정 구슬 사용",
+   "evidence": "[직접 확인] EpisodeSynopsisScreen label."
+  },
+  "btn_use_key": {
+   "label": "열쇠 사용",
+   "evidence": "[직접 확인] GBTitleCardButton / EpisodeSynopsisScreen button label."
+  },
+  "txt_channel_end_1": {
+   "message": "커비 TV 채널의 방영 기간이<br/>끝났습니다.",
+   "evidence": "[직접 확인] ChannelExpSequence (DataController.isExpired) page 1."
+  },
+  "txt_channel_end_2": {
+   "message": "Wii 메뉴에서 커비 TV 채널을<br/>삭제하시겠습니까?",
+   "evidence": "[직접 확인] page 2 is a yes/no dialog; yes advances to page 3 whose OK calls WiiSystem.deleteChannel() (ES_DeleteTitle in the DOL)."
+  },
+  "txt_channel_end_3": {
+   "message": "커비 TV 채널을 삭제합니다.<br/>확인을 누르면 삭제됩니다.",
+   "evidence": "[직접 확인] page 3 OK → deleteChannel()."
+  },
+  "txt_channel_end_4": {
+   "message": "커비 TV 채널을 삭제하지 않았습니다.<br/>나중에 Wii 본체 설정의 데이터 관리에서<br/>삭제할 수 있습니다.",
+   "evidence": "[직접 확인] onPressNo jumps to page 4."
+  },
+  "txt_channel_end_5": {
+   "message": "그동안 커비 TV 채널을<br/>시청해 주셔서 감사합니다!",
+   "evidence": "[직접 확인] page 5 is the closing message before returnToMenu."
+  },
+  "txt_date_updated": {
+   "message": "날짜가 바뀌었습니다.<br/>에피소드 정보를 새로 고칩니다.",
+   "evidence": "[추정] DateManager / EpisodeTimelineScreen / PromoSelectionScreen date-change notice."
+  },
+  "txt_intro_4": {
+   "message": "커비 TV 채널의 방영 기간이<br/>[number_days] 남았습니다.<br/>보고 싶은 에피소드를<br/>놓치지 마세요!",
+   "evidence": "[직접 확인] IntroScreen: when DataController.isFinalWeek (expiry - now < 14 days) and not the first run, onAnimationStart sets _currentPage=4 and shows 'txt_intro_'+4 with [number_days] = getDaysAsText(days left); a first run in that period shows it after page 3. WiiLink's XML has txt_intro_1-3 only. [추정] wording (channel-end notice, same tone as txt_channel_end_1)."
+  },
+  "txt_key_1": {
+   "message": "커비가 선물을 가져왔습니다!",
+   "evidence": "[직접 확인] key reward pages (VideoEndSequence videoReward=1, addRewardOne=keys); [추정] wording."
+  },
+  "txt_key_2": {
+   "message": "열쇠를 받았습니다!",
+   "evidence": "[추정]"
+  },
+  "txt_key_3": {
+   "message": "열쇠를 사용하면 방영이 끝난 에피소드를<br/>24시간 동안 볼 수 있습니다.",
+   "evidence": "[직접 확인] LOCKED_EXPIRED uses keys first; WiiLink help key_2 states the 24 hours."
+  },
+  "txt_late_1": {
+   "message": "커비 TV 채널은 이미<br/>방영을 시작했습니다.",
+   "evidence": "[추정] IntroScreen late-start pages (DataController.isLateStart: first start after episode 1 ended)."
+  },
+  "txt_late_2": {
+   "message": "방영이 끝난 에피소드는 열쇠나<br/>수정 구슬을 사용해 볼 수 있습니다.",
+   "evidence": "[추정] second late-start page (OK dialog)."
+  },
+  "txt_optin_4": {
+   "message": "새 에피소드를 볼 수 있게 되어도<br/>소식을 받지 않습니다.",
+   "badge": 6,
+   "evidence": "[직접 확인] IntroScreen.onPressNo sets _optInPage=3 then advances to 4 and shows 'txt_optin_'+4 (v2 review: 'undefined' after 아니요). MessageOptInScreen uses txt_optin_5 for the same page, so the text is txt_optin_5's."
+  },
+  "txt_reward_1": {
+   "message": "커비가 선물을 가져왔습니다!",
+   "evidence": "[직접 확인] crystal-ball reward pages (IntroScreen gift + VideoEndSequence videoReward=2, RewardSystem.addRewardTwo=cbs); [추정] wording."
+  },
+  "txt_reward_2": {
+   "message": "수정 구슬을 받았습니다!",
+   "evidence": "[추정]"
+  },
+  "txt_reward_3": {
+   "message": "수정 구슬을 사용하면 아직 공개되지 않은<br/>에피소드를 미리 볼 수 있습니다.",
+   "evidence": "[직접 확인] EpisodeSynopsisScreen offers btn_use_crystal for LOCKED_FUTURE (and LOCKED_EXPIRED without keys)."
+  },
+  "txt_unlock_with_cb": {
+   "message": "수정 구슬을 사용해 이 에피소드의 잠금을 푸시겠습니까?",
+   "evidence": "[직접 확인] UnlockScreen counterpart of txt_unlock_with_key."
+  },
+  "txt_video_end_1": {
+   "message": "에피소드를 시청해 주셔서<br/>감사합니다!",
+   "evidence": "[추정] VideoEndSequence message panel, 'txt_video_end_'+page."
+  },
+  "txt_video_end_2": {
+   "message": "에피소드를 시청해 주셔서<br/>감사합니다!",
+   "evidence": "[추정]"
+  },
+  "txt_video_end_3": {
+   "message": "에피소드를 시청해 주셔서<br/>감사합니다!",
+   "evidence": "[추정]"
+  },
+  "txt_video_end_4": {
+   "message": "에피소드를 시청해 주셔서<br/>감사합니다!",
+   "evidence": "[추정]"
+  },
+  "txt_video_end_5": {
+   "message": "에피소드를 시청해 주셔서<br/>감사합니다!",
+   "evidence": "[추정]"
+  }
+ }
+}

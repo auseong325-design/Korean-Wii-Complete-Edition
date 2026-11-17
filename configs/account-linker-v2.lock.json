@@ -1,0 +1,20 @@
+{
+  "schema": 1,
+  "version": "2.2.0",
+  "source_commit": "ad5b1429171d96b82b9dd0d565452c3a209aa093",
+  "source_tag": "v2.2.0",
+  "source_repository": "https://github.com/WiiLink24/AccountLinker",
+  "archive_url": "https://github.com/WiiLink24/AccountLinker/releases/download/v2.2.0/account_linker.zip",
+  "archive_sha256": "a7a9a5585148d030202e01e9e3c48718a43ece449754041da4e81772423963de",
+  "archive_bytes": 1330287,
+  "payload_sha256": {
+    "boot.dol": "10174176484afb689d308a8b05b367effe2b226913ec922a8fb344695ee4a5ae",
+    "meta.xml": "058e562e51ecf0547853ff21724ca05685d601eaa2d56d8fb63171340bf01440",
+    "icon.png": "8d22ce375012efcbf39b173d13519fdabc606ab7f5b6c67b5339123cb0dc7dcd"
+  },
+  "upstream_changes_from_2_1_0": [
+    "OAuth device-flow client ID updated for WiiLink's Authentik server",
+    "JSON syntax errors reported explicitly",
+    "version string and copyright year"
+  ]
+}

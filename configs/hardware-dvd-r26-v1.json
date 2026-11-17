@@ -1,0 +1,12 @@
+{
+  "schema": 1,
+  "purpose": "Native DVD group animation and floor insertion at guarded call sites; full original DVD logo. Player binary unchanged from R25; physical native-entry retest pending.",
+  "player_build": 26,
+  "home_ui": 4,
+  "wad_revision": 26,
+  "wad_sha256": "b8a47163a2e1f7dccc0844e727c7d7cef6bce03be91ae763ecf60926a54e8d62",
+  "installer_source_sha256": "8163d98cbb050026cd765ec4c2718722225975009848a457f384a55dcfed5ef5",
+  "dvd_banner_hook": 11,
+  "dvd_hook_source_sha256": "208ed01ca05a6b611f76c345c3a5bab37a0405ff0f877eaa7d6f64068bb99571",
+  "dvd_native_source_sha256": "a024351c8fff00df7873da5b6727c651ee7cc761b7f5d92b3b37ba7bb14c4c3f"
+}

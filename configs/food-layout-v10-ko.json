@@ -1,0 +1,50 @@
+{
+ "note": "rc6 W-Food (revision >= 10): the 가게 요청 (shop-request) screen 02a static labels, left Japanese by the earlier waves. Reachable from the category screen. Delta over food-layout-v7-ko.json; kwce/food_resources.py merges v7 + v10 for rev >= 10 (rev 9 unchanged). Every string fits its pane (kwce/food_textfit.py, tests/test_food_rc6.py).",
+ "content_index": 2,
+ "layouts": {
+  "DtestOrder.arc": {
+   "Order/blyt/02a_m_layout.brlyt": [
+    {
+     "pane": "02a_T_comment",
+     "ja": "「出前チャンネル」で、出前をとれたらいいなと思う\n ご近所のお店をリクエストしてみませんか？",
+     "ko": "「음식 배달 채널」에서 배달받고 싶은\n 가까운 가게를 요청해 보세요."
+    },
+    {
+     "pane": "02a_T_01",
+     "ja": "ジャンル：",
+     "ko": "장르:"
+    },
+    {
+     "pane": "02a_Tc_txt_01",
+     "ja": "入力してください",
+     "ko": "입력해 주세요"
+    },
+    {
+     "pane": "02a_T_02",
+     "ja": "お店の名前：",
+     "ko": "가게 이름:"
+    },
+    {
+     "pane": "02a_Tc_txt_02",
+     "ja": "入力してください",
+     "ko": "입력해 주세요"
+    },
+    {
+     "pane": "02a_T_03",
+     "ja": "お店の電話番号：",
+     "ko": "가게 전화번호:"
+    },
+    {
+     "pane": "02a_Tc_txt_03",
+     "ja": "入力してください",
+     "ko": "입력해 주세요"
+    },
+    {
+     "pane": "02a_T_btn_noOK",
+     "ja": "入力されていません",
+     "ko": "입력되지 않음"
+    }
+   ]
+  }
+ }
+}

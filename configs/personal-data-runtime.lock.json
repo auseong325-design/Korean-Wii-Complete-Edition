@@ -1,0 +1,42 @@
+{
+  "profile": "personal-data-test-v1-user",
+  "title_id": "000100084843434a",
+  "capability_count": 0,
+  "external_network_allowed": false,
+  "boot": "--nand_title 000100084843434a",
+  "files": [
+    {
+      "path": "workspace/sandbox/personal-data-test-v1/Dolphin-x64/Dolphin.exe",
+      "sha256": "a100419539a7ad5996f99ea39b5471d20beec722b5debae0f4462a9cfa276e05"
+    },
+    {
+      "path": "workspace/sandbox/personal-data-test-v1/NetProbe.exe",
+      "sha256": "faa1a0dae95b56631b530f9ee2ceffb31dbddbd0269cadc99603b7a418a0217d"
+    },
+    {
+      "path": "tools/personal-data-sandbox/v1/bin/PersonalDataRunner.cs",
+      "sha256": "bab13944c77f281cfda43846fd0df74ca5682442e29cc90a41077c03b0239405"
+    },
+    {
+      "path": "tools/personal-data-sandbox/v1/bin/PersonalDataRunner.exe",
+      "sha256": "e2b496d365c30a63373003e17fcc36f77bd7aab4bc51aee1d507977075aa7d37"
+    },
+    {
+      "path": "tools/personal-data-sandbox/v1/bin/PersonalDataServer.cs",
+      "sha256": "1d872c251b608c4bbdadfb6cdbbd42ee194c2c350ee0e6a62028f791fadb65c3"
+    },
+    {
+      "path": "tools/personal-data-sandbox/v1/bin/PersonalDataServer.exe",
+      "sha256": "39a6d92f03c6b8f8cc1d1e033331257d3db732a30e45443d1ca21f57443a2044"
+    },
+    {
+      "path": "workspace/sandbox/personal-data-test-v1/local-feed/fixture-manifest.json",
+      "sha256": "031cbb0bb3dfb8366f6de5b7d3cb5532e2b1775bf1a7759b6891eefeed85152e"
+    }
+  ],
+  "builds": {
+    "1": "1a119939c5b40b463483c206c99fbdd73298f8137904be2e1aae7619dbf60c9f",
+    "2": "db968ff1e21d54c12f396d99270f7a4249076fd9ea56b2fbe4f4b606fc06ffcb"
+  },
+  "fictional_data_installed": false
+}

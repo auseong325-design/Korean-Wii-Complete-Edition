@@ -1,0 +1,10 @@
+{
+  "schema": 1,
+  "system_menu_profile": "gc-native-v7-user",
+  "include_installer_emulator": true,
+  "include_mail_preview": true,
+  "include_wiispeak_test": true,
+  "include_dvd_test": true,
+  "dvd_menu_profile": "dvd-test-v3",
+  "dvd_test_profile": "dvd-test-v3"
+}

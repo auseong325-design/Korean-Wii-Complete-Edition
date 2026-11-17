@@ -1,0 +1,492 @@
+{
+ "schema": 1,
+ "source": "USA Forecast v7 html-us.arc, English (ukv) pages; keys are whitespace-trimmed text nodes",
+ "html": [
+  "startup.html",
+  "index_bottomframe_ukv.html",
+  "index_contentsframe_ukv.html",
+  "index_mainframe_ukv.html",
+  "index_topframe_ukv.html",
+  "ukv/"
+ ],
+ "translations": {
+  "Forecast Channel (English)": "날씨 채널(한국어)",
+  "Scroll": "스크롤",
+  "Select": "선택",
+  "Close": "닫기",
+  "Wii Forecast Channel (English)": "Wii 날씨 채널(한국어)",
+  "Contents": "목차",
+  "Introduction": "소개",
+  "Address Settings": "지역 설정",
+  "Forecast Screen": "예보 화면",
+  "Regional Forecasts": "주변 지역 예보",
+  "Global Forecasts": "세계 예보",
+  "Globe Screen": "지구본 화면",
+  "Settings": "설정",
+  "Forecast Updates": "예보 갱신",
+  "Source": "정보 제공",
+  "Forecast Channel": "날씨 채널",
+  "The Forecast Channel lets you quickly view local and world weather forecasts. Weather data is updated automatically through": "날씨 채널에서는 국내와 세계의 일기 예보를 간편하게 볼 수 있습니다. 날씨 정보는",
+  ", providing you with the most current information at any time.": "를 통해 자동으로 갱신되므로 언제든지 최신 정보를 확인할 수 있습니다.",
+  "*The Forecast Channel does not display weather-related warnings, so please refer to other media for information on these topics.": "※날씨 채널에서는 기상 특보 등의 경보를 표시하지 않습니다. 이러한 정보는 다른 매체를 통해 확인해 주세요.",
+  "An address setting screen appears the first time you view the Forecast Channel, so please choose the city on the map that's closest to where you'd like to receive weather information.": "날씨 채널을 처음 열면 지역 설정 화면이 나타납니다. 지도에서 날씨 정보를 받고 싶은 곳과 가장 가까운 도시를 선택해 주세요.",
+  "The first thing you'll see on the Forecast Channel is the current weather report for the location you've selected. Use the on-screen arrows (": "날씨 채널을 열면 먼저 선택한 지역의 현재 날씨가 표시됩니다. 화면의 화살표(",
+  ") to scroll through the UV Index or weather forecast for right now, today, tomorrow, or the next five days.": ")를 사용해 자외선 지수, 현재 날씨, 오늘, 내일, 주간 예보로 이동할 수 있습니다.",
+  "All weather information, dates and times correspond to the regional time zone for the area selected.": "모든 날씨 정보와 날짜·시각은 선택한 지역의 현지 시간을 기준으로 표시됩니다.",
+  "supported by weathernews": "제공: weathernews",
+  "When you select the Globe from the regional weather map, a map of the area surrounding your selected region will appear.  The weather forecast for your location and nearby cities will appear.": "예보 화면에서 지구본을 선택하면 선택한 지역 주변의 지도가 나타나며, 현재 지역과 주변 도시의 일기 예보가 표시됩니다.",
+  "Choose Next to view the day's predicted high and low temperatures. You can also select another location and press": "다음을 선택하면 그날의 예상 최고·최저 기온을 볼 수 있습니다. 다른 지역을 가리키고",
+  "to bring up the forecast screen for that city.": "를 누르면 그 도시의 예보 화면이 나타납니다.",
+  "Blue Marble image courtesy of NASA": "Blue Marble 이미지 제공: NASA",
+  "To view weather for other regions or other parts of the globe, click the on-screen Zoom buttons or use": "다른 지역이나 세계 각지의 날씨를 보려면 화면의 확대·축소 버튼을 선택하거나 Wii 리모컨의",
+  "and": "와",
+  "on the Wii Remote to zoom in or out on the globe. Press": "로 지구본을 확대·축소해 주세요.",
+  "to grab the globe, and spin it by flicking your wrist, just like you would a real globe. You can check the forecast for any city you see.": "를 누른 채로 손목을 움직이면 실제 지구본처럼 지구본을 돌릴 수 있습니다. 화면에 보이는 도시의 예보를 확인할 수 있습니다.",
+  "Below is a list of things you can do on the Globe screen:": "지구본 화면에서는 다음과 같은 조작을 할 수 있습니다.",
+  "Choose the Change Settings option in the top-right corner of the forecast screen to change how the following information is shown:": "예보 화면 오른쪽 위의 설정을 선택하면 다음 항목의 표시 방법을 바꿀 수 있습니다.",
+  "Closest Location": "현재 지역",
+  "Change your selected location. The forecast for this location will appear when you first open the Forecast Channel.": "선택한 지역을 변경합니다. 날씨 채널을 열면 이 지역의 예보가 처음에 표시됩니다.",
+  "Temperature Display": "기온 표시 단위",
+  "Choose whether temperatures are shown in Celsius (": "기온을 섭씨(",
+  "C) or Fahrenheit (": "C)와 화씨(",
+  "F).": "F) 중 어느 단위로 표시할지 선택합니다.",
+  "Wind Display": "풍속 표시 단위",
+  "Change wind velocity display between mph and km/h.": "풍속을 mph 또는 km/h로 표시하도록 바꿉니다.",
+  "When connected to": "",
+  ", the Forecast Channel automatically obtains the latest forecast information when it's available. Also, weather information won't update while you are viewing the Forecast Channel, so please exit the Forecast Channel and then reopen it to view updated forecast information.": "에 연결되어 있으면 날씨 채널은 새 예보가 나올 때 자동으로 받아 옵니다. 날씨 채널을 보고 있는 동안에는 정보가 갱신되지 않으므로, 최신 예보를 보려면 날씨 채널을 종료한 뒤 다시 열어 주세요.",
+  "There may be cases when weather updates are suspended temporarily without notice for server maintenance.": "서버 점검 등으로 예고 없이 날씨 정보 갱신이 일시적으로 중단될 수 있습니다.",
+  "All information relayed through the Forecast Channel is provided by Weathernews Inc. For questions regarding the weather information displayed here, please refer to": "날씨 채널의 모든 정보는 Weathernews Inc.에서 제공합니다. 표시되는 날씨 정보에 관한 문의는 다음을 참조해 주세요:",
+  "Please note that Nintendo may not be able to answer every question about data transmitted here.": "이곳에서 전송되는 정보에 관한 모든 질문에 Nintendo가 답변하지 못할 수 있으니 양해해 주세요.",
+  "Reproduction or reprinting of this information is strictly prohibited.": "이 정보의 무단 복제 및 전재를 금합니다."
+ },
+ "images": {
+  "img/CHM_common_source/back_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/back_button.png"
+  },
+  "img/CHM_common_source/forward_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/forward_button.png"
+  },
+  "img/CHM_common_source/return_index_button_s_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/return_index_button_s.png"
+  },
+  "img/CHM_common_source/return_index_button_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source/return_index_button.png",
+   "align": "right"
+  },
+  "img/CHM_common_source_ro/back_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/back_button_ro.png"
+  },
+  "img/CHM_common_source_ro/forward_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/forward_button_ro.png"
+  },
+  "img/CHM_common_source_ro/return_index_button_s_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/return_index_button_s_ro.png"
+  },
+  "img/CHM_common_source_ro/return_index_button_ro_ukv.png": {
+   "type": "korean_button",
+   "source": "CHM_common_source_ro/return_index_button_ro.png",
+   "align": "right"
+  },
+  "img/copyright_ukv.gif": {
+   "type": "text",
+   "text": "©2006 Nintendo. ™, ® 및 Wii 로고는\nNintendo의 상표입니다.",
+   "size": 14,
+   "color": [
+    90,
+    90,
+    90
+   ],
+   "box": [
+    8,
+    4,
+    272,
+    50
+   ]
+  },
+  "ukv/page_03/page3_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      22,
+      103,
+      247,
+      271
+     ],
+     "capture": "v24/current.png"
+    }
+   ],
+   "labels": [
+    {
+     "box": [
+      16,
+      6,
+      252,
+      32
+     ],
+     "text": "자외선 지수",
+     "fill": {
+      "sample": [
+       16,
+       18
+      ]
+     },
+     "size": 18
+    },
+    {
+     "box": [
+      40,
+      70,
+      225,
+      98
+     ],
+     "text": "현재",
+     "color": [
+      40,
+      40,
+      40
+     ],
+     "size": 20
+    },
+    {
+     "box": [
+      16,
+      318,
+      252,
+      346
+     ],
+     "text": "오늘",
+     "fill": {
+      "sample": [
+       16,
+       330
+      ]
+     },
+     "size": 18
+    },
+    {
+     "box": [
+      16,
+      382,
+      252,
+      410
+     ],
+     "text": "내일",
+     "fill": {
+      "sample": [
+       16,
+       394
+      ]
+     },
+     "size": 18
+    },
+    {
+     "box": [
+      16,
+      446,
+      252,
+      474
+     ],
+     "text": "주간 예보",
+     "fill": {
+      "sample": [
+       16,
+       458
+      ]
+     },
+     "size": 18
+    }
+   ]
+  },
+  "ukv/page_04/page4_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      22,
+      43,
+      247,
+      209
+     ],
+     "capture": "v24/nearby-weather.png",
+     "keep_red": false
+    },
+    {
+     "box": [
+      22,
+      292,
+      247,
+      458
+     ],
+     "capture": "v24/nearby-temp.png",
+     "keep_red": false,
+     "rings": [
+      [
+       113,
+       361,
+       182,
+       388
+      ]
+     ]
+    },
+    {
+     "box": [
+      22,
+      542,
+      247,
+      708
+     ],
+     "capture": "v24/other-city.png"
+    }
+   ],
+   "labels": [
+    {
+     "box": [
+      30,
+      4,
+      235,
+      41
+     ],
+     "text": "주변 도시의\n날씨 예보",
+     "color": [
+      40,
+      40,
+      40
+     ],
+     "size": 17
+    },
+    {
+     "box": [
+      30,
+      254,
+      235,
+      291
+     ],
+     "text": "주변 도시의\n기온 예보",
+     "color": [
+      40,
+      40,
+      40
+     ],
+     "size": 17
+    },
+    {
+     "box": [
+      30,
+      512,
+      235,
+      539
+     ],
+     "text": "다른 도시의 예보",
+     "color": [
+      40,
+      40,
+      40
+     ],
+     "size": 18
+    }
+   ]
+  },
+  "ukv/page_05/page5_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      18,
+      12,
+      228,
+      182
+     ],
+     "capture": "v24/regional-zoom.png",
+     "keep_red": false
+    },
+    {
+     "box": [
+      315,
+      12,
+      525,
+      182
+     ],
+     "capture": "v24/globe-world.png",
+     "keep_red": false
+    }
+   ],
+   "labels": [
+    {
+     "box": [
+      240,
+      22,
+      302,
+      50
+     ],
+     "text": "축소",
+     "fill": {
+      "sample": [
+       238,
+       10
+      ]
+     },
+     "color": [
+      70,
+      70,
+      70
+     ],
+     "size": 18
+    },
+    {
+     "box": [
+      240,
+      138,
+      302,
+      166
+     ],
+     "text": "확대",
+     "fill": {
+      "sample": [
+       238,
+       10
+      ]
+     },
+     "color": [
+      70,
+      70,
+      70
+     ],
+     "size": 18
+    }
+   ],
+   "remove_old_red": [
+    [
+     8,
+     12,
+     236,
+     85
+    ],
+    [
+     305,
+     12,
+     535,
+     85
+    ]
+   ]
+  },
+  "ukv/page_06/page6_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      287,
+      56,
+      522,
+      232
+     ],
+     "capture": "v24/globe-screen.png"
+    }
+   ],
+   "labels": [
+    {
+     "box": [
+      14,
+      12,
+      246,
+      62
+     ],
+     "text": "날씨와 기온 표시를\n전환합니다.",
+     "fill": {
+      "sample": [
+       14,
+       14
+      ]
+     },
+     "size": 17
+    },
+    {
+     "box": [
+      14,
+      74,
+      246,
+      102
+     ],
+     "text": "지구본을 확대·축소합니다.",
+     "fill": {
+      "sample": [
+       14,
+       76
+      ]
+     },
+     "size": 17
+    },
+    {
+     "box": [
+      14,
+      114,
+      246,
+      165
+     ],
+     "text": "지구본을 처음 위치로\n되돌립니다.",
+     "fill": {
+      "sample": [
+       14,
+       116
+      ]
+     },
+     "size": 17
+    },
+    {
+     "box": [
+      14,
+      178,
+      246,
+      229
+     ],
+     "text": "지구본을 보는 각도를\n바꿉니다.",
+     "fill": {
+      "sample": [
+       14,
+       180
+      ]
+     },
+     "size": 17
+    },
+    {
+     "box": [
+      14,
+      242,
+      246,
+      293
+     ],
+     "text": "지역 예보 화면으로\n돌아갑니다.",
+     "fill": {
+      "sample": [
+       14,
+       244
+      ]
+     },
+     "size": 17
+    }
+   ]
+  },
+  "ukv/page_07/page7_ukv.gif": {
+   "type": "diagram",
+   "shots": [
+    {
+     "box": [
+      22,
+      30,
+      247,
+      190
+     ],
+     "capture": "v24/settings.png"
+    }
+   ]
+  }
+ },
+ "captures": "private native 640x480 4:3 Dolphin v22 UI captures; historical 2026-10-23T05:00:30Z cache preview; v24/capture-manifest.json"
+}
