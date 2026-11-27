@@ -1,6 +1,7 @@
 """Boot the KWCE DVD player DOL in its emulator test bed (capability 0).
 
-Allows preserved dvd-test-v1/v2 and channel-independent dvd-test-v3.
+Allows preserved dvd-test-v1/v2, channel-independent dvd-test-v3 and the forwarder-era
+Windows bed dvd-test-v4 (scripts/prepare_dvd_forwarder_test.py).
 --menu starts the patched menu with a synthetic insertion fixture in v2/v3.
 --check validates the profile without starting Dolphin.
 """
@@ -16,7 +17,7 @@ HELPER=ROOT/'tools/dvd-test/v1/bin/DvdTestRunner.exe'
 def main():
     global PROFILE,ROOT_DIR,HELPER
     settings=json.loads((ROOT/'configs/emulator-launchers.json').read_text(encoding='utf-8'))
-    ap=argparse.ArgumentParser();ap.add_argument('--check',action='store_true');ap.add_argument('--menu',action='store_true');ap.add_argument('--profile',choices=['dvd-test-v1','dvd-test-v2','dvd-test-v3'],default=settings.get('dvd_test_profile','dvd-test-v1'));args=ap.parse_args()
+    ap=argparse.ArgumentParser();ap.add_argument('--check',action='store_true');ap.add_argument('--menu',action='store_true');ap.add_argument('--profile',choices=['dvd-test-v1','dvd-test-v2','dvd-test-v3','dvd-test-v4'],default=settings.get('dvd_test_profile','dvd-test-v1'));args=ap.parse_args()
     PROFILE=args.profile+'-user';ROOT_DIR=ROOT/'workspace/sandbox'/args.profile
     HELPER=ROOT/('tools/dvd-test/'+args.profile.removeprefix('dvd-test-')+'/bin/DvdTestRunner.exe')
     if args.menu and args.profile=='dvd-test-v1':raise SystemExit('DVD menu preview needs an integrated test bed')
@@ -30,7 +31,7 @@ def main():
         else:launcher.scrub_download_tasks(PROFILE)
     config=configparser.ConfigParser(strict=False);config.read(ROOT_DIR/'user/Config/Dolphin.ini',encoding='utf-8-sig')
     if config['Core'].getboolean('EnableWiiLink',fallback=False):raise SystemExit('Unexpected URL settings')
-    if args.profile in ('dvd-test-v2','dvd-test-v3'):
+    if args.profile in ('dvd-test-v2','dvd-test-v3','dvd-test-v4'):
         record=json.loads((ROOT_DIR/'test-bed-manifest.json').read_text(encoding='utf-8'));disc=ROOT_DIR/'disc/dvd-insertion.iso'
         if Path(config['Core'].get('DefaultISO','')).resolve()!=disc.resolve()or sha256(disc)!=record['insertion_fixture_sha256']:raise SystemExit('Unverified DVD insertion fixture')
         if sha256(ROOT_DIR/'Dolphin-x64/Dolphin.exe')!=record['runtime_sha256']or record['runtime_sha256']!=json.loads((ROOT/'configs/gc-fst-runtime.lock.json').read_text())['output_sha256']:raise SystemExit('DVD preview runtime differs')
@@ -39,7 +40,7 @@ def main():
         from kwce.channel_validation import verify_installed_title
         lib=load_library();wad=ROOT/f'workspace/channels/dvd-player/wad-v{record["wad"]}/dvd-player.wad'
         if sha256(wad)!=record['wad_sha256']:raise SystemExit('DVD channel candidate differs')
-        if args.profile=='dvd-test-v3':
+        if args.profile in ('dvd-test-v3','dvd-test-v4'):
             if not record.get('channel_independent'):raise SystemExit('Missing native test marker')
             for p in ('title/00010001/4b445644','ticket/00010001/4b445644.tik'):
                 if (ROOT_DIR/'user/Wii'/p).exists():raise SystemExit('KDVD must be absent in native test')
@@ -47,6 +48,7 @@ def main():
             if sha256(module)!=native.get('module_sha256',native['player_sha256']):raise SystemExit('Native module differs')
             if 'banner_sha256' in native and sha256(ROOT_DIR/'sd-sync/kwce/dvd/menu.arc')!=native['banner_sha256']:raise SystemExit('Native banner differs')
             if 'icon_sha256' in native and sha256(ROOT_DIR/'sd-sync/kwce/dvd/icon.arc')!=native['icon_sha256']:raise SystemExit('Native icon differs')
+            if record.get('forwarder') and sha256(ROOT_DIR/'sd-sync'/native['sd_player_path'])!=native['player_sha256']:raise SystemExit('Forwarded player differs')
         else:
             title=lib.title.Title();title.load_wad(wad.read_bytes());verify_installed_title(ROOT_DIR/'user/Wii',title.tmd.title_id,title.tmd.dump())
         content=ROOT_DIR/'user/Wii/title/00000001/00000002/content';tmd=(content/'title.tmd').read_bytes();found={}

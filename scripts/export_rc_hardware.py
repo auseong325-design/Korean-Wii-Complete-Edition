@@ -169,10 +169,26 @@ def _original(base, lib, tid):
     return None
 
 
-def compile_installer(work, src=None, defines=()):
+def compile_installer(work, src=None, defines=(), nand_writer=None):
+    """nand_writer (1.0.10+, 'gcpic.c'): the one source allowed to call NAND writers; every source is
+    first compiled alone and checked (rc_hardware.writer_scope) before the link."""
     src = Path(src) if src else SRC
-    cc = [str(tool('powerpc-eabi-gcc.exe', DKP / 'devkitPPC/bin')), '-O2', '-Wall', '-Wextra', '-mrvl', '-mcpu=750',
-          '-meabi', '-mhard-float', '-DGEKKO', *defines, '-I' + str(DKP / 'libogc/include'), '-L' + str(DKP / 'libogc/lib/wii'),
+    flags = ['-O2', '-Wall', '-Wextra', '-mrvl', '-mcpu=750', '-meabi', '-mhard-float', '-DGEKKO', *defines,
+             '-I' + str(DKP / 'libogc/include')]
+    gcc = str(tool('powerpc-eabi-gcc.exe', DKP / 'devkitPPC/bin'))
+    if nand_writer:
+        objects = {}
+        for c in sorted(src.glob('*.c')):
+            obj = work / (c.stem + '.o')
+            r = subprocess.run([gcc, *flags, '-c', str(c), '-o', str(obj)], capture_output=True, text=True)
+            if r.returncode:
+                raise SystemExit('RC installer compile failed:\n' + (r.stdout or '') + (r.stderr or ''))
+            nm = subprocess.run([str(tool('powerpc-eabi-nm.exe', DKP / 'devkitPPC/bin')), str(obj)],
+                                capture_output=True, text=True, check=True).stdout
+            objects[c.name] = (nm, obj.read_bytes())
+            obj.unlink()
+        rc_hardware.writer_scope(objects, nand_writer)
+    cc = [gcc, *flags, '-L' + str(DKP / 'libogc/lib/wii'),
           *[str(p) for p in sorted(src.glob('*.c'))], '-lwiiuse', '-lbte', '-lfat', '-logc', '-lm',
           '-o', str(work / 'kwce-rc.elf')]
     r = subprocess.run(cc, capture_output=True, text=True)
@@ -183,7 +199,8 @@ def compile_installer(work, src=None, defines=()):
         raise SystemExit('RC installer compiler warnings:\n' + out)
     nm = subprocess.run([str(tool('powerpc-eabi-nm.exe', DKP / 'devkitPPC/bin')), str(work / 'kwce-rc.elf')],
                         capture_output=True, text=True, check=True).stdout
-    rc_hardware.forbidden_symbols(nm)  # refuses any System Menu / NAND writer symbol
+    # refuses any System Menu / NAND writer symbol (1.0.10+: NAND writers only via the checked module)
+    rc_hardware.forbidden_symbols(nm, allow=rc_hardware.NAND_WRITERS if nand_writer else ())
     subprocess.run([str(tool('elf2dol.exe', DKP / 'tools/bin')), str(work / 'kwce-rc.elf'), str(work / 'boot.dol')],
                    check=True, capture_output=True)
     return (work / 'boot.dol').read_bytes()
@@ -344,6 +361,8 @@ FINAL_CHANGES = {
               '  · 채널을 열 때 나오는 "닌텐도 채널" 글자가 미국판 글자 순서를 그대로 따라 늦게 펴지던 것을,\n'
               '    다섯 글자가 고르게(3프레임 간격) 돌아 들어와 0.85초 안에 반사와 함께 자리 잡게 했습니다.\n'
               '  나머지 채널·DVD·디스크 모드 파일은 1.0.8과 같습니다.\n'),
+    '1.0.10': ('- 1.0.10에서 바뀐 것: 설치 도구만 바뀌었습니다. 채널·DVD·디스크 모드 파일은 1.0.9와 같습니다.\n'
+               '  · 디스크 채널 모드(-) 화면에 +(START) "게임큐브 그림(선택)"을 더했습니다. 아래 "게임큐브 그림" 참고.\n'),
 }
 FINAL_UNVERIFIED = {
     '1.0.1': '  1.0.1의 변경(뉴스·음식 배달·로고)은 실기 확인 전입니다.\n',
@@ -355,7 +374,23 @@ FINAL_UNVERIFIED = {
     '1.0.7': '  1.0.7의 투표 지역 변경은 실기·Dolphin 화면 확인 전입니다.\n',
     '1.0.8': '  1.0.8의 투표 변경(1.0.7 포함)은 실기·Dolphin 화면 확인 전입니다.\n',
     '1.0.9': '  1.0.9의 닌텐도 오프닝은 Dolphin 화면만 확인했고 실기 확인 전입니다. 1.0.8의 투표 변경도 실기 확인 전입니다.\n',
+    '1.0.10': ('  1.0.10의 게임큐브 그림 리소스는 개발자 본체에서 2026-10부터 쓰고 있습니다. 설치 도구의 설치·되돌리기\n'
+               '  화면은 Dolphin에서 확인했고 실기 확인 전입니다. 1.0.9 닌텐도 오프닝도 실기 확인 전입니다.\n'),
 }
+GC_PICTURES_README = (
+    '\n게임큐브 그림 (선택, 기본 꺼짐, RVL-001만)\n'
+    '- Priiloader 핵만 켜면 게임큐브 기능은 되지만, 한국판 시스템 메뉴 파일에는 그림이 없어 Wii 설정의\n'
+    '  데이터 관리·저장 데이터에서 게임큐브 칸의 메모리 카드 그림이 비고 "닌텐도 게임큐브"가 한 줄로 나옵니다.\n'
+    '- 디스크 채널 모드(-) 화면에서 +(START) -> 1 = 그림 넣기, 2 = 원래대로 되돌리기.\n'
+    '- 시스템 메뉴 파일 하나(0000009d.app, 화면 그림·문구 묶음)만 테마 설치와 같은 방식으로 바꿉니다. 실행 파일·\n'
+    '  IOS·Priiloader는 건드리지 않습니다.\n'
+    '- 안전장치: Priiloader가 설치된 본체에서만, 지금 파일이 4.3K 한국판 원본과 정확히 같을 때만 진행합니다(테마를\n'
+    '  깐 본체는 거부). 원본을 kwce-rc/menu/backup-0000009d.app에 먼저 백업해 다시 읽어 확인하고, 새 파일을 임시로\n'
+    '  써서 확인한 뒤 바꾸고 한 번 더 확인합니다. 진행 중 전원을 끄지 마세요.\n'
+    '- 만약 Wii 메뉴가 뜨지 않으면: RESET을 누른 채 전원을 켜 Priiloader -> Homebrew Channel -> 이 설치 도구 ->\n'
+    '  -(GC L) -> +(START) -> 2(되돌리기). kwce-rc/menu 폴더는 지우지 마세요(되돌리기에 필요).\n'
+    '- 그림은 핵과 따로 움직입니다. 핵을 꺼도 그림은 남고, 되돌리기는 이 화면의 2번으로 합니다.\n'
+)
 
 
 def final_notes(cfg):
@@ -563,7 +598,7 @@ def main():
     work = out / '_build'
     work.mkdir()
     try:
-        dol = compile_installer(work, src_dir)
+        dol = compile_installer(work, src_dir, nand_writer='gcpic.c' if cfg.get('gc_pictures') else None)
     except BaseException:
         shutil.rmtree(out)
         raise
@@ -693,6 +728,29 @@ def main():
         (pri / 'gc-only.ini').write_bytes(gc_only)
         (pri / 'gc-dvd.ini').write_bytes(gc_dvd)
 
+    gcpic_rec = None
+    if cfg.get('gc_pictures'):
+        # 1.0.10+: optional System Menu resource (GameCube pictures), written by gcpic.c on request.
+        from kwce.formats import U8
+        g = cfg['gc_pictures']
+        new_res, old_res = (ROOT / g['resource']).read_bytes(), (ROOT / g['original']).read_bytes()
+        if hashlib.sha1(new_res).hexdigest() != g['resource_sha1'] or hashlib.sha1(old_res).hexdigest() != g['original_sha1']:
+            shutil.rmtree(out)
+            raise SystemExit('GC pictures: resource or original hash differs from the config')
+        a, b = U8(old_res), U8(new_res)
+        changed = sorted(f for f in set(a.files) | set(b.files) if a.get(f) != b.get(f))
+        if changed != g['changed_files']:
+            shutil.rmtree(out)
+            raise SystemExit(f'GC pictures: unexpected resource differences {changed}')
+        menu_dir = data_dir / 'menu'
+        menu_dir.mkdir()
+        (menu_dir / 'kwce-0000009d.app').write_bytes(new_res)
+        (menu_dir / 'original-0000009d.app').write_bytes(old_res)
+        (menu_dir / 'resource.txt').write_text(f"original_sha1={g['original_sha1']}\npatched_sha1={g['resource_sha1']}\n",
+                                                encoding='ascii', newline=CRLF)
+        gcpic_rec = dict(original_sha1=g['original_sha1'], patched_sha1=g['resource_sha1'], changed_files=changed,
+                         optional=True, default_off=True, requires_priiloader=True, writer='gcpic.c')
+
     readme = (
         'KWCE 채널 설치 도구 (릴리스 후보 ' + cfg['version'] + ')\n\n'
         '이 묶음은 실기 시험만을 앞둔 상태입니다. SD에 복사하는 것만으로는 설치되지 않습니다.\n'
@@ -717,12 +775,16 @@ def main():
         readme += rc30_readme(cfg).encode('utf-8')
     if cfg['version'] in rc_hardware.FINAL_RELEASES:
         readme += final_notes(cfg).encode('utf-8')
+    if gcpic_rec:
+        readme += GC_PICTURES_README.encode('utf-8')
     if cfg.get('public_edition'):
         readme = public_readme(readme.decode('utf-8'), cfg).encode('utf-8')
     (out / rc_hardware.README).write_text(readme.decode('utf-8'), encoding='utf-8', newline=CRLF)
 
     record = dict(kind='kwce-rc-unified-v1', package=out.name, version=cfg['version'],
-                  menu_writer_linked=False, nand_writes=False, system_menu_version=518,
+                  menu_writer_linked=bool(gcpic_rec),
+                  nand_writes=rc_hardware.GCPIC_SCOPE if gcpic_rec else False,
+                  system_menu_version=518,
                   dol_sha256=rc_hardware.sha(dol), disc_profiles=[rec_only, rec_dvd],
                   channels=channel_records, hardware_tested=False, publish=False,
                   note=('Public beta edition: same install content as the personal build; channel files are '
@@ -735,6 +797,8 @@ def main():
                       installer_source=src_dir.relative_to(ROOT).as_posix())
     if versions_rec is not None:
         record['versions'] = versions_rec
+    if gcpic_rec:
+        record['gc_pictures'] = gcpic_rec
     if dvd_hook:
         record['dvd_forwarder'] = dict(version=cfg['dvd_forwarder'], hook_revision=dvd_hook,
                                        physical_dvd_verified=False)
@@ -760,7 +824,7 @@ def main():
               f"dol {record['dol_sha256'][:16]})")
         return
     print(f"PASS: {out.relative_to(ROOT)}  {len(resolved)} channels  dol {record['dol_sha256'][:16]}  "
-          f"disc profiles gc-only+gc-dvd  no menu writer")
+          "disc profiles gc-only+gc-dvd  " + ('optional GC pictures (gcpic.c)' if gcpic_rec else 'no menu writer'))
 
 
 if __name__ == '__main__':

@@ -20,6 +20,9 @@ class DvdLauncherTests(unittest.TestCase):
         self.assertEqual(entries['05_DVD_Disc_Channel']['argv'],['scripts/launch_dolphin.py','--profile','gc-native-v8-user','--menu'])
         integrated=plans(catalog,self.settings(include_dvd_test=True,dvd_test_profile='dvd-test-v2',dvd_menu_profile='dvd-test-v2'))
         self.assertEqual(integrated['05_DVD_Disc_Channel']['argv'],['scripts/launch_dvd_test.py','--menu'])
+        forwarder=plans(catalog,self.settings(include_dvd_test=True,dvd_test_profile='dvd-test-v4',dvd_menu_profile='dvd-test-v4'))
+        self.assertEqual(forwarder['04_DVD_Player_Test']['profile'],'dvd-test-v4')
+        self.assertEqual(forwarder['05_DVD_Disc_Channel']['argv'],['scripts/launch_dvd_test.py','--menu'])
         with self.assertRaises(ValueError):plans(catalog,self.settings(include_dvd_test=True,dvd_test_profile='unreviewed'))
         for profile in ['gc-native-v7-user','Dolphin.exe','gc-native-v8-user --user x']:
             with self.subTest(profile=profile),self.assertRaises(ValueError):

@@ -5,8 +5,9 @@
  * restores each channel to its state before the first KWCE change (the original WAD if the
  * channel was installed, removal of the title if it was not) and deletes a channel on request.
  * Save data is never deleted. Only channel titles listed in sd:/kwce-rc/packages.txt are
- * touched; system titles, IOS, the System Menu, boot2 and BC/MIOS are refused, and this app links
- * no System Menu / NAND resource writer at all.
+ * touched; system titles, IOS, the System Menu, boot2 and BC/MIOS are refused. 1.0.10 adds one
+ * optional NAND file write, gcpic.c: the System Menu resource 0000009d.app (GameCube pictures,
+ * theme-installer style, Priiloader required, restore included). No other source links a NAND writer.
  *
  * RC4 adds version detection. The build on the console is identified from its stored TMD
  * (versions.c) and compared with this package's WADs and with sd:/kwce-rc/versions.txt, which
@@ -45,7 +46,7 @@
 #include "kwce.h"
 
 #define BASE "sd:/kwce-rc"
-#define VERSION "1.0.9"
+#define VERSION "1.0.10"
 #define MAX_PKG 24
 #define CHUNK (64 * 1024)
 #define ALIGN64(x) (((x) + 63) & ~63u)
@@ -220,6 +221,17 @@ int confirm(const char *what)
     return choose_ab() > 0;
 }
 
+/* gcpic.c: 1 = 1(X), 2 = 2(Y), -1 = B / HOME / POWER / RESET. */
+int read_choice(void)
+{
+    for (;;) {
+        int k = read_key();
+        if (k == K_INSTALL) return 1;
+        if (k == K_RESTORE) return 2;
+        if (k == K_B || k == K_EXIT || k == K_SYS) return -1;
+    }
+}
+
 void wait_any(void)
 {
     say("\n  Press any button.\n");
@@ -334,6 +346,7 @@ static int release_of(const char *v)
     if (strcmp(v, "1.0.7") == 0) return FINAL_1_0 + 7;
     if (strcmp(v, "1.0.8") == 0) return FINAL_1_0 + 8;
     if (strcmp(v, "1.0.9") == 0) return FINAL_1_0 + 9;
+    if (strcmp(v, "1.0.10") == 0) return FINAL_1_0 + 10;
     return strcmp(v, "1.0") == 0 ? FINAL_1_0 : 0;
 }
 
@@ -353,6 +366,7 @@ static const char *rel_name(int n)
     else if (n == FINAL_1_0 + 7) snprintf(b, sizeof buf[0], "1.0.7");
     else if (n == FINAL_1_0 + 8) snprintf(b, sizeof buf[0], "1.0.8");
     else if (n == FINAL_1_0 + 9) snprintf(b, sizeof buf[0], "1.0.9");
+    else if (n == FINAL_1_0 + 10) snprintf(b, sizeof buf[0], "1.0.10");
     else snprintf(b, sizeof buf[0], "RC%d", n);
     return b;
 }
@@ -1269,10 +1283,12 @@ static void do_disc_profile(void)
     }
     say("  1(X): GameCube only  - original two-disc layout, no DVD player\n"
         "  2(Y): GameCube + DVD - three-disc layout with the DVD player\n"
+        "  +(START): GameCube pictures in Wii Settings (optional, System Menu file)\n"
         "  B: cancel\n");
     int k;
-    do k = read_key(); while (k != K_INSTALL && k != K_RESTORE && k != K_B && k != K_EXIT && k != K_SYS);
+    do k = read_key(); while (k != K_INSTALL && k != K_RESTORE && k != K_ALL && k != K_B && k != K_EXIT && k != K_SYS);
     if (k == K_B || k == K_EXIT || k == K_SYS) return;
+    if (k == K_ALL) { gcpic_menu(gc_ok); return; }
     int gc_only = k == K_INSTALL;
     if (!gc_only && !native_dvd_files_ready()) { wait_any(); return; }
     const char *src = gc_only ? BASE "/priiloader/gc-only.ini" : BASE "/priiloader/gc-dvd.ini";

@@ -11,7 +11,7 @@
 
 ## 사용법
 
-준비물: 홈브류 채널, d2x cIOS 249, Priiloader가 설치된 국내판 Wii ([wii.hacks.guide](https://wii.hacks.guide/)), FAT32 SD 카드, Windows 10/11(64비트). 시작 전에 BootMii로 NAND 백업을 권장합니다.
+준비물: 홈브류 채널, d2x cIOS 249, Priiloader(최신 0.10.0 권장, 0.7 등 옛 판은 핵 파일을 못 읽음)가 설치된 국내판 Wii ([wii.hacks.guide](https://wii.hacks.guide/)), FAT32 SD 카드, Windows 10/11(64비트). 시작 전에 BootMii로 NAND 백업을 권장합니다.
 
 1. zip 압축을 모두 풀고 `KWCE-Patcher.bat` 실행 → 번호 선택 (SD 카드를 꽂아 두면 바로 복사)
    - 빠른 설정: 채널 전체 + 게임큐브·DVD (처음 약 430MB 받음, Wii 저장 메모리 약 2,410블록)
@@ -19,9 +19,10 @@
 2. Wii: 홈브류 채널 → KWCE Channel Installer
    - 채널: +(START) → 1(전체 설치)
    - 게임큐브·DVD: -(GC L) → 1 또는 2, 그다음 RESET을 누른 채 전원을 켜서 Priiloader → System Menu Hacks에서 KWCE 항목을 켜고 저장
+   - (선택, 1.0.10+) Wii 설정 데이터 관리의 게임큐브 그림: -(GC L) → +(START) → 1. 시스템 메뉴 파일 하나를 테마처럼 바꾸며 Priiloader가 있을 때만 진행, 같은 화면의 2로 되돌리기
 3. 연결 오류(NEWS000006 등)가 나면 [sntp](https://oscwii.org/library/app/sntp)로 Wii 시계를 맞추세요(시간대 UTC+9).
 
-되돌리기: 설치 도구 +(START) → 2(전체 복원), Priiloader에서 KWCE 항목 끄고 저장. 자세한 내용은 zip 안의 `README-ko.txt`.
+되돌리기: 설치 도구 +(START) → 2(전체 복원), 게임큐브 그림을 넣었다면 -(GC L) → +(START) → 2, Priiloader에서 KWCE 항목 끄고 저장. 자세한 내용은 zip 안의 `README-ko.txt`.
 
 ## 주의
 

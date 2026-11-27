@@ -1,0 +1,104 @@
+{
+  "name": "kwce-patcher-win",
+  "description": "Windows standalone KWCE PC patcher. v10: bundle kwce-public-v7 (installer 1.0.10 with the optional GameCube pictures: System Menu resource 0000009d.app, Priiloader required, restore included); GC-only mode copies kwce-rc/menu; revert guide covers the pictures. Sources frozen under kwce/frozen/patcher-win-v10.",
+  "bundle": "kwce-public-v7",
+  "zip_root": "KWCE-Patcher",
+  "zip_date": [
+    2026,
+    11,
+    17,
+    0,
+    0,
+    0
+  ],
+  "python_version": "3.12.10",
+  "python_source": "local CPython 3.12.10 x64 install (same as .venv home); layout follows the official embeddable package",
+  "runtime_files": [
+    "python.exe",
+    "pythonw.exe",
+    "python3.dll",
+    "python312.dll",
+    "vcruntime140.dll",
+    "vcruntime140_1.dll",
+    "LICENSE.txt"
+  ],
+  "runtime_dll_exclude": [
+    "_tkinter.pyd",
+    "tcl86t.dll",
+    "tk86t.dll",
+    "_ctypes_test.pyd",
+    "_test*.pyd",
+    "*.ico",
+    "python_lib.cat"
+  ],
+  "stdlib_exclude_dirs": [
+    "site-packages",
+    "test",
+    "tkinter",
+    "turtledemo",
+    "idlelib",
+    "ensurepip",
+    "venv",
+    "lib2to3",
+    "pydoc_data",
+    "__pycache__",
+    "__phello__"
+  ],
+  "kwce_modules": [
+    "__init__.py",
+    "public_patch.py",
+    "bspatch.py",
+    "channels.py",
+    "formats.py",
+    "priiloader_profile.py"
+  ],
+  "packages": {
+    "libWiiPy": {
+      "from": "external/channel-tools/libWiiPy-71ad5b90/src/libWiiPy",
+      "license": "external/channel-tools/libWiiPy-71ad5b90/LICENSE",
+      "version": "71ad5b90"
+    },
+    "requests": {
+      "from": "tools/channel-python/requests",
+      "dist": "tools/channel-python/requests-2.32.5.dist-info"
+    },
+    "urllib3": {
+      "from": "tools/channel-python/urllib3",
+      "dist": "tools/channel-python/urllib3-2.8.0.dist-info"
+    },
+    "certifi": {
+      "from": "tools/channel-python/certifi",
+      "dist": "tools/channel-python/certifi-2026.10.19.dist-info"
+    },
+    "idna": {
+      "from": "tools/channel-python/idna",
+      "dist": "tools/channel-python/idna-3.20.dist-info"
+    },
+    "charset_normalizer": {
+      "from": "tools/channel-python/charset_normalizer",
+      "dist": "tools/channel-python/charset_normalizer-3.5.2.dist-info"
+    },
+    "Crypto": {
+      "from": ".venv/Lib/site-packages/Crypto",
+      "dist": ".venv/Lib/site-packages/pycryptodome-4.1.0.dist-info",
+      "exclude_dirs": [
+        "SelfTest"
+      ]
+    },
+    "zstandard": {
+      "from": ".venv/Lib/site-packages/zstandard",
+      "dist": ".venv/Lib/site-packages/zstandard-0.25.0.dist-info"
+    }
+  },
+  "kwce_license": "LICENSE",
+  "readme": "docs/release/patcher-win-README-v10-ko.txt",
+  "extra_licenses": {
+    "licenses/NotoSansKR-OFL.txt": "workspace/channels/forecast/references/NotoSansKR-OFL.txt"
+  },
+  "entry": "kwce/patcher_wizard.py",
+  "launcher": 3,
+  "freeze": true,
+  "app_files": {
+    "nand-usage.json": "configs/nand-usage-v1.json"
+  }
+}

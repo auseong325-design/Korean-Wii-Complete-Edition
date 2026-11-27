@@ -39,6 +39,13 @@ def main():
         verify_card(src,card)
         deploy(src,card,args.dry_run,verifier=verify_forwarder)
         return
+    if args.package.startswith('kwce-priiloader-0-10-0-sd-v'):
+        from kwce.priiloader_update_sd import verify_card, sd_files as verify_priiloader
+        from deploy_channel_package import deploy
+        card = Path(args.drive).resolve()
+        verify_card(src, card)
+        deploy(src, card, args.dry_run, verifier=verify_priiloader)
+        return
     if args.package == 'kwce-dvd-integrated-v1':
         from kwce.dvd_integrated_sd import verify_card, sd_files as verify_integrated
         from deploy_channel_package import deploy

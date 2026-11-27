@@ -36,11 +36,34 @@ def config():
     return json.loads(CONFIG.read_text(encoding='utf-8'))
 
 
-def forbidden_symbols(nm_output):
-    """Raise if the compiled installer links a System Menu / NAND writer symbol."""
-    present = sorted({s for s in FORBIDDEN if re.search(r'\b' + re.escape(s) + r'\b', nm_output)})
+GCPIC_SCOPE = 'optional System Menu resource 0000009d.app only'
+GCPIC_FILES = {f'{DATA}/menu/kwce-0000009d.app', f'{DATA}/menu/original-0000009d.app', f'{DATA}/menu/resource.txt'}
+NAND_WRITERS = ('ISFS_Write', 'ISFS_Delete', 'ISFS_CreateFile', 'ISFS_Rename', 'ISFS_CreateDir', 'ISFS_SetAttr')
+# 1.0.10+: the one NAND file the optional GameCube-pictures module (gcpic.c) may write, and its temp copy.
+GCPIC_NAND_PATHS = {b'/title/00000001/00000002/content/0000009d.app', b'/tmp/0000009d.app',
+                    b'/title/00000001/00000002/content/%08x.app'}
+
+
+def forbidden_symbols(nm_output, allow=()):
+    """Raise if the compiled installer links a System Menu / NAND writer symbol (allow: names checked elsewhere)."""
+    present = sorted({s for s in FORBIDDEN if s not in allow and re.search(r'\b' + re.escape(s) + r'\b', nm_output)})
     if present:
         raise ValueError('RC installer links a forbidden writer: ' + ', '.join(present))
+    return True
+
+
+def writer_scope(objects, writer):
+    """1.0.10+: objects = {source name: (nm output, object bytes)}. NAND writer calls only in `writer`,
+    whose NAND paths are only the System Menu resource, its /tmp copy and the (read-only) boot-content lookup."""
+    for name, (nm, _) in objects.items():
+        used = sorted(s for s in NAND_WRITERS if re.search(r'\bU ' + re.escape(s) + r'\b', nm))
+        if used and name != writer:
+            raise ValueError(f'{name} calls a NAND writer: ' + ', '.join(used))
+    if writer not in objects:
+        raise ValueError(f'NAND writer module {writer} missing')
+    paths = set(re.findall(rb'/(?:title|tmp|shared1|sys|import|ticket)/[\x21-\x7e]*', objects[writer][1]))
+    if paths - GCPIC_NAND_PATHS:
+        raise ValueError(f'{writer} names other NAND paths: {sorted(paths - GCPIC_NAND_PATHS)}')
     return True
 
 
@@ -185,6 +208,9 @@ def allowed(path):
         return True
     if re.fullmatch(r'kwce-rc/extras/wiilink-mail-patcher/(boot\.dol|meta\.xml|icon\.png|LICENSE|SOURCE\.txt|source\.zip)', path):
         return True
+    # 1.0.10+: optional GameCube pictures (System Menu resource, written only by gcpic.c on request)
+    if path in GCPIC_FILES:
+        return True
     return False
 
 
@@ -210,8 +236,17 @@ def sd_files(package):
     if sha(raw) != (package / 'package-manifest.sha256').read_text(encoding='ascii').strip():
         raise ValueError('RC manifest digest differs')
     record = json.loads(raw)
-    if record.get('kind') != 'kwce-rc-unified-v1' or record.get('menu_writer_linked') or record.get('nand_writes'):
+    if record.get('kind') != 'kwce-rc-unified-v1':
         raise ValueError('RC package scope differs')
+    gcpic = record.get('gc_pictures')
+    if gcpic is None and (record.get('menu_writer_linked') or record.get('nand_writes')):
+        raise ValueError('RC package scope differs')
+    if gcpic is not None and (record.get('menu_writer_linked') is not True or record.get('nand_writes') != GCPIC_SCOPE
+                              or gcpic.get('writer') != 'gcpic.c' or gcpic.get('requires_priiloader') is not True
+                              or not {i['path'] for i in record['sd_files']} >= GCPIC_FILES):
+        raise ValueError('RC package GameCube pictures scope differs')
+    if gcpic is None and any(i['path'] in GCPIC_FILES for i in record['sd_files']):
+        raise ValueError('RC package has GameCube pictures files without the record')
     seen, result = set(), []
     for item in record['sd_files']:
         name = item['path']
@@ -287,7 +322,7 @@ def tmd_identity(tmd):
 
 
 # The final personal release follows RC31; keep in step with FINAL_1_0 in the installer.
-FINAL_RELEASES = {'1.0': 32, '1.0.1': 33, '1.0.2': 34, '1.0.3': 35, '1.0.4': 36, '1.0.5': 37, '1.0.6': 38, '1.0.7': 39, '1.0.8': 40, '1.0.9': 41}
+FINAL_RELEASES = {'1.0': 32, '1.0.1': 33, '1.0.2': 34, '1.0.3': 35, '1.0.4': 36, '1.0.5': 37, '1.0.6': 38, '1.0.7': 39, '1.0.8': 40, '1.0.9': 41, '1.0.10': 42}
 
 
 def release_of(version):

@@ -619,6 +619,15 @@
    "home_ui": "home-ui-v9",
    "platform": "linux",
    "role": "experimental"
+  },
+  {
+   "profile": "dvd-test-v4",
+   "purpose": "Windows DVD forwarder test bed (16:9/4:3): kwce-rc-sd-v51 DVD set, no KDVD title; scripts/launch_dvd_test.py --profile dvd-test-v4 --menu",
+   "native_hook": "dvd-native-hook-v79",
+   "player_build": "build-v66",
+   "home_ui": "home-ui-v9",
+   "platform": "windows",
+   "role": "experimental"
   }
  ]
 }

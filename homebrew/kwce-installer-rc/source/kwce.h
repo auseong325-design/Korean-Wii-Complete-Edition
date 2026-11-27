@@ -8,6 +8,11 @@ int confirm(const char *what);
 /* Waits for A or B without printing anything: 1 = A, 0 = B or HOME, -1 = POWER / RESET. */
 int choose_ab(void);
 void wait_any(void);
+/* 1 = 1(X), 2 = 2(Y), -1 = B / HOME / POWER / RESET. */
+int read_choice(void);
+
+/* gcpic.c: optional System Menu resource 0000009d.app (GameCube pictures) install / restore. */
+void gcpic_menu(int gamecube_ports);
 
 typedef enum { CONSOLE_UNKNOWN = 0, CONSOLE_RVL001, CONSOLE_RVL101, CONSOLE_VWII } console_model;
 

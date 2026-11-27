@@ -5,6 +5,6 @@
   "include_mail_preview": true,
   "include_wiispeak_test": true,
   "include_dvd_test": true,
-  "dvd_menu_profile": "dvd-test-v3",
-  "dvd_test_profile": "dvd-test-v3"
+  "dvd_menu_profile": "dvd-test-v4",
+  "dvd_test_profile": "dvd-test-v4"
 }

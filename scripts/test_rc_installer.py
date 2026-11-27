@@ -227,7 +227,8 @@ def main():
     (run / 'build').mkdir(parents=True)
 
     # 1) test-only DOL from the head source (keys from a file), same compiler gate as a package build
-    dol = compile_installer(run / 'build', SRC, defines=('-DKWCE_TEST_SCRIPT',))
+    dol = compile_installer(run / 'build', SRC, defines=('-DKWCE_TEST_SCRIPT',),
+                            nand_writer='gcpic.c' if (SRC / 'gcpic.c').is_file() else None)
 
     # 2) backups first, then staging (inside try: any failure restores the bed)
     before = snapshot()

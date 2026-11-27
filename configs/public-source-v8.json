@@ -1,0 +1,50 @@
+{
+  "name": "kwce-source",
+  "description": "GPL-3.0 corresponding source for the KWCE public beta 1.0.10 (package kwce-rc-sd-v55 / patch bundle kwce-public-v7 / patcher v10).",
+  "package": "kwce-rc-sd-v55",
+  "zip_root": "kwce-source",
+  "zip_date": [
+    2026,
+    11,
+    27,
+    0,
+    0,
+    0
+  ],
+  "own_dirs": [
+    "kwce",
+    "scripts",
+    "homebrew",
+    "configs",
+    "tests"
+  ],
+  "readme": "docs/release/SOURCE-README-ko.txt",
+  "wiimc": {
+    "upstream": "external/other-tools/wiimc",
+    "commit": "fae733f1ee51db8f8c9e3560cdb8b65835174f00",
+    "revisions": {
+      "66": {
+        "ships_as": "kwce/dvd/player.dol",
+        "verify": "workspace/channels/dvd-player/build-v66/build-manifest.json",
+        "linux_build_tweaks": {
+          "gcc_version": "16.2.0"
+        }
+      },
+      "31": {
+        "ships_as": "kwce-rc/dvd-player/korean.wad (legacy DVD Player channel, remove-only)",
+        "verify": null
+      }
+    }
+  },
+  "spd": {
+    "upstream": "workspace/channels/personal-data/references/set-personal-data-18fa5a7d",
+    "commit": "18fa5a7d696dfb0f8c7fcdcd2fc5613f2c41dabf",
+    "built_tree": "tools/personal-data-sandbox/build/set-personal-data",
+    "verify": "workspace/channels/personal-data/build-v2/build-manifest.json",
+    "libpatcher": "workspace/channels/personal-data/references/libpatcher-3e51f23a",
+    "ships_as": "kwce-rc/personal-data/korean.wad (Set Personal Data, hardware-v2 from build-v2)"
+  },
+  "extra_files": {
+    "third_party/NotoSansKR-OFL.txt": "workspace/channels/forecast/references/NotoSansKR-OFL.txt"
+  }
+}

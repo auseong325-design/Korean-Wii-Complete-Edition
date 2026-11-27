@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "purpose": "Unified release-candidate SD package: every KWCE channel in one installer, console-aware. Paths are under workspace/channels/<id>/. Never publish the output.",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "strict_priiloader_search_order": true,
   "packed_priiloader_tokens": true,
   "versions": true,
@@ -199,5 +199,16 @@
   },
   "gc_card_menu": 2,
   "dvd_forwarder": 3,
-  "account_linker": "kwce-account-linker-sd-v2"
+  "account_linker": "kwce-account-linker-sd-v2",
+  "gc_pictures": {
+    "resource": "workspace/hardware/kwce-alpha-v7/kwce/menu/kwce-0000009d.app",
+    "resource_sha1": "2e882145d3150d39bbc467046d62fe0ce2745694",
+    "original": "workspace/extracted-system/nand-current/title/00000001/00000002/content/0000009d.app",
+    "original_sha1": "aafc40a74c232533afda04a64cef679ebfcfc78c",
+    "changed_files": [
+      "layout/common/diskBann2.ash",
+      "layout/common/setupSel2.ash",
+      "message/kor/ipl_common.bmg"
+    ]
+  }
 }

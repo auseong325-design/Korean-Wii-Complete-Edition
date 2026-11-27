@@ -36,6 +36,30 @@ class TestRcHardware(unittest.TestCase):
             with self.assertRaises(ValueError):
                 rc_hardware.forbidden_symbols(f'0001 T {bad}\n0002 T main')
 
+    def test_writer_scope_only_gcpic(self):
+        ok_obj = b'sd:/kwce-rc/menu\0/title/00000001/00000002/content/0000009d.app\0/tmp/0000009d.app\0'
+        objs = {'main.c': ('         U ES_AddTitleStart\n00000000 T main\n', b''),
+                'gcpic.c': ('         U ISFS_Write\n         U ISFS_Rename\n00000000 T gcpic_menu\n', ok_obj)}
+        self.assertTrue(rc_hardware.writer_scope(objs, 'gcpic.c'))
+        bad = dict(objs, **{'main.c': ('         U ISFS_Delete\n00000000 T main\n', b'')})
+        with self.assertRaises(ValueError):
+            rc_hardware.writer_scope(bad, 'gcpic.c')
+        other_path = dict(objs, **{'gcpic.c': (objs['gcpic.c'][0], ok_obj + b'/title/00000001/00000002/content/title.tmd\0')})
+        with self.assertRaises(ValueError):
+            rc_hardware.writer_scope(other_path, 'gcpic.c')
+        with self.assertRaises(ValueError):
+            rc_hardware.writer_scope({'main.c': objs['main.c']}, 'gcpic.c')
+        # the linked image may hold the writers only when the module check ran (allow=NAND_WRITERS)
+        self.assertTrue(rc_hardware.forbidden_symbols('0001 T ISFS_Write\n', allow=rc_hardware.NAND_WRITERS))
+        with self.assertRaises(ValueError):
+            rc_hardware.forbidden_symbols('0001 T menu_install\n', allow=rc_hardware.NAND_WRITERS)
+
+    def test_gcpic_paths_allowed_only_with_record(self):
+        for rel in rc_hardware.GCPIC_FILES:
+            self.assertTrue(rc_hardware.allowed(rel))
+        self.assertFalse(rc_hardware.allowed('kwce-rc/menu/backup-0000009d.app'))
+        self.assertEqual(rc_hardware.release_of('1.0.10'), 42)
+
     def test_gc_only_ini_is_two_disc_no_dvd(self):
         raw, rec = rc_hardware.disc_ini(self.menu, dvd=False)
         self.assertEqual(rec['mode'], 'gc-only')

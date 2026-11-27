@@ -41,11 +41,11 @@ def plans(catalog,settings):
     if settings.get('include_mail_preview')is True:
         result['03_Mail_Preview']=dict(label='Wii 알림판 메일 · 등록 불가 한글 도구 미리보기',profile='mail-test-v1',artifact='화면 검수 전용',argv=['scripts/launch_wii_mail_preview.py'])
     if settings.get('include_dvd_test')is True:
-        if settings.get('dvd_test_profile','dvd-test-v1')not in('dvd-test-v1','dvd-test-v2','dvd-test-v3'):raise ValueError('Unapproved DVD test profile')
+        if settings.get('dvd_test_profile','dvd-test-v1')not in('dvd-test-v1','dvd-test-v2','dvd-test-v3','dvd-test-v4'):raise ValueError('Unapproved DVD test profile')
         result['04_DVD_Player_Test']=dict(label='DVD 플레이어 · 준비된 ISO 자동 재생 (디스크 삽입 불필요)',profile=settings.get('dvd_test_profile','dvd-test-v1'),
             artifact='시험대 SD에 준비된 플레이어',argv=['scripts/launch_dvd_test.py'])
     dvd_menu=settings.get('dvd_menu_profile')
-    if dvd_menu in ('dvd-test-v2','dvd-test-v3'):
+    if dvd_menu in ('dvd-test-v2','dvd-test-v3','dvd-test-v4'):
         result['05_DVD_Disc_Channel']=dict(label='DVD 디스크 채널 배너 · 합성 디스크 자동 삽입 → 시작 → 재생',profile=dvd_menu,artifact='통합 DVD 시험대',argv=['scripts/launch_dvd_test.py','--menu'])
     elif dvd_menu is not None:
         match=re.fullmatch(r'gc-native-v([1-9][0-9]*)-user',dvd_menu)
@@ -141,7 +141,7 @@ def expected_files(entries):
         '프로젝트 Dolphin은 격리되어 바탕화면·다운로드·드라이브 루트를 탐색하면 접근 거부가 날 수 있다. 준비된 ISO는 launcher가 해시를 확인하고 시험용 SD에서 읽는다.',
         '잘못 연 파일 선택창은 취소하고, `Stop_Emulator.bat`로 DVD 시험대를 종료한 뒤 04번을 실행한다. 영상 종료 후 Wii 메뉴로 돌아온 상태에서 다시 볼 때도 종료 후 04번을 실행한다.',
         '`05_DVD_Disc_Channel.bat`는 같은 통합 DVD 시험대의 Wii 메뉴로 시작한다. 건강 안내에서 A(스페이스)를 누르고 첫 페이지의 디스크 채널을 선택한다. 합성 삽입 상태가 갱신되면 DVD 배너와 시작 버튼이 나타난다(약 30초까지 걸릴 수 있음).',
-        '05번의 dvd-test-v3는 별도 DVD 채널 없이 메모리 훅이 SD 실행 모듈을 읽어 제공 ISO를 재생한다. 다른 페이지로 열리면 Q(리모컨 −)로 첫 페이지로 이동한다. 이 합성 삽입·배너는 Dolphin 검수용이며 실기의 DVD 인식 검증과 구분한다.','',
+        '05번의 통합 시험대(dvd-test-v3: 훅41/R47, dvd-test-v4: 1.0.9 SD 묶음의 훅79/R66/HOME9)는 별도 DVD 채널 없이 메모리 훅이 SD 실행 모듈을 읽어 제공 ISO를 재생한다. 다른 페이지로 열리면 Q(리모컨 −)로 첫 페이지로 이동한다. 이 합성 삽입·배너는 Dolphin 검수용이며 실기의 DVD 인식 검증과 구분한다.','',
         '## 이후 갱신','',
         '`configs/channels.catalog.json`의 각 채널 `role=active`와 `launch`를 실행 때마다 읽는다. BAT에는 빌드 번호를 고정하지 않는다.',
         '메뉴 기준은 `configs/emulator-launchers.json`에서 관리한다. 새 채널 launcher는 `kwce/emulator_shortcuts.py`의 허용 명령도 검토·등록한다.',

@@ -39,7 +39,7 @@ CHANNELS = {
     'internet': '인터넷 채널', 'photoprints': '사진 프린트 채널', 'wiispeak': 'Wii 스피크 채널',
     'tvguide': 'TV 가이드 채널', 'personal-data': '주소 설정 채널', 'dvd-player': 'DVD 재생',
 }
-GC_PREFIXES = ('apps/kwce-installer-rc/', 'kwce/dvd/', 'kwce-rc/priiloader/')
+GC_PREFIXES = ('apps/kwce-installer-rc/', 'kwce/dvd/', 'kwce-rc/priiloader/', 'kwce-rc/menu/')
 GC_FILES = ('kwce-rc/versions.txt', 'kwce-rc/editions.txt', 'KWCE-RC-README-ko.txt')
 GC_SKIP = b'KWCE WiiLink question answered: GameCube/DVD only package. Delete this file to be asked again.\n'
 
@@ -504,6 +504,8 @@ def revert_guide(target):
             print('    복원 기록: 없음 — 채널을 설치할 때 쓴 SD 카드가 아니거나 kwce-rc 폴더를 지운 경우입니다.')
         if not has_tool or missing:
             print('    → 먼저 이 패처의 1번(빠른 설정)으로 이 카드에 다시 복사하세요. 복원 기록은 지워지지 않습니다.')
+        if (t / 'kwce-rc/menu/backup-0000009d.app').is_file():
+            print('    게임큐브 그림: 설치한 기록(원본 백업)이 있습니다 → 아래 2번을 하세요.')
     else:
         print('  (SD 카드를 고르면 복원에 필요한 파일과 기록이 있는지 확인해 드립니다.)')
     print()
@@ -511,12 +513,14 @@ def revert_guide(target):
     print('     KWCE 전에 없던 채널은 지우고, 있던 채널은 원래 판으로 다시 넣습니다.')
     print('     복원 기록이 없으면 채널을 고르고 A → Delete channel로 하나씩 지웁니다.')
     print('     세이브 데이터는 남습니다(Wii 설정 → 데이터 관리에서 지울 수 있음).')
-    print('  2. 게임큐브·DVD: RESET을 누른 채 전원을 켜서 Priiloader → System Menu Hacks에서')
+    print('  2. 게임큐브 그림을 넣었다면: 설치 도구 → -(GC L) → +(START) → 2(원래대로)')
+    print('  3. 게임큐브·DVD: RESET을 누른 채 전원을 켜서 Priiloader → System Menu Hacks에서')
     print('     이름이 "KWCE"로 시작하는 항목을 모두 끄고 저장합니다.')
-    print('  3. (선택) 1·2를 마친 뒤 SD에서 apps/kwce-installer-rc, kwce, kwce-rc 폴더를 지웁니다.')
+    print('  4. (선택) 1~3을 마친 뒤 SD에서 apps/kwce-installer-rc, kwce, kwce-rc 폴더를 지웁니다.')
     print()
-    print('  Wii 메뉴가 뜨지 않을 때: RESET을 누른 채 전원을 켜면 Priiloader가 열립니다. 2번처럼 KWCE')
-    print('  항목을 끄고 저장한 뒤 다시 켜세요. KWCE는 시스템 메뉴 파일 자체는 바꾸지 않습니다.')
+    print('  Wii 메뉴가 뜨지 않을 때: RESET을 누른 채 전원을 켜면 Priiloader가 열립니다. 3번처럼 KWCE')
+    print('  항목을 끄고 저장한 뒤 다시 켜세요. 그래도 안 되면 Priiloader → Homebrew Channel →')
+    print('  설치 도구에서 2번(게임큐브 그림 되돌리기)을 하세요. KWCE가 바꾸는 시스템 메뉴 파일은 이 그림 파일 하나뿐입니다.')
 
 
 # ------------------------------------------------------------------ main
@@ -544,6 +548,9 @@ def finish(out, target, copied, plan, auto):
         print('    2. -(GC L) → 1 게임큐브만 / 2 게임큐브+DVD')
     print('    마지막으로 RESET을 누른 채 전원을 켜서 Priiloader → System Menu Hacks에서')
     print('    KWCE 항목을 켜고 저장합니다. (쓰던 다른 핵도 켜져 있는지 확인하세요.)')
+    if any(rel.startswith('kwce-rc/menu/') for rel in plan.files):
+        print('    (선택) Wii 설정의 게임큐브 메모리 카드 그림: 설치 도구에서 -(GC L) → +(START) → 1.')
+        print('    시스템 메뉴 파일 하나를 테마처럼 바꿉니다(Priiloader 필요, 같은 화면의 2로 되돌리기).')
     if plan.mode == 'full':
         print()
         print('  권장 홈브류: sntp — Wii 시계를 인터넷 시간에 맞춥니다.')
